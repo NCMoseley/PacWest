@@ -91,7 +91,6 @@ get_header(); ?>
 					<div class="investor-portal-content-copy">
 						<p>		<?php echo $investor_portal_desc ?>	</p>
 					</div>
-
 				</div>	
 
 

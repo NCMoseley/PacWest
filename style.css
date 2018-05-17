@@ -851,6 +851,71 @@ object {
     text-decoration: none;
     text-transform: uppercase; }
 
+.page-template-front-page .investor-portal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-template-front-page .investor-portal-content h2 {
+    text-align: center; }
+  .page-template-front-page .investor-portal-content-copy {
+    width: 65%;
+    margin: 0 auto; }
+
+.page-template-front-page .investor-portal form {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "first second" "third fourth" "fifth fifth"; }
+  .page-template-front-page .investor-portal form input[type="submit"] {
+    margin: 1rem auto;
+    width: 210px;
+    padding: 15px 30px;
+    font-size: 16px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: white;
+    background-color: #0a2d5d;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #00c860; }
+  .page-template-front-page .investor-portal form p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .page-template-front-page .investor-portal form p:nth-of-type(1) {
+    grid-area: first; }
+  .page-template-front-page .investor-portal form p:nth-of-type(2) {
+    grid-area: second; }
+  .page-template-front-page .investor-portal form p:nth-of-type(3) {
+    grid-area: third; }
+  .page-template-front-page .investor-portal form p:nth-of-type(4) {
+    grid-area: fourth; }
+  .page-template-front-page .investor-portal form p:nth-of-type(5) {
+    grid-area: fifth; }
+
 .page-template-front-page .sub-footer {
   display: -webkit-box;
   display: -ms-flexbox;
