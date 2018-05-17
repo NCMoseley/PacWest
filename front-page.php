@@ -99,23 +99,9 @@ get_header(); ?>
 				</div>
 
 			</section>
-
-
-
-			<section class="sub-footer">
-				<div class="contact-us-today">
-				</div>
-				<div class="faq">
-				</div>
-				<div class="investors">
-				</div>
-			</section>
-
-
-
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-
+<?php get_template_part('template-parts/sub-footer'); ?>
 <?php get_footer(); ?>

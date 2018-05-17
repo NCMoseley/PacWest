@@ -851,7 +851,7 @@ object {
     text-decoration: none;
     text-transform: uppercase; }
 
-.page-template-front-page .investor-portal-content {
+.investor-portal-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,18 +865,18 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .page-template-front-page .investor-portal-content h2 {
+  .investor-portal-content h2 {
     text-align: center; }
-  .page-template-front-page .investor-portal-content-copy {
+  .investor-portal-content-copy {
     width: 65%;
     margin: 0 auto; }
 
-.page-template-front-page .investor-portal form {
+.investor-portal form {
   width: 85%;
   margin: 0 auto;
   display: grid;
   grid-template-areas: "first second" "third fourth" "fifth fifth"; }
-  .page-template-front-page .investor-portal form input[type="submit"] {
+  .investor-portal form input[type="submit"] {
     margin: 1rem auto;
     width: 210px;
     padding: 15px 30px;
@@ -891,7 +891,7 @@ object {
     text-decoration: none;
     text-transform: uppercase;
     background-color: #00c860; }
-  .page-template-front-page .investor-portal form p {
+  .investor-portal form p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -905,18 +905,28 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .page-template-front-page .investor-portal form p:nth-of-type(1) {
+  .investor-portal form p:nth-of-type(1) {
     grid-area: first; }
-  .page-template-front-page .investor-portal form p:nth-of-type(2) {
+  .investor-portal form p:nth-of-type(2) {
     grid-area: second; }
-  .page-template-front-page .investor-portal form p:nth-of-type(3) {
+  .investor-portal form p:nth-of-type(3) {
     grid-area: third; }
-  .page-template-front-page .investor-portal form p:nth-of-type(4) {
+  .investor-portal form p:nth-of-type(4) {
     grid-area: fourth; }
-  .page-template-front-page .investor-portal form p:nth-of-type(5) {
+  .investor-portal form p:nth-of-type(5) {
     grid-area: fifth; }
 
-.page-template-front-page .sub-footer {
+.investor-portal .sub-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 60vw; }
+
+.investor-portal .sub-footer-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -924,7 +934,51 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 60vw; }
+  height: 100%;
+  width: 50%; }
+  .investor-portal .sub-footer-left a {
+    height: 100%; }
+
+.investor-portal .sub-footer-contact-us-today {
+  height: 100%;
+  background-image: url("../../assets/placeholder_photos/Contact-us.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.investor-portal .sub-footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 50%; }
+  .investor-portal .sub-footer-right a {
+    height: 50%; }
+
+.investor-portal .sub-footer-faq {
+  height: 100%;
+  background-image: url("../../assets/placeholder_photos/Faq.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.investor-portal .sub-footer-investors {
+  height: 100%;
+  background-image: url("../../assets/placeholder_photos/Investors.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.investor-portal .sub-footer-products {
+  height: 100%;
+  background-image: url("../../assets/placeholder_photos/Products.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
 
 .page-template-about .entry-title {
   display: none; }

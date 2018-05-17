@@ -120,75 +120,104 @@
       @include button-blue
     }
   }
-  .investor-portal {
-    &-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-      align-items: center;
+}
 
-      h2 {
-        text-align: center;
-      }
-      &-copy {
-        width: 65%;
-        margin: 0 auto;
-      }
-    }
-
-    form {
-      width: 85%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-areas: 
-              "first second"
-              "third fourth"
-              "fifth fifth"
-                        ;
-
-      input[type="submit"] {
-        @include button-blue;
-        background-color: $color__green;
-      }
-
-      p {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      p:nth-of-type(1) {
-        grid-area: first;
-      }
-      p:nth-of-type(2) {
-        grid-area: second;
-      }
-      p:nth-of-type(3) {
-        grid-area: third;
-      }
-      p:nth-of-type(4) {
-        grid-area: fourth;
-      }
-      p:nth-of-type(5) {
-        grid-area: fifth;
-      }
-
-    }
-
-
-
-  }
-
-
-
-
-  .sub-footer {
+.investor-portal {
+  &-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      text-align: center;
+    }
+    &-copy {
+      width: 65%;
+      margin: 0 auto;
+    }
+  }
+  form {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "first second" "third fourth" "fifth fifth";
+    input[type="submit"] {
+      @include button-blue;
+      background-color: $color__green;
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    p:nth-of-type(1) {
+      grid-area: first;
+    }
+    p:nth-of-type(2) {
+      grid-area: second;
+    }
+    p:nth-of-type(3) {
+      grid-area: third;
+    }
+    p:nth-of-type(4) {
+      grid-area: fourth;
+    }
+    p:nth-of-type(5) {
+      grid-area: fifth;
+    }
+  }
+  //=============Sub footer sections===========
+  //Todo: Add correct photos
+  .sub-footer {
+    display: flex;
+    flex-direction: row;
     height: 60vw;
   }
-  .contact-us-today {}
-  .faq {}
-  .investors {}
+  .sub-footer-left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    a {
+      height: 100%;
+    }
+  }
+  .sub-footer-contact-us-today {
+    height: 100%;
+    background-image: url('../../assets/placeholder_photos/Contact-us.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .sub-footer-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    a {
+      height: 50%;
+    }
+  }
+  .sub-footer-faq {
+    height: 100%;
+    background-image: url('../../assets/placeholder_photos/Faq.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .sub-footer-investors {
+    height: 100%;
+    background-image: url('../../assets/placeholder_photos/Investors.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .sub-footer-products {
+    height: 100%;
+    background-image: url('../../assets/placeholder_photos/Products.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }
