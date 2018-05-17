@@ -119,7 +119,55 @@
     .button-blue {
       @include button-blue
     }
-  } //=============Sub footer sections===========
+  }
+}
+
+.investor-portal {
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      text-align: center;
+    }
+    &-copy {
+      width: 65%;
+      margin: 0 auto;
+    }
+  }
+  form {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "first second" "third fourth" "fifth fifth";
+    input[type="submit"] {
+      @include button-blue;
+      background-color: $color__green;
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    p:nth-of-type(1) {
+      grid-area: first;
+    }
+    p:nth-of-type(2) {
+      grid-area: second;
+    }
+    p:nth-of-type(3) {
+      grid-area: third;
+    }
+    p:nth-of-type(4) {
+      grid-area: fourth;
+    }
+    p:nth-of-type(5) {
+      grid-area: fifth;
+    }
+  }
+  //=============Sub footer sections===========
   //Todo: Add correct photos
   .sub-footer {
     display: flex;
