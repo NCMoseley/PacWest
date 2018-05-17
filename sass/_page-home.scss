@@ -119,13 +119,57 @@
     .button-blue {
       @include button-blue
     }
-  }
+  } //=============Sub footer sections===========
+  //Todo: Add correct photos
   .sub-footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 60vw;
   }
-  .contact-us-today {}
-  .faq {}
-  .investors {}
+  .sub-footer-left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    a {
+      height: 100%;
+    }
+  }
+  .sub-footer-contact-us-today {
+    height: 100%;
+    background-image: url('../../assets/placeholder_photos/Contact-us.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .sub-footer-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    a {
+      height: 50%;
+    }
+  }
+  .sub-footer-faq {
+    height: 100%;
+    background-image: url('../../assets/placeholder_photos/Faq.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .sub-footer-investors {
+    height: 100%;
+    background-image: url('../../assets/placeholder_photos/Investors.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .sub-footer-products {
+    height: 100%;
+    background-image: url('../../assets/placeholder_photos/Products.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }

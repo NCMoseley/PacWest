@@ -855,11 +855,65 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 60vw; }
+
+.page-template-front-page .sub-footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 60vw; }
+  height: 100%;
+  width: 50%; }
+  .page-template-front-page .sub-footer-left a {
+    height: 100%; }
+
+.page-template-front-page .sub-footer-contact-us-today {
+  height: 100%;
+  background-image: url("../../assets/placeholder_photos/Contact-us.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.page-template-front-page .sub-footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 50%; }
+  .page-template-front-page .sub-footer-right a {
+    height: 50%; }
+
+.page-template-front-page .sub-footer-faq {
+  height: 100%;
+  background-image: url("../../assets/placeholder_photos/Faq.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.page-template-front-page .sub-footer-investors {
+  height: 100%;
+  background-image: url("../../assets/placeholder_photos/Investors.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.page-template-front-page .sub-footer-products {
+  height: 100%;
+  background-image: url("../../assets/placeholder_photos/Products.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
 
 .page-template-about .entry-title {
   display: none; }
