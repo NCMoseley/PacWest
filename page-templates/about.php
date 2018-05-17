@@ -11,8 +11,10 @@ get_header(); ?>
 <?php $about_header = get_field('about_header');?>
 <?php $about_company_header = get_field('about_company_header');?>
 <?php $about_company = get_field('about_company');?>
-<?php $about_header = get_field('about_header');?>
-<?php $about_header = get_field('about_header');?>
+<?php $our_vision_header = get_field('our_vision_header');?>
+<?php $our_vision = get_field('our_vision');?>
+<?php $our_vision_image = get_field('our_vision_image');?>
+
 
 
 
@@ -29,10 +31,29 @@ get_header(); ?>
 					</div>
 					
 				</div>
-				<div class="about-our-company">
 
+				<div class="about-our-company">
+					<h1> <?php echo $about_company_header ?> </h1>
+					<p> <?php echo $about_company ?> </p>
 				</div>
-				<div class="about-our-vision"></div>
+
+				<div class="about-our-vision">
+					<div class="our-vision-text">
+						<p> <?php echo $our_vision_header ?> </p>
+						<p> <?php echo $our_vision ?> </p>
+					
+					</div>
+					<div class="our-vision-image">
+						<img src="<?php echo $our_vision_image ?>" alt="A lake with mountains"/>
+					
+					</div>
+
+					
+				</div>
+				
+					<div class="about-team"></div>
+					<div class="about-alliances"></div>
+					<div class="facilities-technology"></div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
