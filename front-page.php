@@ -65,6 +65,16 @@ get_header(); ?>
 			</section>
 
 
+			<section class="sub-footer">
+				<div class="contact-us-today">
+				</div>
+				<div class="faq">
+				</div>
+				<div class="investors">
+				</div>
+			</section>
+
+
 
 	
 		</main><!-- #main -->
