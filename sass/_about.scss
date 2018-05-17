@@ -1,0 +1,51 @@
+.page-template-about {
+  .entry-title {
+    display: none;
+  }
+  .about-wrapper {
+    margin-top: 90px; // will apply this with a standard height across all pages
+    .about-menu {
+      border: 1px solid black;
+      width: 100%;
+      height: 80px;
+      background: green;
+    }
+    .about-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      width: 100%;
+      min-height: 500px;
+      background: url('../../assets/Stock_Photos/pwc-about.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0 -120px;
+
+      .about-banner-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 100px;
+          width: 100px;
+        }
+        h1 {
+          color: #fff;
+        }
+      }
+    }
+    .about-our-company {
+      width: 100%;
+      min-height: 400px;
+      border: 1px solid black;
+    }
+    .about-our-vision {
+      width: 100%;
+      min-height: 400px;
+      border: 1px solid black;
+    }
+  }
+}
