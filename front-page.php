@@ -12,7 +12,10 @@ get_header(); ?>
 		<?php $intro_text = get_field('front_page_intro_paragraph'); ?>
 		<?php $intro_icon = get_field('front_page_intro_icon'); ?>
 
+		<?php $product_image = get_field('front_page_products_image'); ?>
+		<?php $product_paragraph = get_field('front_page_products_paragraph'); ?>
 
+		<?php $investor_portal_desc = get_field('investor_portal_description'); ?>
 
 
 	<div id="primary" class="content-area">
@@ -65,17 +68,14 @@ get_header(); ?>
 
 			<section class="our-products">
 				<div class="our-products-img-wrapper">
-					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Images:Graphics/pwc-bag.png" alt="Cannabis Product">
+					<img src="<?php echo $product_image ?>" alt="Cannabis Product">
 				</div>
 				<div class="our-products-content">
 					<div class="our-products-content-header">
 						<h2>Our Products</h2>
 					</div>
 					<div class="our-products-content-copy">
-						<p>
-							Pacwest produces, processes, packages, and distributes dried cannabis and cannabis oils
-							to consumers, distributors, and medical users beginning in 2018.
-						</p>
+						<p>		<?php echo $product_paragraph ?>	</p>
 					</div>
 
 					<button class="button-blue">
@@ -86,31 +86,22 @@ get_header(); ?>
 			</section>
 
 			<section class="investor-portal">
-				
+				<div class="investor-portal-content">
+					<h2>Request Access to Investor Portal</h2>
+					<div class="investor-portal-content-copy">
+						<p>		<?php echo $investor_portal_desc ?>	</p>
+					</div>
+				</div>	
+
 
 				<div class="contact-form">
-
+					<?php echo do_shortcode('[contact-form-7 id="36" title="Request Access to Investor Portal"]'); ?>
 				</div>
 
 			</section>
-
-
-
-			<section class="sub-footer">
-				<div class="contact-us-today">
-				</div>
-				<div class="faq">
-				</div>
-				<div class="investors">
-				</div>
-			</section>
-
-
-
-
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-
+<?php get_template_part('template-parts/sub-footer'); ?>
 <?php get_footer(); ?>
