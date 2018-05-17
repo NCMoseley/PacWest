@@ -26,7 +26,6 @@ get_header(); ?>
 				<h1><?php echo $banner_text ?></h1>	
 			</header>
 
-
 			<section class="intro-section">
 				<div class="intro-section-paragraph">
 					<?php echo $intro_text ?>
@@ -59,11 +58,43 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<button class="learn-more">
+				<button class="button-blue">
 					Learn More
 				</button>
-
 			</section>
+
+			<section class="our-products">
+				<div class="our-products-img-wrapper">
+					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Images:Graphics/pwc-bag.png" alt="Cannabis Product">
+				</div>
+				<div class="our-products-content">
+					<div class="our-products-content-header">
+						<h2>Our Products</h2>
+					</div>
+					<div class="our-products-content-copy">
+						<p>
+							Pacwest produces, processes, packages, and distributes dried cannabis and cannabis oils
+							to consumers, distributors, and medical users beginning in 2018.
+						</p>
+					</div>
+
+					<button class="button-blue">
+						Explore
+					</button>
+
+				</div>
+			</section>
+
+
+			<section class="sub-footer">
+				<div class="contact-us-today">
+				</div>
+				<div class="faq">
+				</div>
+				<div class="investors">
+				</div>
+			</section>
+
 
 
 

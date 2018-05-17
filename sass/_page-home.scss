@@ -2,7 +2,6 @@
   .site-branding {
     display: none;
   }
-
   .banner-section {
     height: 40vw;
     width: 100%;
@@ -15,19 +14,16 @@
     background: url('../../assets/Stock_Photos/pwc-images-home.jpg');
     color: white;
     background-size: cover;
-
     &-img-wrapper {
       width: 200px;
       display: flex;
       justify-content: center;
       align-items: center;
-
       img {
         width: 100%;
       }
     }
   }
-
   .intro-section {
     padding: 3rem 0;
     display: flex;
@@ -46,20 +42,17 @@
       }
     }
   }
-
   .pacwest-difference {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     &-card-wrapper {
       width: 90%;
       margin: 1rem auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       grid-gap: 1rem;
-
       .card {
         padding: 2rem 0;
         display: flex;
@@ -68,7 +61,6 @@
         align-items: center;
         text-transform: uppercase;
         background-color: #eee;
-
         &:nth-child(odd) {
           color: white;
           background-color: $color__navy;
@@ -83,7 +75,6 @@
         }
       }
     }
-
     .learn-more {
       margin: 1rem auto;
       width: 210px;
@@ -97,5 +88,44 @@
       text-decoration: none;
       text-transform: uppercase;
     }
+    .button-blue {
+      @include button-blue
+    }
   }
+  .our-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color__green;
+    color: white;
+    &-img-wrapper {
+      width: 500px;
+      margin: 1rem 1rem 1rem 5rem;
+      img {
+        width: 100%;
+      }
+    }
+    &-content {
+      width: 40%;
+      margin: 0 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &-content-header {
+      text-align: center;
+    }
+    .button-blue {
+      @include button-blue
+    }
+  }
+  .sub-footer {
+    display: flex;
+    flex-direction: column;
+    height: 60vw;
+  }
+  .contact-us-today {}
+  .faq {}
+  .investors {}
 }
