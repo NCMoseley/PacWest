@@ -97,8 +97,35 @@ get_header(); ?>
 				<div class="contact-form">
 					<?php echo do_shortcode('[contact-form-7 id="36" title="Request Access to Investor Portal"]'); ?>
 				</div>
+			</section>
+
+			<section class="news">
+			<?php global $post; // required
+            $args = array('numberposts'=>-1, 'order'=>'ASC'); 
+            $custom_posts = get_posts($args);
+          ?>
+        
+          <div class="news-container">
+            <?php 
+            foreach($custom_posts as $post) : setup_postdata($post);
+            ?>
+
+            <div class="news-item"> 
+							<div class="news-item-title">
+								<?php echo "<h2" . " " . "class=" . "post-title" . ">" . $post->post_title . "</h2>"; ?>
+							</div>
+							<div class="news-item-date">
+								<?php echo date("F j, Y", strtotime($post->post_date));?>
+							</div>
+                
+            </div> <!-- END NEWS ITEM -->
+            <?php endforeach;  wp_reset_postdata(); ?>
+          </div> <!-- END NEWS CONTAINER-->
+
 
 			</section>
+
+
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->
