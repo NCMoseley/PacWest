@@ -15,6 +15,8 @@ get_header(); ?>
 		<?php $product_image = get_field('front_page_products_image'); ?>
 		<?php $product_paragraph = get_field('front_page_products_paragraph'); ?>
 
+		<?php $investor_portal_desc = get_field('investor_portal_description'); ?>
+
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -84,10 +86,17 @@ get_header(); ?>
 			</section>
 
 			<section class="investor-portal">
-				
+				<div class="investor-portal-content">
+					<h2>Request Access to Investor Portal</h2>
+					<div class="investor-portal-content-copy">
+						<p>		<?php echo $investor_portal_desc ?>	</p>
+					</div>
+
+				</div>	
+
 
 				<div class="contact-form">
-
+					<?php echo do_shortcode('[contact-form-7 id="36" title="Request Access to Investor Portal"]'); ?>
 				</div>
 
 			</section>
