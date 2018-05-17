@@ -23,5 +23,21 @@
 	border-radius: 5px;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase; 
+	text-transform: uppercase;
+}
+
+@mixin button-white {
+	// margin: 1rem auto;
+	width: 256px;
+	padding: 15px 30px;
+	font-size: 26px;
+	font-weight: 500;
+	box-shadow: none;
+	color: $color__navy;
+	background-color: $color__link;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
 }

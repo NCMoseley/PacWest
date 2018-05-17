@@ -173,6 +173,17 @@
   display: flex;
   flex-direction: row;
   height: 50vw;
+  .sub-footer-text {
+    color: #FFFFFF;
+    font-size: 52px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 
 .sub-footer-left {
@@ -191,6 +202,27 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 125px;
+  h1 {
+    width: 480px;
+  }
+  .button-white {
+    @include button-white;
+    margin-bottom: 55px;
+    margin-top: 47px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.sub-footer-contact-us-today-line {
+  width: 350px;
+  height: 6px;
+  background-color: #FFFFFF;
 }
 
 .sub-footer-right {
@@ -209,6 +241,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
 }
 
 .sub-footer-investors {
@@ -217,6 +254,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
 }
 
 .sub-footer-products {
@@ -225,4 +267,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
 }

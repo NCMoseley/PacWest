@@ -101,13 +101,13 @@ get_header(); ?>
 
 			<section class="news">
 			<?php global $post; // required
-            $args = array('numberposts'=>-1, 'order'=>'ASC'); 
+            $args = array('numberposts'=>-1, 'order'=>'ASC');
             $custom_posts = get_posts($args);
           ?>
         
           <div class="news-container">
             <?php 
-            foreach($custom_posts as $post) : setup_postdata($post);
+            foreach ($custom_posts as $post) : setup_postdata($post);
             ?>
 
             <div class="news-item"> 
@@ -129,6 +129,10 @@ get_header(); ?>
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+
+	
+<?php get_template_part('template-parts/sub-footer-faq'); ?>
 
 <?php get_template_part('template-parts/sub-footer'); ?>
 <?php get_footer(); ?>

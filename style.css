@@ -416,9 +416,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #fff; }
   a:visited {
-    color: purple; }
+    color: lightblue; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -925,6 +925,15 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 50vw; }
+  .sub-footer .sub-footer-text {
+    color: #FFFFFF;
+    font-size: 52px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .sub-footer a {
+    text-decoration: none; }
 
 .sub-footer-left {
   display: -webkit-box;
@@ -944,7 +953,46 @@ object {
   background-image: url("../../assets/placeholder_photos/Contact-us.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 125px; }
+  .sub-footer-contact-us-today h1 {
+    width: 480px; }
+  .sub-footer-contact-us-today .button-white {
+    width: 256px;
+    padding: 15px 30px;
+    font-size: 26px;
+    font-weight: 500;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #0a2d5d;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    margin-top: 47px;
+    margin-left: 0;
+    margin-right: 0; }
+
+.sub-footer-contact-us-today-line {
+  width: 350px;
+  height: 6px;
+  background-color: #FFFFFF; }
 
 .sub-footer-right {
   display: -webkit-box;
@@ -964,21 +1012,63 @@ object {
   background-image: url("../../assets/placeholder_photos/Faq.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 25px; }
 
 .sub-footer-investors {
   height: 100%;
   background-image: url("../../assets/placeholder_photos/Investors.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 25px; }
 
 .sub-footer-products {
   height: 100%;
   background-image: url("../../assets/placeholder_photos/Products.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 25px; }
 
 .page-template-about .entry-title {
   display: none; }
