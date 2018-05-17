@@ -36,6 +36,36 @@ get_header(); ?>
 				</div>
 			</section>
 
+			<section class="pacwest-difference">
+				<div class="pacwest-difference-title">
+					<h2>The Pacwest Difference</h2>
+				</div>
+				<div class="pacwest-difference-card-wrapper">
+					<div class="card">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-balance.png" alt="Icon">
+						<p>Strong Government Relationships</p>
+					</div>
+					<div class="card">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-lab-dark.png" alt="Icon">
+						<p>Innovative Technologies</p>
+					</div>
+					<div class="card">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-hands.png" alt="Icon">
+						<p>Strategic Partnerships and Alliances</p>
+					</div>
+					<div class="card">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-light-dark-01.png" alt="Icon">
+						<p>Multi-Provincial Opportunities</p>
+					</div>
+				</div>
+
+				<button class="learn-more">
+					Learn More
+				</button>
+
+			</section>
+
+
 
 	
 		</main><!-- #main -->
