@@ -773,6 +773,19 @@ object {
       .page-template-front-page .pacwest-difference-card-wrapper .card p {
         width: 60%;
         text-align: center; }
+  .page-template-front-page .pacwest-difference .learn-more {
+    margin: 1rem auto;
+    width: 210px;
+    padding: 15px 30px;
+    font-size: 16px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: white;
+    background-color: #0a2d5d;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; }
   .page-template-front-page .pacwest-difference .button-blue {
     margin: 1rem auto;
     width: 210px;
@@ -837,6 +850,16 @@ object {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase; }
+
+.page-template-front-page .sub-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60vw; }
 
 .site-footer .site-info {
   border: 1px solid black;
