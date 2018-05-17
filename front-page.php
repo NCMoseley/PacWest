@@ -131,8 +131,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 
-	
-<?php get_template_part('template-parts/sub-footer-faq'); ?>
+
 
 <?php get_template_part('template-parts/sub-footer'); ?>
 <?php get_footer(); ?>
