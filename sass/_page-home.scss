@@ -88,6 +88,37 @@
       text-decoration: none;
       text-transform: uppercase;
     }
+    .button-blue {
+      @include button-blue
+    }
+  }
+  .our-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color__green;
+    color: white;
+    &-img-wrapper {
+      width: 500px;
+      margin: 1rem 1rem 1rem 5rem;
+      img {
+        width: 100%;
+      }
+    }
+    &-content {
+      width: 40%;
+      margin: 0 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &-content-header {
+      text-align: center;
+    }
+    .button-blue {
+      @include button-blue
+    }
   }
   .sub-footer {
     display: flex;
