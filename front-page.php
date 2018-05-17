@@ -26,7 +26,6 @@ get_header(); ?>
 				<h1><?php echo $banner_text ?></h1>	
 			</header>
 
-
 			<section class="intro-section">
 				<div class="intro-section-paragraph">
 					<?php echo $intro_text ?>
