@@ -741,6 +741,8 @@ object {
     .page-template-products .banner-section-img-wrapper img {
       width: 100%; }
     .page-template-products .banner-section-img-wrapper h1 {
+      margin-top: 0; }
+    .page-template-products .banner-section-img-wrapper h1 p {
       font-size: 40px;
       text-transform: uppercase;
       font-weight: 400;
