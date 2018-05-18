@@ -39,8 +39,40 @@
   }
 
   .news-item {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-group {
+        width: 80%;
+        padding: 5px;
+        background-color: $color__navy;
+        color: white;
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+
+    &-pdf {
+      position: relative;
+      right: 5rem;
+      padding: 1rem;
+      background-color: $color__green;
+      color: white;
+      border-radius: 3px;
+      text-transform: uppercase;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        &:visited, &:hover {
+          color: white;
+        }
+      }
+    }
 
     &-body {
       height: 100px;
@@ -50,7 +82,6 @@
     &-expand-link {
       width: 100%;
       text-align: center;
-
     }
   }
   

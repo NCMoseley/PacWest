@@ -33,13 +33,20 @@ get_header(); ?>
           
             <div class="news-item">
               <div class="news-item-header">
-                <h3>
-                  <?php the_title(); ?>
-                </h3>
-                <span>
-                  <?php the_time(' F jS, Y') ?>
-                </span>
+                <div class="news-item-header-group">
+                  <h3>
+                    <?php the_title(); ?>
+                  </h3>
+                  <span>
+                    <?php the_time(' F jS, Y') ?>
+                  </span>
+                </div>
+                <div class="news-item-pdf">
+                  <a href="<?php the_field('press_release_pdf')  ?>">PDF</a>
+                </div>
               </div>
+
+
 
               <div class="news-item-body">
                 <?php the_content(); ?>
@@ -48,13 +55,6 @@ get_header(); ?>
               <p class="news-item-expand-link">
                 <i class="fa fa-chevron-down"></i>
               </p>
-
-
-              <div class="news-item-pdf">
-                <a href="<?php the_field('press_release_pdf')  ?>">PDF</a>
-              </div>
-
-
 
             </div>
 
