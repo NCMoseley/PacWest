@@ -44,15 +44,17 @@ get_header(); ?>
               <div class="news-item-body">
                 <?php the_content(); ?>
               </div>
-            
+
+              <p class="news-item-expand-link">
+                <i class="fa fa-chevron-down"></i>
+              </p>
+
+
               <div class="news-item-pdf">
                 <a href="<?php the_field('press_release_pdf')  ?>">PDF</a>
               </div>
 
 
-              <p class="news-item-expand-link">
-                <i class="fa fa-chevron-down"></i>
-              </p>
 
             </div>
 
