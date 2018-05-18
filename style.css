@@ -414,6 +414,83 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.investor-nav {
+  padding: 1rem 1rem 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0a2d5d; }
+  .investor-nav input {
+    margin: 0 5px;
+    padding: 1px;
+    border: none;
+    border-radius: 0; }
+  .investor-nav button {
+    margin: 1rem auto;
+    width: 210px;
+    padding: 15px 30px;
+    font-size: 16px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: white;
+    background-color: #0a2d5d;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #00c860;
+    margin: 0;
+    padding: 5px 12px;
+    font-weight: 300; }
+
+.nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .nav-wrapper .logo-container {
+    width: 100px;
+    margin: 10px 0 10px 2rem; }
+    .nav-wrapper .logo-container img {
+      width: 100%; }
+  .nav-wrapper nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .nav-wrapper nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .nav-wrapper nav li {
+      margin: 0 1rem; }
+      .nav-wrapper nav li a {
+        color: #000;
+        text-transform: uppercase; }
+
+.menu-toggle {
+  display: none; }
+
 /* Links */
 a {
   color: #fff; }
@@ -667,9 +744,6 @@ object {
 --------------------------------------------------------------*/
 .uppercase {
   text-transform: uppercase; }
-
-.page-template-front-page .site-branding {
-  display: none; }
 
 .page-template-front-page .banner-section {
   height: 40vw;
