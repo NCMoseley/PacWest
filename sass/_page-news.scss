@@ -1,0 +1,96 @@
+.page-template-news {
+  .banner-section {
+    height: 40vw;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-news.jpg');
+    color: white;
+    background-size: cover;
+    &-img-wrapper {
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .news-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-items-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .news-item {
+    width: 90%;
+    margin: 0 auto;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-group {
+        width: 80%;
+        padding: 5px;
+        background-color: $color__navy;
+        color: white;
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+
+    &-pdf {
+      position: relative;
+      right: 5rem;
+      padding: 1rem;
+      background-color: $color__green;
+      color: white;
+      border-radius: 3px;
+      text-transform: uppercase;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        &:visited, &:hover {
+          color: white;
+        }
+      }
+    }
+
+    &-body {
+      height: 100px;
+      overflow: hidden;
+    }
+
+    &-expand-link {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+}
