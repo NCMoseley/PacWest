@@ -93,67 +93,33 @@ get_header(); ?>
 					</div>
 				</div>	
 
-
 				<div class="contact-form">
 					<?php echo do_shortcode('[contact-form-7 id="36" title="Request Access to Investor Portal"]'); ?>
 				</div>
 			</section>
 
-			<section class="news">
-			<?php global $post; // required
-            $args = array('numberposts'=>-1, 'order'=>'ASC');
-            $custom_posts = get_posts($args);
-          ?>
-        
-          <div class="news-container">
-            <?php 
-            foreach ($custom_posts as $post) : setup_postdata($post);
-            ?>
-
-            <div class="news-item"> 
-							<div class="news-item-title">
-								<?php echo "<h2" . " " . "class=" . "post-title" . ">" . $post->post_title . "</h2>"; ?>
-							</div>
-							<div class="news-item-date">
-								<?php echo date("F j, Y", strtotime($post->post_date));?>
-							</div>
-                
-            </div> <!-- END NEWS ITEM -->
-            <?php endforeach;  wp_reset_postdata(); ?>
-          </div> <!-- END NEWS CONTAINER-->
-
-
-			</section>
-
 			<section class="press-releases-wrapper">
-
 				<h1 class="press-releases-title"><span>Packwest</span> News</h1>
 				
 					<div class="press-releases-container">
-
-								<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>
-                             <?php while ($query->have_posts()) : $query->the_post(); ?>
-														<div class="press-release">
-															<div class="green-vertical-line"></div>
-																	<div class="pr-content">
-																		<h3><?php the_title(); ?></h3>
-																		<span><?php the_time(' F jS, Y') ?></span>
-																	</div>
-																				<p>
-																					<a href="<?php the_permalink();?>">Read More ‣</a>
-																				</p>
-																	
-														</div>
-															<?php endwhile; ?>
-															<?php wp_reset_query() ?>
-															
-																
-											
+						<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>
+								<?php while ($query->have_posts()) : $query->the_post(); ?>
+									<div class="press-release">
+										<div class="green-vertical-line"></div>
+												<div class="pr-content">
+													<h3><?php the_title(); ?></h3>
+													<span><?php the_time(' F jS, Y') ?></span>
+												</div>
+													<p>
+														<a href="<?php the_permalink();?>">Read More ‣</a>
+													</p>		
+												</div>
+							<?php endwhile; ?>
+						<?php wp_reset_query() ?>		
 					</div>
 
-				             
-										 <a href="<?php the_permalink();?>"><button class="button-blue">Read More</button></a>
-           </section>
+				<a href="<?php the_permalink();?>"><button class="button-blue">Read More</button></a>
+			</section>
 				<!-- close Press Releases -->
 
 	
