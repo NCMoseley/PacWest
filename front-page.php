@@ -97,7 +97,6 @@ get_header(); ?>
 					</div>
 				</div>
 
-
 				<div class="contact-form">
 					<?php echo do_shortcode('[contact-form-7 id="36" title="Request Access to Investor Portal"]'); ?>
 				</div>
