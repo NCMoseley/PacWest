@@ -1118,7 +1118,8 @@ object {
   opacity: 0; }
 
 .press-release:hover p {
-  opacity: 1; }
+  opacity: 1;
+  font-size: 24px; }
 
 .press-release:nth-child(2) {
   background-color: #ccc; }
