@@ -1285,6 +1285,115 @@ object {
           align-items: center;
   padding-bottom: 25px; }
 
+.page-template-contact .banner-section {
+  height: 40vw;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
+  color: white;
+  background-size: cover; }
+  .page-template-contact .banner-section-img-wrapper {
+    width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-contact .banner-section-img-wrapper img {
+      width: 100%; }
+
+.page-template-contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase; }
+
+.page-template-contact form {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "first second" "third fourth" "fifth sixth" "seventh seventh" "eighth eighth"; }
+  .page-template-contact form input[type="submit"] {
+    margin: 1rem auto;
+    width: 210px;
+    padding: 15px 30px;
+    font-size: 16px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: white;
+    background-color: #0a2d5d;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: none;
+    background-color: #00c860; }
+  .page-template-contact form p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .page-template-contact form p:nth-of-type(1) {
+    grid-area: first; }
+  .page-template-contact form p:nth-of-type(2) {
+    grid-area: second; }
+  .page-template-contact form p:nth-of-type(3) {
+    grid-area: third; }
+  .page-template-contact form p:nth-of-type(4) {
+    grid-area: fourth; }
+  .page-template-contact form p:nth-of-type(5) {
+    grid-area: fifth; }
+  .page-template-contact form p:nth-of-type(6) {
+    grid-area: sixth; }
+  .page-template-contact form p:nth-of-type(7) {
+    grid-area: seventh; }
+    .page-template-contact form p:nth-of-type(7) label {
+      width: 85%;
+      margin: 0 auto; }
+  .page-template-contact form p:nth-of-type(8) {
+    grid-area: eighth; }
+
+.page-template-contact .entry-title {
+  display: none; }
+
+.page-template-contact .widget-area {
+  display: none; }
+
 .page-template-about .entry-title {
   display: none; }
 
