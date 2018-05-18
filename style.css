@@ -420,7 +420,7 @@ a {
   a:visited {
     color: lightblue; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #00c860; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -915,6 +915,147 @@ object {
     grid-area: fourth; }
   .investor-portal form p:nth-of-type(5) {
     grid-area: fifth; }
+
+/* ================== Press Releases ================= */
+.press-releases-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3vh;
+  padding-bottom: 5vh; }
+  .press-releases-wrapper .button-blue {
+    margin: 1rem auto;
+    width: 210px;
+    padding: 15px 30px;
+    font-size: 16px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: white;
+    background-color: #0a2d5d;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center; }
+  .press-releases-wrapper a {
+    margin: 0 auto; }
+
+.press-releases-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #0a2d5d;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600; }
+  .press-releases-title span {
+    color: #00c860; }
+
+.press-releases-container {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.press-release {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 28vh;
+  max-height: 250px;
+  width: 80vw;
+  background-color: #0a2d5d;
+  margin: 2vh;
+  padding: 2vh; }
+  .press-release .green-vertical-line {
+    background-color: #00c860;
+    height: 180px;
+    width: 5px;
+    position: absolute; }
+  .press-release .pr-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    padding-left: 20px; }
+  .press-release h3 {
+    font-weight: 100;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; }
+  .press-release span {
+    display: inline;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; }
+  .press-release p {
+    position: absolute;
+    padding-left: 5%;
+    padding-bottom: 40px;
+    color: #fff;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; }
+
+.press-release:nth-child(2) {
+  background-color: #ccc; }
+  .press-release:nth-child(2) h3 {
+    color: #404040; }
+  .press-release:nth-child(2) span {
+    color: #404040;
+    font-weight: bold; }
+  .press-release:nth-child(2) a {
+    color: #404040;
+    font-weight: bold; }
+
+.press-release:hover h3 {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0; }
+
+.press-release:hover span {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0; }
+
+.press-release:hover p {
+  -webkit-transform: scale(1);
+          transform: scale(1); }
 
 .sub-footer {
   display: -webkit-box;
