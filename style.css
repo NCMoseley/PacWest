@@ -747,6 +747,8 @@ object {
     .page-template-products .banner-section-img-wrapper img {
       width: 100%; }
     .page-template-products .banner-section-img-wrapper h1 {
+      margin-top: 0; }
+    .page-template-products .banner-section-img-wrapper h1 p {
       font-size: 40px;
       text-transform: uppercase;
       font-weight: 400;
@@ -754,6 +756,11 @@ object {
   .page-template-products .banner-section .products-leaf-icon {
     height: 69px;
     width: 69px; }
+
+.page-template-news .news-h2 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
 
 .page-template-news .banner-section {
   height: 40vw;
@@ -778,7 +785,7 @@ object {
   color: white;
   background-size: cover; }
   .page-template-news .banner-section-img-wrapper {
-    width: 200px;
+    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -790,6 +797,16 @@ object {
             align-items: center; }
     .page-template-news .banner-section-img-wrapper img {
       width: 100%; }
+  .page-template-news .banner-section h1 {
+    width: 60%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px; }
+    .page-template-news .banner-section h1 strong {
+      font-weight: 700; }
 
 .page-template-news .news-section {
   display: -webkit-box;
@@ -863,6 +880,11 @@ object {
     width: 100%;
     text-align: center; }
 
+.page-template-front-page .front-h2 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+
 .page-template-front-page .banner-section {
   height: 40vw;
   width: 100%;
@@ -897,9 +919,19 @@ object {
             align-items: center; }
     .page-template-front-page .banner-section-img-wrapper img {
       width: 100%; }
+  .page-template-front-page .banner-section h1 {
+    width: 60%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px; }
+    .page-template-front-page .banner-section h1 strong {
+      font-weight: 700; }
 
 .page-template-front-page .intro-section {
-  padding: 3rem 0;
+  padding: 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,7 +944,9 @@ object {
   background-color: #eee; }
   .page-template-front-page .intro-section-paragraph {
     width: 50%;
-    margin: 0 2rem; }
+    margin: 0 2rem;
+    line-height: 30px;
+    font-weight: 300; }
   .page-template-front-page .intro-section-img-wrapper {
     max-width: 150px;
     margin: 1rem 5rem 1rem 1rem; }
@@ -920,6 +954,7 @@ object {
       width: 100%; }
 
 .page-template-front-page .pacwest-difference {
+  padding: 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -932,7 +967,10 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  color: #333333; }
+  .page-template-front-page .pacwest-difference h2 > span {
+    color: #00c860; }
   .page-template-front-page .pacwest-difference-card-wrapper {
     width: 90%;
     margin: 1rem auto;
@@ -954,16 +992,21 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      background-color: #eee;
       text-transform: uppercase;
-      background-color: #eee; }
+      font-weight: 300;
+      letter-spacing: 3px; }
       .page-template-front-page .pacwest-difference-card-wrapper .card:nth-child(odd) {
         color: white;
         background-color: #0a2d5d; }
+      .page-template-front-page .pacwest-difference-card-wrapper .card div {
+        text-align: center; }
       .page-template-front-page .pacwest-difference-card-wrapper .card img {
         width: 50px;
         height: 50px; }
       .page-template-front-page .pacwest-difference-card-wrapper .card p {
         width: 60%;
+        margin: 5px auto;
         text-align: center; }
   .page-template-front-page .pacwest-difference .learn-more {
     margin: 1rem auto;
@@ -1026,7 +1069,10 @@ object {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight: 300; }
   .page-template-front-page .our-products-content-header {
     text-align: center; }
   .page-template-front-page .our-products .button-blue {
@@ -1046,6 +1092,7 @@ object {
     text-shadow: none; }
 
 .investor-portal {
+  padding: 3rem 0;
   background-color: #f1f1f1; }
   .investor-portal-content {
     display: -webkit-box;
@@ -1062,15 +1109,22 @@ object {
         -ms-flex-align: center;
             align-items: center; }
     .investor-portal-content h2 {
-      text-align: center; }
+      text-align: center;
+      color: #333333; }
     .investor-portal-content-copy {
       width: 65%;
       margin: 0 auto; }
   .investor-portal form {
-    width: 85%;
+    width: 70%;
     margin: 0 auto;
-    display: grid;
-    grid-template-areas: "first second" "third fourth" "fifth fifth"; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .investor-portal form input[type="submit"] {
       margin: 1rem auto;
       width: 210px;
@@ -1088,6 +1142,7 @@ object {
       text-shadow: none;
       background-color: #00c860; }
     .investor-portal form p {
+      margin: 1rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1101,16 +1156,6 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-    .investor-portal form p:nth-of-type(1) {
-      grid-area: first; }
-    .investor-portal form p:nth-of-type(2) {
-      grid-area: second; }
-    .investor-portal form p:nth-of-type(3) {
-      grid-area: third; }
-    .investor-portal form p:nth-of-type(4) {
-      grid-area: fourth; }
-    .investor-portal form p:nth-of-type(5) {
-      grid-area: fifth; }
 
 /* ================== Press Releases ================= */
 .press-releases-wrapper {
@@ -1144,12 +1189,9 @@ object {
 
 .press-releases-title {
   font-weight: 700;
-  font-size: 34px;
-  color: #0a2d5d;
+  color: #333333;
   text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 600; }
+  margin-bottom: 20px; }
   .press-releases-title span {
     color: #00c860; }
 
@@ -1403,6 +1445,11 @@ object {
           align-items: center;
   padding-bottom: 25px; }
 
+.page-template-contact .contact-h2 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+
 .page-template-contact .banner-section {
   height: 40vw;
   width: 100%;
@@ -1426,7 +1473,7 @@ object {
   color: white;
   background-size: cover; }
   .page-template-contact .banner-section-img-wrapper {
-    width: 200px;
+    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1438,6 +1485,16 @@ object {
             align-items: center; }
     .page-template-contact .banner-section-img-wrapper img {
       width: 100%; }
+  .page-template-contact .banner-section h1 {
+    width: 60%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px; }
+    .page-template-contact .banner-section h1 strong {
+      font-weight: 700; }
 
 .page-template-contact .contact-form {
   display: -webkit-box;
@@ -1452,10 +1509,16 @@ object {
   text-transform: uppercase; }
 
 .page-template-contact form {
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
-  display: grid;
-  grid-template-areas: "first second" "third fourth" "fifth sixth" "seventh seventh" "eighth eighth"; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .page-template-contact form input[type="submit"] {
     margin: 1rem auto;
     width: 210px;
@@ -1473,6 +1536,7 @@ object {
     text-shadow: none;
     background-color: #00c860; }
   .page-template-contact form p {
+    margin: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1486,25 +1550,12 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .page-template-contact form p:nth-of-type(1) {
-    grid-area: first; }
-  .page-template-contact form p:nth-of-type(2) {
-    grid-area: second; }
-  .page-template-contact form p:nth-of-type(3) {
-    grid-area: third; }
-  .page-template-contact form p:nth-of-type(4) {
-    grid-area: fourth; }
-  .page-template-contact form p:nth-of-type(5) {
-    grid-area: fifth; }
-  .page-template-contact form p:nth-of-type(6) {
-    grid-area: sixth; }
   .page-template-contact form p:nth-of-type(7) {
-    grid-area: seventh; }
+    width: 85%;
+    margin: 0 auto; }
     .page-template-contact form p:nth-of-type(7) label {
-      width: 85%;
+      width: 100%;
       margin: 0 auto; }
-  .page-template-contact form p:nth-of-type(8) {
-    grid-area: eighth; }
 
 .page-template-contact .entry-title {
   display: none; }

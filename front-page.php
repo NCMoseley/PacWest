@@ -42,24 +42,24 @@ get_header(); ?>
 
 			<section class="pacwest-difference">
 				<div class="pacwest-difference-title">
-					<h2>The Pacwest Difference</h2>
+					<h2 class="front-h2">The <span>Pacwest</span> Difference</h2>
 				</div>
 				<div class="pacwest-difference-card-wrapper">
 					<div class="card">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-balance.png" alt="Icon">
-						<p>Strong Government Relationships</p>
+						<img src="<?php echo get_field('icon_1') ?>" alt="Icon">
+						<p><?php echo get_field('text_1') ?></p>
 					</div>
 					<div class="card">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-lab-dark.png" alt="Icon">
-						<p>Innovative Technologies</p>
+						<img src="<?php echo get_field('icon_2') ?>" alt="Icon">
+						<p><?php echo get_field('text_2') ?></p>
 					</div>
 					<div class="card">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-hands.png" alt="Icon">
-						<p>Strategic Partnerships and Alliances</p>
+						<img src="<?php echo get_field('icon_3') ?>" alt="Icon">
+						<p><?php echo get_field('text_3') ?></p>
 					</div>
 					<div class="card">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-light-dark-01.png" alt="Icon">
-						<p>Multi-Provincial Opportunities</p>
+						<img src="<?php echo get_field('icon_4') ?>" alt="Icon">
+						<p><?php echo get_field('text_4') ?></p>
 					</div>
 				</div>
 
@@ -74,7 +74,7 @@ get_header(); ?>
 				</div>
 				<div class="our-products-content">
 					<div class="our-products-content-header">
-						<h2>Our Products</h2>
+						<h2 class="front-h2">Our Products</h2>
 					</div>
 					<div class="our-products-content-copy">
 						<p>
@@ -90,7 +90,7 @@ get_header(); ?>
 
 			<section class="investor-portal">
 				<div class="investor-portal-content">
-					<h2>Request Access to Investor Portal</h2>
+					<h2 class="front-h2">Request Access to Investor Portal</h2>
 					<div class="investor-portal-content-copy">
 						<p>
 							<?php echo $investor_portal_desc ?> </p>
@@ -104,9 +104,8 @@ get_header(); ?>
 
 			<section class="press-releases-wrapper">
 
-				<h1 class="press-releases-title">
-					<span>Packwest</span> News</h1>
-
+				<h2 class="press-releases-title front-h2">
+					<span>Pacwest</span> News</h2>
 				<div class="press-releases-container">
 
 					<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>

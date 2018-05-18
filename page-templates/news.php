@@ -25,7 +25,7 @@ get_header(); ?>
 
 
       <section class="news-section">
-        <h2>Latest Press Releases</h2>
+        <h2 class="news-h2">Latest Press Releases</h2>
 
         <div class="news-items-wrapper">
           <?php $args = array( 'post_type' => 'post', 'posts_per_page' => -1 ); $query = new WP_Query($args);?>
