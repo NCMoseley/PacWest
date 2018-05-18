@@ -42,7 +42,7 @@ get_header(); ?>
 
 			<section class="pacwest-difference">
 				<div class="pacwest-difference-title">
-					<h2>The <span>Pacwest</span> Difference</h2>
+					<h2 class="front-h2">The <span>Pacwest</span> Difference</h2>
 				</div>
 				<div class="pacwest-difference-card-wrapper">
 					<div class="card">
@@ -74,7 +74,7 @@ get_header(); ?>
 				</div>
 				<div class="our-products-content">
 					<div class="our-products-content-header">
-						<h2>Our Products</h2>
+						<h2 class="front-h2">Our Products</h2>
 					</div>
 					<div class="our-products-content-copy">
 						<p>
@@ -90,7 +90,7 @@ get_header(); ?>
 
 			<section class="investor-portal">
 				<div class="investor-portal-content">
-					<h2>Request Access to Investor Portal</h2>
+					<h2 class="front-h2">Request Access to Investor Portal</h2>
 					<div class="investor-portal-content-copy">
 						<p>
 							<?php echo $investor_portal_desc ?> </p>
@@ -104,9 +104,8 @@ get_header(); ?>
 
 			<section class="press-releases-wrapper">
 
-				<h1 class="press-releases-title">
-					<span>Packwest</span> News</h1>
-
+				<h2 class="press-releases-title front-h2">
+					<span>Pacwest</span> News</h2>
 				<div class="press-releases-container">
 
 					<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>

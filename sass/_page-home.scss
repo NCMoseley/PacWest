@@ -1,4 +1,11 @@
 .page-template-front-page {
+  .front-h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+
   .banner-section {
     height: 40vw;
     width: 100%;
@@ -46,6 +53,7 @@
       width: 50%;
       margin: 0 2rem;
       line-height: 30px;
+      font-weight: 300;
     }
     &-img-wrapper {
       max-width: 150px;
@@ -61,11 +69,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: $color__grey-dark;
 
     h2 {
-      font-size: 2rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
       & > span {
         color: $color__green;
       }
@@ -144,6 +150,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      line-height: 30px;
+      letter-spacing: 1px;
+      font-weight: 300;
     }
     &-content-header {
       text-align: center;
@@ -155,6 +164,7 @@
 }
 
 .investor-portal {
+  padding: 3rem 0;
   background-color: $color__background-screen;
   &-content {
     display: flex;
@@ -163,43 +173,76 @@
     align-items: center;
     h2 {
       text-align: center;
+      color: $color__grey-dark;
     }
     &-copy {
       width: 65%;
       margin: 0 auto;
     }
   }
+      // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
+      // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
+      // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
+      // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
+      // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
+
+  // form {
+  //   width: 85%;
+  //   margin: 0 auto;
+  //   display: grid;
+  //   grid-template-areas: "first second" "third fourth" "fifth fifth";
+  //   input[type="submit"] {
+  //     @include button-blue;
+  //     background-color: $color__green;
+  //   }
+  //   p {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
+  //   p:nth-of-type(1) {
+  //     grid-area: first;
+  //   }
+  //   p:nth-of-type(2) {
+  //     grid-area: second;
+  //   }
+  //   p:nth-of-type(3) {
+  //     grid-area: third;
+  //   }
+  //   p:nth-of-type(4) {
+  //     grid-area: fourth;
+  //   }
+  //   p:nth-of-type(5) {
+  //     grid-area: fifth;
+  //   }
+  // }
+
+
+
   form {
-    width: 85%;
+    width: 70%;
     margin: 0 auto;
-    display: grid;
-    grid-template-areas: "first second" "third fourth" "fifth fifth";
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     input[type="submit"] {
       @include button-blue;
       background-color: $color__green;
     }
     p {
+      margin: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
-    p:nth-of-type(1) {
-      grid-area: first;
-    }
-    p:nth-of-type(2) {
-      grid-area: second;
-    }
-    p:nth-of-type(3) {
-      grid-area: third;
-    }
-    p:nth-of-type(4) {
-      grid-area: fourth;
-    }
-    p:nth-of-type(5) {
-      grid-area: fifth;
-    }
   }
+
+
+
+
+
 }
 
 /* ================== Press Releases ================= */
@@ -223,16 +266,14 @@
 
 .press-releases-title {
   font-weight: 700;
-  font-size: 34px;
-  color: $color__navy;
+  color: $color__grey-dark;
   text-align: center;
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 600;
   span {
     color: $color__green;
   }
 }
+
 
 .press-releases-container {
   width: 80%;
