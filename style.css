@@ -968,16 +968,21 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      background-color: #eee;
       text-transform: uppercase;
-      background-color: #eee; }
+      font-weight: 300;
+      letter-spacing: 3px; }
       .page-template-front-page .pacwest-difference-card-wrapper .card:nth-child(odd) {
         color: white;
         background-color: #0a2d5d; }
+      .page-template-front-page .pacwest-difference-card-wrapper .card div {
+        text-align: center; }
       .page-template-front-page .pacwest-difference-card-wrapper .card img {
         width: 50px;
         height: 50px; }
       .page-template-front-page .pacwest-difference-card-wrapper .card p {
         width: 60%;
+        margin: 5px auto;
         text-align: center; }
   .page-template-front-page .pacwest-difference .learn-more {
     margin: 1rem auto;

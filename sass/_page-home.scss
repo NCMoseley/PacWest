@@ -83,18 +83,26 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-transform: uppercase;
         background-color: #eee;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 3px;
         &:nth-child(odd) {
           color: white;
           background-color: $color__navy;
         }
+
+        div {
+          text-align: center;
+        }
+
         img {
           width: 50px;
           height: 50px;
         }
         p {
           width: 60%;
+          margin: 5px auto;
           text-align: center;
         }
       }

@@ -46,20 +46,20 @@ get_header(); ?>
 				</div>
 				<div class="pacwest-difference-card-wrapper">
 					<div class="card">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-balance.png" alt="Icon">
-						<p>Strong Government Relationships</p>
+						<img src="<?php echo get_field('icon_1') ?>" alt="Icon">
+						<p><?php echo get_field('text_1') ?></p>
 					</div>
 					<div class="card">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-lab-dark.png" alt="Icon">
-						<p>Innovative Technologies</p>
+						<img src="<?php echo get_field('icon_2') ?>" alt="Icon">
+						<p><?php echo get_field('text_2') ?></p>
 					</div>
 					<div class="card">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-hands.png" alt="Icon">
-						<p>Strategic Partnerships and Alliances</p>
+						<img src="<?php echo get_field('icon_3') ?>" alt="Icon">
+						<p><?php echo get_field('text_3') ?></p>
 					</div>
 					<div class="card">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-light-dark-01.png" alt="Icon">
-						<p>Multi-Provincial Opportunities</p>
+						<img src="<?php echo get_field('icon_4') ?>" alt="Icon">
+						<p><?php echo get_field('text_4') ?></p>
 					</div>
 				</div>
 
