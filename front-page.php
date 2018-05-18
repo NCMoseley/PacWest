@@ -133,8 +133,6 @@ get_header(); ?>
 				</a>
 			</section>
 			<!-- close Press Releases -->
-
-
 		</main>
 		<!-- #main -->
 	</div>
