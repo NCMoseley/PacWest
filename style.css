@@ -1473,10 +1473,16 @@ object {
   text-transform: uppercase; }
 
 .page-template-contact form {
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
-  display: grid;
-  grid-template-areas: "first second" "third fourth" "fifth sixth" "seventh seventh" "eighth eighth"; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .page-template-contact form input[type="submit"] {
     margin: 1rem auto;
     width: 210px;
@@ -1494,6 +1500,7 @@ object {
     text-shadow: none;
     background-color: #00c860; }
   .page-template-contact form p {
+    margin: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1507,25 +1514,12 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .page-template-contact form p:nth-of-type(1) {
-    grid-area: first; }
-  .page-template-contact form p:nth-of-type(2) {
-    grid-area: second; }
-  .page-template-contact form p:nth-of-type(3) {
-    grid-area: third; }
-  .page-template-contact form p:nth-of-type(4) {
-    grid-area: fourth; }
-  .page-template-contact form p:nth-of-type(5) {
-    grid-area: fifth; }
-  .page-template-contact form p:nth-of-type(6) {
-    grid-area: sixth; }
   .page-template-contact form p:nth-of-type(7) {
-    grid-area: seventh; }
+    width: 85%;
+    margin: 0 auto; }
     .page-template-contact form p:nth-of-type(7) label {
-      width: 85%;
+      width: 100%;
       margin: 0 auto; }
-  .page-template-contact form p:nth-of-type(8) {
-    grid-area: eighth; }
 
 .page-template-contact .entry-title {
   display: none; }
