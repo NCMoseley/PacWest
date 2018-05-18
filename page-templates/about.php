@@ -14,7 +14,11 @@ get_header(); ?>
 <?php $our_vision_header = get_field('our_vision_header');?>
 <?php $our_vision = get_field('our_vision');?>
 <?php $our_vision_image = get_field('our_vision_image');?>
-<?php $team_member_image = get_field('team_member_image');?>
+
+<?php $about_team_header = get_field('about_team_header');?>
+<?php $about_team = get_field('about_team');?>
+
+
 
 
 
@@ -40,8 +44,10 @@ get_header(); ?>
 
 				<div class="about-our-vision">
 					<div class="our-vision-text">
-						<p> <?php echo $our_vision_header ?> </p>
-						<p> <?php echo $our_vision ?> </p>
+						<div class="our-vision-text-wrapper">
+							<p> <?php echo $our_vision_header ?> </p>
+							<p> <?php echo $our_vision ?> </p>
+						</div>
 					
 					</div>
 					<div class="our-vision-image">
@@ -57,6 +63,11 @@ get_header(); ?>
 				
 					<section class="about-team">
 
+					<h1> <?php echo $about_team_header ?> </h1>
+					 <div class="about-team-para">
+						 <?php echo $about_team ?> 
+					</div>
+
 					<div class="team-wrapper">
 					<?php $args = array( 'post_type' => 'team_member'); $query = new WP_Query( $args );?>
 					
@@ -71,15 +82,22 @@ get_header(); ?>
 							<div class="team-member-info">
 								<h2 class="uppercase"><?php the_title(); ?></h2>
 								<div class="position-container uppercase"> <?php the_field('position') ?> 
-									<i class="fa fa-plus" aria-hidden="true"></i>
+									<i class="about-plus-icon fa fa-plus" aria-hidden="true"></i>
 								</div>
 								
 
-								<?php the_content(); ?>
+								<div class="about-bio">
+									<?php the_content(); ?>
+								</div>
+
+								<div class="about-close">
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</div>
+
 								
-							</div>
+							</div> <!-- close team member info -->
 							
-						</div>
+						</div> <!-- close individual team member -->
 							
 							
 							<?php endwhile; ?>
