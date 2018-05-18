@@ -267,9 +267,25 @@
     padding-left: 5%;
     padding-bottom: 40px;
     color: #fff;
-    transform: scale(0);
+    transform: scale(1);
+    opacity: 0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+  }
+}
+
+.press-release:hover {
+  h3 {
+    transform: scale(1);
+    opacity: 0;
+  }
+  span {
+    transform: scale(1);
+    opacity: 0;
+  }
+  p {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
@@ -285,20 +301,6 @@
   a {
     color: $color__text-main;
     font-weight: bold;
-  }
-}
-
-.press-release:hover {
-  h3 {
-    transform: scale(0);
-    opacity: 0;
-  }
-  span {
-    transform: scale(0);
-    opacity: 0;
-  }
-  p {
-    transform: scale(1);
   }
 } //=============Sub footer sections===========
 //Todo: Add correct photos

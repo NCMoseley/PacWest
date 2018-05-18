@@ -6,16 +6,16 @@
  */
 
 get_header(); ?>
-		<?php $logo = get_field('front_page_banner_logo'); ?>
-		<?php $banner_text = get_field('front_page_banner_text'); ?>
+	<?php $logo = get_field('front_page_banner_logo'); ?>
+	<?php $banner_text = get_field('front_page_banner_text'); ?>
 
-		<?php $intro_text = get_field('front_page_intro_paragraph'); ?>
-		<?php $intro_icon = get_field('front_page_intro_icon'); ?>
+	<?php $intro_text = get_field('front_page_intro_paragraph'); ?>
+	<?php $intro_icon = get_field('front_page_intro_icon'); ?>
 
-		<?php $product_image = get_field('front_page_products_image'); ?>
-		<?php $product_paragraph = get_field('front_page_products_paragraph'); ?>
+	<?php $product_image = get_field('front_page_products_image'); ?>
+	<?php $product_paragraph = get_field('front_page_products_paragraph'); ?>
 
-		<?php $investor_portal_desc = get_field('investor_portal_description'); ?>
+	<?php $investor_portal_desc = get_field('investor_portal_description'); ?>
 
 
 	<div id="primary" class="content-area">
@@ -26,7 +26,9 @@ get_header(); ?>
 					<img src="<?php echo $logo ?>" alt="Pacwest Logo">
 				</div>
 
-				<h1><?php echo $banner_text ?></h1>	
+				<h1>
+					<?php echo $banner_text ?>
+				</h1>
 			</header>
 
 			<section class="intro-section">
@@ -75,7 +77,8 @@ get_header(); ?>
 						<h2>Our Products</h2>
 					</div>
 					<div class="our-products-content-copy">
-						<p>		<?php echo $product_paragraph ?>	</p>
+						<p>
+							<?php echo $product_paragraph ?> </p>
 					</div>
 
 					<button class="button-blue">
@@ -89,9 +92,10 @@ get_header(); ?>
 				<div class="investor-portal-content">
 					<h2>Request Access to Investor Portal</h2>
 					<div class="investor-portal-content-copy">
-						<p>		<?php echo $investor_portal_desc ?>	</p>
+						<p>
+							<?php echo $investor_portal_desc ?> </p>
 					</div>
-				</div>	
+				</div>
 
 
 				<div class="contact-form">
@@ -99,69 +103,46 @@ get_header(); ?>
 				</div>
 			</section>
 
-			<section class="news">
-			<?php global $post; // required
-            $args = array('numberposts'=>-1, 'order'=>'ASC');
-            $custom_posts = get_posts($args);
-          ?>
-        
-          <div class="news-container">
-            <?php 
-            foreach ($custom_posts as $post) : setup_postdata($post);
-            ?>
-
-            <div class="news-item"> 
-							<div class="news-item-title">
-								<?php echo "<h2" . " " . "class=" . "post-title" . ">" . $post->post_title . "</h2>"; ?>
-							</div>
-							<div class="news-item-date">
-								<?php echo date("F j, Y", strtotime($post->post_date));?>
-							</div>
-                
-            </div> <!-- END NEWS ITEM -->
-            <?php endforeach;  wp_reset_postdata(); ?>
-          </div> <!-- END NEWS CONTAINER-->
-
-
-			</section>
-
 			<section class="press-releases-wrapper">
 
-				<h1 class="press-releases-title"><span>Packwest</span> News</h1>
-				
-					<div class="press-releases-container">
+				<h1 class="press-releases-title">
+					<span>Packwest</span> News</h1>
 
-								<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>
-                             <?php while ($query->have_posts()) : $query->the_post(); ?>
-														<div class="press-release">
-															<div class="green-vertical-line"></div>
-																	<div class="pr-content">
-																		<h3><?php the_title(); ?></h3>
-																		<span><?php the_time(' F jS, Y') ?></span>
-																	</div>
-																				<p>
-																					<a href="<?php the_permalink();?>">Read More ‣</a>
-																				</p>
-																	
-														</div>
-															<?php endwhile; ?>
-															<?php wp_reset_query() ?>
-															
-																
-											
+				<div class="press-releases-container">
+
+					<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>
+					<?php while ($query->have_posts()) : $query->the_post(); ?>
+					<div class="press-release">
+						<div class="green-vertical-line"></div>
+						<div class="pr-content">
+							<h3>
+								<?php the_title(); ?>
+							</h3>
+							<span>
+								<?php the_time(' F jS, Y') ?>
+							</span>
+						</div>
+						<p>
+							<a href="<?php the_permalink();?>">Read More ‣</a>
+						</p>
 					</div>
-
-				             
-										 <a href="<?php the_permalink();?>"><button class="button-blue">Read More</button></a>
-           </section>
-				<!-- close Press Releases -->
-
-	
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+					<?php endwhile; ?>
+					<?php wp_reset_query() ?>
+				</div>
+				<a href="<?php the_permalink();?>">
+					<button class="button-blue">Read More</button>
+				</a>
+			</section>
+			<!-- close Press Releases -->
 
 
+		</main>
+		<!-- #main -->
+	</div>
+	<!-- #primary -->
 
-<?php get_template_part('template-parts/sub-footer'); ?>
-<?php get_footer(); ?>
+
+
+
+	<?php get_template_part('template-parts/sub-footer'); ?>
+	<?php get_footer(); ?>
