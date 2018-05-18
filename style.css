@@ -445,6 +445,7 @@ textarea {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    text-shadow: none;
     background-color: #00c860;
     margin: 0;
     padding: 5px 12px;
@@ -873,7 +874,8 @@ object {
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-shadow: none; }
 
 .page-template-front-page .our-products {
   display: -webkit-box;
@@ -923,7 +925,8 @@ object {
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-shadow: none; }
 
 .investor-portal {
   background-color: #f1f1f1; }
@@ -965,6 +968,7 @@ object {
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
+      text-shadow: none;
       background-color: #00c860; }
     .investor-portal form p {
       display: -webkit-box;
@@ -1016,6 +1020,7 @@ object {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    text-shadow: none;
     text-align: center; }
   .press-releases-wrapper a {
     margin: 0 auto; }
