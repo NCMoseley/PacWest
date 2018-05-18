@@ -42,7 +42,7 @@ get_header(); ?>
 
 			<section class="pacwest-difference">
 				<div class="pacwest-difference-title">
-					<h2>The Pacwest Difference</h2>
+					<h2>The <span>Pacwest</span> Difference</h2>
 				</div>
 				<div class="pacwest-difference-card-wrapper">
 					<div class="card">

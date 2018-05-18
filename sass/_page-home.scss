@@ -1,7 +1,4 @@
 .page-template-front-page {
-  // .site-branding {
-  //   display: none;
-  // }
   .banner-section {
     height: 40vw;
     width: 100%;
@@ -23,9 +20,24 @@
         width: 100%;
       }
     }
+
+    h1 {
+      width: 60%;
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
   }
   .intro-section {
-    padding: 3rem 0;
+    padding: 5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +45,7 @@
     &-paragraph {
       width: 50%;
       margin: 0 2rem;
+      line-height: 30px;
     }
     &-img-wrapper {
       max-width: 150px;
@@ -43,10 +56,21 @@
     }
   }
   .pacwest-difference {
+    padding: 3rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      & > span {
+        color: $color__green;
+      }
+    }
+
     &-card-wrapper {
       width: 90%;
       margin: 1rem auto;
