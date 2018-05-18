@@ -1027,25 +1027,17 @@ object {
     padding-left: 5%;
     padding-bottom: 40px;
     color: #fff;
-    -webkit-transform: scale(1);
-            transform: scale(1);
     opacity: 0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s; }
 
 .press-release:hover h3 {
-  -webkit-transform: scale(1);
-          transform: scale(1);
   opacity: 0; }
 
 .press-release:hover span {
-  -webkit-transform: scale(1);
-          transform: scale(1);
   opacity: 0; }
 
 .press-release:hover p {
-  -webkit-transform: scale(1);
-          transform: scale(1);
   opacity: 1; }
 
 .press-release:nth-child(2) {
