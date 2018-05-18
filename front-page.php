@@ -125,6 +125,36 @@ get_header(); ?>
 
 			</section>
 
+			<section class="press-releases-wrapper">
+
+				<h1 class="press-releases-title"><span>Packwest</span> News</h1>
+				
+					<div class="press-releases-container">
+
+								<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>
+                             <?php while ($query->have_posts()) : $query->the_post(); ?>
+														<div class="press-release">
+															<div class="green-vertical-line"></div>
+																	<div class="pr-content">
+																		<h3><?php the_title(); ?></h3>
+																		<span><?php the_time(' F jS, Y') ?></span>
+																	</div>
+																				<p>
+																					<a href="<?php the_permalink();?>">Read More ‣</a>
+																				</p>
+																	
+														</div>
+															<?php endwhile; ?>
+															<?php wp_reset_query() ?>
+															
+																
+											
+					</div>
+
+				             
+										 <a href="<?php the_permalink();?>"><button class="button-blue">Read More</button></a>
+           </section>
+				<!-- close Press Releases -->
 
 	
 		</main><!-- #main -->

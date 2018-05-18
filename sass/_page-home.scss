@@ -167,6 +167,139 @@
       grid-area: fifth;
     }
   }
+}
+
+/* ================== Press Releases ================= */
+
+.press-releases-wrapper {
+  // background: url('../../assets/XXX.png') bottom left no-repeat;
+  // background-size: 100% 100%;
+  // background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  .button-blue {
+    @include button-blue;
+    text-align: center;
+  }
+  a {
+    margin: 0 auto;
+  }
+}
+
+.press-releases-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: $color__navy;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  span {
+    color: $color__green;
+  }
+}
+
+.press-releases-container {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  min-height: 400px;
+  align-items: center; // @include footer_row {
+  //   flex-direction: row;
+  //   justify-content: center;
+  //   align-items: flex-start;
+  // }
+}
+
+.press-release {
+  display: flex; // flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 28vh;
+  max-height: 250px;
+  width: 80vw; // @include footer_row {
+  //   min-height: 150px;
+  //   height: 28vh;
+  //   width: 28vw;
+  // }
+  background-color: $color__navy;
+  margin: 2vh;
+  padding: 2vh;
+  .green-vertical-line {
+    background-color: $color__green;
+    height: 180px;
+    width: 5px;
+    position: absolute;
+  }
+  .pr-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+  }
+  h3 {
+    font-weight: 100;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  span {
+    display: inline;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  p {
+    position: absolute;
+    padding-left: 5%;
+    padding-bottom: 40px;
+    color: #fff;
+    transform: scale(0);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+}
+
+.press-release:nth-child(2) {
+  background-color: $color__background-hr;
+  h3 {
+    color: $color__text-main; // font-weight: bold;
+  }
+  span {
+    color: $color__text-main;
+    font-weight: bold;
+  }
+  a {
+    color: $color__text-main;
+    font-weight: bold;
+  }
+}
+
+.press-release:hover {
+  h3 {
+    transform: scale(0);
+    opacity: 0;
+  }
+  span {
+    transform: scale(0);
+    opacity: 0;
+  }
+  p {
+    transform: scale(1);
+  }
 } //=============Sub footer sections===========
 //Todo: Add correct photos
 .sub-footer {
