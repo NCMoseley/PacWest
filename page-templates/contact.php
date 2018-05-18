@@ -27,7 +27,7 @@ get_header(); ?>
 
 
 			<section class="contact-form">
-				<h2><?php echo $main_text ?></h2>
+				<h2 class="contact-h2"><?php echo $main_text ?></h2>
 			</section>
 
 			<?php while ( have_posts() ) : the_post(); ?>

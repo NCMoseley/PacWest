@@ -1,4 +1,10 @@
 .page-template-news {
+  .news-h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
   .banner-section {
     height: 40vw;
     width: 100%;
@@ -12,12 +18,26 @@
     color: white;
     background-size: cover;
     &-img-wrapper {
-      width: 200px;
+      width: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
       img {
         width: 100%;
+      }
+    }
+
+    h1 {
+      width: 60%;
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+
+      strong {
+        font-weight: 700;
       }
     }
   }
