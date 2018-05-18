@@ -65,6 +65,49 @@
       border: 1px solid black;
       min-height: 600px;
       width: 100%;
+
+      .team-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid green;
+        justify-content: center;
+
+        .individual-team-member {
+          flex-basis: 50%;
+          margin: 10px 30px;
+          border: 1px solid red;
+          max-width: 500px;
+          max-height: 150px;
+          min-height: 150px;
+          overflow: hidden;
+          display: flex;
+
+          .team-headshot {
+            flex-basis: 30%;
+            border: 1px solid blue;
+          }
+          .team-member-info {
+            flex-basis: 70%;
+            margin: 3px 2%;
+
+            h2 {
+              margin: 0;
+              color: blue;
+            }
+
+            .position-container {
+              display: flex;
+              justify-content: space-between;
+              color: gray;
+              i {
+                margin-top: 5px;
+                font-size: 20px;
+                color: blue;
+              }
+            }
+          }
+        }
+      }
     }
     .about-alliances {
       border: 1px solid black;

@@ -14,6 +14,7 @@ get_header(); ?>
 <?php $our_vision_header = get_field('our_vision_header');?>
 <?php $our_vision = get_field('our_vision');?>
 <?php $our_vision_image = get_field('our_vision_image');?>
+<?php $team_member_image = get_field('team_member_image');?>
 
 
 
@@ -30,7 +31,7 @@ get_header(); ?>
 						<h1> <?php echo $about_header ?></h1>
 					</div>
 					
-				</div>
+				</div> <!-- close about banner -->
 
 				<div class="about-our-company">
 					<h1> <?php echo $about_company_header ?> </h1>
@@ -46,12 +47,49 @@ get_header(); ?>
 					<div class="our-vision-image">
 						<img src="<?php echo $our_vision_image ?>" alt="A lake with mountains"/>
 					
-					</div>
+				</div>
 
 					
-				</div>
+				</div> <!-- close about our vision -->
 				
-					<div class="about-team"></div>
+
+
+				
+					<section class="about-team">
+
+					<div class="team-wrapper">
+					<?php $args = array( 'post_type' => 'team_member'); $query = new WP_Query( $args );?>
+					
+						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+						
+						<div class="individual-team-member">
+							<div class="team-headshot">
+								<img src="<?php the_field('team_member_image')?>" />
+							</div>
+
+							<div class="team-member-info">
+								<h2 class="uppercase"><?php the_title(); ?></h2>
+								<div class="position-container uppercase"> <?php the_field('position') ?> 
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+								
+
+								<?php the_content(); ?>
+								
+							</div>
+							
+						</div>
+							
+							
+							<?php endwhile; ?>
+						<?php wp_reset_query() ?>
+					
+
+					</div> <!-- team wrapper -->
+					
+				</section> <!-- about team -->
+
 					<div class="about-alliances"></div>
 					<div class="facilities-technology"></div>
 
@@ -62,7 +100,7 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 
-			</section>
+			</section> <!-- close about wrapper -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

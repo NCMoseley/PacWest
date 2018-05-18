@@ -1590,6 +1590,51 @@ object {
     border: 1px solid black;
     min-height: 600px;
     width: 100%; }
+    .page-template-about .about-wrapper .about-team .team-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      border: 2px solid green;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        margin: 10px 30px;
+        border: 1px solid red;
+        max-width: 500px;
+        max-height: 150px;
+        min-height: 150px;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot {
+          -ms-flex-preferred-size: 30%;
+              flex-basis: 30%;
+          border: 1px solid blue; }
+        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
+          -ms-flex-preferred-size: 70%;
+              flex-basis: 70%;
+          margin: 3px 2%; }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
+            margin: 0;
+            color: blue; }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            color: gray; }
+            .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
+              margin-top: 5px;
+              font-size: 20px;
+              color: blue; }
   .page-template-about .about-wrapper .about-alliances {
     border: 1px solid black;
     min-height: 600px; }
