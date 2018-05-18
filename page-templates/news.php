@@ -42,21 +42,20 @@ get_header(); ?>
               </div>
 
               <div class="news-item-body">
-                <?php the_excerpt(); ?>
+                <?php the_content(); ?>
               </div>
-            </div>
-
-
-            <div class="news-item-pdf">
-              <a href="<?php the_field('press_release_pdf')  ?>">PDF</a>
-            </div>
-
-
-            <p>
-              <a href="<?php the_permalink();?>"><i class="fa fa-chevron-right"></i></a>
-            </p>
-
             
+              <div class="news-item-pdf">
+                <a href="<?php the_field('press_release_pdf')  ?>">PDF</a>
+              </div>
+
+
+              <p class="news-item-expand-link">
+                <i class="fa fa-chevron-down"></i>
+              </p>
+
+            </div>
+
           <?php endwhile; ?>
           <?php wp_reset_query() ?>
         </div>

@@ -814,6 +814,16 @@ object {
       -ms-flex-align: start;
           align-items: flex-start; }
 
+.page-template-news .news-item {
+  width: 85%;
+  margin: 0 auto; }
+  .page-template-news .news-item-body {
+    height: 100px;
+    overflow: hidden; }
+  .page-template-news .news-item-expand-link {
+    width: 100%;
+    text-align: center; }
+
 .page-template-front-page .banner-section {
   height: 40vw;
   width: 100%;

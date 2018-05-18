@@ -36,11 +36,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+  }
 
+  .news-item {
+    width: 85%;
+    margin: 0 auto;
 
+    &-body {
+      height: 100px;
+      overflow: hidden;
+    }
 
+    &-expand-link {
+      width: 100%;
+      text-align: center;
 
-
+    }
   }
   
 
