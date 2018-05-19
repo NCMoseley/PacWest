@@ -61,11 +61,11 @@
         justify-content: center;
         align-items: center;
         flex-basis: 50%;
-        background: gray;
+        background: $color__background-gray;
         .our-vision-text-wrapper {
           height: 300px;
           width: 300px;
-          border: 1px solid red;
+
           .about-vision {
             display: block;
             font-size: 30px;
@@ -76,6 +76,10 @@
       .our-vision-image {
         border: 1px solid black;
         flex-basis: 50%;
+        max-height: 400px;
+        img {
+          max-height: 400px;
+        }
       }
     }
     .about-team {
@@ -102,14 +106,14 @@
 
         .individual-team-member {
           margin: 10px 10px;
-
           max-width: 350px;
           min-width: 350px;
-          max-height: 150px;
-          min-height: 150px;
+          max-height: 200px; //150
+          min-height: 200px;
           overflow: hidden;
           display: flex;
           transition: all 0.5s ease;
+          border: 1px solid blue;
 
           @include tablet {
             max-width: 500px;
@@ -137,25 +141,35 @@
           .team-headshot {
             flex-basis: 30%;
             border: 1px solid blue;
-            max-height: 150px;
+            max-height: 200px;
+            min-width: 140px;
           }
           .team-member-info {
             display: flex;
             flex-direction: column;
-
             flex-basis: 70%;
             margin: 3px 2%;
+            max-height: 173px;
+            overflow: hidden;
+            border: 1px solid red;
+            @include tablet {
+              max-height: 163px;
+            }
 
             h2 {
               margin: 0;
               color: blue;
+              font-size: 16px;
+              @include tablet {
+                font-size: 20px;
+              }
             }
 
             .position-container {
               display: flex;
               justify-content: space-between;
               color: gray;
-              margin-bottom: 20px;
+              margin-bottom: 25px;
               i {
                 margin-top: 5px;
                 font-size: 20px;
@@ -163,7 +177,7 @@
               }
             }
             .about-bio {
-              margin-top: 18px;
+              margin-top: 14px;
             }
             .about-close {
               margin-top: 5px;

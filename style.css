@@ -704,8 +704,8 @@ object {
 .show-full-container {
   max-height: 1000px !important;
   height: auto !important;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease; }
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .page-template-products .banner-section {
   height: 40vw;
@@ -1648,11 +1648,10 @@ object {
               align-items: center;
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
-      background: gray; }
+      background: #f2f2f1; }
       .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper {
         height: 300px;
-        width: 300px;
-        border: 1px solid red; }
+        width: 300px; }
         .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper .about-vision {
           display: block;
           font-size: 30px;
@@ -1660,7 +1659,10 @@ object {
     .page-template-about .about-wrapper .about-our-vision .our-vision-image {
       border: 1px solid black;
       -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
+          flex-basis: 50%;
+      max-height: 400px; }
+      .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
+        max-height: 400px; }
   .page-template-about .about-wrapper .about-team {
     border: 1px solid black;
     min-height: 600px;
@@ -1695,14 +1697,15 @@ object {
         margin: 10px 10px;
         max-width: 350px;
         min-width: 350px;
-        max-height: 150px;
-        min-height: 150px;
+        max-height: 200px;
+        min-height: 200px;
         overflow: hidden;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease; }
+        transition: all 0.5s ease;
+        border: 1px solid blue; }
         @media all and (min-width: 600px) {
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
             max-width: 500px;
@@ -1727,7 +1730,8 @@ object {
           -ms-flex-preferred-size: 30%;
               flex-basis: 30%;
           border: 1px solid blue;
-          max-height: 150px; }
+          max-height: 200px;
+          min-width: 140px; }
         .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1738,10 +1742,20 @@ object {
                   flex-direction: column;
           -ms-flex-preferred-size: 70%;
               flex-basis: 70%;
-          margin: 3px 2%; }
+          margin: 3px 2%;
+          max-height: 173px;
+          overflow: hidden;
+          border: 1px solid red; }
+          @media all and (min-width: 600px) {
+            .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
+              max-height: 163px; } }
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
             margin: 0;
-            color: blue; }
+            color: blue;
+            font-size: 16px; }
+            @media all and (min-width: 600px) {
+              .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
+                font-size: 20px; } }
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1750,13 +1764,13 @@ object {
                 -ms-flex-pack: justify;
                     justify-content: space-between;
             color: gray;
-            margin-bottom: 20px; }
+            margin-bottom: 25px; }
             .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
               margin-top: 5px;
               font-size: 20px;
               color: blue; }
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-bio {
-            margin-top: 18px; }
+            margin-top: 14px; }
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-close {
             margin-top: 5px;
             -ms-flex-item-align: center;

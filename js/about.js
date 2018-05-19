@@ -5,11 +5,20 @@ jQuery(document).ready(function($) {
       .parent()
       .parent()
       .addClass('show-full-container');
+
+    $(this)
+      .parent()
+      .parent()
+      .addClass('show-full-container');
   });
 
   $('.about-close').on('click', function() {
     $(this)
       .parent()
+      .parent()
+      .removeClass('show-full-container');
+
+    $(this)
       .parent()
       .removeClass('show-full-container');
   });
