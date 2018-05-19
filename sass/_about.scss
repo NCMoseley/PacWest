@@ -209,12 +209,71 @@
       }
     }
     .about-alliances {
-      border: 1px solid black;
       min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .alliance-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 85%;
+
+        .alliance-logo {
+          flex-basis: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-height: 200;
+
+          @include medium {
+            flex-basis: 25%;
+          }
+
+          img {
+            max-height: 190px;
+            margin: 0 auto;
+            align-self: center;
+          }
+        }
+      }
     }
     .facilities-technology {
       border: 1px solid black;
       min-height: 600px;
+
+      .facilities {
+        max-height: 400px;
+        min-height: 400px;
+        display: flex;
+        .facilities-text {
+          flex-basis: 50%;
+        }
+        .facilities-image {
+          flex-basis: 50%;
+          img {
+            max-height: 400px;
+            min-height: 400px;
+          }
+        }
+      }
+      .technologies {
+        max-height: 400px;
+        min-height: 400px;
+        display: flex;
+        .technologies-image {
+          flex-basis: 50%;
+          img {
+            max-height: 400px;
+            min-height: 400px;
+          }
+        }
+        .technologies-text {
+          flex-basis: 50%;
+        }
+      }
     }
   }
 }

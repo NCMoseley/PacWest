@@ -752,6 +752,11 @@ object {
   -webkit-transition: all 1s ease;
   transition: all 1s ease; }
 
+.about-uppercase {
+  display: block;
+  font-size: 30px;
+  font-weight: bold; }
+
 .page-template-products .banner-section {
   height: 40vw;
   width: 100%;
@@ -1839,11 +1844,85 @@ object {
               font-size: 20px;
               color: #0a2d5d; }
   .page-template-about .about-wrapper .about-alliances {
-    border: 1px solid black;
-    min-height: 600px; }
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-about .about-wrapper .about-alliances .alliance-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 85%; }
+      .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        max-height: 200; }
+        @media all and (min-width: 750px) {
+          .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%; } }
+        .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo img {
+          max-height: 190px;
+          margin: 0 auto;
+          -ms-flex-item-align: center;
+              align-self: center; }
   .page-template-about .about-wrapper .facilities-technology {
     border: 1px solid black;
     min-height: 600px; }
+    .page-template-about .about-wrapper .facilities-technology .facilities {
+      max-height: 400px;
+      min-height: 400px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+      .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+        .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image img {
+          max-height: 400px;
+          min-height: 400px; }
+    .page-template-about .about-wrapper .facilities-technology .technologies {
+      max-height: 400px;
+      min-height: 400px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image img {
+          max-height: 400px;
+          min-height: 400px; }
+      .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
 
 .site-footer .site-info {
   border: 1px solid black;

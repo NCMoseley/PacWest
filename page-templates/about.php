@@ -62,6 +62,7 @@ get_header(); ?>
 
 				
 					<section class="about-team">
+					
 
 					<h1> <?php echo $about_team_header ?> </h1>
 					 <div class="about-team-para">
@@ -109,8 +110,45 @@ get_header(); ?>
 					
 				</section> <!-- about team -->
 
-					<div class="about-alliances"></div>
-					<div class="facilities-technology"></div>
+				<section class="about-alliances">
+					<h1> <?php echo get_field('strategic_alliance_header'); ?> </h1>
+					<?php $args = array( 'post_type' => 'alliance'); $query = new WP_Query( $args );?>
+					<div class="alliance-wrapper">
+					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+							<div class="alliance-logo">
+								<img src="<?php the_field('alliance_logo')?>" />
+							</div>
+						
+					<?php endwhile; ?>
+				</div>
+					<?php wp_reset_query() ?>
+				</section>
+
+					<section class="facilities-technology">
+						<div class="facilities">
+							<div class="facilities-image">
+								<img src="<?php the_field('facilities_image')?>" />
+							</div>
+							<div class="facilities-text">
+								<p> <?php echo get_field('facilities_header');?></p>
+								<p> <?php echo get_field('facilities_text');?></p>
+
+							</div>
+						
+						</div>
+						<div class="technologies">
+							<div class="technologies-text">
+								<p> <?php echo get_field('technology_header');?></p>
+								<p> <?php echo get_field('technology_text');?></p>
+
+
+							</div>
+							<div class="technologies-image">
+								<img src="<?php the_field('technology_image')?>" />
+
+							</div>
+						</div>
+					</section>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
