@@ -73,7 +73,7 @@ get_header(); ?>
 					
 						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-						
+					
 						<div class="individual-team-member">
 							<div class="team-headshot">
 								<img src="<?php the_field('team_member_image')?>" />
@@ -105,6 +105,7 @@ get_header(); ?>
 					
 
 					</div> <!-- team wrapper -->
+			
 					
 				</section> <!-- about team -->
 

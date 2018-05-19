@@ -1671,13 +1671,15 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .page-template-about .about-wrapper .about-our-company h1 {
+      color: #333333; }
     .page-template-about .about-wrapper .about-our-company p {
       text-align: center;
-      max-width: 75%; }
+      max-width: 75%;
+      color: #333333; }
   .page-template-about .about-wrapper .about-our-vision {
     width: 100%;
     min-height: 400px;
-    border: 1px solid black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -1695,6 +1697,7 @@ object {
           flex-basis: 50%;
       background: #f2f2f1; }
       .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper {
+        color: #333333;
         height: 300px;
         width: 300px; }
         .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper .about-vision {
@@ -1702,14 +1705,14 @@ object {
           font-size: 30px;
           font-weight: bold; }
     .page-template-about .about-wrapper .about-our-vision .our-vision-image {
-      border: 1px solid black;
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
       max-height: 400px; }
       .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
-        max-height: 400px; }
+        max-height: 400px;
+        min-height: 400px;
+        width: 100%; }
   .page-template-about .about-wrapper .about-team {
-    border: 1px solid black;
     min-height: 600px;
     width: 100%;
     display: -webkit-box;
@@ -1725,19 +1728,29 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .page-template-about .about-wrapper .about-team h1 {
+      color: #333333; }
     .page-template-about .about-wrapper .about-team .about-team-para {
       max-width: 75%; }
       .page-template-about .about-wrapper .about-team .about-team-para p {
-        text-align: center; }
+        text-align: center;
+        color: #333333; }
     .page-template-about .about-wrapper .about-team .team-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+      border: 1px solid red;
+      width: 90%;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .about-team .team-wrapper {
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; } }
       .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
         margin: 10px 10px;
         max-width: 350px;
@@ -1749,34 +1762,37 @@ object {
         display: -ms-flexbox;
         display: flex;
         -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        border: 1px solid blue; }
+        transition: all 0.5s ease; }
         @media all and (min-width: 600px) {
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
             max-width: 500px;
             min-width: 500px; } }
-        @media all and (min-width: 750px) {
+        @media all and (min-width: 800px) {
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
             -ms-flex-preferred-size: 50%;
                 flex-basis: 50%;
-            margin: 10px 10px;
-            max-width: 350px;
-            min-width: 350px; } }
+            max-width: 335px;
+            min-width: 335px; } }
+        @media all and (min-width: 950px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 400px;
+            min-width: 400px; } }
         @media all and (min-width: 1000px) {
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
             max-width: 450px;
             min-width: 450px;
-            margin: 10px 20px; } }
+            margin: 10px 0px; } }
         @media all and (min-width: 1200px) {
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-            max-width: 550px;
-            min-width: 550px; } }
+            max-width: 530px;
+            min-width: 530px;
+            margin: 10px 0; } }
         .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot {
           -ms-flex-preferred-size: 30%;
               flex-basis: 30%;
-          border: 1px solid blue;
           max-height: 200px;
-          min-width: 140px; }
+          min-width: 140px;
+          border: 1px solid black; }
         .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1788,15 +1804,14 @@ object {
           -ms-flex-preferred-size: 70%;
               flex-basis: 70%;
           margin: 3px 2%;
-          max-height: 173px;
-          overflow: hidden;
-          border: 1px solid red; }
+          max-height: 172px;
+          overflow: hidden; }
           @media all and (min-width: 600px) {
             .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
-              max-height: 163px; } }
+              max-height: 162px; } }
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
             margin: 0;
-            color: blue;
+            color: #0a2d5d;
             font-size: 16px; }
             @media all and (min-width: 600px) {
               .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
@@ -1808,12 +1823,12 @@ object {
             -webkit-box-pack: justify;
                 -ms-flex-pack: justify;
                     justify-content: space-between;
-            color: gray;
+            color: #c3c3c3;
             margin-bottom: 25px; }
             .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
               margin-top: 5px;
               font-size: 20px;
-              color: blue; }
+              color: #0a2d5d; }
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-bio {
             margin-top: 14px; }
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-close {
@@ -1822,7 +1837,7 @@ object {
                 align-self: center; }
             .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-close i {
               font-size: 20px;
-              color: blue; }
+              color: #0a2d5d; }
   .page-template-about .about-wrapper .about-alliances {
     border: 1px solid black;
     min-height: 600px; }
