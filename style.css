@@ -1,3 +1,48 @@
+/*!
+Theme Name: PacWest
+Theme URI: http://underscores.me/
+Author: Caravel
+Author URI: https://github.com/NCMoseley/Packwest
+Description: A WordPress Theme for a beautiful webpage.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+PacWest Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Embedded Fonts
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Asides
+	## Comments
+# Media
+	## Captions
+	## Galleries
+# Page Templates
+	## Front page
+--------------------------------------------------------------*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -700,6 +745,12 @@ object {
 --------------------------------------------------------------*/
 .uppercase {
   text-transform: uppercase; }
+
+.show-full-container {
+  max-height: 1000px !important;
+  height: auto !important;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .page-template-products .banner-section {
   height: 40vw;
@@ -1620,6 +1671,9 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .page-template-about .about-wrapper .about-our-company p {
+      text-align: center;
+      max-width: 75%; }
   .page-template-about .about-wrapper .about-our-vision {
     width: 100%;
     min-height: 400px;
@@ -1628,50 +1682,125 @@ object {
     display: -ms-flexbox;
     display: flex; }
     .page-template-about .about-wrapper .about-our-vision .our-vision-text {
-      border: 1px solid black;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
+          flex-basis: 50%;
+      background: #f2f2f1; }
+      .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper {
+        height: 300px;
+        width: 300px; }
+        .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper .about-vision {
+          display: block;
+          font-size: 30px;
+          font-weight: bold; }
     .page-template-about .about-wrapper .about-our-vision .our-vision-image {
       border: 1px solid black;
       -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
+          flex-basis: 50%;
+      max-height: 400px; }
+      .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
+        max-height: 400px; }
   .page-template-about .about-wrapper .about-team {
     border: 1px solid black;
     min-height: 600px;
-    width: 100%; }
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-about .about-wrapper .about-team .about-team-para {
+      max-width: 75%; }
+      .page-template-about .about-wrapper .about-team .about-team-para p {
+        text-align: center; }
     .page-template-about .about-wrapper .about-team .team-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      border: 2px solid green;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
       .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-        -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-        margin: 10px 30px;
-        border: 1px solid red;
-        max-width: 500px;
-        max-height: 150px;
-        min-height: 150px;
+        margin: 10px 10px;
+        max-width: 350px;
+        min-width: 350px;
+        max-height: 200px;
+        min-height: 200px;
         overflow: hidden;
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        border: 1px solid blue; }
+        @media all and (min-width: 600px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 500px;
+            min-width: 500px; } }
+        @media all and (min-width: 750px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+            margin: 10px 10px;
+            max-width: 350px;
+            min-width: 350px; } }
+        @media all and (min-width: 1000px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 450px;
+            min-width: 450px;
+            margin: 10px 20px; } }
+        @media all and (min-width: 1200px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 550px;
+            min-width: 550px; } }
         .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot {
           -ms-flex-preferred-size: 30%;
               flex-basis: 30%;
-          border: 1px solid blue; }
+          border: 1px solid blue;
+          max-height: 200px;
+          min-width: 140px; }
         .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
           -ms-flex-preferred-size: 70%;
               flex-basis: 70%;
-          margin: 3px 2%; }
+          margin: 3px 2%;
+          max-height: 173px;
+          overflow: hidden;
+          border: 1px solid red; }
+          @media all and (min-width: 600px) {
+            .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
+              max-height: 163px; } }
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
             margin: 0;
-            color: blue; }
+            color: blue;
+            font-size: 16px; }
+            @media all and (min-width: 600px) {
+              .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
+                font-size: 20px; } }
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -1679,9 +1808,19 @@ object {
             -webkit-box-pack: justify;
                 -ms-flex-pack: justify;
                     justify-content: space-between;
-            color: gray; }
+            color: gray;
+            margin-bottom: 25px; }
             .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
               margin-top: 5px;
+              font-size: 20px;
+              color: blue; }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-bio {
+            margin-top: 14px; }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-close {
+            margin-top: 5px;
+            -ms-flex-item-align: center;
+                align-self: center; }
+            .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-close i {
               font-size: 20px;
               color: blue; }
   .page-template-about .about-wrapper .about-alliances {

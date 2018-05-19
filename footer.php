@@ -35,7 +35,7 @@
 						<p>PacWest will begin selling cannabis to distributors and medical users beginning in 2018. Be the first to learn of new products, and stay up to date with PacWest and company news</p>
 						</div>
 						<div class="footer-sign-up">
-							<?php echo do_shortcode( '[contact-form-7 id="19" title="Email Sign Up"]' ); ?>
+							<?php echo do_shortcode( '[contact-form-7 id="75" title="Email Sign Up"]' ); ?>
 						</div>
 						<p class="footer-copy">&copy 2018 Pacific West Canopy Ltd. All rights reserved</p>
 					</div>

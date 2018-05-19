@@ -60,3 +60,9 @@
     @content;
   }
 }
+
+@mixin medium {
+  @media all and (min-width: $medium) {
+    @content;
+  }
+}

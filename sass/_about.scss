@@ -45,6 +45,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      p {
+        text-align: center;
+        max-width: 75%;
+      }
     }
     .about-our-vision {
       width: 100%;
@@ -53,54 +57,132 @@
       display: flex;
 
       .our-vision-text {
-        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-basis: 50%;
+        background: $color__background-gray;
+        .our-vision-text-wrapper {
+          height: 300px;
+          width: 300px;
+
+          .about-vision {
+            display: block;
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
       }
       .our-vision-image {
         border: 1px solid black;
         flex-basis: 50%;
+        max-height: 400px;
+        img {
+          max-height: 400px;
+        }
       }
     }
     .about-team {
       border: 1px solid black;
       min-height: 600px;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .about-team-para {
+        max-width: 75%;
+        p {
+          text-align: center;
+        }
+      }
 
       .team-wrapper {
         display: flex;
         flex-wrap: wrap;
-        border: 2px solid green;
+
         justify-content: center;
 
         .individual-team-member {
-          flex-basis: 50%;
-          margin: 10px 30px;
-          border: 1px solid red;
-          max-width: 500px;
-          max-height: 150px;
-          min-height: 150px;
+          margin: 10px 10px;
+          max-width: 350px;
+          min-width: 350px;
+          max-height: 200px; //150
+          min-height: 200px;
           overflow: hidden;
           display: flex;
+          transition: all 0.5s ease;
+          border: 1px solid blue;
+
+          @include tablet {
+            max-width: 500px;
+            min-width: 500px;
+          }
+
+          @include medium {
+            flex-basis: 50%;
+            margin: 10px 10px;
+            max-width: 350px;
+            min-width: 350px;
+          }
+
+          @include desktop {
+            max-width: 450px;
+            min-width: 450px;
+            margin: 10px 20px;
+          }
+
+          @include large {
+            max-width: 550px;
+            min-width: 550px;
+          }
 
           .team-headshot {
             flex-basis: 30%;
             border: 1px solid blue;
+            max-height: 200px;
+            min-width: 140px;
           }
           .team-member-info {
+            display: flex;
+            flex-direction: column;
             flex-basis: 70%;
             margin: 3px 2%;
+            max-height: 173px;
+            overflow: hidden;
+            border: 1px solid red;
+            @include tablet {
+              max-height: 163px;
+            }
 
             h2 {
               margin: 0;
               color: blue;
+              font-size: 16px;
+              @include tablet {
+                font-size: 20px;
+              }
             }
 
             .position-container {
               display: flex;
               justify-content: space-between;
               color: gray;
+              margin-bottom: 25px;
               i {
                 margin-top: 5px;
+                font-size: 20px;
+                color: blue;
+              }
+            }
+            .about-bio {
+              margin-top: 14px;
+            }
+            .about-close {
+              margin-top: 5px;
+              align-self: center;
+              i {
                 font-size: 20px;
                 color: blue;
               }
