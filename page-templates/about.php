@@ -26,7 +26,16 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="about-wrapper">
-				<div class="about-menu"></div>
+				<div class="about-menu">
+					<ul class="about-menu-list">
+						<li>About</li>
+						<a href="#about-vision"><li>Vision</li></a>
+						<a href="#management-team"><li>Management Team</li></a>
+						<a href="#strategic-alliances"><li>Strategic Alliances</li></a>
+						<a href="#facilities"><li>Facilities</li></a>
+						<a href="#technologies"><li>Technology</li></a>			
+					</ul>
+					</div>
 
 				<div class="about-banner">
 
@@ -38,11 +47,11 @@ get_header(); ?>
 				</div> <!-- close about banner -->
 
 				<div class="about-our-company">
-					<h1> <?php echo $about_company_header ?> </h1>
+					<h1 class="uppercase"> <?php echo $about_company_header ?> </h1>
 					<p> <?php echo $about_company ?> </p>
 				</div>
 
-				<div class="about-our-vision">
+				<div class="about-our-vision" id="about-vision">
 					<div class="our-vision-text">
 						<div class="our-vision-text-wrapper">
 							<p> <?php echo $our_vision_header ?> </p>
@@ -61,10 +70,10 @@ get_header(); ?>
 
 
 				
-					<section class="about-team">
+					<section class="about-team" id="management-team">
 					
 
-					<h1> <?php echo $about_team_header ?> </h1>
+					<h1 class="uppercase"> <?php echo $about_team_header ?> </h1>
 					 <div class="about-team-para">
 						 <?php echo $about_team ?> 
 					</div>
@@ -110,8 +119,8 @@ get_header(); ?>
 					
 				</section> <!-- about team -->
 
-				<section class="about-alliances">
-					<h1> <?php echo get_field('strategic_alliance_header'); ?> </h1>
+				<section class="about-alliances" id="strategic-alliances">
+					<h1 class="uppercase"> <?php echo get_field('strategic_alliance_header'); ?> </h1>
 					<?php $args = array( 'post_type' => 'alliance'); $query = new WP_Query( $args );?>
 					<div class="alliance-wrapper">
 					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -124,22 +133,27 @@ get_header(); ?>
 					<?php wp_reset_query() ?>
 				</section>
 
-					<section class="facilities-technology">
+					<section class="facilities-technology" id="facilities">
 						<div class="facilities">
 							<div class="facilities-image">
 								<img src="<?php the_field('facilities_image')?>" />
 							</div>
 							<div class="facilities-text">
-								<p> <?php echo get_field('facilities_header');?></p>
-								<p> <?php echo get_field('facilities_text');?></p>
+								<div class="facilities-text-wrapper">
+									<p> <?php echo get_field('facilities_header');?></p>
+									<p> <?php echo get_field('facilities_text');?></p>
+								</div>
 
 							</div>
 						
 						</div>
-						<div class="technologies">
+						<div class="technologies" id="technologies">
 							<div class="technologies-text">
+
+							<div class="technologies-text-wrapper">
 								<p> <?php echo get_field('technology_header');?></p>
 								<p> <?php echo get_field('technology_text');?></p>
+							</div>
 
 
 							</div>
