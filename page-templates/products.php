@@ -32,10 +32,10 @@ get_header(); ?>
 			<header class="banner-section">
 				<div class="banner-section-img-wrapper">
 					<img class="products-leaf-icon" src="<?php echo $logo ?>" alt="Products Logo">
-					<h1>
-						<?php echo $banner_text ?>
-					</h1>
 				</div>			
+				<h1>
+					<?php echo $banner_text ?>
+				</h1>
 			</header>
 
 			<section class="product-a-intro-section">
