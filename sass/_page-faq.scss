@@ -53,16 +53,32 @@
   }
   .faq {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 40%;
     background-color: $color__navy;
     padding: 5px 5% 5px 10px;
+    
     h3 {
       color: $color__text-light;
       font-size: 16px;
       max-width: 70%;
     }
+
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    &-answer {
+      color: white;
+    }
+
+
     .horizontal {
       width: 20px;
       height: 3px;
@@ -74,6 +90,19 @@
       background-color: $color__green;
       transform: rotate(90deg);
       transform-origin: 53% 19%;
+    }
+
+    .invisible {
+      opacity: 0;
+      transition: opacity .5s;
+    }
+    .visible {
+      opacity: 1;
+      transition: opacity .5s;
+    }
+    .open {
+      color: $color__grey-dark !important;
+      background-color: #fff !important;
     }
   }
 }
