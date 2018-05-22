@@ -1,0 +1,34 @@
+.page-template-faq {
+  .banner-section {
+    height: 40vw;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-news.jpg');
+    color: white;
+    background-size: cover;
+    &-img-wrapper {
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+
+    h1 {
+      width: 60%;
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+  }
+}
