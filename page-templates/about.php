@@ -79,9 +79,9 @@ get_header(); ?>
 					</div>
 
 					<div class="team-wrapper">
-					<?php $args = array( 'post_type' => 'team_member'); $query = new WP_Query( $args );?>
+					<?php $args = array( 'post_type' => 'team_member'); $query = new WP_Query($args);?>
 					
-						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+						<?php while ($query->have_posts()) : $query->the_post(); ?>
 
 					
 						<div class="individual-team-member">
@@ -121,9 +121,9 @@ get_header(); ?>
 
 				<section class="about-alliances" id="strategic-alliances">
 					<h1 class="uppercase"> <?php echo get_field('strategic_alliance_header'); ?> </h1>
-					<?php $args = array( 'post_type' => 'alliance'); $query = new WP_Query( $args );?>
+					<?php $args = array( 'post_type' => 'alliance'); $query = new WP_Query($args);?>
 					<div class="alliance-wrapper">
-					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+					<?php while ($query->have_posts()) : $query->the_post(); ?>
 							<div class="alliance-logo">
 								<img src="<?php the_field('alliance_logo')?>" />
 							</div>
@@ -164,16 +164,16 @@ get_header(); ?>
 						</div>
 					</section>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while (have_posts()) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php get_template_part('template-parts/content', 'page'); ?>
 
-			<?php endwhile; // End of the loop. ?>
+			<?php endwhile; // End of the loop.?>
 
 
 			</section> <!-- close about wrapper -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-
+<?php get_template_part('template-parts/sub-footer'); ?>
 <?php get_footer(); ?>

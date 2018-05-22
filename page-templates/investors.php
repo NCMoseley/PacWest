@@ -45,5 +45,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php get_template_part('template-parts/sub-footer'); ?>
 <?php get_footer(); ?>
