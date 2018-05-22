@@ -1,26 +1,73 @@
 .page-template-about {
+  h1 {
+    letter-spacing: 2px;
+  }
+  .hentry {
+    display: none;
+  }
   .entry-title {
     display: none;
   }
   .about-wrapper {
-    margin-top: 90px; // will apply this with a standard height across all pages
     .about-menu {
-      border: 1px solid black;
+      display: none;
+
+      justify-content: center;
       width: 100%;
-      height: 80px;
-      background: green;
+      height: 100px;
+      background: $color__green;
+      align-items: center;
+
+      @include desktop {
+        display: flex;
+        height: 70px;
+        justify-content: flex-end;
+      }
+
+      ul {
+        margin: 0;
+        margin-top: 20px;
+        min-height: 50px;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+
+        @include desktop {
+          margin-top: 0;
+          width: 70%;
+          min-height: 50px;
+          margin-right: 1%;
+        }
+        @include large {
+          width: 65%;
+        }
+
+        li {
+          text-transform: uppercase;
+          list-style: none;
+          margin: 0 8px;
+          color: #fff;
+        }
+      }
+      a {
+        text-decoration: none;
+      }
     }
     .about-banner {
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid black;
       width: 100%;
       min-height: 500px;
       background: url('../../assets/Stock_Photos/pwc-about.jpg');
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: 0 -120px;
+
+      @include medium {
+        background-position: 0 -120px;
+      }
 
       .about-banner-content-wrapper {
         display: flex;
@@ -34,79 +81,108 @@
         }
         h1 {
           color: #fff;
+          font-family: $font__main;
         }
       }
     }
     .about-our-company {
       width: 100%;
       min-height: 400px;
-      border: 1px solid black;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 20px 0;
+      h1 {
+        color: $color__grey-dark;
+        font-family: $font__main;
+      }
       p {
         text-align: center;
         max-width: 75%;
+        color: $color__grey-dark;
+        font-family: $font__main;
       }
     }
     .about-our-vision {
       width: 100%;
       min-height: 400px;
-      border: 1px solid black;
       display: flex;
+      flex-direction: column;
+
+      @include medium {
+        flex-direction: row;
+      }
 
       .our-vision-text {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-basis: 50%;
-        background: gray;
+        min-height: 350px;
+        flex-basis: 40%;
+        background: $color__background-grey;
         .our-vision-text-wrapper {
+          color: $color__grey-dark;
           height: 300px;
           width: 300px;
-          border: 1px solid red;
+          max-height: 200px;
+
           .about-vision {
             display: block;
             font-size: 30px;
             font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
           }
         }
       }
       .our-vision-image {
-        border: 1px solid black;
-        flex-basis: 50%;
+        flex-basis: 60%;
+        max-height: 400px;
+        img {
+          max-height: 400px;
+          min-height: 400px;
+          width: 100%;
+        }
       }
     }
     .about-team {
-      border: 1px solid black;
       min-height: 600px;
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 40px 0;
+      h1 {
+        color: $color__grey-dark;
+      }
 
       .about-team-para {
         max-width: 75%;
         p {
           text-align: center;
+          color: $color__grey-dark;
         }
       }
 
       .team-wrapper {
         display: flex;
         flex-wrap: wrap;
-
+        width: 90%;
         justify-content: center;
+        padding: 20px 0;
+
+        @include eight {
+          justify-content: space-between;
+        }
 
         .individual-team-member {
           margin: 10px 10px;
-
           max-width: 350px;
           min-width: 350px;
-          max-height: 150px;
-          min-height: 150px;
+          max-height: 200px; //150
+          min-height: 200px;
           overflow: hidden;
           display: flex;
           transition: all 0.5s ease;
@@ -116,61 +192,78 @@
             min-width: 500px;
           }
 
-          @include medium {
+          @include eight {
             flex-basis: 50%;
-            margin: 10px 10px;
-            max-width: 350px;
-            min-width: 350px;
+            max-width: 335px;
+            min-width: 335px;
+          }
+
+          @include nine-fifty {
+            max-width: 400px;
+            min-width: 400px;
           }
 
           @include desktop {
-            max-width: 450px;
+            max-width: 450px; //450, 20 margin
             min-width: 450px;
-            margin: 10px 20px;
+            margin: 10px 0px;
           }
 
           @include large {
-            max-width: 550px;
-            min-width: 550px;
+            max-width: 530px;
+            min-width: 530px;
+            margin: 10px 0;
           }
 
           .team-headshot {
             flex-basis: 30%;
-            border: 1px solid blue;
-            max-height: 150px;
+            max-height: 200px;
+            min-width: 140px;
+            border: 1px solid black;
           }
           .team-member-info {
             display: flex;
             flex-direction: column;
-
             flex-basis: 70%;
             margin: 3px 2%;
+            max-height: 172px;
+            overflow: hidden;
+
+            @include tablet {
+              max-height: 162px;
+            }
 
             h2 {
               margin: 0;
-              color: blue;
+              color: $color__navy;
+              font-size: 16px;
+              letter-spacing: 2px;
+              @include tablet {
+                font-size: 20px;
+              }
             }
 
             .position-container {
               display: flex;
               justify-content: space-between;
-              color: gray;
-              margin-bottom: 20px;
+              color: $color__text-light-grey;
+              margin-bottom: 50px;
+              letter-spacing: 2px;
               i {
                 margin-top: 5px;
                 font-size: 20px;
-                color: blue;
+                color: $color__navy;
               }
             }
             .about-bio {
-              margin-top: 18px;
+              margin-top: 14px;
             }
             .about-close {
               margin-top: 5px;
               align-self: center;
               i {
                 font-size: 20px;
-                color: blue;
+                color: $color__navy;
               }
             }
           }
@@ -178,12 +271,116 @@
       }
     }
     .about-alliances {
-      border: 1px solid black;
+      background: $color__background-grey;
       min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        padding-top: 15px;
+      }
+
+      .alliance-wrapper {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 85%;
+        padding: 20px 0;
+
+        .alliance-logo {
+          flex-basis: 50%;
+          display: flex;
+          padding: 0 5px;
+          justify-content: center;
+          align-items: center;
+          max-height: 200;
+
+          @include medium {
+            flex-basis: 25%;
+          }
+
+          img {
+            max-height: 190px;
+            margin: 0 auto;
+            align-self: center;
+          }
+        }
+      }
     }
     .facilities-technology {
       border: 1px solid black;
-      min-height: 600px;
+      min-height: 700px;
+
+      .facilities {
+        display: flex;
+        flex-direction: column;
+        background: $color__navy;
+
+        @include medium {
+          max-height: 500px;
+          min-height: 500px;
+          flex-direction: row;
+        }
+
+        .facilities-text {
+          flex-basis: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          @include medium {
+            justify-content: flex-start;
+            padding-left: 8%;
+          }
+
+          .facilities-text-wrapper {
+            height: 80%;
+            width: 58%;
+          }
+        }
+        .facilities-image {
+          flex-basis: 50%;
+          img {
+            max-height: 700px;
+            min-height: 500px;
+            object-fit: cover;
+          }
+        }
+      }
+      .technologies {
+        background: $color__navy;
+        display: flex;
+        flex-direction: column;
+        @include medium {
+          max-height: 500px;
+          min-height: 500px;
+          flex-direction: row;
+        }
+        .technologies-image {
+          flex-basis: 50%;
+          max-height: 500px;
+          img {
+            max-height: 700px;
+            min-height: 500px;
+            object-fit: cover;
+          }
+        }
+        .technologies-text {
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-basis: 50%;
+          .technologies-text-wrapper {
+            height: 80%;
+            width: 58%;
+            margin-bottom: 40px;
+          }
+        }
+      }
     }
   }
 }
