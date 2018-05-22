@@ -1177,11 +1177,17 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 50vw; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
+  @media all and (min-width: 800px) {
+    .sub-footer {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      height: 50vw; } }
   .sub-footer .sub-footer-text {
     color: #FFFFFF;
     font-size: 52px;
@@ -1201,7 +1207,10 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  width: 50%; }
+  width: 100%; }
+  @media all and (min-width: 750px) {
+    .sub-footer-left {
+      width: 50%; } }
   .sub-footer-left a {
     height: 100%; }
 
@@ -1221,12 +1230,16 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-left: 17%; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%; }
   .sub-footer-contact-us-today h1 {
-    width: 480px; }
+    font-size: 42px;
+    width: 280px; }
+    @media all and (min-width: 600px) {
+      .sub-footer-contact-us-today h1 {
+        width: 365px; } }
   .sub-footer-contact-us-today .button-white {
     width: 256px;
     padding: 15px 30px;
@@ -1247,9 +1260,12 @@ object {
     margin-right: 0; }
 
 .sub-footer-contact-us-today-line {
-  width: 350px;
+  width: 250px;
   height: 6px;
   background-color: #FFFFFF; }
+  @media all and (min-width: 750px) {
+    .sub-footer-contact-us-today-line {
+      width: 350px; } }
 
 .sub-footer-right {
   display: -webkit-box;
@@ -1260,9 +1276,14 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  width: 50%; }
+  width: 100%; }
+  @media all and (min-width: 750px) {
+    .sub-footer-right {
+      width: 50%; } }
   .sub-footer-right a {
     height: 50%; }
+  .sub-footer-right div {
+    min-height: 300px; }
 
 .sub-footer-faq {
   height: 100%;
