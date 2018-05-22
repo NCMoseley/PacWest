@@ -37,14 +37,16 @@ get_header(); ?>
 					<?php while ($query->have_posts()) : $query->the_post(); ?>
 						<div class="faq">
 
-							
 								<h3>
 									<?php the_title(); ?>
 								</h3>
-								<span>
-									<?php the_time(' F jS, Y') ?>
-								</span>
-							
+								<div class="open-close-icon">
+									<div class="horizontal">
+									</div>
+									<div class="vertical">
+									</div>	
+								</div>
+
 						</div>
 						<?php endwhile; ?>
 						<?php wp_reset_query() ?>

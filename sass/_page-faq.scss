@@ -12,7 +12,7 @@
     align-items: center; // Todo: add correct photo
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../../assets/Stock_Photos/pwc-news.jpg');
-    color: white;
+    color: $color__text-light;
     background-size: cover;
     &-img-wrapper {
       width: 100px;
@@ -34,6 +34,46 @@
       font-size: 2.5rem;
       font-weight: 300;
       letter-spacing: 2px;
+    }
+  }
+  .main-section-intro {
+    text-align: center;
+    h2 {
+      text-transform: uppercase;
+    }
+    strong {
+      color: $color__green;
+    }
+  }
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    padding: 20px 5%;
+  }
+  .faq {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    background-color: $color__navy;
+    padding: 5px 5% 5px 10px;
+    h3 {
+      color: $color__text-light;
+      font-size: 16px;
+      max-width: 70%;
+    }
+    .horizontal {
+      width: 20px;
+      height: 3px;
+      background-color: $color__green;
+    }
+    .vertical {
+      width: 20px;
+      height: 3px;
+      background-color: $color__green;
+      transform: rotate(90deg);
+      transform-origin: 53% 19%;
     }
   }
 }
