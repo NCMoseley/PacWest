@@ -380,7 +380,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  @include medium {
+  @include eight {
     width: 50%;
   }
   a {
@@ -429,7 +429,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  @include medium {
+  @include eight {
     width: 50%;
   }
   a {
@@ -437,6 +437,9 @@
   }
   div {
     min-height: 300px;
+    @include eight {
+      min-height: auto;
+    }
   }
 }
 

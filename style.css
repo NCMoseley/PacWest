@@ -450,6 +450,8 @@ textarea {
     margin: 0;
     padding: 5px 12px;
     font-weight: 300; }
+    .investor-nav button:hover {
+      background-color: #082246; }
 
 .nav-wrapper {
   display: -webkit-box;
@@ -918,6 +920,8 @@ object {
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: none; }
+    .page-template-front-page .pacwest-difference .button-blue:hover {
+      background-color: #082246; }
 
 .page-template-front-page .our-products {
   display: -webkit-box;
@@ -972,6 +976,8 @@ object {
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: none; }
+    .page-template-front-page .our-products .button-blue:hover {
+      background-color: #082246; }
 
 .investor-portal {
   padding: 3rem 0;
@@ -1023,6 +1029,8 @@ object {
       text-transform: uppercase;
       text-shadow: none;
       background-color: #00c860; }
+      .investor-portal form input[type="submit"]:hover {
+        background-color: #082246; }
     .investor-portal form p {
       margin: 1rem;
       display: -webkit-box;
@@ -1066,6 +1074,8 @@ object {
     text-transform: uppercase;
     text-shadow: none;
     text-align: center; }
+    .press-releases-wrapper .button-blue:hover {
+      background-color: #082246; }
   .press-releases-wrapper a {
     margin: 0 auto; }
 
@@ -1208,7 +1218,7 @@ object {
           flex-direction: column;
   height: 100%;
   width: 100%; }
-  @media all and (min-width: 750px) {
+  @media all and (min-width: 800px) {
     .sub-footer-left {
       width: 50%; } }
   .sub-footer-left a {
@@ -1258,6 +1268,8 @@ object {
     margin-top: 47px;
     margin-left: 0;
     margin-right: 0; }
+    .sub-footer-contact-us-today .button-white:hover {
+      background-color: #d9d9d9; }
 
 .sub-footer-contact-us-today-line {
   width: 250px;
@@ -1277,13 +1289,16 @@ object {
           flex-direction: column;
   height: 100%;
   width: 100%; }
-  @media all and (min-width: 750px) {
+  @media all and (min-width: 800px) {
     .sub-footer-right {
       width: 50%; } }
   .sub-footer-right a {
     height: 50%; }
   .sub-footer-right div {
     min-height: 300px; }
+    @media all and (min-width: 800px) {
+      .sub-footer-right div {
+        min-height: auto; } }
 
 .sub-footer-faq {
   height: 100%;
@@ -2219,6 +2234,8 @@ object {
     text-transform: uppercase;
     text-shadow: none;
     background-color: #00c860; }
+    .page-template-contact form input[type="submit"]:hover {
+      background-color: #082246; }
   .page-template-contact form p {
     margin: 1rem;
     display: -webkit-box;
@@ -2248,7 +2265,6 @@ object {
   display: none; }
 
 .page-template-faq .banner-section {
-  height: 40vw;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -2269,6 +2285,9 @@ object {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-news.jpg");
   color: white;
   background-size: cover; }
+  @media all and (min-width: 800px) {
+    .page-template-faq .banner-section {
+      height: 40vw; } }
   .page-template-faq .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -2283,13 +2302,16 @@ object {
     .page-template-faq .banner-section-img-wrapper img {
       width: 100%; }
   .page-template-faq .banner-section h1 {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     text-transform: uppercase;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 300;
     letter-spacing: 2px; }
+    @media all and (min-width: 600px) {
+      .page-template-faq .banner-section h1 {
+        width: 60%; } }
 
 .site-footer .site-info {
   border: 1px solid black;
