@@ -29,14 +29,19 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<header class="banner-section">
+      <header class="banner-section">
 				<div class="banner-section-img-wrapper">
-					<img class="products-leaf-icon" src="<?php echo $logo ?>" alt="Products Logo">
-				</div>			
+					<img src="<?php echo $logo ?>" alt="Pacwest Logo">
+				</div>
+
 				<h1>
 					<?php echo $banner_text ?>
 				</h1>
-			</header>
+      </header>
+
+
+
+
 
 			<section class="product-a-intro-section">
 				<div class="product-a-intro-section-paragraph">
