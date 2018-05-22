@@ -36,7 +36,7 @@ get_header(); ?>
 
 				<div class="faq-container">
 
-					<?php $args = array( 'post_type' => 'faq', 'posts_per_page' => 1 ); $query = new WP_Query($args);?>
+					<?php $args = array( 'post_type' => 'faq', 'posts_per_page' => -1 ); $query = new WP_Query($args);?>
 					<?php while ($query->have_posts()) : $query->the_post(); ?>
 						<div class="faq">
 

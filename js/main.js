@@ -8,13 +8,13 @@ jQuery( document ).ready(function($) {
       faqExpanded = !faqExpanded;
 
       $(this).parent().next().slideToggle('swing');
-      $('.open-close-icon .vertical').toggleClass('visible');
-      $('.open-close-icon .vertical').toggleClass('invisible');
+      $(this).children().last().toggleClass('visible');
+      $(this).children().last().toggleClass('invisible');
       
       if (faqExpanded) {
-        $('.faq').css('backgroundColor', '#fff');
-        $('.faq-answer').css('color', '#333');
-        $('.faq-header h3').css('color', '#333');
+        $(this).parent().parent().css('backgroundColor', '#fff');
+        $(this).parent().next().css('color', '#333');
+        $(this).prev().css('color', '#333');
 
         // $('.faq').animate({'backgroundColor': '#fff'}, 200);
         // $('.faq-answer').animate({'color' : '#333'}, 200);
