@@ -1,0 +1,119 @@
+.page-template-investor-portal {
+  .hentry {
+    display: none;
+  }
+  .entry-title {
+    display: none;
+  }
+  .investors-portal-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    background: url('../../assets/Stock_Photos/pwc-investors.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .portal-banner-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 100px;
+        width: 100px;
+      }
+      h1 {
+        color: #fff;
+        font-family: $font__main;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .investors-corporate-presentation {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .green {
+      color: $color__green;
+    }
+
+    p {
+      max-width: 70%;
+      text-align: center;
+    }
+    .corporate-download {
+      color: #fff;
+      background: $color__green;
+      box-shadow: none;
+      text-shadow: none;
+      border: none;
+      width: 213px;
+      height: 51px;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+  .headed-next {
+    padding: 60px 0;
+    min-height: 400px;
+    background: $color__background-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+    .green {
+      color: $color__green;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: space-around;
+
+      margin: 20px 0;
+      margin-bottom: 30px;
+      .vid {
+        width: 350px;
+        margin: 0 20px;
+        height: 175px;
+        background: gray;
+        border: 1px solid black;
+      }
+    }
+    .portal-view-more {
+      color: #fff;
+      background: $color__navy;
+      box-shadow: none;
+      text-shadow: none;
+      width: 210px;
+      height: 50px;
+      font-size: 18px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+  .not-logged-in {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

@@ -22,7 +22,7 @@ $join_url = $setting->get_value('join-us-page-url');
              <div class="swpm-before-login-submit-section"><?php echo apply_filters('swpm_before_login_form_submit_button', ''); ?></div>
 
 
-            <?php if ( is_page('investors')) { ?>
+            <?php if ( is_page('investors') || (is_page('investor-portal'))) { ?>
             <div class="swpm-login-submit">
                 <input type="submit" class="swpm-login-form-submit" name="swpm-login" value="<?php echo SwpmUtils::_('Submit') ?>"/>
             </div>

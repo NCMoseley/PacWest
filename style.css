@@ -764,6 +764,58 @@ object {
 .pacwest-about-header {
   color: #00c860; }
 
+.membership-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .membership-wrapper .email-password {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .membership-wrapper .email-password input {
+      margin: 0 10px;
+      min-height: 40px;
+      border-radius: 0px;
+      border: 1px solid #d7d7d7; }
+    .membership-wrapper .email-password input::-webkit-input-placeholder {
+      color: #d7d7d7;
+      padding-left: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .membership-wrapper .email-password input:-ms-input-placeholder {
+      color: #d7d7d7;
+      padding-left: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .membership-wrapper .email-password input::-ms-input-placeholder {
+      color: #d7d7d7;
+      padding-left: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .membership-wrapper .email-password input::placeholder {
+      color: #d7d7d7;
+      padding-left: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .membership-wrapper .email-password .swpm-login-form-submit {
+      color: #fff;
+      background: #00c860;
+      text-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      min-width: 180px;
+      border-radius: 3px;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+
 .page-template-front-page .front-h2 {
   font-size: 2rem;
   letter-spacing: 3px;
@@ -2476,57 +2528,6 @@ object {
       color: #00c860;
       text-transform: uppercase;
       font-weight: 700; }
-  .page-template-investors .investor-login .investor-login-form .membership-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password input {
-        margin: 0 10px;
-        min-height: 40px;
-        border-radius: 0px;
-        border: 1px solid #d7d7d7; }
-      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password input::-webkit-input-placeholder {
-        color: #d7d7d7;
-        padding-left: 10px;
-        text-transform: uppercase;
-        letter-spacing: 1px; }
-      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password input:-ms-input-placeholder {
-        color: #d7d7d7;
-        padding-left: 10px;
-        text-transform: uppercase;
-        letter-spacing: 1px; }
-      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password input::-ms-input-placeholder {
-        color: #d7d7d7;
-        padding-left: 10px;
-        text-transform: uppercase;
-        letter-spacing: 1px; }
-      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password input::placeholder {
-        color: #d7d7d7;
-        padding-left: 10px;
-        text-transform: uppercase;
-        letter-spacing: 1px; }
-      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password .swpm-login-form-submit {
-        color: #fff;
-        background: #00c860;
-        text-shadow: none;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        min-width: 180px;
-        border-radius: 3px;
-        font-size: 16px;
-        letter-spacing: 2px;
-        text-transform: uppercase; }
 
 .page-template-news .news-h2 {
   font-size: 2rem;
@@ -2917,6 +2918,151 @@ object {
   .page-template-faq .faq .open {
     color: #333333 !important;
     background-color: #fff !important; }
+
+.page-template-investor-portal .hentry {
+  display: none; }
+
+.page-template-investor-portal .entry-title {
+  display: none; }
+
+.page-template-investor-portal .investors-portal-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 500px;
+  background: url("../../assets/Stock_Photos/pwc-investors.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper img {
+      height: 100px;
+      width: 100px; }
+    .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper h1 {
+      color: #fff;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      text-transform: uppercase; }
+
+.page-template-investor-portal .investors-corporate-presentation {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-template-investor-portal .investors-corporate-presentation h1 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .page-template-investor-portal .investors-corporate-presentation .green {
+    color: #00c860; }
+  .page-template-investor-portal .investors-corporate-presentation p {
+    max-width: 70%;
+    text-align: center; }
+  .page-template-investor-portal .investors-corporate-presentation .corporate-download {
+    color: #fff;
+    background: #00c860;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    border: none;
+    width: 213px;
+    height: 51px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.page-template-investor-portal .headed-next {
+  padding: 60px 0;
+  min-height: 400px;
+  background: #f2f2f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-template-investor-portal .headed-next h1 {
+    margin-top: 0;
+    text-transform: uppercase; }
+  .page-template-investor-portal .headed-next .green {
+    color: #00c860; }
+  .page-template-investor-portal .headed-next .video-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 20px 0;
+    margin-bottom: 30px; }
+    .page-template-investor-portal .headed-next .video-container .vid {
+      width: 350px;
+      margin: 0 20px;
+      height: 175px;
+      background: gray;
+      border: 1px solid black; }
+  .page-template-investor-portal .headed-next .portal-view-more {
+    color: #fff;
+    background: #0a2d5d;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    width: 210px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.page-template-investor-portal .not-logged-in {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .site-footer .site-info {
   border: 1px solid black;
