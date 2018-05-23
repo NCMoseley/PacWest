@@ -11,8 +11,9 @@ get_header(); ?>
 	<?php $cg_header = get_field('cg_header');?>
 	<?php $cg_page_description = get_field('cg_page_description');?>
 
-	<?php $cg_team_header = get_field('cg_team_header');?>
-	<?php $cg_team = get_field('cg_team');?>
+	<?php $cg_board_of_directors_description = get_field('cg_board_of_directors_description');?>
+	<?php $cg_management_description = get_field('cg_management_description');?>
+	<?php $cg_board_of_advisors_description = get_field('cg_board_of_advisors_description');?>
 
 
 
@@ -46,14 +47,22 @@ get_header(); ?>
 				<!-- close cg banner -->
 
 				<div class="cg-page-description">
-					<p>
-						<?php echo $cg_page_description ?> </p>
+					<p><?php echo $cg_page_description ?> </p>
 				</div>
 
+				
 
-				<section class="cg-team" id="management-team">
+				<div class="cg-section-heading">
+					<div class="left-box">
+						<p>Board of</p>
+						<h1>Directors</h1>
+					</div>
+					<div class="right-box">
+						<p><?php echo $cg_board_of_directors_description ?></p>
+					</div>
+				</div>
 
-
+				<section class="cg-team cg-bod" id="management-team">
 					<h1 class="uppercase">
 						<?php echo $cg_team_header ?> </h1>
 					<div class="cg-team-para">
@@ -100,8 +109,20 @@ get_header(); ?>
 
 
 					</div>
+					</section>
 					<!-- bod wrapper -->
 
+					<div class="cg-section-heading">
+					<div class="left-box">
+						<p>PacWest</p>
+						<h1>Management</h1>
+					</div>
+					<div class="right-box">
+						<p><?php echo $cg_management_description ?></p>
+					</div>
+				</div>
+
+				<section class="cg-team cg-mngmnt" id="management-team">
 					<div class="managment-wrapper team-wrapper">
 						<?php $args = array('post_type'		=> 'team_member', 'meta_key'		=> 'team_member_category', 'meta_value'	=> 'Management'); $query = new WP_Query($args);?>
 
@@ -134,6 +155,7 @@ get_header(); ?>
 							<!-- close team member info -->
 
 						</div>
+						
 						<!-- close individual team member -->
 
 
@@ -142,8 +164,20 @@ get_header(); ?>
 
 
 					</div>
+					</section>
 					<!-- management wrapper -->
 
+					<div class="cg-section-heading">
+					<div class="left-box">
+						<p>Board of</p>
+						<h1>Advisors</h1>
+					</div>
+					<div class="right-box">
+						<p><?php echo $cg_board_of_advisors_description ?></p>
+					</div>
+				</div>
+
+				<section class="cg-team cg-boa" id="management-team">
 					<div class="boa-wrapper team-wrapper">
 						<?php $args = array('post_type'		=> 'team_member', 'meta_key'		=> 'team_member_category', 'meta_value'	=> 'Board of Advisors'); $query = new WP_Query($args);?>
 
@@ -184,10 +218,9 @@ get_header(); ?>
 
 
 					</div>
-					<!-- team wrapper -->
-
-
-				</section>
+					</section>
+					<!-- boa wrapper -->
+				
 				<!-- cg team -->
 
 				<?php while (have_posts()) : the_post(); ?>
