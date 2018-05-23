@@ -14,10 +14,13 @@ $transition-duration: 0.5s;
 
 	.toggle-container .button-toggle {
 		position: absolute;
+		z-index: 10;
+		left: 70px;
 		display: inline-block;
 		width: 60px;
 		height: 20px;
 		background-color: transparent;
+		// background-color: red;
 		border: none;
 		cursor: pointer;
 		transition: $transition-duration + 0.1;
@@ -25,15 +28,17 @@ $transition-duration: 0.5s;
 
 	.menu-close {
 		width: 100%;
-		position: relative;
-		left: 2rem;
+		height: 30px;
+		// position: relative;
+		// left: 2rem;
+		cursor: pointer;
 	}
 
 	.left-x, .right-x {
 		position: absolute;
 		content: '';
-		top: 50%;
-		left: 0;
+		top: 30px;
+		right: 30px;
 		width: 20px;
 		height: 2px;
 		background-color: $color__navy;
@@ -50,6 +55,10 @@ $transition-duration: 0.5s;
 		transform: translateY(-50%) rotate(-45deg);
 	}
 
+	.menu-menu-1-container {
+		position: static;
+		justify-content: flex-end;
+	}
 		
 	.menu {
 		flex-direction: column;
@@ -118,15 +127,17 @@ $transition-duration: 0.5s;
 		}
 
 		& ~ .menu-menu-1-container {
-			position: absolute;
-			top: 30px;
+			position: static;
+			// top: 30px;
 			background: white;
 			width: 100%;
 			display: flex;
 			justify-content: center;
+			transition: width 0.5s;
 		}
 
 		& ~ .menu-menu-1-container .menu {
+			padding: 5rem 0;
 			li {
 				letter-spacing: 0;
 				height: 40px;
@@ -139,23 +150,6 @@ $transition-duration: 0.5s;
 				// Hiding the lines
 				&:before {
 					opacity: 0;
-				}
-			}
-		}
-	}
-
-	$items: 4;
-	$transition-delay: 0.05s;
-
-	.menu > li {
-
-		// Setting delays for the nav items in close transition
-		@for $i from 1 through $items {
-			&:nth-child(#{$i}) {
-				$delay: ($i - 1) * $transition-delay;
-				transition-delay: $delay;
-				&:before {
-					transition-delay: $delay;
 				}
 			}
 		}
