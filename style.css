@@ -467,9 +467,6 @@ textarea {
             align-items: flex-start !important; }
   .menu > .menu-item {
     position: relative;
-    display: inline-block;
-    float: left;
-    clear: both;
     color: transparent;
     font-size: 14px;
     letter-spacing: -1.2px;
@@ -530,7 +527,25 @@ textarea {
       -webkit-transition: 0.5s, opacity 0.1s;
       transition: 0.5s, opacity 0.1s; }
       #toggle:checked ~ .menu-menu-1-container .menu li:before {
-        opacity: 0; } }
+        opacity: 0;
+        width: 0; } }
+
+.login-prompt {
+  display: none; }
+  @media all and (max-width: 680px) {
+    .login-prompt {
+      display: block;
+      margin-right: 2rem; } }
+  .login-prompt button {
+    color: #fff;
+    background: #00c860;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 3px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
 
 .investor-nav {
   background: #0a2d5d;
@@ -544,20 +559,48 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (max-width: 680px) {
+    .investor-nav .investor-header-wrapper {
+      display: none; } }
   .investor-nav .membership-wrapper {
     margin-right: 5%; }
     .investor-nav .membership-wrapper span {
       color: #fff;
       padding-top: 15px; }
+    @media all and (max-width: 680px) {
+      .investor-nav .membership-wrapper .email-password {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
     .investor-nav .membership-wrapper .email-password .swpm-password-input {
       margin: 0 !important; }
+      @media all and (max-width: 680px) {
+        .investor-nav .membership-wrapper .email-password .swpm-password-input {
+          margin: 3px 0 !important; } }
     .investor-nav .membership-wrapper .email-password .swpm-username-input {
       margin: 0 !important; }
+      @media all and (max-width: 680px) {
+        .investor-nav .membership-wrapper .email-password .swpm-username-input {
+          margin: 3px 0 !important; } }
     .investor-nav .membership-wrapper .email-password .swpm-login-submit {
       margin: 0 !important;
       font-size: 10px; }
       .investor-nav .membership-wrapper .email-password .swpm-login-submit .swpm-login-form-submit {
         font-size: 10px; }
+        @media all and (max-width: 680px) {
+          .investor-nav .membership-wrapper .email-password .swpm-login-submit .swpm-login-form-submit {
+            margin: 3px 0 !important;
+            min-width: 215px; } }
     .investor-nav .membership-wrapper .email-password input {
       min-height: 25px;
       max-height: 25px; }
@@ -1892,7 +1935,7 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 85%;
+    width: 90%;
     padding: 20px 0; }
     .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
       -ms-flex-preferred-size: 50%;
@@ -1900,7 +1943,7 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding: 0 5px;
+      padding: 5px 10px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -2395,6 +2438,11 @@ object {
     color: #0a2d5d;
     text-transform: uppercase;
     text-align: center; }
+    @media all and (max-width: 750px) {
+      .page-template-products .product-a-intro-section-paragraph,
+      .page-template-products .product-b-intro-section-paragraph,
+      .page-template-products .product-c-intro-section-paragraph {
+        width: 70%; } }
 
 .page-template-products .product-b-intro-section-paragraph,
 .page-template-products .product-c-intro-section-paragraph {
@@ -2409,6 +2457,12 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (max-width: 750px) {
+    .page-template-products .product-main-section .product {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .page-template-products .product-main-section .product-info {
     width: 50%;
     padding: 6rem 0;
@@ -2427,6 +2481,10 @@ object {
             align-items: flex-start;
     background-color: #00c860;
     color: white; }
+    @media all and (max-width: 750px) {
+      .page-template-products .product-main-section .product-info {
+        width: 100%;
+        padding: 3rem 0; } }
   .page-template-products .product-main-section .product-info-header {
     width: 40%;
     margin: 0 auto; }
@@ -2455,8 +2513,14 @@ object {
         -ms-flex-align: center;
             align-items: center;
     overflow: hidden; }
+    @media all and (max-width: 750px) {
+      .page-template-products .product-main-section .product-img-wrapper {
+        width: 100%; } }
     .page-template-products .product-main-section .product-img-wrapper img {
       width: 80%; }
+      @media all and (max-width: 750px) {
+        .page-template-products .product-main-section .product-img-wrapper img {
+          width: 100%; } }
 
 .page-template-investors .banner-section {
   width: 100%;
@@ -2542,7 +2606,11 @@ object {
 .page-template-news .news-h2 {
   font-size: 2rem;
   letter-spacing: 3px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
+  @media all and (max-width: 600px) {
+    .page-template-news .news-h2 {
+      font-size: 1.5rem; } }
 
 .page-template-news .banner-section {
   width: 100%;
@@ -2653,12 +2721,18 @@ object {
     border-radius: 3px;
     text-transform: uppercase;
     cursor: pointer; }
+    @media all and (max-width: 930px) {
+      .page-template-news .news-item-pdf {
+        right: 0; } }
+    @media all and (max-width: 480px) {
+      .page-template-news .news-item-pdf {
+        left: 2rem; } }
     .page-template-news .news-item-pdf a {
       text-decoration: none; }
       .page-template-news .news-item-pdf a:visited, .page-template-news .news-item-pdf a:hover {
         color: white; }
   .page-template-news .news-item-body {
-    height: 100px;
+    height: 30px;
     overflow: hidden; }
   .page-template-news .news-item-expand-link {
     width: 100%;

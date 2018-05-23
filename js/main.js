@@ -53,10 +53,23 @@ jQuery( document ).ready(function($) {
     }
   })
 
-
-
-
   $("#toggle").change(function() {
       $('.menu-close').children().toggleClass('expanded');
   });
+
+
+
+
+
+    // INVESTOR LOGIN SHOW / HIDE
+
+    $('.login-prompt').on('click', function(e){
+      e.preventDefault();
+      $(this).parent().css('justifyContent', 'center');
+      $(this).css('display', 'none');
+      $('.investor-header-wrapper').css("display", "flex");
+    })
+
+
+
 });
