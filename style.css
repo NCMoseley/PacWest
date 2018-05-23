@@ -2180,12 +2180,15 @@ object {
       text-transform: uppercase; }
   .page-template-corporate-governance .cg-wrapper .cg-section-heading .right-box {
     width: 100%;
+    background-color: #f2f2f1;
     padding: 20px 5%;
     text-align: center;
     font-size: 20px; }
     @media all and (min-width: 600px) {
       .page-template-corporate-governance .cg-wrapper .cg-section-heading .right-box {
         width: 50%; } }
+    .page-template-corporate-governance .cg-wrapper .cg-section-heading .right-box p {
+      color: #333333; }
 
 .page-template-corporate-governance .cg-wrapper .cg-team {
   min-height: 600px;
