@@ -2567,10 +2567,13 @@ object {
 .page-template-news .news-h2 {
   font-size: 2rem;
   letter-spacing: 3px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
+  @media all and (max-width: 600px) {
+    .page-template-news .news-h2 {
+      font-size: 1.5rem; } }
 
 .page-template-news .banner-section {
-  height: 40vw;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -2589,8 +2592,11 @@ object {
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-news.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-news.jpg");
-  color: white;
+  color: #fff;
   background-size: cover; }
+  @media all and (min-width: 800px) {
+    .page-template-news .banner-section {
+      height: 40vw; } }
   .page-template-news .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -2676,12 +2682,18 @@ object {
     border-radius: 3px;
     text-transform: uppercase;
     cursor: pointer; }
+    @media all and (max-width: 930px) {
+      .page-template-news .news-item-pdf {
+        right: 0; } }
+    @media all and (max-width: 480px) {
+      .page-template-news .news-item-pdf {
+        left: 2rem; } }
     .page-template-news .news-item-pdf a {
       text-decoration: none; }
       .page-template-news .news-item-pdf a:visited, .page-template-news .news-item-pdf a:hover {
         color: white; }
   .page-template-news .news-item-body {
-    height: 100px;
+    height: 30px;
     overflow: hidden; }
   .page-template-news .news-item-expand-link {
     width: 100%;
