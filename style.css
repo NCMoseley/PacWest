@@ -2423,6 +2423,9 @@ object {
     color: #0a2d5d;
     text-transform: uppercase;
     text-align: center; }
+    @media all and (max-width: 750px) {
+      .page-template-products .product-a-intro-section-paragraph, .page-template-products .product-b-intro-section-paragraph, .page-template-products .product-c-intro-section-paragraph {
+        width: 70%; } }
 
 .page-template-products .product-b-intro-section-paragraph, .page-template-products .product-c-intro-section-paragraph {
   width: 70%;
@@ -2436,6 +2439,12 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (max-width: 750px) {
+    .page-template-products .product-main-section .product {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .page-template-products .product-main-section .product-info {
     width: 50%;
     padding: 6rem 0;
@@ -2454,6 +2463,10 @@ object {
             align-items: flex-start;
     background-color: #00c860;
     color: white; }
+    @media all and (max-width: 750px) {
+      .page-template-products .product-main-section .product-info {
+        width: 100%;
+        padding: 3rem 0; } }
   .page-template-products .product-main-section .product-info-header {
     width: 40%;
     margin: 0 auto; }
@@ -2482,8 +2495,14 @@ object {
         -ms-flex-align: center;
             align-items: center;
     overflow: hidden; }
+    @media all and (max-width: 750px) {
+      .page-template-products .product-main-section .product-img-wrapper {
+        width: 100%; } }
     .page-template-products .product-main-section .product-img-wrapper img {
       width: 80%; }
+      @media all and (max-width: 750px) {
+        .page-template-products .product-main-section .product-img-wrapper img {
+          width: 100%; } }
 
 .page-template-investors .banner-section {
   height: 40vw;
