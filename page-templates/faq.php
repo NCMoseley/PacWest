@@ -11,6 +11,9 @@ get_header(); ?>
 
 	<?php $main_text = get_field('faq_page_main_text'); ?>
 
+
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -37,14 +40,24 @@ get_header(); ?>
 					<?php while ($query->have_posts()) : $query->the_post(); ?>
 						<div class="faq">
 
-							
+							<div class="faq-header">
 								<h3>
 									<?php the_title(); ?>
 								</h3>
-								<span>
-									<?php the_time(' F jS, Y') ?>
-								</span>
-							
+								<div class="open-close-icon">
+									<div class="horizontal">
+									</div>
+									<div class="vertical visible">
+									</div>	
+								</div>
+							</div>
+
+							<div class="faq-answer">
+								<div class="faq-answer-body">
+									<p><?php echo the_field('faq_answer') ?></p>
+								</div>
+							</div>
+
 						</div>
 						<?php endwhile; ?>
 						<?php wp_reset_query() ?>
