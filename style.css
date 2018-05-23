@@ -1562,6 +1562,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-products h1.products-text {
+    color: #0a2d5d; }
 
 .page-template-about h1 {
   letter-spacing: 2px; }
