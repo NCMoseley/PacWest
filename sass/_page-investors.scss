@@ -21,7 +21,6 @@
         width: 100%;
       }
     }
-
     h1 {
       width: 60%;
       margin: 0 auto;
@@ -30,13 +29,11 @@
       font-size: 2.5rem;
       font-weight: 300;
       letter-spacing: 2px;
-
       strong {
         font-weight: 700;
       }
     }
   }
-
   .investor-login {
     padding: 3rem 0;
     display: flex;
@@ -44,38 +41,57 @@
     justify-content: center;
     align-items: center;
     background-color: #eee;
-
     h2 {
       font-size: 2rem;
       letter-spacing: 3px;
       text-transform: uppercase;
     }
-
     &-desc {
       padding: 1rem;
       text-align: center;
       font-size: 1.5rem;
       letter-spacing: 3px;
-
       p {
         margin: 0;
         font-weight: 300;
       }
-
       strong {
         color: $color__green;
         text-transform: uppercase;
         font-weight: 700;
       }
     }
-
     .investor-login-form {
-      border: 1px solid red;
-      .simple-form-wrapper {
-        border: 1px solid blue;
-        display: flex !important;
-        flex-direction: row;
-        width: 500px;
+      .membership-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .email-password {
+          display: flex;
+          input {
+            margin: 0 10px;
+            min-height: 40px;
+            border-radius: 0px;
+            border: 1px solid $color__border-input;
+          }
+          input::placeholder {
+            color: $color__border-input;
+            padding-left: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+          .swpm-login-form-submit {
+            color: #fff;
+            background: $color__green;
+            text-shadow: none;
+            box-shadow: none;
+            min-width: 180px;
+            border-radius: 3px;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+        }
       }
     }
   }

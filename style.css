@@ -764,23 +764,6 @@ object {
 .pacwest-about-header {
   color: #00c860; }
 
-.email-password {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.membership-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 .page-template-front-page .front-h2 {
   font-size: 2rem;
   letter-spacing: 3px;
@@ -2493,18 +2476,57 @@ object {
       color: #00c860;
       text-transform: uppercase;
       font-weight: 700; }
-  .page-template-investors .investor-login .investor-login-form {
-    border: 1px solid red; }
-    .page-template-investors .investor-login .investor-login-form .simple-form-wrapper {
-      border: 1px solid blue;
-      display: -webkit-box !important;
-      display: -ms-flexbox !important;
-      display: flex !important;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      width: 500px; }
+  .page-template-investors .investor-login .investor-login-form .membership-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password input {
+        margin: 0 10px;
+        min-height: 40px;
+        border-radius: 0px;
+        border: 1px solid #d7d7d7; }
+      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password input::-webkit-input-placeholder {
+        color: #d7d7d7;
+        padding-left: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password input:-ms-input-placeholder {
+        color: #d7d7d7;
+        padding-left: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password input::-ms-input-placeholder {
+        color: #d7d7d7;
+        padding-left: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password input::placeholder {
+        color: #d7d7d7;
+        padding-left: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+      .page-template-investors .investor-login .investor-login-form .membership-wrapper .email-password .swpm-login-form-submit {
+        color: #fff;
+        background: #00c860;
+        text-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        min-width: 180px;
+        border-radius: 3px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
 
 .page-template-news .news-h2 {
   font-size: 2rem;
