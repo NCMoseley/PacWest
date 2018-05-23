@@ -8,7 +8,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-investors.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('../../assets/Stock_Photos/pwc-investors.jpg');
     color: white;
     background-size: cover;
     &-img-wrapper {
@@ -68,8 +69,14 @@
       }
     }
 
+    .investor-login-form {
+      border: 1px solid red;
+      .simple-form-wrapper {
+        border: 1px solid blue;
+        display: flex !important;
+        flex-direction: row;
+        width: 500px;
+      }
+    }
   }
-
-
-
 }

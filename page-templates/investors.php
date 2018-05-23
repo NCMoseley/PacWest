@@ -30,7 +30,7 @@ get_header(); ?>
 			<h2><?php echo $login_prompt ?></h2>
 
 			<div class="investor-login-form">
-				Form goes here
+				<?php echo get_field('investor_login') ?>
 			</div>
 
 			<div class="investor-login-desc">
