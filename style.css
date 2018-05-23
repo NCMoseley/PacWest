@@ -1545,6 +1545,9 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-products h1.products-text {
+    color: #0a2d5d;
+    -webkit-text-stroke: 1px #fff; }
 
 .page-template-about h1 {
   letter-spacing: 2px; }
@@ -2021,7 +2024,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media all and (min-width: 1000px) {
+  @media all and (min-width: 800px) {
     .page-template-corporate-governance .cg-wrapper .cg-menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2044,10 +2047,10 @@ object {
         -ms-flex-align: center;
             align-items: center;
     width: 100%; }
-    @media all and (min-width: 1000px) {
+    @media all and (min-width: 800px) {
       .page-template-corporate-governance .cg-wrapper .cg-menu ul {
         margin-top: 0;
-        width: 70%;
+        width: 75%;
         min-height: 50px;
         margin-right: 1%; } }
     @media all and (min-width: 1200px) {
