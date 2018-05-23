@@ -63,11 +63,6 @@ get_header(); ?>
 				</div>
 
 				<section class="cg-team cg-bod" >
-					<h1 class="uppercase">
-						<?php echo $cg_team_header ?> </h1>
-					<div class="cg-team-para">
-						<?php echo $cg_team ?>
-					</div>
 
 					<div class="bod-wrapper team-wrapper">
 						<?php $args = array('post_type'		=> 'team_member', 'meta_key'		=> 'team_member_category', 'meta_value'	=> 'Board of Directors'); $query = new WP_Query($args);?>
