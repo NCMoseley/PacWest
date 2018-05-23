@@ -3,7 +3,10 @@
     border: 1px solid black;
     min-height: 370px;
     display: flex;
-
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
     .footer-left {
       flex-basis: 50%;
       display: flex;
@@ -11,7 +14,7 @@
       justify-content: center;
       align-items: center;
       background: black;
-
+      padding: 3%;
       .footer-logo {
         height: 120px;
         width: 200px;
@@ -32,7 +35,6 @@
       flex-direction: column;
       justify-content: center;
       background: #333536;
-
       .footer-right-wrapper {
         display: flex;
         flex-direction: column;
@@ -57,13 +59,12 @@
       .footer-sign-up {
         display: flex;
         margin-bottom: 10px;
-
         .wpcf7-form {
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-wrap: wrap;
           width: 100%;
-
           .wpcf7-email {
             max-width: 250px;
             margin-right: 10px;
@@ -71,7 +72,6 @@
           }
           .wpcf7-submit {
             height: 25px;
-
             min-width: 175px;
             color: #fff;
             background: green;
