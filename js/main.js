@@ -15,6 +15,8 @@ jQuery( document ).ready(function($) {
         $(this).parent().parent().css('backgroundColor', '#fff');
         $(this).parent().next().css('color', '#333');
         $(this).prev().css('color', '#333');
+        $(this).parent().parent().prev().css('height', '5rem');
+        $(this).parent().parent().next().css('height', '5rem');
 
         // $('.faq').animate({'backgroundColor': '#fff'}, 200);
         // $('.faq-answer').animate({'color' : '#333'}, 200);
@@ -23,6 +25,9 @@ jQuery( document ).ready(function($) {
         $('.faq').css('backgroundColor', '#0a2d5d');
         $('.faq-answer').css('color', '#fff');
         $('.faq-header h3').css('color', '#fff');
+        $(this).parent().parent().prev().css('height', 'auto');
+        $(this).parent().parent().next().css('height', 'auto');
+
 
         // $('.faq').animate({'backgroundColor': '#0a2d5d'}, 200);
         // $('.faq-answer').animate({'color': '#fff'}, 200);
