@@ -2027,7 +2027,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media all and (min-width: 1000px) {
+  @media all and (min-width: 800px) {
     .page-template-corporate-governance .cg-wrapper .cg-menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2050,10 +2050,10 @@ object {
         -ms-flex-align: center;
             align-items: center;
     width: 100%; }
-    @media all and (min-width: 1000px) {
+    @media all and (min-width: 800px) {
       .page-template-corporate-governance .cg-wrapper .cg-menu ul {
         margin-top: 0;
-        width: 70%;
+        width: 75%;
         min-height: 50px;
         margin-right: 1%; } }
     @media all and (min-width: 1200px) {
