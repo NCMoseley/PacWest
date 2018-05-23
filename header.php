@@ -24,13 +24,12 @@
 
 
 				<div class="investor-nav">
-			
-				
-				<div class="investor-header-wrapper">
-					<?php echo get_field('header_investor_login')?>
-				</div>
-				
-					
+					<div class="login-prompt">
+						<button>Investor Login</button>
+					</div>
+					<div class="investor-header-wrapper">
+						<?php echo get_field('header_investor_login')?>
+					</div>					
 				</div>
 			
 				<div class="nav-wrapper">

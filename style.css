@@ -527,7 +527,25 @@ textarea {
       -webkit-transition: 0.5s, opacity 0.1s;
       transition: 0.5s, opacity 0.1s; }
       #toggle:checked ~ .menu-menu-1-container .menu li:before {
-        opacity: 0; } }
+        opacity: 0;
+        width: 0; } }
+
+.login-prompt {
+  display: none; }
+  @media all and (max-width: 680px) {
+    .login-prompt {
+      display: block;
+      margin-right: 2rem; } }
+  .login-prompt button {
+    color: #fff;
+    background: #00c860;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 3px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
 
 .investor-nav {
   background: #0a2d5d;
@@ -541,20 +559,48 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (max-width: 680px) {
+    .investor-nav .investor-header-wrapper {
+      display: none; } }
   .investor-nav .membership-wrapper {
     margin-right: 5%; }
     .investor-nav .membership-wrapper span {
       color: #fff;
       padding-top: 15px; }
+    @media all and (max-width: 680px) {
+      .investor-nav .membership-wrapper .email-password {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
     .investor-nav .membership-wrapper .email-password .swpm-password-input {
       margin: 0 !important; }
+      @media all and (max-width: 680px) {
+        .investor-nav .membership-wrapper .email-password .swpm-password-input {
+          margin: 3px 0 !important; } }
     .investor-nav .membership-wrapper .email-password .swpm-username-input {
       margin: 0 !important; }
+      @media all and (max-width: 680px) {
+        .investor-nav .membership-wrapper .email-password .swpm-username-input {
+          margin: 3px 0 !important; } }
     .investor-nav .membership-wrapper .email-password .swpm-login-submit {
       margin: 0 !important;
       font-size: 10px; }
       .investor-nav .membership-wrapper .email-password .swpm-login-submit .swpm-login-form-submit {
         font-size: 10px; }
+        @media all and (max-width: 680px) {
+          .investor-nav .membership-wrapper .email-password .swpm-login-submit .swpm-login-form-submit {
+            margin: 3px 0 !important;
+            min-width: 215px; } }
     .investor-nav .membership-wrapper .email-password input {
       min-height: 25px;
       max-height: 25px; }
