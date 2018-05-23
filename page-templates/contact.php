@@ -30,14 +30,13 @@ get_header(); ?>
 				<h2 class="contact-h2"><?php echo $main_text ?></h2>
 			</section>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-			<?php endwhile; // End of the loop. ?>
+			<?php while (have_posts()) : the_post(); ?>
+				<?php get_template_part('template-parts/content', 'page'); ?>
+			<?php endwhile; // End of the loop.?>
 
 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+<?php get_template_part('template-parts/sub-footer'); ?>
 <?php get_footer(); ?>

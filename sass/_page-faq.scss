@@ -1,0 +1,126 @@
+.page-template-faq {
+  .banner-section {
+    @include eight {
+      height: 40vw;
+    }
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; // Todo: add correct photo
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../../assets/Stock_Photos/pwc-boxes-faq.jpg');
+    color: $color__text-light;
+    background-size: cover;
+    &-img-wrapper {
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    h1 {
+      width: 100%;
+      @include tablet {
+        width: 60%;
+      }
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+  }
+  .main-section {
+    padding: 4rem 0;
+    background-color: #eee;
+  }
+  .main-section-intro {
+    margin: 0;
+    text-align: center;
+    h2 {
+      text-transform: uppercase;
+    }
+    strong {
+      color: $color__green;
+    }
+  }
+  .faq-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media #{all and (max-width: $medium)} {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+  .faq {
+    width: 40%;
+    margin: 1rem;
+    padding: 5px 5% 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color__navy;
+    @media #{all and (max-width: $medium)} {
+      width: 70%;
+    }
+
+    
+    h3 {
+      color: $color__text-light;
+      font-size: 16px;
+      max-width: 70%;
+    }
+
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    &-answer {
+      color: white;
+    }
+
+
+    .horizontal {
+      width: 20px;
+      height: 3px;
+      background-color: $color__green;
+    }
+    .vertical {
+      width: 20px;
+      height: 3px;
+      background-color: $color__green;
+      transform: rotate(90deg);
+      transform-origin: 53% 19%;
+    }
+
+    .invisible {
+      opacity: 0;
+      transition: opacity .5s;
+    }
+    .visible {
+      opacity: 1;
+      transition: opacity .5s;
+    }
+    .open {
+      color: $color__grey-dark !important;
+      background-color: #fff !important;
+    }
+  }
+}

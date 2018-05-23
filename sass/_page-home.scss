@@ -4,8 +4,6 @@
     letter-spacing: 3px;
     text-transform: uppercase;
   }
-
-
   .banner-section {
     height: 40vw;
     width: 100%;
@@ -27,7 +25,6 @@
         width: 100%;
       }
     }
-
     h1 {
       width: 60%;
       margin: 0 auto;
@@ -36,12 +33,10 @@
       font-size: 2.5rem;
       font-weight: 300;
       letter-spacing: 2px;
-
       strong {
         font-weight: 700;
       }
     }
-
   }
   .intro-section {
     padding: 5rem 0;
@@ -70,13 +65,11 @@
     justify-content: center;
     align-items: center;
     color: $color__grey-dark;
-
     h2 {
-      & > span {
+      &>span {
         color: $color__green;
       }
     }
-
     &-card-wrapper {
       width: 90%;
       margin: 1rem auto;
@@ -97,11 +90,9 @@
           color: white;
           background-color: $color__navy;
         }
-
         div {
           text-align: center;
         }
-
         img {
           width: 50px;
           height: 50px;
@@ -179,13 +170,11 @@
       width: 65%;
       margin: 0 auto;
     }
-  }
-      // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
-      // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
-      // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
-      // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
-      // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
-
+  } // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
+  // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
+  // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
+  // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
+  // PLEASE DON'T DELETE, I'LL DEAL WITH IT, I PROMISE
   // form {
   //   width: 85%;
   //   margin: 0 auto;
@@ -217,11 +206,8 @@
   //     grid-area: fifth;
   //   }
   // }
-
-
-
   form {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -238,11 +224,6 @@
       align-items: center;
     }
   }
-
-
-
-
-
 }
 
 /* ================== Press Releases ================= */
@@ -273,7 +254,6 @@
     color: $color__green;
   }
 }
-
 
 .press-releases-container {
   width: 80%;
@@ -377,8 +357,11 @@
 //Todo: Add correct photos
 .sub-footer {
   display: flex;
-  flex-direction: row;
-  height: 50vw;
+  flex-direction: column-reverse;
+  @include eight {
+    flex-direction: row;
+    height: 50vw;
+  }
   .sub-footer-text {
     color: #FFFFFF;
     font-size: 52px;
@@ -396,7 +379,10 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 50%;
+  width: 100%;
+  @include eight {
+    width: 50%;
+  }
   a {
     height: 100%;
   }
@@ -411,10 +397,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 17%;
+  align-items: center;
+  padding: 5%;
   h1 {
-    width: 480px;
+    font-size: 42px;
+    width: 280px;
+    @include tablet {
+      width: 365px;
+    }
   }
   .button-white {
     @include button-white;
@@ -426,18 +416,30 @@
 }
 
 .sub-footer-contact-us-today-line {
-  width: 350px;
+  width: 250px;
   height: 6px;
   background-color: #FFFFFF;
+  @include medium {
+    width: 350px;
+  }
 }
 
 .sub-footer-right {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 50%;
+  width: 100%;
+  @include eight {
+    width: 50%;
+  }
   a {
     height: 50%;
+  }
+  div {
+    min-height: 300px;
+    @include eight {
+      min-height: auto;
+    }
   }
 }
 

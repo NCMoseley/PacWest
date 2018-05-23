@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About Page
+ * Template Name: Corporate Governance Page
  *
  * @package RED_Starter_Theme
  */
@@ -20,20 +20,14 @@ get_header(); ?>
 
 
 
-
-
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="about-wrapper">
 				<div class="about-menu">
 					<ul class="about-menu-list">
-						<li>About</li>
-						<a href="#about-vision"><li>Vision</li></a>
+						<a href="#board-of-directors"><li>Board of Directors</li></a>
 						<a href="#management-team"><li>Management Team</li></a>
-						<a href="#strategic-alliances"><li>Strategic Alliances</li></a>
-						<a href="#facilities"><li>Facilities</li></a>
-						<a href="#technologies"><li>Technology</li></a>			
+						<a href="#board-of-advisors"><li>Board of Advisors</li></a>
 					</ul>
 					</div>
 

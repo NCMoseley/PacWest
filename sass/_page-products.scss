@@ -1,7 +1,4 @@
 .page-template-products {
-  // .site-branding {
-  //   display: none;
-  // }
   .banner-section {
     height: 40vw;
     width: 100%;
@@ -11,31 +8,125 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../../assets/Stock_Photos/pwc-products.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-news.jpg');
     color: white;
     background-size: cover;
     &-img-wrapper {
-      width: 200px;
+      width: 100px;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       img {
         width: 100%;
       }
-      h1 {
-        margin-top: 0;
-      }
-      h1 p {
-        font-size: 40px;
-        text-transform: uppercase;
-        font-weight: 400;
-        margin-top: 10px;
-      }
     }
-    .products-leaf-icon {
-      height: 69px;
-      width: 69px;
+
+    h1 {
+      width: 60%;
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
     }
   }
+
+ 
+  .product-a-intro-section, .product-b-intro-section, .product-c-intro-section {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    &-paragraph {
+      width: 50%;
+      margin: 0 2rem;
+      line-height: 30px;
+      color: $color__navy;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  .product-b-intro-section, .product-c-intro-section {
+    &-paragraph {
+      width: 70%;
+      color: $color__grey-dark;
+      text-transform: none;
+    }
+  }
+
+
+  .product-main-section {
+    .product {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      &-info {
+        width: 50%;
+        // height: 100%;
+        padding: 6rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: $color__green;
+        color: white;
+      }
+
+      &-info-header {
+        width: 40%;
+        margin: 0 auto;
+
+        * {
+          margin: 0;
+          text-transform: uppercase;
+        }
+        .product-subtitle {
+          font-weight: 300; 
+        }
+        .product-title {
+          font-size: 2rem;
+        }
+      }
+
+
+      &-info-description {
+        width: 40%;
+        margin: 0 auto;
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-weight: 300;  
+      }
+      
+      &-img-wrapper {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
