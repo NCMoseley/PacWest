@@ -1461,7 +1461,8 @@ object {
       width: 100px; }
     .page-template-about .about-wrapper .about-banner .about-banner-content-wrapper h1 {
       color: #fff;
-      font-family: "Roboto", Arial, Helvetica, sans-serif; }
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      text-transform: uppercase; }
 
 .page-template-about .about-wrapper .about-our-company {
   width: 100%;
@@ -1813,6 +1814,461 @@ object {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
       .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+        height: 80%;
+        width: 58%;
+        margin-bottom: 40px; }
+
+.page-template-corporate-governance h1 {
+  letter-spacing: 2px; }
+
+.page-template-corporate-governance .hentry {
+  display: none; }
+
+.page-template-corporate-governance .entry-title {
+  display: none; }
+
+.page-template-corporate-governance .about-wrapper .about-menu {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100px;
+  background: #00c860;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media all and (min-width: 1000px) {
+    .page-template-corporate-governance .about-wrapper .about-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 70px;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+  .page-template-corporate-governance .about-wrapper .about-menu ul {
+    margin: 0;
+    margin-top: 20px;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%; }
+    @media all and (min-width: 1000px) {
+      .page-template-corporate-governance .about-wrapper .about-menu ul {
+        margin-top: 0;
+        width: 70%;
+        min-height: 50px;
+        margin-right: 1%; } }
+    @media all and (min-width: 1200px) {
+      .page-template-corporate-governance .about-wrapper .about-menu ul {
+        width: 65%; } }
+    .page-template-corporate-governance .about-wrapper .about-menu ul li {
+      text-transform: uppercase;
+      list-style: none;
+      margin: 0 8px;
+      color: #fff; }
+  .page-template-corporate-governance .about-wrapper .about-menu a {
+    text-decoration: none; }
+
+.page-template-corporate-governance .about-wrapper .about-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 500px;
+  background: url("../../assets/Stock_Photos/pwc-about.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media all and (min-width: 750px) {
+    .page-template-corporate-governance .about-wrapper .about-banner {
+      background-position: 0 -120px; } }
+  .page-template-corporate-governance .about-wrapper .about-banner .about-banner-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-corporate-governance .about-wrapper .about-banner .about-banner-content-wrapper img {
+      height: 100px;
+      width: 100px; }
+    .page-template-corporate-governance .about-wrapper .about-banner .about-banner-content-wrapper h1 {
+      color: #fff;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      text-transform: uppercase; }
+
+.page-template-corporate-governance .about-wrapper .about-our-company {
+  width: 100%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0; }
+  .page-template-corporate-governance .about-wrapper .about-our-company h1 {
+    color: #333333;
+    font-family: "Roboto", Arial, Helvetica, sans-serif; }
+  .page-template-corporate-governance .about-wrapper .about-our-company p {
+    text-align: center;
+    max-width: 75%;
+    color: #333333;
+    font-family: "Roboto", Arial, Helvetica, sans-serif; }
+
+.page-template-corporate-governance .about-wrapper .about-our-vision {
+  width: 100%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media all and (min-width: 750px) {
+    .page-template-corporate-governance .about-wrapper .about-our-vision {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  .page-template-corporate-governance .about-wrapper .about-our-vision .our-vision-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 350px;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    background: #f2f2f1; }
+    .page-template-corporate-governance .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper {
+      color: #333333;
+      height: 300px;
+      width: 300px;
+      max-height: 200px; }
+      .page-template-corporate-governance .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper .about-vision {
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px; }
+  .page-template-corporate-governance .about-wrapper .about-our-vision .our-vision-image {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    max-height: 400px; }
+    .page-template-corporate-governance .about-wrapper .about-our-vision .our-vision-image img {
+      max-height: 400px;
+      min-height: 400px;
+      width: 100%; }
+
+.page-template-corporate-governance .about-wrapper .about-team {
+  min-height: 600px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0; }
+  .page-template-corporate-governance .about-wrapper .about-team h1 {
+    color: #333333; }
+  .page-template-corporate-governance .about-wrapper .about-team .about-team-para {
+    max-width: 75%; }
+    .page-template-corporate-governance .about-wrapper .about-team .about-team-para p {
+      text-align: center;
+      color: #333333; }
+  .page-template-corporate-governance .about-wrapper .about-team .team-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 0; }
+    @media all and (min-width: 800px) {
+      .page-template-corporate-governance .about-wrapper .about-team .team-wrapper {
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
+    .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member {
+      margin: 10px 10px;
+      max-width: 350px;
+      min-width: 350px;
+      max-height: 200px;
+      min-height: 200px;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      @media all and (min-width: 600px) {
+        .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member {
+          max-width: 500px;
+          min-width: 500px; } }
+      @media all and (min-width: 800px) {
+        .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member {
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+          max-width: 335px;
+          min-width: 335px; } }
+      @media all and (min-width: 950px) {
+        .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member {
+          max-width: 400px;
+          min-width: 400px; } }
+      @media all and (min-width: 1000px) {
+        .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member {
+          max-width: 450px;
+          min-width: 450px;
+          margin: 10px 0px; } }
+      @media all and (min-width: 1200px) {
+        .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member {
+          max-width: 530px;
+          min-width: 530px;
+          margin: 10px 0; } }
+      .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot {
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
+        max-height: 200px;
+        min-width: 140px;
+        border: 1px solid black; }
+      .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-preferred-size: 70%;
+            flex-basis: 70%;
+        margin: 3px 2%;
+        max-height: 172px;
+        overflow: hidden; }
+        @media all and (min-width: 600px) {
+          .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
+            max-height: 162px; } }
+        .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
+          margin: 0;
+          color: #0a2d5d;
+          font-size: 16px;
+          letter-spacing: 2px; }
+          @media all and (min-width: 600px) {
+            .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
+              font-size: 20px; } }
+        .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          color: #c3c3c3;
+          margin-bottom: 50px;
+          letter-spacing: 2px; }
+          .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
+            margin-top: 5px;
+            font-size: 20px;
+            color: #0a2d5d; }
+        .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-bio {
+          margin-top: 14px; }
+        .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-close {
+          margin-top: 5px;
+          -ms-flex-item-align: center;
+              align-self: center; }
+          .page-template-corporate-governance .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-close i {
+            font-size: 20px;
+            color: #0a2d5d; }
+
+.page-template-corporate-governance .about-wrapper .about-alliances {
+  background: #f2f2f1;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-template-corporate-governance .about-wrapper .about-alliances h1 {
+    padding-top: 15px; }
+  .page-template-corporate-governance .about-wrapper .about-alliances .alliance-wrapper {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 85%;
+    padding: 20px 0; }
+    .page-template-corporate-governance .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0 5px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-height: 200; }
+      @media all and (min-width: 750px) {
+        .page-template-corporate-governance .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
+          -ms-flex-preferred-size: 25%;
+              flex-basis: 25%; } }
+      .page-template-corporate-governance .about-wrapper .about-alliances .alliance-wrapper .alliance-logo img {
+        max-height: 190px;
+        margin: 0 auto;
+        -ms-flex-item-align: center;
+            align-self: center; }
+
+.page-template-corporate-governance .about-wrapper .facilities-technology {
+  border: 1px solid black;
+  min-height: 700px; }
+  .page-template-corporate-governance .about-wrapper .facilities-technology .facilities {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #0a2d5d; }
+    @media all and (min-width: 750px) {
+      .page-template-corporate-governance .about-wrapper .facilities-technology .facilities {
+        max-height: 500px;
+        min-height: 500px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
+    .page-template-corporate-governance .about-wrapper .facilities-technology .facilities .facilities-text {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      color: #fff; }
+      @media all and (min-width: 750px) {
+        .page-template-corporate-governance .about-wrapper .facilities-technology .facilities .facilities-text {
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          padding-left: 8%; } }
+      .page-template-corporate-governance .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
+        height: 80%;
+        width: 58%; }
+    .page-template-corporate-governance .about-wrapper .facilities-technology .facilities .facilities-image {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+      .page-template-corporate-governance .about-wrapper .facilities-technology .facilities .facilities-image img {
+        max-height: 700px;
+        min-height: 500px;
+        -o-object-fit: cover;
+           object-fit: cover; }
+  .page-template-corporate-governance .about-wrapper .facilities-technology .technologies {
+    background: #0a2d5d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media all and (min-width: 750px) {
+      .page-template-corporate-governance .about-wrapper .facilities-technology .technologies {
+        max-height: 500px;
+        min-height: 500px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
+    .page-template-corporate-governance .about-wrapper .facilities-technology .technologies .technologies-image {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      max-height: 500px; }
+      .page-template-corporate-governance .about-wrapper .facilities-technology .technologies .technologies-image img {
+        max-height: 700px;
+        min-height: 500px;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .page-template-corporate-governance .about-wrapper .facilities-technology .technologies .technologies-text {
+      color: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+      .page-template-corporate-governance .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
         height: 80%;
         width: 58%;
         margin-bottom: 40px; }
