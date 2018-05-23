@@ -9,7 +9,6 @@
       font-size: 1.5rem;
     }
   }
-
   .banner-section {
     @include eight {
       height: 40vw;
@@ -47,14 +46,12 @@
       }
     }
   }
-
   .news-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .news-items-wrapper {
     width: 85%;
     margin: 0 auto;
@@ -63,11 +60,9 @@
     justify-content: center;
     align-items: flex-start;
   }
-
   .news-item {
     width: 90%;
     margin: 0 auto;
-
     &-header {
       display: flex;
       justify-content: space-between;
@@ -82,7 +77,6 @@
         }
       }
     }
-
     &-pdf {
       position: relative;
       right: 5rem;
@@ -102,29 +96,19 @@
 
       a {
         text-decoration: none;
-        &:visited, &:hover {
+        &:visited,
+        &:hover {
           color: white;
         }
       }
     }
-
     &-body {
       height: 30px;
       overflow: hidden;
     }
-
     &-expand-link {
       width: 100%;
       text-align: center;
     }
   }
-  
-
-
-
-
-
-
-
-
 }

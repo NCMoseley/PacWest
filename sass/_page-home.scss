@@ -5,7 +5,9 @@
     text-transform: uppercase;
   }
   .banner-section {
-    height: 40vw;
+    @include eight {
+      height: 40vw;
+    }
     width: 100%;
     margin: 0 auto;
     padding: 2rem 0;
@@ -13,8 +15,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('../../assets/Stock_Photos/pwc-images-home.jpg');
-    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../../assets/Stock_Photos/pwc-images-home.jpg');
+    color: $color__text-light;
     background-size: cover;
     &-img-wrapper {
       width: 200px;

@@ -6,24 +6,28 @@
     display: none;
   }
   .investors-portal-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include eight {
+      height: 40vw;
+    }
     width: 100%;
-    min-height: 500px;
-    background: url('../../assets/Stock_Photos/pwc-investors.jpg');
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; // Todo: add correct photo
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../../assets/Stock_Photos/pwc-investors.jpg');
+    color: $color__text-light;
     background-size: cover;
-    background-repeat: no-repeat;
-
     .portal-banner-wrapper {
+      width: 100px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       img {
-        height: 100px;
-        width: 100px;
+        width: 100%;
       }
       h1 {
         color: #fff;
@@ -38,7 +42,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     h1 {
       margin-bottom: 0;
       text-transform: uppercase;
@@ -47,7 +50,6 @@
     .green {
       color: $color__green;
     }
-
     p {
       max-width: 70%;
       text-align: center;
@@ -73,7 +75,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     h1 {
       margin-top: 0;
       text-transform: uppercase;
@@ -81,11 +82,9 @@
     .green {
       color: $color__green;
     }
-
     .video-container {
       display: flex;
       justify-content: space-around;
-
       margin: 20px 0;
       margin-bottom: 30px;
       .vid {
