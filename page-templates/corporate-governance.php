@@ -52,7 +52,7 @@ get_header(); ?>
 
 				
 
-				<div class="cg-section-heading">
+				<div class="cg-section-heading" id="board-of-directors">
 					<div class="left-box">
 						<p>Board of</p>
 						<h1>Directors</h1>
@@ -62,7 +62,7 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<section class="cg-team cg-bod" id="management-team">
+				<section class="cg-team cg-bod" >
 					<h1 class="uppercase">
 						<?php echo $cg_team_header ?> </h1>
 					<div class="cg-team-para">
@@ -112,7 +112,7 @@ get_header(); ?>
 					</section>
 					<!-- bod wrapper -->
 
-					<div class="cg-section-heading">
+					<div class="cg-section-heading" id="management-team">
 					<div class="left-box">
 						<p>PacWest</p>
 						<h1>Management</h1>
@@ -122,7 +122,7 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<section class="cg-team cg-mngmnt" id="management-team">
+				<section class="cg-team cg-mngmnt" >
 					<div class="managment-wrapper team-wrapper">
 						<?php $args = array('post_type'		=> 'team_member', 'meta_key'		=> 'team_member_category', 'meta_value'	=> 'Management'); $query = new WP_Query($args);?>
 
@@ -167,7 +167,7 @@ get_header(); ?>
 					</section>
 					<!-- management wrapper -->
 
-					<div class="cg-section-heading">
+					<div class="cg-section-heading" id="board-of-advisors">
 					<div class="left-box">
 						<p>Board of</p>
 						<h1>Advisors</h1>
@@ -177,7 +177,7 @@ get_header(); ?>
 					</div>
 				</div>
 
-				<section class="cg-team cg-boa" id="management-team">
+				<section class="cg-team cg-boa" >
 					<div class="boa-wrapper team-wrapper">
 						<?php $args = array('post_type'		=> 'team_member', 'meta_key'		=> 'team_member_category', 'meta_value'	=> 'Board of Advisors'); $query = new WP_Query($args);?>
 

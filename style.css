@@ -2054,10 +2054,9 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2080,21 +2079,29 @@ object {
     text-decoration: none; }
 
 .page-template-corporate-governance .cg-wrapper .cg-banner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  min-height: 500px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-team.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-team.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  color: #fff;
+  background-size: cover; }
+  @media all and (min-width: 800px) {
+    .page-template-corporate-governance .cg-wrapper .cg-banner {
+      height: 40vw; } }
   .page-template-corporate-governance .cg-wrapper .cg-banner .cg-banner-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2116,11 +2123,11 @@ object {
       color: #fff;
       font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-weight: 200;
+      text-align: center;
       text-transform: uppercase; }
 
 .page-template-corporate-governance .cg-wrapper .cg-page-description {
   width: 100%;
-  min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2140,6 +2147,56 @@ object {
     max-width: 75%;
     color: #333333;
     font-size: 20px; }
+
+.page-template-corporate-governance .cg-wrapper .cg-section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media all and (min-width: 600px) {
+    .page-template-corporate-governance .cg-wrapper .cg-section-heading {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  .page-template-corporate-governance .cg-wrapper .cg-section-heading .left-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 20px 5%;
+    background-color: #00c860;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100; }
+    @media all and (min-width: 600px) {
+      .page-template-corporate-governance .cg-wrapper .cg-section-heading .left-box {
+        width: 50%; } }
+    .page-template-corporate-governance .cg-wrapper .cg-section-heading .left-box p {
+      margin-bottom: 0; }
+    .page-template-corporate-governance .cg-wrapper .cg-section-heading .left-box h1 {
+      margin-top: 0;
+      color: #fff;
+      text-transform: uppercase; }
+  .page-template-corporate-governance .cg-wrapper .cg-section-heading .right-box {
+    width: 100%;
+    padding: 20px 5%;
+    text-align: center;
+    font-size: 20px; }
+    @media all and (min-width: 600px) {
+      .page-template-corporate-governance .cg-wrapper .cg-section-heading .right-box {
+        width: 50%; } }
 
 .page-template-corporate-governance .cg-wrapper .cg-team {
   min-height: 600px;
@@ -2270,26 +2327,6 @@ object {
           .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-member-info .cg-close i {
             font-size: 20px;
             color: #0a2d5d; }
-
-.page-template-corporate-governance .cg-wrapper .cg-section-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  .page-template-corporate-governance .cg-wrapper .cg-section-heading .left-box {
-    width: 50%;
-    padding: 5%;
-    background-color: #00c860;
-    color: #fff; }
-    .page-template-corporate-governance .cg-wrapper .cg-section-heading .left-box h1 {
-      color: #fff; }
-  .page-template-corporate-governance .cg-wrapper .cg-section-heading .right-box {
-    padding: 5%;
-    text-align: center;
-    font-size: 20px; }
 
 .page-template-products .banner-section {
   height: 40vw;
@@ -2763,10 +2800,13 @@ object {
     .page-template-faq .banner-section {
       height: 40vw; } }
   .page-template-faq .banner-section-img-wrapper {
-    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2774,7 +2814,8 @@ object {
         -ms-flex-align: center;
             align-items: center; }
     .page-template-faq .banner-section-img-wrapper img {
-      width: 100%; }
+      height: 100px;
+      width: 100px; }
   .page-template-faq .banner-section h1 {
     width: 100%;
     margin: 0 auto;
