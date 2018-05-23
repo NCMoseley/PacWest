@@ -20,13 +20,17 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html('Skip to content'); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">			
+			<header id="masthead" class="site-header" role="banner">	
+
+
 				<div class="investor-nav">
-					<form action="">
-						<input type="email" placeholder="email">
-						<input type="password" placeholder="password">
-						<button>Investor Login</button>
-					</form>
+			
+				
+				<div class="investor-header-wrapper">
+					<?php echo get_field('header_investor_login')?>
+				</div>
+				
+					
 				</div>
 			
 				<div class="nav-wrapper">
@@ -37,7 +41,14 @@
 					</div>
 	
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html('Primary Menu'); ?></button>
+						<input id="toggle" type="checkbox">
+						<label class="toggle-container" for="toggle">
+							<span class="button button-toggle"></span>
+							<div class="menu-close">
+								<div class="left-x"></div>
+								<div class="right-x"></div>
+							</div>
+    				</label>
 						<?php wp_nav_menu(array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' )); ?>
 					</nav><!-- #site-navigation -->
 				</div>

@@ -49,6 +49,7 @@ get_header(); ?>
 				<div class="about-our-company">
 					<h1 class="uppercase"> <?php echo $about_company_header ?> </h1>
 					<p> <?php echo $about_company ?> </p>
+					
 				</div>
 
 				<div class="about-our-vision" id="about-vision">
