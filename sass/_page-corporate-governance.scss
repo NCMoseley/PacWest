@@ -8,8 +8,8 @@
   .entry-title {
     display: none;
   }
-  .about-wrapper {
-    .about-menu {
+  .cg-wrapper {
+    .cg-menu {
       display: none;
       justify-content: center;
       width: 100%;
@@ -50,19 +50,19 @@
         text-decoration: none;
       }
     }
-    .about-banner {
+    .cg-banner {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
       min-height: 500px;
-      background: url('../../assets/Stock_Photos/pwc-about.jpg');
+      background: url('../../assets/Stock_Photos/pwc-team.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       @include medium {
         background-position: 0 -120px;
       }
-      .about-banner-content-wrapper {
+      .cg-banner-content-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -78,7 +78,7 @@
         }
       }
     }
-    .about-our-company {
+    .cg-our-company {
       width: 100%;
       min-height: 400px;
       display: flex;
@@ -97,7 +97,7 @@
         font-family: $font__main;
       }
     }
-    .about-our-vision {
+    .cg-our-vision {
       width: 100%;
       min-height: 400px;
       display: flex;
@@ -117,7 +117,7 @@
           height: 300px;
           width: 300px;
           max-height: 200px;
-          .about-vision {
+          .cg-vision {
             display: block;
             font-size: 30px;
             font-weight: bold;
@@ -136,7 +136,7 @@
         }
       }
     }
-    .about-team {
+    .cg-team {
       min-height: 600px;
       width: 100%;
       display: flex;
@@ -147,7 +147,7 @@
       h1 {
         color: $color__grey-dark;
       }
-      .about-team-para {
+      .cg-team-para {
         max-width: 75%;
         p {
           text-align: center;
@@ -232,10 +232,10 @@
                 color: $color__navy;
               }
             }
-            .about-bio {
+            .cg-bio {
               margin-top: 14px;
             }
-            .about-close {
+            .cg-close {
               margin-top: 5px;
               align-self: center;
               i {
@@ -247,7 +247,7 @@
         }
       }
     }
-    .about-alliances {
+    .cg-alliances {
       background: $color__background-grey;
       min-height: 600px;
       display: flex;
