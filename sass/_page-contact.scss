@@ -14,7 +14,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-boxes-investors.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('../../assets/Stock_Photos/pwc-boxes-investors.jpg');
     color: white;
     background-size: cover;
     &-img-wrapper {
@@ -40,17 +41,14 @@
         font-weight: 700;
       }
     }
-
   }
-  
+
   .contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
   }
-
-
 
   // form {
   //   width: 85%;
@@ -97,14 +95,13 @@
   //   }
   // }
 
-
-  form {
+  .wpcf7-form {
     width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    input[type="submit"] {
+    input[type='submit'] {
       @include button-blue;
       background-color: $color__green;
     }
@@ -125,13 +122,10 @@
     }
   }
 
-
-
-
   .entry-title {
     display: none;
   }
-  
+
   .widget-area {
     display: none;
   }

@@ -415,7 +415,8 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 .investor-nav {
-  padding: 1rem 10rem 1rem 0;
+  background: #0a2d5d;
+  min-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,34 +425,48 @@ textarea {
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  background-color: #0a2d5d; }
-  .investor-nav input {
-    margin: 0 5px;
-    padding: 1px;
-    border: none;
-    border-radius: 0; }
-  .investor-nav button {
-    margin: 1rem auto;
-    width: 210px;
-    padding: 15px 30px;
-    font-size: 16px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    color: white;
-    background-color: #0a2d5d;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-shadow: none;
-    background-color: #00c860;
-    margin: 0;
-    padding: 5px 12px;
-    font-weight: 300; }
-    .investor-nav button:hover {
-      background-color: #082246; }
+          align-items: center; }
+  .investor-nav .membership-wrapper {
+    margin-right: 5%; }
+    .investor-nav .membership-wrapper span {
+      color: #fff;
+      padding-top: 15px; }
+    .investor-nav .membership-wrapper .email-password .swpm-password-input {
+      margin: 0 !important; }
+    .investor-nav .membership-wrapper .email-password .swpm-username-input {
+      margin: 0 !important; }
+    .investor-nav .membership-wrapper .email-password .swpm-login-submit {
+      margin: 0 !important;
+      font-size: 10px; }
+      .investor-nav .membership-wrapper .email-password .swpm-login-submit .swpm-login-form-submit {
+        font-size: 10px; }
+    .investor-nav .membership-wrapper .email-password input {
+      min-height: 25px;
+      max-height: 25px; }
+    .investor-nav .membership-wrapper .email-password input::-webkit-input-placeholder {
+      color: #d7d7d7;
+      padding-left: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px; }
+    .investor-nav .membership-wrapper .email-password input:-ms-input-placeholder {
+      color: #d7d7d7;
+      padding-left: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px; }
+    .investor-nav .membership-wrapper .email-password input::-ms-input-placeholder {
+      color: #d7d7d7;
+      padding-left: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px; }
+    .investor-nav .membership-wrapper .email-password input::placeholder {
+      color: #d7d7d7;
+      padding-left: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px; }
 
 .nav-wrapper {
   display: -webkit-box;
@@ -2715,7 +2730,7 @@ object {
           align-items: center;
   text-transform: uppercase; }
 
-.page-template-contact form {
+.page-template-contact .wpcf7-form {
   width: 70%;
   margin: 0 auto;
   display: -webkit-box;
@@ -2726,7 +2741,7 @@ object {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .page-template-contact form input[type="submit"] {
+  .page-template-contact .wpcf7-form input[type='submit'] {
     margin: 1rem auto;
     width: 210px;
     padding: 15px 30px;
@@ -2742,9 +2757,9 @@ object {
     text-transform: uppercase;
     text-shadow: none;
     background-color: #00c860; }
-    .page-template-contact form input[type="submit"]:hover {
+    .page-template-contact .wpcf7-form input[type='submit']:hover {
       background-color: #082246; }
-  .page-template-contact form p {
+  .page-template-contact .wpcf7-form p {
     margin: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2759,10 +2774,10 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .page-template-contact form p:nth-of-type(7) {
+  .page-template-contact .wpcf7-form p:nth-of-type(7) {
     width: 85%;
     margin: 0 auto; }
-    .page-template-contact form p:nth-of-type(7) label {
+    .page-template-contact .wpcf7-form p:nth-of-type(7) label {
       width: 100%;
       margin: 0 auto; }
 
