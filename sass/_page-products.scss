@@ -85,6 +85,10 @@
       &-info-header {
         width: 40%;
         margin: 0 auto;
+        @media all and (max-width: $medium) {
+          width: 85%;
+        }  
+
         * {
           margin: 0;
           text-transform: uppercase;
@@ -101,7 +105,10 @@
         margin: 0 auto;
         line-height: 30px;
         letter-spacing: 1px;
-        font-weight: 300;
+        font-weight: 300;  
+        @media all and (max-width: $medium) {
+          width: 85%;
+        }  
       }
       &-img-wrapper {
         width: 50%;
