@@ -2737,8 +2737,8 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-news.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-news.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
   color: #fff;
   background-size: cover; }
   @media all and (min-width: 800px) {
@@ -2769,7 +2769,12 @@ object {
       .page-template-faq .banner-section h1 {
         width: 60%; } }
 
+.page-template-faq .main-section {
+  padding: 4rem 0;
+  background-color: #eee; }
+
 .page-template-faq .main-section-intro {
+  margin: 0;
   text-align: center; }
   .page-template-faq .main-section-intro h2 {
     text-transform: uppercase; }
@@ -2777,6 +2782,34 @@ object {
     color: #00c860; }
 
 .page-template-faq .faq-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 750px) {
+    .page-template-faq .faq-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.page-template-faq .faq {
+  width: 40%;
+  margin: 1rem;
+  padding: 5px 5% 5px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2784,26 +2817,32 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 600px;
-  padding: 20px 5%; }
-
-.page-template-faq .faq {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
-  background-color: #0a2d5d;
-  padding: 5px 5% 5px 10px; }
+  background-color: #0a2d5d; }
+  @media (max-width: 750px) {
+    .page-template-faq .faq {
+      width: 70%; } }
   .page-template-faq .faq h3 {
     color: #fff;
     font-size: 16px;
     max-width: 70%; }
+  .page-template-faq .faq-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .page-template-faq .faq-answer {
+    color: white; }
   .page-template-faq .faq .horizontal {
     width: 20px;
     height: 3px;
@@ -2816,6 +2855,17 @@ object {
             transform: rotate(90deg);
     -webkit-transform-origin: 53% 19%;
             transform-origin: 53% 19%; }
+  .page-template-faq .faq .invisible {
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s; }
+  .page-template-faq .faq .visible {
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s; }
+  .page-template-faq .faq .open {
+    color: #333333 !important;
+    background-color: #fff !important; }
 
 .site-footer .site-info {
   border: 1px solid black;
