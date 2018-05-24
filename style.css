@@ -3099,7 +3099,7 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  @media (max-width: 750px) {
+  @media all and (max-width: 750px) {
     .page-template-faq .faq-container {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -3111,6 +3111,9 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; } }
+  @media all and (max-width: 550px) {
+    .page-template-faq .faq-container {
+      width: 100%; } }
 
 .page-template-faq .faq {
   width: 40%;
@@ -3133,6 +3136,9 @@ object {
   @media (max-width: 750px) {
     .page-template-faq .faq {
       width: 70%; } }
+  @media (max-width: 550px) {
+    .page-template-faq .faq {
+      width: 90%; } }
   .page-template-faq .faq h3 {
     color: #fff;
     font-size: 16px;

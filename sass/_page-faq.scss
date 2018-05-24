@@ -58,11 +58,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media #{all and (max-width: $medium)} {
+    @media all and (max-width: $medium) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
+    @media all and (max-width: 550px) {
+      width: 100%;
+    }
+    
   }
   .faq {
     width: 40%;
@@ -75,6 +79,9 @@
     background-color: $color__navy;
     @media #{all and (max-width: $medium)} {
       width: 70%;
+    }
+    @media #{all and (max-width: 550px)} {
+      width: 90%;
     }
     h3 {
       color: $color__text-light;
