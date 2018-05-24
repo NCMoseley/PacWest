@@ -1,7 +1,9 @@
 jQuery( document ).ready(function($) {
+
+  // FAQ DROPDOWN
+
   $(function () {
     var faqExpanded = false;
-
 
 		$('.faq-answer').css('display', 'none');
     $('.open-close-icon').click(function () {
@@ -37,9 +39,7 @@ jQuery( document ).ready(function($) {
   });
 
 
-
-
-
+  // NEWS ITEM EXPANSION
 
   var expanded = false;
 
@@ -52,4 +52,24 @@ jQuery( document ).ready(function($) {
       $(this).prev().animate({'height':'100px'}, 200);
     }
   })
+
+  $("#toggle").change(function() {
+      $('.menu-close').children().toggleClass('expanded');
+  });
+
+
+
+
+
+    // INVESTOR LOGIN SHOW / HIDE
+
+    $('.login-prompt').on('click', function(e){
+      e.preventDefault();
+      $(this).parent().css('justifyContent', 'center');
+      $(this).css('display', 'none');
+      $('.investor-header-wrapper').css("display", "flex");
+    })
+
+
+
 });

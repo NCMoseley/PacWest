@@ -7,7 +7,7 @@
 
 ?>
   
-  <!-- Todo: add correct photos -->
+  
 			<section class="sub-footer">
 				<div class="sub-footer-left">
 					<a href="<?php echo esc_url(home_url('/contact/')); ?>">

@@ -3,10 +3,15 @@
     font-size: 2rem;
     letter-spacing: 3px;
     text-transform: uppercase;
+    text-align: center;
+    @media all and (max-width: $tablet) {
+      font-size: 1.5rem;
+    }
   }
-
   .banner-section {
-    height: 40vw;
+    @include eight {
+      height: 40vw;
+    }
     width: 100%;
     margin: 0 auto;
     padding: 2rem 0;
@@ -14,8 +19,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-news.jpg');
-    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../../assets/Stock_Photos/pwc-news.jpg');
+    color: $color__text-light;
     background-size: cover;
     &-img-wrapper {
       width: 100px;
@@ -26,7 +32,6 @@
         width: 100%;
       }
     }
-
     h1 {
       width: 60%;
       margin: 0 auto;
@@ -35,20 +40,17 @@
       font-size: 2.5rem;
       font-weight: 300;
       letter-spacing: 2px;
-
       strong {
         font-weight: 700;
       }
     }
   }
-
   .news-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .news-items-wrapper {
     width: 85%;
     margin: 0 auto;
@@ -56,27 +58,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    @media all and (max-width: 550px) {
+      width: 100%;
+    }
   }
-
   .news-item {
     width: 90%;
     margin: 0 auto;
-
+    @media all and (max-width: 550px) {
+      width: 100%;
+    }
     &-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media all and (max-width: 550px) {
+        flex-direction: column;
+      }
       &-group {
         width: 80%;
         padding: 5px;
         background-color: $color__navy;
         color: white;
+        @media all and (max-width: 550px) {
+          width: 90%;
+        }
         h3 {
           margin: 0;
         }
       }
     }
-
     &-pdf {
       position: relative;
       right: 5rem;
@@ -86,31 +97,32 @@
       border-radius: 3px;
       text-transform: uppercase;
       cursor: pointer;
+      @media all and (max-width: 930px) {
+        right: 0;
+      }
+      @media all and (max-width: 550px) {
+        width: 75%;
+        margin: 1rem;
+      }
       a {
         text-decoration: none;
-        &:visited, &:hover {
+        &:visited,
+        &:hover {
           color: white;
         }
       }
     }
-
     &-body {
-      height: 100px;
+      height: 30px;
       overflow: hidden;
+      @media all and (max-width: 550px) {
+        width: 90%;
+        margin: 0 auto;
+      }
     }
-
     &-expand-link {
       width: 100%;
       text-align: center;
     }
   }
-  
-
-
-
-
-
-
-
-
 }

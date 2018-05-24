@@ -7,7 +7,7 @@
 
 ?>
   
- <!-- Todo: add correct photos -->
+ 
 			<section class="sub-footer">
 				<div class="sub-footer-left">
 					<a href="<?php echo esc_url(home_url('/contact/')); ?>">
@@ -31,7 +31,7 @@
 					</a>
           	<a href="<?php echo esc_url(home_url('/products/')); ?>">
 						<div class="sub-footer-products">
-							<h1 class="sub-footer-text">Products</h1>
+							<h1 class="sub-footer-text products-text">Products</h1>
 						</div>
 					</a>
 				</div>

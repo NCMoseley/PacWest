@@ -3,10 +3,12 @@
     font-size: 2rem;
     letter-spacing: 3px;
     text-transform: uppercase;
+    text-align: center; 
   }
-
   .banner-section {
-    height: 40vw;
+    @include eight {
+      height: 40vw;
+    }
     width: 100%;
     margin: 0 auto;
     padding: 2rem 0;
@@ -14,8 +16,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-boxes-investors.jpg');
-    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../../assets/Stock_Photos/pwc-boxes-investors.jpg');
+    color: $color__text-light;
     background-size: cover;
     &-img-wrapper {
       width: 100px;
@@ -26,7 +29,6 @@
         width: 100%;
       }
     }
-
     h1 {
       width: 60%;
       margin: 0 auto;
@@ -35,85 +37,56 @@
       font-size: 2.5rem;
       font-weight: 300;
       letter-spacing: 2px;
-
       strong {
         font-weight: 700;
       }
     }
-
   }
-  
   .contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-  }
-
-
-
-  // form {
-  //   width: 85%;
-  //   margin: 0 auto;
-  //   display: grid;
-  //   grid-template-areas: "first second" "third fourth" "fifth sixth" "seventh seventh" "eighth eighth";
-  //   input[type="submit"] {
-  //     @include button-blue;
-  //     background-color: $color__green;
-  //   }
-  //   p {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: center;
-  //     align-items: center;
-  //   }
-  //   p:nth-of-type(1) {
-  //     grid-area: first;
-  //   }
-  //   p:nth-of-type(2) {
-  //     grid-area: second;
-  //   }
-  //   p:nth-of-type(3) {
-  //     grid-area: third;
-  //   }
-  //   p:nth-of-type(4) {
-  //     grid-area: fourth;
-  //   }
-  //   p:nth-of-type(5) {
-  //     grid-area: fifth;
-  //   }
-  //   p:nth-of-type(6) {
-  //     grid-area: sixth;
-  //   }
-  //   p:nth-of-type(7) {
-  //     grid-area: seventh;
-  //     label {
-  //       width: 85%;
-  //       margin: 0 auto;
-  //     }
-  //   }
-  //   p:nth-of-type(8) {
-  //     grid-area: eighth;
-  //   }
-  // }
-
-
-  form {
+  } 
+  .wpcf7-form {
     width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    input[type="submit"] {
+    @media all and (max-width: 1050px) {
+      width: 100%;
+    }
+
+
+    // label {
+    //   @media all and (max-width: 500px) {
+    //     text-align: center;
+    //   }
+    // }
+
+
+    input {
+      width: 100%;
+    }
+
+    input[type='submit'] {
       @include button-blue;
       background-color: $color__green;
     }
+
     p {
       margin: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @media all and (max-width: 750px) {
+        width: 230px;
+      }
+      @media all and (max-width: 550px) {
+        width: 100%;
+      }
     }
     p:nth-of-type(7) {
       width: 85%;
@@ -124,14 +97,9 @@
       }
     }
   }
-
-
-
-
   .entry-title {
     display: none;
   }
-  
   .widget-area {
     display: none;
   }

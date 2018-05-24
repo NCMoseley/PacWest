@@ -35,20 +35,19 @@ get_header(); ?>
 						<a href="#facilities"><li>Facilities</li></a>
 						<a href="#technologies"><li>Technology</li></a>			
 					</ul>
-					</div>
+				</div>
 
-				<div class="about-banner">
-
-					<div class="about-banner-content-wrapper">
-						<img src="<?php echo $about_logo ?>" alt="About page logo"/>
-						<h1> <?php echo $about_header ?></h1>
+				<header class="banner-section">
+					<div class="banner-section-img-wrapper">
+						<img src="<?php echo $about_logo ?>" alt="About page logo">
 					</div>
-					
-				</div> <!-- close about banner -->
+					<h1><?php echo $about_header ?></h1>
+        </header>
 
 				<div class="about-our-company">
 					<h1 class="uppercase"> <?php echo $about_company_header ?> </h1>
-					<p> <?php echo $about_company ?> </p>
+					<p> <?php echo $about_company ?></p>
+					
 				</div>
 
 				<div class="about-our-vision" id="about-vision">

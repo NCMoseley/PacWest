@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; // Todo: add correct photo
+    align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../../assets/Stock_Photos/pwc-boxes-faq.jpg');
     color: $color__text-light;
@@ -17,8 +17,9 @@
     &-img-wrapper {
       width: 100px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: center; 
       img {
         width: 100%;
       }
@@ -57,12 +58,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media #{all and (max-width: $medium)} {
+    @media all and (max-width: $medium) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
-
+    @media all and (max-width: 550px) {
+      width: 100%;
+    }
+    
   }
   .faq {
     width: 40%;
@@ -76,27 +80,23 @@
     @media #{all and (max-width: $medium)} {
       width: 70%;
     }
-
-    
+    @media #{all and (max-width: 550px)} {
+      width: 90%;
+    }
     h3 {
       color: $color__text-light;
       font-size: 16px;
       max-width: 70%;
+      font-weight: 300;
     }
-
-
     &-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
-
     &-answer {
       color: white;
     }
-
-
     .horizontal {
       width: 20px;
       height: 3px;
@@ -107,9 +107,8 @@
       height: 3px;
       background-color: $color__green;
       transform: rotate(90deg);
-      transform-origin: 53% 19%;
+      transform-origin: 58% 10%;
     }
-
     .invisible {
       opacity: 0;
       transition: opacity .5s;
