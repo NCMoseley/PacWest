@@ -2923,7 +2923,8 @@ object {
 .page-template-contact .contact-h2 {
   font-size: 2rem;
   letter-spacing: 3px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .page-template-contact .banner-section {
   width: 100%;
@@ -2996,6 +2997,11 @@ object {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media all and (max-width: 1050px) {
+    .page-template-contact .wpcf7-form {
+      width: 100%; } }
+  .page-template-contact .wpcf7-form input {
+    width: 100%; }
   .page-template-contact .wpcf7-form input[type='submit'] {
     margin: 1rem auto;
     width: 210px;
@@ -3029,6 +3035,12 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media all and (max-width: 750px) {
+      .page-template-contact .wpcf7-form p {
+        width: 230px; } }
+    @media all and (max-width: 550px) {
+      .page-template-contact .wpcf7-form p {
+        width: 100%; } }
   .page-template-contact .wpcf7-form p:nth-of-type(7) {
     width: 85%;
     margin: 0 auto; }
