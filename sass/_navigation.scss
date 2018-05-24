@@ -15,14 +15,17 @@ $transition-duration: 0.5s;
 	.toggle-container .button-toggle {
 		position: absolute;
 		z-index: 10;
-		left: 70px;
+		left: 35%;
 		display: inline-block;
-		width: 60px;
+		width: 70px;
 		height: 20px;
 		background-color: transparent;
 		border: none;
 		cursor: pointer;
 		transition: $transition-duration + 0.1;
+		@media all and (max-width: 450px) {
+			left: 20%;
+		}  
 	}
 
 	.menu-close {
@@ -153,7 +156,7 @@ $transition-duration: 0.5s;
 
 .login-prompt {
 	display: none;
-	@media all and (max-width : 680px) {
+	@media all and (max-width : 750px) {
 		display: block;
 		margin-right: 2rem;
 	}
@@ -181,7 +184,7 @@ $transition-duration: 0.5s;
 	// }
 
 	.investor-header-wrapper {
-		@media all and (max-width : 680px) {
+		@media all and (max-width : 750px) {
 			display: none;
 		}
 	}
@@ -302,10 +305,14 @@ a {
 	display: block;
 	float: left;
 	width: 60%;
-	@media all and (max-width: $medium) {
+	@media all and (max-width: 900px) {
 		position: relative;
+		width: 80%;
+	}
+	@media all and (max-width: 750px) {
 		width: 30%;
 	}
+
 
 	ul {
 		display: none;
