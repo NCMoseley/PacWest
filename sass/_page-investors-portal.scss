@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center; // Todo: add correct photo
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../../assets/Stock_Photos/pwc-investors.jpg');
+      url('../../assets/Stock_Photos/pwc-investors.jpg');
     color: $color__text-light;
     background-size: cover;
     .portal-banner-wrapper {
@@ -37,6 +37,7 @@
     }
   }
   .investors-corporate-presentation {
+    padding: 40px 0;
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -46,6 +47,8 @@
       margin-bottom: 0;
       text-transform: uppercase;
       letter-spacing: 2px;
+      text-align: center;
+      max-width: 80%;
     }
     .green {
       color: $color__green;
@@ -53,6 +56,7 @@
     p {
       max-width: 70%;
       text-align: center;
+      margin-bottom: 30px;
     }
     .corporate-download {
       color: #fff;
@@ -78,21 +82,38 @@
     h1 {
       margin-top: 0;
       text-transform: uppercase;
+      text-align: center;
+      max-width: 80%;
     }
     .green {
       color: $color__green;
     }
     .video-container {
       display: flex;
+      flex-direction: column;
       justify-content: space-around;
+      align-items: center;
       margin: 20px 0;
       margin-bottom: 30px;
+
+      @include desktop {
+        flex-direction: row;
+      }
+
       .vid {
         width: 350px;
-        margin: 0 20px;
+        margin: 20px 20px;
         height: 175px;
         background: gray;
         border: 1px solid black;
+        @include desktop {
+          margin: 20px 10px;
+          width: 320px;
+        }
+        @include large {
+          width: 350px;
+          margin: 20px 20px;
+        }
       }
     }
     .portal-view-more {
@@ -108,11 +129,25 @@
       letter-spacing: 2px;
     }
   }
+  .press-releases-wrapper {
+    .press-releases-container {
+      display: flex;
+      flex-direction: column;
+
+      @include desktop {
+        flex-direction: row;
+      }
+    }
+  }
   .not-logged-in {
     min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    h1 {
+      max-width: 80%;
+      text-align: center;
+    }
   }
 }

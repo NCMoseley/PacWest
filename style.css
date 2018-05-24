@@ -421,15 +421,20 @@ textarea {
   .toggle-container .button-toggle {
     position: absolute;
     z-index: 10;
-    left: 70px;
+    left: 35%;
     display: inline-block;
-    width: 60px;
+    width: 70px;
     height: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     -webkit-transition: 0.6s;
-    transition: 0.6s; }
+    transition: 0.6s; } }
+  @media all and (max-width: 750px) and (max-width: 450px) {
+    .toggle-container .button-toggle {
+      left: 20%; } }
+
+@media (max-width: 750px) {
   .menu-close {
     width: 100%;
     height: 30px;
@@ -532,7 +537,7 @@ textarea {
 
 .login-prompt {
   display: none; }
-  @media all and (max-width: 680px) {
+  @media all and (max-width: 750px) {
     .login-prompt {
       display: block;
       margin-right: 2rem; } }
@@ -559,7 +564,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media all and (max-width: 680px) {
+  @media all and (max-width: 750px) {
     .investor-nav .investor-header-wrapper {
       display: none; } }
   .investor-nav .membership-wrapper {
@@ -685,9 +690,12 @@ a {
   display: block;
   float: left;
   width: 60%; }
-  @media all and (max-width: 750px) {
+  @media all and (max-width: 900px) {
     .main-navigation {
       position: relative;
+      width: 80%; } }
+  @media all and (max-width: 750px) {
+    .main-navigation {
       width: 30%; } }
   .main-navigation ul {
     display: none;
@@ -955,7 +963,20 @@ object {
   .membership-wrapper .email-password {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media all and (min-width: 750px) {
+      .membership-wrapper .email-password {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
     .membership-wrapper .email-password input {
       margin: 0 10px;
       min-height: 40px;
@@ -2600,7 +2621,9 @@ object {
   .page-template-investors .investor-login h2 {
     font-size: 2rem;
     letter-spacing: 3px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    max-width: 80%;
+    text-align: center; }
   .page-template-investors .investor-login-desc {
     padding: 1rem;
     text-align: center;
@@ -3075,6 +3098,7 @@ object {
       text-transform: uppercase; }
 
 .page-template-investor-portal .investors-corporate-presentation {
+  padding: 40px 0;
   min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3092,12 +3116,15 @@ object {
   .page-template-investor-portal .investors-corporate-presentation h1 {
     margin-bottom: 0;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    text-align: center;
+    max-width: 80%; }
   .page-template-investor-portal .investors-corporate-presentation .green {
     color: #00c860; }
   .page-template-investor-portal .investors-corporate-presentation p {
     max-width: 70%;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 30px; }
   .page-template-investor-portal .investors-corporate-presentation .corporate-download {
     color: #fff;
     background: #00c860;
@@ -3130,23 +3157,46 @@ object {
           align-items: center; }
   .page-template-investor-portal .headed-next h1 {
     margin-top: 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 80%; }
   .page-template-investor-portal .headed-next .green {
     color: #00c860; }
   .page-template-investor-portal .headed-next .video-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 20px 0;
     margin-bottom: 30px; }
+    @media all and (min-width: 1000px) {
+      .page-template-investor-portal .headed-next .video-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
     .page-template-investor-portal .headed-next .video-container .vid {
       width: 350px;
-      margin: 0 20px;
+      margin: 20px 20px;
       height: 175px;
       background: gray;
       border: 1px solid black; }
+      @media all and (min-width: 1000px) {
+        .page-template-investor-portal .headed-next .video-container .vid {
+          margin: 20px 10px;
+          width: 320px; } }
+      @media all and (min-width: 1200px) {
+        .page-template-investor-portal .headed-next .video-container .vid {
+          width: 350px;
+          margin: 20px 20px; } }
   .page-template-investor-portal .headed-next .portal-view-more {
     color: #fff;
     background: #0a2d5d;
@@ -3159,6 +3209,21 @@ object {
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 2px; }
+
+.page-template-investor-portal .press-releases-wrapper .press-releases-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media all and (min-width: 1000px) {
+    .page-template-investor-portal .press-releases-wrapper .press-releases-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
 .page-template-investor-portal .not-logged-in {
   min-height: 400px;
@@ -3175,6 +3240,9 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .page-template-investor-portal .not-logged-in h1 {
+    max-width: 80%;
+    text-align: center; }
 
 .site-footer .site-info {
   border: 1px solid black;

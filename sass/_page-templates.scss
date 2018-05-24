@@ -33,6 +33,11 @@
   align-items: center;
   .email-password {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include medium {
+      flex-direction: row;
+    }
 
     input {
       margin: 0 10px;
