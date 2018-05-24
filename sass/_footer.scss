@@ -17,12 +17,10 @@
       align-items: center;
       background: black;
       padding: 3%;
-
       .footer-left-text {
         p:nth-of-type(2) {
           display: none;
         }
-
         #footer-sidebar1 {
           h3 {
             display: none;
@@ -59,7 +57,6 @@
         justify-content: center;
         align-items: center;
         max-width: 80%;
-
         margin-top: 13px;
         #footer-sidebar2 {
           .widget {
@@ -72,6 +69,7 @@
             }
             p {
               font-size: 14px;
+              text-align: center;
             }
           }
         }
@@ -83,6 +81,7 @@
             color: #fff;
             display: inline;
             font-size: 12px;
+            text-align: center;
           }
         }
         p {
@@ -113,7 +112,6 @@
             text-transform: uppercase;
             color: $color__text-light-grey;
           }
-
           .wpcf7-submit {
             height: 25px;
             min-width: 175px;
