@@ -66,6 +66,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media all and (max-width: 550px) {
+        flex-direction: column;
+      }
       &-group {
         width: 80%;
         padding: 5px;
@@ -88,8 +91,9 @@
       @media all and (max-width: 930px) {
         right: 0;
       }
-      @media all and (max-width: 480px) {
-        left: 2rem;
+      @media all and (max-width: 550px) {
+        width: 75%;
+        margin: 1rem;
       }
       a {
         text-decoration: none;
