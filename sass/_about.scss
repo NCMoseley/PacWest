@@ -60,9 +60,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; // Todo: add correct photo
+      align-items: center;
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('../../assets/Stock_Photos/pwc-news.jpg');
+      url('../../assets/Stock_Photos/pwc-about.jpg');
       color: $color__text-light;
       background-size: cover;
       &-img-wrapper {
@@ -314,7 +314,6 @@
           align-items: center;
           justify-content: center;
           color: #fff;
-
           @include eight {
             justify-content: flex-start;
             padding-left: 8%;
@@ -322,9 +321,7 @@
           .facilities-text-wrapper {
             height: 80%;
             width: 58%;
-
             padding: 20px 0;
-
             @include eight {
               width: 80%;
             }
@@ -370,7 +367,6 @@
           display: flex;
           align-items: center;
           justify-content: center;
-
           flex-basis: 50%;
           @include eight {
             order: 1;
@@ -379,7 +375,6 @@
             padding: 20px 0;
             height: 80%;
             width: 58%;
-
             @include eight {
               width: 80%;
               padding: 0;
