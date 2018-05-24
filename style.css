@@ -1325,14 +1325,20 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 400px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 1000px) {
+    .press-releases-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
 .press-release {
   display: -webkit-box;
@@ -1344,15 +1350,14 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 28vh;
-  max-height: 250px;
-  width: 80vw;
+  min-height: 250px;
+  width: 70%;
   background-color: #0a2d5d;
   margin: 2vh;
   padding: 2vh; }
   .press-release .green-vertical-line {
     background-color: #00c860;
-    height: 180px;
+    height: 223px;
     width: 5px;
     position: absolute; }
   .press-release .pr-content {

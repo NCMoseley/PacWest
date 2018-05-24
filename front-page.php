@@ -90,7 +90,7 @@ get_header(); ?>
 
 			<section class="investor-portal">
 				<div class="investor-portal-content">
-					<h2 class="front-h2">Request Access to Investor Portal</h2>
+					<h2 class="front-h2">Request Access to Investors Portal</h2>
 					<div class="investor-portal-content-copy">
 						<p>
 							<?php echo $investor_portal_desc ?> </p>
@@ -121,13 +121,13 @@ get_header(); ?>
 							</span>
 						</div>
 						<p>
-							<a href="<?php the_permalink();?>">Read More ‣</a>
+							<a href="<?php echo esc_url(home_url('/news/')); ?>">Read More ‣</a>
 						</p>
 					</div>
 					<?php endwhile; ?>
 					<?php wp_reset_query() ?>
 				</div>
-				<a href="<?php the_permalink();?>">
+				<a href="<?php echo esc_url(home_url('/news/')); ?>">
 					<button class="button-blue">Read More</button>
 				</a>
 			</section>
