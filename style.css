@@ -1736,10 +1736,14 @@ object {
   .page-template-about .about-wrapper .about-menu ul {
     margin: 0;
     margin-top: 20px;
+    margin-right: 5.5rem;
     min-height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -ms-flex-line-pack: center;
         align-content: center;
     -ms-flex-wrap: wrap;
@@ -1751,12 +1755,7 @@ object {
     @media all and (min-width: 1000px) {
       .page-template-about .about-wrapper .about-menu ul {
         margin-top: 0;
-        width: 70%;
-        min-height: 50px;
-        margin-right: 1%; } }
-    @media all and (min-width: 1200px) {
-      .page-template-about .about-wrapper .about-menu ul {
-        width: 65%; } }
+        min-height: 50px; } }
     .page-template-about .about-wrapper .about-menu ul li {
       text-transform: uppercase;
       list-style: none;
