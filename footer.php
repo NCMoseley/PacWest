@@ -16,28 +16,55 @@
 						<img src="<?php echo get_template_directory_uri() . '/assets/Logos/PNG/PWC-Dark.png'?>"/>
 
 					</div>
+					
 					<div class="footer-left-text">
-						<p>Innovating Cannabis Culture in Canada </p>
+					<div id="footer-sidebar" class="secondary">
+							<div id="footer-sidebar1">
+							<?php
+							if(is_active_sidebar('footer-sidebar-1')){
+							dynamic_sidebar('footer-sidebar-1');
+							}
+							?>
 					</div>
-					<div class="footer-left-text"></div>
+
+					</div>
+					
 					<div class="footer-social-media">
 						<i class="fa fa-facebook" aria-hidden="true"></i>
 						<i class="fa fa-twitter" aria-hidden="true"></i>
 						<i class="fa fa-instagram" aria-hidden="true"></i>
 						<i class="fa fa-linkedin" aria-hidden="true"></i>
 					</div>
-				</div>
+					</div>
+					
+					</div> <!-- close footer left -->
 
 					<div class="footer-right">
+						
 						<div class="footer-right-wrapper">
-						<div class="footer-right-text">
-						<h2 class="uppercase">Be the first to know </h2>
-						<p>PacWest will begin selling cannabis to distributors and medical users beginning in 2018. Be the first to learn of new products, and stay up to date with PacWest and company news</p>
+				
+						<div id="footer-sidebar2">
+						<?php
+						if(is_active_sidebar('footer-sidebar-2')){
+						dynamic_sidebar('footer-sidebar-2');
+						}
+						?>
 						</div>
+
 						<div class="footer-sign-up">
 							<?php echo do_shortcode('[contact-form-7 id="75" title="Email Sign Up"]'); ?>
 						</div>
-						<p class="footer-copy">&copy 2018 Pacific West Canopy Ltd. All rights reserved</p>
+ 						
+						<div id="footer-sidebar3">
+						<?php
+						if(is_active_sidebar('footer-sidebar-3')){
+					  dynamic_sidebar('footer-sidebar-3');
+						}
+						?>
+						</div>
+
+						</div>
+					
 					</div>
 					</div>
 				</div><!-- .site-info -->
