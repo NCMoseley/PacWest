@@ -2853,10 +2853,16 @@ object {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
+  @media all and (max-width: 550px) {
+    .page-template-news .news-items-wrapper {
+      width: 100%; } }
 
 .page-template-news .news-item {
   width: 90%;
   margin: 0 auto; }
+  @media all and (max-width: 550px) {
+    .page-template-news .news-item {
+      width: 100%; } }
   .page-template-news .news-item-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2867,11 +2873,20 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media all and (max-width: 550px) {
+      .page-template-news .news-item-header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .page-template-news .news-item-header-group {
       width: 80%;
       padding: 5px;
       background-color: #0a2d5d;
       color: white; }
+      @media all and (max-width: 550px) {
+        .page-template-news .news-item-header-group {
+          width: 90%; } }
       .page-template-news .news-item-header-group h3 {
         margin: 0; }
   .page-template-news .news-item-pdf {
@@ -2886,9 +2901,10 @@ object {
     @media all and (max-width: 930px) {
       .page-template-news .news-item-pdf {
         right: 0; } }
-    @media all and (max-width: 480px) {
+    @media all and (max-width: 550px) {
       .page-template-news .news-item-pdf {
-        left: 2rem; } }
+        width: 75%;
+        margin: 1rem; } }
     .page-template-news .news-item-pdf a {
       text-decoration: none; }
       .page-template-news .news-item-pdf a:visited, .page-template-news .news-item-pdf a:hover {
@@ -2896,6 +2912,10 @@ object {
   .page-template-news .news-item-body {
     height: 30px;
     overflow: hidden; }
+    @media all and (max-width: 550px) {
+      .page-template-news .news-item-body {
+        width: 90%;
+        margin: 0 auto; } }
   .page-template-news .news-item-expand-link {
     width: 100%;
     text-align: center; }
