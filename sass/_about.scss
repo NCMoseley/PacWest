@@ -62,7 +62,7 @@
       justify-content: center;
       align-items: center; // Todo: add correct photo
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url('../../assets/Stock_Photos/pwc-news.jpg');
+        url('../../assets/Stock_Photos/pwc-news.jpg');
       color: $color__text-light;
       background-size: cover;
       &-img-wrapper {
@@ -104,7 +104,7 @@
       min-height: 400px;
       display: flex;
       flex-direction: column;
-      @include medium {
+      @include eight {
         flex-direction: row;
       }
       .our-vision-text {
@@ -114,6 +114,10 @@
         min-height: 350px;
         flex-basis: 40%;
         background: $color__background-grey;
+        order: 2;
+        @include eight {
+          order: 1;
+        }
         .our-vision-text-wrapper {
           color: $color__grey-dark;
           height: 300px;
@@ -129,12 +133,20 @@
         }
       }
       .our-vision-image {
+        order: 1;
         flex-basis: 60%;
         max-height: 400px;
+        @include eight {
+          order: 2;
+        }
         img {
-          max-height: 400px;
-          min-height: 400px;
-          width: 100%;
+          height: auto;
+          width: auto;
+          @include eight {
+            max-height: 400px;
+            min-height: 400px;
+            width: 100%;
+          }
         }
       }
     }
@@ -291,7 +303,7 @@
         display: flex;
         flex-direction: column;
         background: $color__navy;
-        @include medium {
+        @include eight {
           max-height: 500px;
           min-height: 500px;
           flex-direction: row;
@@ -302,13 +314,23 @@
           align-items: center;
           justify-content: center;
           color: #fff;
-          @include medium {
+
+          @include eight {
             justify-content: flex-start;
             padding-left: 8%;
           }
           .facilities-text-wrapper {
             height: 80%;
             width: 58%;
+
+            padding: 20px 0;
+
+            @include eight {
+              width: 80%;
+            }
+            @include desktop {
+              width: 60%;
+            }
           }
         }
         .facilities-image {
@@ -332,6 +354,10 @@
         .technologies-image {
           flex-basis: 50%;
           max-height: 500px;
+          order: 1;
+          @include eight {
+            order: 2;
+          }
           img {
             max-height: 700px;
             min-height: 500px;
@@ -339,15 +365,29 @@
           }
         }
         .technologies-text {
+          order: 2;
           color: #fff;
           display: flex;
           align-items: center;
           justify-content: center;
+
           flex-basis: 50%;
+          @include eight {
+            order: 1;
+          }
           .technologies-text-wrapper {
+            padding: 20px 0;
             height: 80%;
             width: 58%;
-            margin-bottom: 40px;
+
+            @include eight {
+              width: 80%;
+              padding: 0;
+            }
+            @include desktop {
+              width: 60%;
+              margin-bottom: 30px;
+            }
           }
         }
       }

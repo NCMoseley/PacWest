@@ -80,6 +80,7 @@
       color: $color__text-light;
       font-size: 16px;
       max-width: 70%;
+      font-weight: 300;
     }
     &-header {
       display: flex;
@@ -99,7 +100,7 @@
       height: 3px;
       background-color: $color__green;
       transform: rotate(90deg);
-      transform-origin: 53% 19%;
+      transform-origin: 58% 10%;
     }
     .invisible {
       opacity: 0;

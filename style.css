@@ -439,7 +439,8 @@ textarea {
     width: 100%;
     height: 30px;
     cursor: pointer; }
-  .left-x, .right-x {
+  .left-x,
+  .right-x {
     position: absolute;
     content: '';
     top: 30px;
@@ -689,7 +690,7 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 60%; }
+  width: 70%; }
   @media all and (max-width: 900px) {
     .main-navigation {
       position: relative;
@@ -1368,6 +1369,9 @@ object {
 
 /* ================== Press Releases ================= */
 .press-releases-wrapper {
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1556,7 +1560,8 @@ object {
 
 .sub-footer-contact-us-today {
   height: 100%;
-  background-image: url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-contact-box.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-contact-box.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1835,7 +1840,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media all and (min-width: 750px) {
+  @media all and (min-width: 800px) {
     .page-template-about .about-wrapper .about-our-vision {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -1854,7 +1859,15 @@ object {
     min-height: 350px;
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
-    background: #f2f2f1; }
+    background: #f2f2f1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+    @media all and (min-width: 800px) {
+      .page-template-about .about-wrapper .about-our-vision .our-vision-text {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; } }
     .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper {
       color: #333333;
       height: 300px;
@@ -1867,13 +1880,25 @@ object {
         text-transform: uppercase;
         letter-spacing: 2px; }
   .page-template-about .about-wrapper .about-our-vision .our-vision-image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
     max-height: 400px; }
+    @media all and (min-width: 800px) {
+      .page-template-about .about-wrapper .about-our-vision .our-vision-image {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; } }
     .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
-      max-height: 400px;
-      min-height: 400px;
-      width: 100%; }
+      height: auto;
+      width: auto; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
+          max-height: 400px;
+          min-height: 400px;
+          width: 100%; } }
 
 .page-template-about .about-wrapper .about-team {
   min-height: 600px;
@@ -2071,7 +2096,7 @@ object {
         -ms-flex-direction: column;
             flex-direction: column;
     background: #0a2d5d; }
-    @media all and (min-width: 750px) {
+    @media all and (min-width: 800px) {
       .page-template-about .about-wrapper .facilities-technology .facilities {
         max-height: 500px;
         min-height: 500px;
@@ -2092,7 +2117,7 @@ object {
           -ms-flex-pack: center;
               justify-content: center;
       color: #fff; }
-      @media all and (min-width: 750px) {
+      @media all and (min-width: 800px) {
         .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
           -webkit-box-pack: start;
               -ms-flex-pack: start;
@@ -2100,7 +2125,14 @@ object {
           padding-left: 8%; } }
       .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
         height: 80%;
-        width: 58%; }
+        width: 58%;
+        padding: 20px 0; }
+        @media all and (min-width: 800px) {
+          .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
+            width: 80%; } }
+        @media all and (min-width: 1000px) {
+          .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
+            width: 60%; } }
     .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
@@ -2129,13 +2161,24 @@ object {
     .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
-      max-height: 500px; }
+      max-height: 500px;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; } }
       .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image img {
         max-height: 700px;
         min-height: 500px;
         -o-object-fit: cover;
            object-fit: cover; }
     .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
       color: #fff;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2148,10 +2191,23 @@ object {
               justify-content: center;
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; } }
       .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+        padding: 20px 0;
         height: 80%;
-        width: 58%;
-        margin-bottom: 40px; }
+        width: 58%; }
+        @media all and (min-width: 800px) {
+          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+            width: 80%;
+            padding: 0; } }
+        @media all and (min-width: 1000px) {
+          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+            width: 60%;
+            margin-bottom: 30px; } }
 
 .page-template-corporate-governance h1 {
   letter-spacing: 2px; }
@@ -3080,7 +3136,8 @@ object {
   .page-template-faq .faq h3 {
     color: #fff;
     font-size: 16px;
-    max-width: 70%; }
+    max-width: 70%;
+    font-weight: 300; }
   .page-template-faq .faq-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3103,8 +3160,8 @@ object {
     background-color: #00c860;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    -webkit-transform-origin: 53% 19%;
-            transform-origin: 53% 19%; }
+    -webkit-transform-origin: 58% 10%;
+            transform-origin: 58% 10%; }
   .page-template-faq .faq .invisible {
     opacity: 0;
     -webkit-transition: opacity .5s;
