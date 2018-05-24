@@ -1487,7 +1487,8 @@ object {
 
 .sub-footer-contact-us-today {
   height: 100%;
-  background-image: url("../../assets/Stock_Photos/pwc-contact-box.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-contact-box.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-contact-box.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -3062,7 +3063,8 @@ object {
   .page-template-faq .faq h3 {
     color: #fff;
     font-size: 16px;
-    max-width: 70%; }
+    max-width: 70%;
+    font-weight: 300; }
   .page-template-faq .faq-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3085,8 +3087,8 @@ object {
     background-color: #00c860;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    -webkit-transform-origin: 53% 19%;
-            transform-origin: 53% 19%; }
+    -webkit-transform-origin: 58% 10%;
+            transform-origin: 58% 10%; }
   .page-template-faq .faq .invisible {
     opacity: 0;
     -webkit-transition: opacity .5s;
