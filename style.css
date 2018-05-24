@@ -1302,6 +1302,9 @@ object {
 
 /* ================== Press Releases ================= */
 .press-releases-wrapper {
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1484,7 +1487,7 @@ object {
 
 .sub-footer-contact-us-today {
   height: 100%;
-  background-image: url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
+  background-image: url("../../assets/Stock_Photos/pwc-contact-box.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
