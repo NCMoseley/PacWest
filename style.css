@@ -3507,16 +3507,17 @@ object {
           .site-footer .site-info .footer-right .footer-right-wrapper #footer-sidebar2 .widget h3 {
             text-transform: uppercase;
             font-size: 34px;
-            margin: 0;
-            text-align: center; }
+            margin: 0; }
           .site-footer .site-info .footer-right .footer-right-wrapper #footer-sidebar2 .widget p {
-            font-size: 14px; }
+            font-size: 14px;
+            text-align: center; }
         .site-footer .site-info .footer-right .footer-right-wrapper #footer-sidebar3 h3 {
           display: none; }
         .site-footer .site-info .footer-right .footer-right-wrapper #footer-sidebar3 p {
           color: #fff;
           display: inline;
-          font-size: 12px; }
+          font-size: 12px;
+          margin-right: 140px; }
         .site-footer .site-info .footer-right .footer-right-wrapper p {
           margin: 5px 0; }
         .site-footer .site-info .footer-right .footer-right-wrapper .footer-right-text {
@@ -3533,9 +3534,6 @@ object {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           width: 100%; }
