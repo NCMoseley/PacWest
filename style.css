@@ -654,9 +654,13 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 5rem; }
+    @media all and (max-width: 800px) {
+      .nav-wrapper nav {
+        margin-right: 3rem; } }
     .nav-wrapper nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -689,7 +693,6 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 70%; }
   @media all and (max-width: 900px) {
     .main-navigation {
@@ -2255,12 +2258,8 @@ object {
     @media all and (min-width: 800px) {
       .page-template-corporate-governance .cg-wrapper .cg-menu ul {
         margin-top: 0;
-        width: 75%;
         min-height: 50px;
-        margin-right: 1%; } }
-    @media all and (min-width: 1200px) {
-      .page-template-corporate-governance .cg-wrapper .cg-menu ul {
-        width: 65%; } }
+        margin-right: 5.5rem; } }
     .page-template-corporate-governance .cg-wrapper .cg-menu ul li {
       text-transform: uppercase;
       list-style: none;
