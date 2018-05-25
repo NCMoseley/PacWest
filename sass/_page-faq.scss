@@ -1,4 +1,10 @@
 .page-template-faq {
+  .faq-h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center; 
+  }
   .banner-section {
     @include eight {
       height: 40vw;

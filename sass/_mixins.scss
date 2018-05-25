@@ -32,6 +32,26 @@
   }
 }
 
+@mixin button-green {
+  margin: 1rem auto;
+  width: 210px;
+  padding: 15px 30px;
+  font-size: 16px;
+  box-shadow: none;
+  color: white;
+  background-color: $color__green;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  &:hover {
+    background-color: darken($color__green, 5%);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+  }
+}
+
 @mixin button-white {
   // margin: 1rem auto;
   width: 256px;

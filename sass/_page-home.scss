@@ -82,6 +82,12 @@
     justify-content: center;
     align-items: center;
     color: $color__grey-dark;
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    @media all and (max-width: $medium) {
+      background: #fff;
+    }
     h2 {
       &>span {
         color: $color__green;
@@ -132,6 +138,12 @@
           @media all and (max-width: 950px) {
             width: 90%;
           }
+        }
+        &:hover {
+          background-color: $color__green;
+          color: $color__text-light;
+          transform: scale(1.01);
+          box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
         }
       }
     }
@@ -243,9 +255,7 @@
       }
     }
     input[type="submit"] {
-      @include button-blue;
-      @include hover-shadow;
-      background-color: $color__green;
+      @include button-green;
     }
     p {
       margin: 1rem;
@@ -428,6 +438,7 @@
   }
   .button-white {
     @include button-white;
+    @include hover-shadow;
     margin-bottom: 55px;
     margin-top: 47px;
     margin-left: 0;

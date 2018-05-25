@@ -35,7 +35,7 @@
 				<div class="nav-wrapper">
 					<div class="logo-container">
 						<a href="<?php echo esc_url(home_url('/')); ?>">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Logos/SVG/PWC-Light-01.svg" alt="Pacwest Logo">
+							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Logos/PNG/PWC-Nav.png" alt="Pacwest Logo">
 						</a>
 					</div>
 	

@@ -53,10 +53,21 @@
       }
     }
   }
+  .product-a-intro-section {
+    &-paragraph {
+      font-weight: 700;
+    }
+  }
+
   .product-b-intro-section,
   .product-c-intro-section {
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    @media all and (max-width: $medium) {
+      background: #fff;
+    }
     &-paragraph {
-      width: 70%;
       color: $color__grey-dark;
       text-transform: none;
     }

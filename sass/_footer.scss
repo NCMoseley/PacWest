@@ -124,7 +124,7 @@
             padding-bottom: 22px;
             &:hover {
               background-color: darken($color__green, 5%);
-              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .83), 0px 10px 13px -8px rgba(0, 0, 0, .83);
             }
           }
           div.wpcf7-mail-sent-ok {

@@ -638,6 +638,7 @@ textarea {
       font-size: 12px; }
 
 .nav-wrapper {
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,6 +651,13 @@ textarea {
   .nav-wrapper .logo-container {
     width: 100px;
     margin: 10px 0 10px 2rem; }
+    .nav-wrapper .logo-container a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .nav-wrapper .logo-container img {
       width: 100%; }
   .nav-wrapper nav {
@@ -703,6 +711,8 @@ a {
   @media all and (max-width: 750px) {
     .main-navigation {
       width: 30%; } }
+  .main-navigation .current-menu-item a {
+    color: #00c860; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -1128,7 +1138,13 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #333333; }
+  color: #333333;
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
+  @media all and (max-width: 750px) {
+    .page-template-front-page .pacwest-difference {
+      background: #fff; } }
   .page-template-front-page .pacwest-difference h2 > span {
     color: #00c860; }
   .page-template-front-page .pacwest-difference-card-wrapper {
@@ -1186,6 +1202,13 @@ object {
         @media all and (max-width: 950px) {
           .page-template-front-page .pacwest-difference-card-wrapper .card p {
             width: 90%; } }
+      .page-template-front-page .pacwest-difference-card-wrapper .card:hover {
+        background-color: #00c860;
+        color: #fff;
+        -webkit-transform: scale(1.01);
+                transform: scale(1.01);
+        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   .page-template-front-page .pacwest-difference .learn-more {
     margin: 1rem auto;
     width: 210px;
@@ -1356,19 +1379,15 @@ object {
       -webkit-box-shadow: none;
               box-shadow: none;
       color: white;
-      background-color: #0a2d5d;
+      background-color: #00c860;
       border: none;
       border-radius: 5px;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
-      text-shadow: none;
-      background-color: #00c860; }
+      text-shadow: none; }
       .investor-portal form input[type="submit"]:hover {
-        background-color: #082246;
-        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
-                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
-      .investor-portal form input[type="submit"]:hover {
+        background-color: #00af54;
         -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
                 box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
     .investor-portal form p {
@@ -1623,6 +1642,9 @@ object {
       background-color: #d9d9d9;
       -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
               box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+    .sub-footer-contact-us-today .button-white:hover {
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .sub-footer-contact-us-today-line {
   width: 250px;
@@ -1759,14 +1781,12 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height: 70px;
+      height: 60px;
       justify-content: center; } }
   .page-template-about .about-wrapper .about-menu ul {
     margin: 0;
-    margin-right: 0 !important;
     padding-left: 0 !important;
     margin-top: 20px;
-    margin-right: 5.5rem;
     min-height: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1784,12 +1804,15 @@ object {
       .page-template-about .about-wrapper .about-menu ul {
         margin-top: 0;
         min-height: 50px; } }
-    @media all and (min-width: 1000px) {
+    @media all and (min-width: 800px) {
       .page-template-about .about-wrapper .about-menu ul {
         -webkit-box-pack: end;
             -ms-flex-pack: end;
                 justify-content: flex-end;
-        padding-right: 5%; } }
+        margin-right: 5rem; } }
+    @media all and (min-width: 1000px) {
+      .page-template-about .about-wrapper .about-menu ul {
+        margin-right: 5.5rem; } }
     .page-template-about .about-wrapper .about-menu ul li {
       text-transform: uppercase;
       list-style: none;
@@ -2275,7 +2298,7 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height: 70px;
+      height: 60px;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
@@ -2635,11 +2658,22 @@ object {
       .page-template-products .product-c-intro-section-paragraph {
         width: 70%; } }
 
-.page-template-products .product-b-intro-section-paragraph,
-.page-template-products .product-c-intro-section-paragraph {
-  width: 70%;
-  color: #333333;
-  text-transform: none; }
+.page-template-products .product-a-intro-section-paragraph {
+  font-weight: 700; }
+
+.page-template-products .product-b-intro-section,
+.page-template-products .product-c-intro-section {
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
+  @media all and (max-width: 750px) {
+    .page-template-products .product-b-intro-section,
+    .page-template-products .product-c-intro-section {
+      background: #fff; } }
+  .page-template-products .product-b-intro-section-paragraph,
+  .page-template-products .product-c-intro-section-paragraph {
+    color: #333333;
+    text-transform: none; }
 
 .page-template-products .product-main-section .product {
   display: -webkit-box;
@@ -2872,7 +2906,13 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
+  @media all and (max-width: 750px) {
+    .page-template-news .news-section {
+      background: #fff; } }
 
 .page-template-news .news-items-wrapper {
   width: 85%;
@@ -3093,6 +3133,12 @@ object {
 
 .page-template-contact .widget-area {
   display: none; }
+
+.page-template-faq .faq-h2 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center; }
 
 .page-template-faq .banner-section {
   width: 100%;
@@ -3767,8 +3813,8 @@ object {
             padding-bottom: 22px; }
             .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form .wpcf7-submit:hover {
               background-color: #00af54;
-              -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
-                      box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+              -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.83), 0px 10px 13px -8px rgba(0, 0, 0, 0.83);
+                      box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.83), 0px 10px 13px -8px rgba(0, 0, 0, 0.83); }
           .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-mail-sent-ok {
             color: #fff; }
           .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-response-output {
