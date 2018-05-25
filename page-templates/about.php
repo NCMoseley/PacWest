@@ -14,7 +14,6 @@ get_header(); ?>
 <?php $our_vision_header = get_field('our_vision_header');?>
 <?php $our_vision = get_field('our_vision');?>
 <?php $our_vision_image = get_field('our_vision_image');?>
-
 <?php $about_team_header = get_field('about_team_header');?>
 <?php $about_team = get_field('about_team');?>
 
