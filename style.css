@@ -3605,8 +3605,8 @@ object {
             padding-bottom: 22px; }
             .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form .wpcf7-submit:hover {
               background-color: #00af54;
-              -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
-                      box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+              -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.83), 0px 10px 13px -8px rgba(0, 0, 0, 0.83);
+                      box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.83), 0px 10px 13px -8px rgba(0, 0, 0, 0.83); }
           .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-mail-sent-ok {
             color: #fff; }
           .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-response-output {
