@@ -1214,6 +1214,9 @@ object {
     text-shadow: none; }
     .page-template-front-page .pacwest-difference .button-blue:hover {
       background-color: #082246; }
+    .page-template-front-page .pacwest-difference .button-blue:hover {
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .page-template-front-page .our-products {
   display: -webkit-box;
@@ -1357,6 +1360,9 @@ object {
       background-color: #00c860; }
       .investor-portal form input[type="submit"]:hover {
         background-color: #082246; }
+      .investor-portal form input[type="submit"]:hover {
+        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
     .investor-portal form p {
       margin: 1rem;
       display: -webkit-box;
@@ -1405,6 +1411,9 @@ object {
     text-align: center; }
     .press-releases-wrapper .button-blue:hover {
       background-color: #082246; }
+    .press-releases-wrapper .button-blue:hover {
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   .press-releases-wrapper a {
     margin: 0 auto; }
 

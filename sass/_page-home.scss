@@ -153,7 +153,8 @@
       text-transform: uppercase;
     }
     .button-blue {
-      @include button-blue
+      @include button-blue;
+      @include hover-shadow;
     }
   }
   .our-products {
@@ -198,10 +199,7 @@
     }
     .button-blue {
       @include button-blue;
-      &:hover {
-        // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        box-shadow: 0px 14px 20px -15px rgba(0,0,0,.19), 0px 10px 13px -8px rgba(0,0,0,.23);
-      }
+      @include hover-shadow;
     }
   }
 }
@@ -255,6 +253,7 @@
 
     input[type="submit"] {
       @include button-blue;
+      @include hover-shadow;
       background-color: $color__green;
     }
     p {
@@ -279,6 +278,7 @@
   padding-bottom: 5vh;
   .button-blue {
     @include button-blue;
+    @include hover-shadow;
     text-align: center;
   }
   a {
