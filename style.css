@@ -1283,6 +1283,8 @@ object {
         width: 90%; } }
   .page-template-front-page .our-products-content-header {
     text-align: center; }
+  .page-template-front-page .our-products-content-copy {
+    text-align: center; }
   .page-template-front-page .our-products .button-blue {
     margin: 1rem auto;
     width: 210px;

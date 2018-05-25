@@ -199,6 +199,9 @@
     &-content-header {
       text-align: center;
     }
+    &-content-copy {
+      text-align: center;
+    }
     .button-blue {
       @include button-blue;
       @include hover-shadow;
