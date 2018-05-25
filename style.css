@@ -3060,6 +3060,14 @@ object {
     .page-template-contact .banner-section h1 strong {
       font-weight: 700; }
 
+.page-template-contact .main-content {
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
+  @media all and (max-width: 750px) {
+    .page-template-contact .main-content {
+      background: #fff; } }
+
 .page-template-contact .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3071,6 +3079,9 @@ object {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase; }
+
+.page-template-contact .entry-content > p {
+  display: none; }
 
 .page-template-contact .wpcf7-form {
   width: 70%;
@@ -3130,10 +3141,10 @@ object {
       .page-template-contact .wpcf7-form p {
         width: 100%; } }
   .page-template-contact .wpcf7-form p:nth-of-type(7) {
-    width: 85%;
+    width: 100%;
     margin: 0 auto; }
     .page-template-contact .wpcf7-form p:nth-of-type(7) label {
-      width: 100%;
+      width: 75%;
       margin: 0 auto; }
 
 .page-template-contact .entry-title {
@@ -3593,6 +3604,13 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3618,6 +3636,10 @@ object {
         max-width: 80%; }
       .search .site-content .article-wrapper article .entry-header a:hover {
         text-decoration: underline; }
+    .search .site-content .article-wrapper article .entry-summary {
+      color: #fff;
+      max-width: 80%;
+      text-align: center; }
 
 .search-no-results .page-content {
   min-height: 250px;
@@ -3641,7 +3663,9 @@ object {
       background-size: 100% 100%; } }
   .search-no-results .page-content p {
     font-weight: 800;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center;
+    max-width: 80%; }
   .search-no-results .page-content .search-form {
     display: -webkit-box;
     display: -ms-flexbox;

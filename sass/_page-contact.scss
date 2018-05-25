@@ -42,12 +42,27 @@
       }
     }
   }
+
+  .main-content {
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    @media all and (max-width: $medium) {
+      background: #fff;
+    }
+  }
+
   .contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
   } 
+
+  .entry-content > p {
+    display: none;
+  }
+
   .wpcf7-form {
     width: 70%;
     margin: 0 auto;
@@ -57,14 +72,6 @@
     @media all and (max-width: 1050px) {
       width: 100%;
     }
-
-
-    // label {
-    //   @media all and (max-width: 500px) {
-    //     text-align: center;
-    //   }
-    // }
-
 
     input {
       width: 100%;
@@ -88,11 +95,12 @@
         width: 100%;
       }
     }
+
     p:nth-of-type(7) {
-      width: 85%;
+      width: 100%;
       margin: 0 auto;
       label {
-        width: 100%;
+        width: 75%;
         margin: 0 auto;
       }
     }

@@ -54,6 +54,8 @@
         min-height: 100px;
         background: $color__navy;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         border: 4px solid $color__green;
         margin: 20px 10%;
@@ -72,9 +74,15 @@
             text-align: center;
             max-width: 80%;
           }
+
           a:hover {
             text-decoration: underline;
           }
+        }
+        .entry-summary {
+          color: #fff;
+          max-width: 80%;
+          text-align: center;
         }
       }
     }
@@ -87,6 +95,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     align-items: center;
     background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left
       no-repeat;
@@ -98,6 +107,8 @@
     p {
       font-weight: 800;
       font-size: 20px;
+      text-align: center;
+      max-width: 80%;
     }
 
     .search-form {
