@@ -3015,7 +3015,8 @@ object {
         margin: 0 auto; } }
   .page-template-news .news-item-expand-link {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
 
 .page-template-contact .contact-h2 {
   font-size: 2rem;
