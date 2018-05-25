@@ -3,7 +3,7 @@
     font-size: 2rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    text-align: center; 
+    text-align: center;
   }
   .banner-section {
     @include eight {
@@ -25,7 +25,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; 
+      align-items: center;
       img {
         width: 100%;
       }
@@ -72,7 +72,6 @@
     @media all and (max-width: 550px) {
       width: 100%;
     }
-    
   }
   .faq {
     width: 40%;
