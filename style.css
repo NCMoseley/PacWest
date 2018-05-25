@@ -3520,11 +3520,16 @@ object {
         display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center; }
+                justify-content: center;
+        color: #fff; }
         .site-footer .site-info .footer-left .footer-social-media i {
-          color: #fff;
           margin: 0 15px;
           font-size: 22px; }
+          .site-footer .site-info .footer-left .footer-social-media i:hover {
+            -webkit-transform: scale(1.2);
+                    transform: scale(1.2); }
+          .site-footer .site-info .footer-left .footer-social-media i i.fa-facebook:hover {
+            color: #0a2d5d; }
     .site-footer .site-info .footer-right {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
