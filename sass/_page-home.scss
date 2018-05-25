@@ -415,6 +415,10 @@
   justify-content: center;
   align-items: center;
   padding: 5%;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+  }
   h1 {
     font-size: 42px;
     width: 280px;
@@ -470,6 +474,10 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+  }
 }
 
 .sub-footer-investors {
@@ -483,6 +491,10 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+  }
 }
 
 .sub-footer-products {
@@ -496,6 +508,10 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+  }
   h1.products-text {
     color: $color__navy;
     -webkit-text-stroke: 1px #fff;
