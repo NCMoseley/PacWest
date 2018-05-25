@@ -49,7 +49,7 @@ jQuery( document ).ready(function($) {
     if (expanded === true) {
       $(this).prev().animate({'max-height':'1000px'}, 200);
     } else {
-      $(this).prev().animate({'max-height':'30px'}, 200);
+      $(this).prev().animate({'max-height':'38px'}, 200);
     }
   })
 
