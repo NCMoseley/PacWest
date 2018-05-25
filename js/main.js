@@ -47,9 +47,9 @@ jQuery( document ).ready(function($) {
     expanded = !expanded
     
     if (expanded === true) {
-      $(this).prev().animate({'height':'300px'}, 200);
+      $(this).prev().animate({'max-height':'1000px'}, 200);
     } else {
-      $(this).prev().animate({'height':'100px'}, 200);
+      $(this).prev().animate({'max-height':'30px'}, 200);
     }
   })
 
@@ -69,7 +69,4 @@ jQuery( document ).ready(function($) {
       $(this).css('display', 'none');
       $('.investor-header-wrapper').css("display", "flex");
     })
-
-
-
 });
