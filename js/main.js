@@ -48,8 +48,10 @@ jQuery( document ).ready(function($) {
     
     if (expanded === true) {
       $(this).prev().animate({'max-height':'1000px'}, 200);
+      $(this).children().css('transform', 'rotate(180deg)');
     } else {
       $(this).prev().animate({'max-height':'38px'}, 200);
+      $(this).children().css('transform', 'rotate(0)');
     }
   })
 
