@@ -25,16 +25,15 @@ get_header(); ?>
 				</h1>
 			</header>
 
+			<div class="main-content">		
+				<section class="contact-form">
+					<h2 class="contact-h2"><?php echo $main_text ?></h2>
+				</section>
 
-			<section class="contact-form">
-				<h2 class="contact-h2"><?php echo $main_text ?></h2>
-			</section>
-
-			<?php while (have_posts()) : the_post(); ?>
-				<?php get_template_part('template-parts/content', 'page'); ?>
-			<?php endwhile; // End of the loop.?>
-
-
+				<?php while (have_posts()) : the_post(); ?>
+					<?php get_template_part('template-parts/content', 'page'); ?>
+				<?php endwhile; // End of the loop.?>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
