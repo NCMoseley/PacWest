@@ -3584,6 +3584,13 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3609,6 +3616,10 @@ object {
         max-width: 80%; }
       .search .site-content .article-wrapper article .entry-header a:hover {
         text-decoration: underline; }
+    .search .site-content .article-wrapper article .entry-summary {
+      color: #fff;
+      max-width: 80%;
+      text-align: center; }
 
 .search-no-results .page-content {
   min-height: 250px;
@@ -3632,7 +3643,9 @@ object {
       background-size: 100% 100%; } }
   .search-no-results .page-content p {
     font-weight: 800;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center;
+    max-width: 80%; }
   .search-no-results .page-content .search-form {
     display: -webkit-box;
     display: -ms-flexbox;
