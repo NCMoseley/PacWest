@@ -15,7 +15,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: black;
+      background: $color__footer;
       padding: 3%;
       .footer-left-text {
         p:nth-of-type(2) {
@@ -37,10 +37,13 @@
       .footer-social-media {
         display: flex;
         justify-content: center;
+        color: #fff;
         i {
-          color: #fff;
-          margin: 0 5px;
+          margin: 0 15px;
           font-size: 22px;
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
     }
