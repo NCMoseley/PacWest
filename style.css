@@ -2992,7 +2992,7 @@ object {
         color: white; }
   .page-template-news .news-item-body {
     height: auto;
-    max-height: 30px;
+    max-height: 38px;
     overflow: hidden; }
     @media all and (max-width: 550px) {
       .page-template-news .news-item-body {
@@ -3333,7 +3333,6 @@ object {
     .page-template-investor-portal .investors-portal-banner {
       height: 40vw; } }
   .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper {
-    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3347,12 +3346,21 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media all and (min-width: 800px) {
+      .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper {
+        width: 800px; } }
     .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper img {
-      width: 100%; }
+      width: 100px; }
     .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper h1 {
-      color: #fff;
-      font-family: "Roboto", Arial, Helvetica, sans-serif;
-      text-transform: uppercase; }
+      width: 60%;
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px; }
+      .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper h1 strong {
+        font-weight: 700; }
 
 .page-template-investor-portal .investors-corporate-presentation {
   background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;

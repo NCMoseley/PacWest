@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../../assets/Stock_Photos/pwc-news.jpg');
+      url('../../assets/Stock_Photos/pwc-news.jpg');
     color: $color__text-light;
     background-size: cover;
     &-img-wrapper {
@@ -50,7 +50,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left
+      no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
     @media all and (max-width: $medium) {
@@ -120,7 +121,7 @@
     }
     &-body {
       height: auto;
-      max-height: 30px;
+      max-height: 38px;
       overflow: hidden;
       @media all and (max-width: 550px) {
         width: 90%;
