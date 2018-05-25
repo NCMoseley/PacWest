@@ -69,4 +69,5 @@ jQuery( document ).ready(function($) {
       $(this).css('display', 'none');
       $('.investor-header-wrapper').css("display", "flex");
     })
+
 });
