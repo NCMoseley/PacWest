@@ -1403,7 +1403,8 @@ object {
     .press-releases-wrapper .button-blue:hover {
       background-color: #082246; }
   .press-releases-wrapper a {
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-decoration: none; }
 
 .press-releases-title {
   font-weight: 700;
@@ -1476,49 +1477,34 @@ object {
     color: #ffffff;
     text-align: left;
     margin: 0;
-    margin-bottom: 30px;
-    opacity: 1;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s; }
+    margin-bottom: 30px; }
   .press-release span {
     display: inline;
     font-size: 17px;
     font-weight: 500;
     color: #fff;
     text-align: left;
-    text-transform: uppercase;
-    opacity: 1;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s; }
-  .press-release p {
-    position: absolute;
-    padding-left: 5%;
-    padding-bottom: 40px;
-    color: #fff;
-    opacity: 0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s; }
-
-.press-release:hover h3 {
-  opacity: 0; }
-
-.press-release:hover span {
-  opacity: 0; }
-
-.press-release:hover p {
-  opacity: 1;
-  font-size: 24px; }
+    text-transform: uppercase; }
 
 .press-release:nth-child(2) {
   background-color: #ccc; }
   .press-release:nth-child(2) h3 {
     color: #404040; }
   .press-release:nth-child(2) span {
-    color: #404040;
-    font-weight: bold; }
+    color: #404040; }
   .press-release:nth-child(2) a {
-    color: #404040;
-    font-weight: bold; }
+    color: #404040; }
+
+.press-release:hover {
+  background-color: #00c860;
+  -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+  .press-release:hover .green-vertical-line {
+    background-color: #fff; }
+  .press-release:hover h3 a {
+    color: #fff; }
+  .press-release:hover span {
+    color: #fff; }
 
 .sub-footer {
   display: -webkit-box;
