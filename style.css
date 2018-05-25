@@ -1026,10 +1026,14 @@ object {
               box-shadow: none;
       min-width: 180px;
       border-radius: 3px;
-      font-size: 16px;
+      font-size: 22px;
       letter-spacing: 2px;
       text-transform: uppercase;
       border: 0; }
+      .membership-wrapper .email-password .swpm-login-form-submit:hover {
+        background-color: #00af54;
+        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69), 0px 10px 13px -8px rgba(0, 0, 0, 0.73);
+                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69), 0px 10px 13px -8px rgba(0, 0, 0, 0.73); }
 
 .page-template-front-page .front-h2 {
   font-size: 2rem;
