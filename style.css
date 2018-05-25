@@ -395,6 +395,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
+input,
 textarea {
   color: #666;
   border: 1px solid #ccc;
@@ -404,6 +405,7 @@ textarea {
   input[type="url"]:focus,
   input[type="password"]:focus,
   input[type="search"]:focus,
+  input:focus,
   textarea:focus {
     color: #111; }
 
