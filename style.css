@@ -2980,7 +2980,8 @@ object {
         .page-template-news .news-item-header-group {
           width: 90%; } }
       .page-template-news .news-item-header-group h3 {
-        margin: 0; }
+        margin: 0;
+        font-weight: 300; }
   .page-template-news .news-item-pdf {
     position: relative;
     right: 5rem;
