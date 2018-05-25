@@ -1192,6 +1192,13 @@ object {
         @media all and (max-width: 950px) {
           .page-template-front-page .pacwest-difference-card-wrapper .card p {
             width: 90%; } }
+      .page-template-front-page .pacwest-difference-card-wrapper .card:hover {
+        background-color: #00c860;
+        color: #fff;
+        -webkit-transform: scale(1.01);
+                transform: scale(1.01);
+        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   .page-template-front-page .pacwest-difference .learn-more {
     margin: 1rem auto;
     width: 210px;
@@ -1362,19 +1369,15 @@ object {
       -webkit-box-shadow: none;
               box-shadow: none;
       color: white;
-      background-color: #0a2d5d;
+      background-color: #00c860;
       border: none;
       border-radius: 5px;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
-      text-shadow: none;
-      background-color: #00c860; }
+      text-shadow: none; }
       .investor-portal form input[type="submit"]:hover {
-        background-color: #082246;
-        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
-                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
-      .investor-portal form input[type="submit"]:hover {
+        background-color: #00af54;
         -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
                 box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
     .investor-portal form p {
@@ -3646,8 +3649,8 @@ object {
             padding-bottom: 22px; }
             .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form .wpcf7-submit:hover {
               background-color: #00af54;
-              -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
-                      box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+              -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.83), 0px 10px 13px -8px rgba(0, 0, 0, 0.83);
+                      box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.83), 0px 10px 13px -8px rgba(0, 0, 0, 0.83); }
           .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-mail-sent-ok {
             color: #fff; }
           .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-response-output {
