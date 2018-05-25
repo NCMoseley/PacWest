@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url('../../assets/Stock_Photos/pwc-investors.jpg');
+    url('../../assets/Stock_Photos/pwc-investors.jpg');
     color: $color__text-light;
     background-size: cover;
     .portal-banner-wrapper {
@@ -30,15 +30,16 @@
         width: 100%;
       }
       h1 {
-        color: #fff;
-        font-family: $font__main;
-        text-transform: uppercase;
+        // width: 60%;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 300;
+        letter-spacing: 2px;
       }
     }
   }
   .investors-corporate-presentation {
-    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left
-      no-repeat;
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 40px 0;
@@ -144,8 +145,7 @@
     }
   }
   .not-logged-in {
-    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left
-      no-repeat;
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
     background-attachment: fixed;
     min-height: 400px;
     display: flex;

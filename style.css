@@ -1821,7 +1821,8 @@ object {
       text-transform: uppercase;
       list-style: none;
       margin: 0 8px;
-      color: #fff; }
+      color: #fff;
+      font-weight: 300; }
   .page-template-about .about-wrapper .about-menu a {
     text-decoration: none; }
 
@@ -1863,8 +1864,11 @@ object {
     .page-template-about .about-wrapper .banner-section-img-wrapper img {
       width: 100%; }
   .page-template-about .about-wrapper .banner-section h1 {
-    color: #fff;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    width: 60%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
     text-transform: uppercase; }
 
 .page-template-about .about-wrapper .about-our-company {
@@ -2375,10 +2379,10 @@ object {
       height: 100px;
       width: 100px; }
     .page-template-corporate-governance .cg-wrapper .cg-banner .cg-banner-content-wrapper h1 {
-      color: #fff;
-      font-family: "Roboto", Arial, Helvetica, sans-serif;
-      font-weight: 200;
       text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
       text-transform: uppercase; }
 
 .page-template-corporate-governance .cg-wrapper .cg-page-description {
@@ -3350,9 +3354,10 @@ object {
     .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper img {
       width: 100%; }
     .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper h1 {
-      color: #fff;
-      font-family: "Roboto", Arial, Helvetica, sans-serif;
-      text-transform: uppercase; }
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px; }
 
 .page-template-investor-portal .investors-corporate-presentation {
   background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
