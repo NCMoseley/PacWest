@@ -3503,7 +3503,7 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      background: black;
+      background: #252525;
       padding: 3%; }
       .site-footer .site-info .footer-left .footer-left-text p:nth-of-type(2) {
         display: none; }
@@ -3523,7 +3523,7 @@ object {
                 justify-content: center; }
         .site-footer .site-info .footer-left .footer-social-media i {
           color: #fff;
-          margin: 0 5px;
+          margin: 0 15px;
           font-size: 22px; }
     .site-footer .site-info .footer-right {
       -ms-flex-preferred-size: 50%;
