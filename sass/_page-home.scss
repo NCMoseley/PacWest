@@ -149,7 +149,8 @@
       text-transform: uppercase;
     }
     .button-blue {
-      @include button-blue
+      @include button-blue;
+      @include hover-shadow;
     }
   }
   .our-products {
@@ -193,7 +194,8 @@
       text-align: center;
     }
     .button-blue {
-      @include button-blue
+      @include button-blue;
+      @include hover-shadow;
     }
   }
 }
@@ -242,6 +244,7 @@
     }
     input[type="submit"] {
       @include button-blue;
+      @include hover-shadow;
       background-color: $color__green;
     }
     p {
@@ -266,6 +269,7 @@
   padding-bottom: 5vh;
   .button-blue {
     @include button-blue;
+    @include hover-shadow;
     text-align: center;
   }
   a {

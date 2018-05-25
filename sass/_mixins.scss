@@ -84,3 +84,9 @@
     @content;
   }
 }
+
+@mixin hover-shadow {
+  &:hover {
+    box-shadow: 0px 14px 20px -15px rgba(0,0,0,.19), 0px 10px 13px -8px rgba(0,0,0,.23);
+  }
+}
