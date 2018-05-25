@@ -650,6 +650,13 @@ textarea {
   .nav-wrapper .logo-container {
     width: 100px;
     margin: 10px 0 10px 2rem; }
+    .nav-wrapper .logo-container a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .nav-wrapper .logo-container img {
       width: 100%; }
   .nav-wrapper nav {

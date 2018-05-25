@@ -221,6 +221,10 @@ $transition-duration: 0.5s;
   .logo-container {
     width: 100px;
     margin: 10px 0 10px 2rem;
+    a {
+      display: flex;
+      align-items: center;
+    }
     img {
       width: 100%;
     }
