@@ -3567,8 +3567,9 @@ object {
             border: none;
             padding-bottom: 22px; }
           .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-mail-sent-ok {
-            color: #fff;
-            border: 2px solid #398f14; }
+            color: #fff; }
+          .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-response-output {
+            color: #fff; }
       .site-footer .site-info .footer-right .footer-copy {
         font-size: 12px;
         color: #fff; }

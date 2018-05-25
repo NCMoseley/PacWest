@@ -124,8 +124,10 @@
             padding-bottom: 22px;
           }
           div.wpcf7-mail-sent-ok {
-            color: #fff;
-            border: 2px solid #398f14;
+            color: $color__text-light;
+          }
+          div.wpcf7-response-output {
+            color: $color__text-light;
           }
         }
       }
