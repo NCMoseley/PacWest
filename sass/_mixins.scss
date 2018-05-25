@@ -27,7 +27,8 @@
   text-shadow: none;
   &:hover {
     background-color: darken($color__navy, 5%);
-    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19),
+      0px 10px 13px -8px rgba(0, 0, 0, 0.23);
   }
 }
 
@@ -67,7 +68,8 @@
   text-transform: uppercase;
   &:hover {
     background-color: darken($color__link, 15%);
-    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19),
+      0px 10px 13px -8px rgba(0, 0, 0, 0.23);
   }
 }
 
@@ -109,6 +111,26 @@
 
 @mixin hover-shadow {
   &:hover {
-    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19),
+      0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+  }
+}
+
+@mixin search-form {
+  display: flex;
+  justify-content: center;
+  input {
+    height: 30px;
+    border-radius: 0;
+    border: 1px solid $color__text-light-grey;
+    @include eight {
+      min-width: 400px;
+    }
+  }
+  .search-submit {
+    background: $color__green;
+    color: #fff;
+    box-shadow: none;
+    text-shadow: none;
   }
 }

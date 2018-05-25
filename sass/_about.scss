@@ -19,15 +19,13 @@
         background: $color__green;
         align-items: center;
         display: flex;
-        height: 70px;
+        height: 60px;
         justify-content: center;
       }
       ul {
         margin: 0;
-        margin-right: 0 !important;
         padding-left: 0 !important;
         margin-top: 20px;
-        margin-right: 5.5rem;
         min-height: 50px;
         display: flex;
         justify-content: center;
@@ -38,9 +36,12 @@
           margin-top: 0;
           min-height: 50px;
         }
-        @include desktop {
+        @include eight {
           justify-content: flex-end;
-          padding-right: 5%;
+          margin-right: 5rem;
+        }
+        @include desktop {
+          margin-right: 5.5rem;
         }
         li {
           text-transform: uppercase;
@@ -86,7 +87,6 @@
     .about-our-company {
       background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom
         left no-repeat;
-      background-size: 100% 100%;
       background-attachment: fixed;
       width: 100%;
       min-height: 400px;
@@ -95,6 +95,9 @@
       justify-content: center;
       align-items: center;
       padding: 20px 0;
+      @include eight {
+        background-size: 100% 100%;
+      }
       h1 {
         color: $color__grey-dark;
         font-family: $font__main;

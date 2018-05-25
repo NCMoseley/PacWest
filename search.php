@@ -16,6 +16,8 @@ get_header(); ?>
 				<h1 class="page-title"><?php printf(esc_html('Search Results for: %s'), '<span>' . get_search_query() . '</span>'); ?></h1>
 			</header><!-- .page-header -->
 
+			<div class="article-wrapper">
+
 			<?php /* Start the Loop */ ?>
 			<?php while (have_posts()) : the_post(); ?>
 
@@ -30,9 +32,9 @@ get_header(); ?>
 			<?php get_template_part('template-parts/content', 'none'); ?>
 
 		<?php endif; ?>
-
+		</div>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

@@ -31,7 +31,7 @@ get_header(); ?>
 
 			<section class="main-section">
 				<div class="main-section-intro">
-					<h2><?php echo $main_text ?></h2>
+					<h2 class="faq-h2"><?php echo $main_text ?></h2>
 				</div>
 
 				<div class="faq-container">
