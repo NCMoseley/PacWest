@@ -31,13 +31,12 @@
         width: 100%;
         @include eight {
           margin-top: 0;
-          width: 75%;
           min-height: 50px;
-          margin-right: 1%;
+          margin-right: 5.5rem;
         }
-        @include large {
-          width: 65%;
-        }
+        // @include large {
+        //   width: 65%;
+        // }
         li {
           text-transform: uppercase;
           list-style: none;

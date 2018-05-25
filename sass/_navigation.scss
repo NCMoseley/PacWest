@@ -225,7 +225,12 @@ $transition-duration: 0.5s;
 	}
 	nav {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
+		margin-right: 5rem;
+		@media all and (max-width: 800px) {
+			margin-right: 3rem;
+		}
+
 		ul {
 			display: flex;
 			justify-content: center;
@@ -267,7 +272,6 @@ a {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
 	width: 70%;
 	@media all and (max-width: 900px) {
 		position: relative;
