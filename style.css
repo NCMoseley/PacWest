@@ -711,6 +711,8 @@ a {
   @media all and (max-width: 750px) {
     .main-navigation {
       width: 30%; } }
+  .main-navigation .current-menu-item a {
+    color: #00c860; }
   .main-navigation ul {
     display: none;
     list-style: none;

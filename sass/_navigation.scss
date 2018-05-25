@@ -287,6 +287,11 @@ a {
   @media all and (max-width: 750px) {
     width: 30%;
   }
+
+  .current-menu-item a {
+    color: $color__green;
+  }
+
   ul {
     display: none;
     list-style: none;
