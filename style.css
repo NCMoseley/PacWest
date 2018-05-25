@@ -1215,7 +1215,9 @@ object {
     text-transform: uppercase;
     text-shadow: none; }
     .page-template-front-page .pacwest-difference .button-blue:hover {
-      background-color: #082246; }
+      background-color: #082246;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
     .page-template-front-page .pacwest-difference .button-blue:hover {
       -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
               box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
@@ -1290,7 +1292,9 @@ object {
     text-transform: uppercase;
     text-shadow: none; }
     .page-template-front-page .our-products .button-blue:hover {
-      background-color: #082246; }
+      background-color: #082246;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
     .page-template-front-page .our-products .button-blue:hover {
       -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
               box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
@@ -1361,7 +1365,9 @@ object {
       text-shadow: none;
       background-color: #00c860; }
       .investor-portal form input[type="submit"]:hover {
-        background-color: #082246; }
+        background-color: #082246;
+        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
       .investor-portal form input[type="submit"]:hover {
         -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
                 box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
@@ -1412,7 +1418,9 @@ object {
     text-shadow: none;
     text-align: center; }
     .press-releases-wrapper .button-blue:hover {
-      background-color: #082246; }
+      background-color: #082246;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
     .press-releases-wrapper .button-blue:hover {
       -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
               box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
@@ -1607,7 +1615,9 @@ object {
     margin-left: 0;
     margin-right: 0; }
     .sub-footer-contact-us-today .button-white:hover {
-      background-color: #d9d9d9; }
+      background-color: #d9d9d9;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .sub-footer-contact-us-today-line {
   width: 250px;
@@ -3022,7 +3032,9 @@ object {
     text-shadow: none;
     background-color: #00c860; }
     .page-template-contact .wpcf7-form input[type='submit']:hover {
-      background-color: #082246; }
+      background-color: #082246;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   .page-template-contact .wpcf7-form p {
     margin: 1rem;
     display: -webkit-box;
@@ -3571,6 +3583,10 @@ object {
             text-transform: uppercase;
             border: none;
             padding-bottom: 22px; }
+            .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form .wpcf7-submit:hover {
+              background-color: #00af54;
+              -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+                      box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
           .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-mail-sent-ok {
             color: #fff; }
           .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-response-output {
