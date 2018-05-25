@@ -399,7 +399,8 @@ input,
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 3px;
+  padding: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -3778,6 +3779,12 @@ object {
           .site-footer .site-info .footer-left .footer-social-media i:hover {
             -webkit-transform: scale(1.2);
                     transform: scale(1.2); }
+        .site-footer .site-info .footer-left .footer-social-media i:nth-of-type(1):hover {
+          color: blue; }
+        .site-footer .site-info .footer-left .footer-social-media i:nth-of-type(2):hover {
+          color: skyblue; }
+        .site-footer .site-info .footer-left .footer-social-media i:nth-of-type(4):hover {
+          color: salmon; }
     .site-footer .site-info .footer-right {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
