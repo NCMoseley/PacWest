@@ -46,6 +46,7 @@
       margin: 0 2rem;
       line-height: 30px;
       color: $color__navy;
+      font-size: 20px;
       text-transform: uppercase;
       text-align: center;
       @media all and (max-width: $medium) {
@@ -55,7 +56,7 @@
   }
   .product-a-intro-section {
     &-paragraph {
-      font-weight: 700;
+      font-weight: 400;
     }
   }
 
@@ -130,9 +131,9 @@
           width: 100%;
         }
         img {
-          width: 80%;
+          width: 100%;
           @media all and (max-width: $medium) {
-            width: 100%;
+            width: 80%;
           }
         }
       }
