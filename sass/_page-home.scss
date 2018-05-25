@@ -40,7 +40,6 @@
       @media all and (max-width: 840px) {
         width: 80%;
       }
-
       strong {
         font-weight: 700;
       }
@@ -56,7 +55,6 @@
       padding: 3rem 0;
       flex-direction: column;
     }
-
     &-paragraph {
       width: 50%;
       margin: 0 2rem;
@@ -64,15 +62,14 @@
       font-weight: 300;
       @media all and (max-width: $tablet) {
         width: 90%;
-      }  
+      }
     }
     &-img-wrapper {
       max-width: 150px;
       margin: 1rem 5rem 1rem 1rem;
       @media all and (max-width: $tablet) {
         margin: 1rem;
-      }  
-
+      }
       img {
         width: 100%;
       }
@@ -98,10 +95,10 @@
       @media all and (max-width: 900px) {
         width: 70%;
         flex-wrap: wrap;
-      }  
+      }
       @media all and (max-width: 660px) {
         width: 100%;
-      }  
+      }
       .card {
         max-width: 200px;
         margin: 0 1rem;
@@ -117,7 +114,6 @@
         @media all and (max-width: 900px) {
           margin: 1rem;
         }
-
         &:nth-child(odd) {
           color: white;
           background-color: $color__navy;
@@ -135,7 +131,7 @@
           text-align: center;
           @media all and (max-width: 950px) {
             width: 90%;
-          }  
+          }
         }
       }
     }
@@ -227,7 +223,6 @@
       }
     }
   }
-
   form {
     width: 60%;
     margin: 0 auto;
@@ -237,20 +232,16 @@
     @media all and (max-width: 500px) {
       width: 100%;
     }
-
     label {
       @media all and (max-width: 500px) {
         text-align: center;
       }
     }
-
-
     input {
       @media all and (max-width: 500px) {
         width: 90%;
       }
     }
-
     input[type="submit"] {
       @include button-blue;
       @include hover-shadow;
@@ -283,6 +274,7 @@
   }
   a {
     margin: 0 auto;
+    text-decoration: none;
   }
 }
 
@@ -342,9 +334,6 @@
     text-align: left;
     margin: 0;
     margin-bottom: 30px;
-    opacity: 1;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
   }
   span {
     display: inline;
@@ -353,31 +342,6 @@
     color: #fff;
     text-align: left;
     text-transform: uppercase;
-    opacity: 1;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-  }
-  p {
-    position: absolute;
-    padding-left: 5%;
-    padding-bottom: 40px;
-    color: #fff;
-    opacity: 0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-  }
-}
-
-.press-release:hover {
-  h3 {
-    opacity: 0;
-  }
-  span {
-    opacity: 0;
-  }
-  p {
-    opacity: 1;
-    font-size: 24px;
   }
 }
 
@@ -388,11 +352,23 @@
   }
   span {
     color: $color__text-main;
-    font-weight: bold;
   }
   a {
     color: $color__text-main;
-    font-weight: bold;
+  }
+}
+
+.press-release:hover {
+  background-color: $color__green;
+  box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+  .green-vertical-line {
+    background-color: $color__background-body;
+  }
+  h3 a {
+    color: $color__text-light;
+  }
+  span {
+    color: $color__text-light;
   }
 } //=============Sub footer sections===========
 .sub-footer {
@@ -439,6 +415,10 @@
   justify-content: center;
   align-items: center;
   padding: 5%;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+  }
   h1 {
     font-size: 42px;
     width: 280px;
@@ -495,6 +475,10 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+  }
 }
 
 .sub-footer-investors {
@@ -508,6 +492,10 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+  }
 }
 
 .sub-footer-products {
@@ -521,6 +509,10 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+  }
   h1.products-text {
     color: $color__navy;
     -webkit-text-stroke: 1px #fff;

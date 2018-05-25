@@ -110,23 +110,25 @@ get_header(); ?>
 
 					<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>
 					<?php while ($query->have_posts()) : $query->the_post(); ?>
-					<div class="press-release">
-						<div class="green-vertical-line"></div>
-						<div class="pr-content">
-							<h3>
-								<?php the_title(); ?>
-							</h3>
-							<span>
-								<?php the_time(' F jS, Y') ?>
-							</span>
-						</div>
-						<p>
-							<a href="<?php echo esc_url(home_url('/news/')); ?>">Read More ‣</a>
-						</p>
-					</div>
-					<?php endwhile; ?>
-					<?php wp_reset_query() ?>
-				</div>
+					
+							<div class="press-release">
+								<div class="green-vertical-line"></div>
+								<div class="pr-content">
+									<h3>
+										<a href="<?php echo esc_url(home_url('/news/')); ?>">
+										<?php the_title(); ?>
+										</a>
+									</h3>
+									<span>
+										<?php the_time(' F jS, Y') ?>
+									</span>
+								</div>
+							</div>
+							<?php endwhile; ?>
+							<?php wp_reset_query() ?>
+							</div>
+					
+
 				<a href="<?php echo esc_url(home_url('/news/')); ?>">
 					<button class="button-blue">Read More</button>
 				</a>
