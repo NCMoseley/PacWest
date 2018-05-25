@@ -1620,6 +1620,9 @@ object {
     margin-right: 0; }
     .sub-footer-contact-us-today .button-white:hover {
       background-color: #d9d9d9; }
+    .sub-footer-contact-us-today .button-white:hover {
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .sub-footer-contact-us-today-line {
   width: 250px;
@@ -2845,7 +2848,10 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
 
 .page-template-news .news-items-wrapper {
   width: 85%;
