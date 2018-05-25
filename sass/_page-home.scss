@@ -133,6 +133,12 @@
             width: 90%;
           }
         }
+        &:hover {
+          background-color: $color__green;
+          color: $color__text-light;
+          transform: scale(1.01);
+          box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+        }
       }
     }
     .learn-more {
@@ -243,9 +249,7 @@
       }
     }
     input[type="submit"] {
-      @include button-blue;
-      @include hover-shadow;
-      background-color: $color__green;
+      @include button-green;
     }
     p {
       margin: 1rem;
