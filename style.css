@@ -2990,6 +2990,10 @@ object {
     border-radius: 3px;
     text-transform: uppercase;
     cursor: pointer; }
+    .page-template-news .news-item-pdf:hover {
+      background-color: #00af54;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
     @media all and (max-width: 930px) {
       .page-template-news .news-item-pdf {
         right: 0; } }
