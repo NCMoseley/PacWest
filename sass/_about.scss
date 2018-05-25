@@ -86,7 +86,6 @@
     .about-our-company {
       background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom
         left no-repeat;
-      background-size: 100% 100%;
       background-attachment: fixed;
       width: 100%;
       min-height: 400px;
@@ -95,6 +94,9 @@
       justify-content: center;
       align-items: center;
       padding: 20px 0;
+      @include eight {
+        background-size: 100% 100%;
+      }
       h1 {
         color: $color__grey-dark;
         font-family: $font__main;
