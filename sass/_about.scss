@@ -84,6 +84,10 @@
       }
     }
     .about-our-company {
+      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom
+        left no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
       width: 100%;
       min-height: 400px;
       display: flex;

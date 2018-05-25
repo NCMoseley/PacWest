@@ -428,6 +428,7 @@
   }
   .button-white {
     @include button-white;
+    @include hover-shadow;
     margin-bottom: 55px;
     margin-top: 47px;
     margin-left: 0;
