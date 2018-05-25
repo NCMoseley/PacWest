@@ -224,6 +224,7 @@
     &-copy {
       width: 65%;
       margin: 0 auto;
+      text-align: center;
       @media all and (max-width: 700px) {
         width: 50%
       }
@@ -253,6 +254,7 @@
     }
     input[type="submit"] {
       @include button-green;
+      width: 335px;
     }
     p {
       margin: 1rem;
