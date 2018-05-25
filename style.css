@@ -1372,8 +1372,7 @@ object {
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
-      text-shadow: none;
-      width: 335px; }
+      text-shadow: none; }
       .investor-portal form input[type="submit"]:hover {
         background-color: #00af54;
         -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
@@ -1392,7 +1391,8 @@ object {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      width: 335px; }
 
 /* ================== Press Releases ================= */
 .press-releases-wrapper {
@@ -1578,11 +1578,11 @@ object {
 
 .sub-footer-contact-us-today {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-contact-box.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-contact-box.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 150, 0.5)), to(rgba(0, 140, 128, 0.6))), url("../../assets/Stock_Photos/pwc-contact-box.png");
+  background-image: linear-gradient(rgba(0, 0, 150, 0.5), rgba(0, 140, 128, 0.6)), url("../../assets/Stock_Photos/pwc-contact-box.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 0% 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

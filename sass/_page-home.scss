@@ -254,7 +254,6 @@
     }
     input[type="submit"] {
       @include button-green;
-      width: 335px;
     }
     p {
       margin: 1rem;
@@ -262,6 +261,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      width: 335px;
     }
   }
 }
@@ -415,10 +415,10 @@
 
 .sub-footer-contact-us-today {
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-contact-box.png');
+  background-image: linear-gradient(rgba(0, 0, 150, .5), rgba(0, 140, 128, 0.6)), url('../../assets/Stock_Photos/pwc-contact-box.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 0% 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
