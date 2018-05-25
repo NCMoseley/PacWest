@@ -123,6 +123,12 @@
             border: none;
             padding-bottom: 22px;
           }
+          div.wpcf7-mail-sent-ok {
+            color: $color__text-light;
+          }
+          div.wpcf7-response-output {
+            color: $color__text-light;
+          }
         }
       }
       .footer-copy {
