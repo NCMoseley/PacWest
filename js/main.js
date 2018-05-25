@@ -53,8 +53,7 @@ jQuery( document ).ready(function($) {
       $(this).prev().animate({'max-height':'38px'}, 200);
       $(this).children().css('transform', 'rotate(0)');
     }
-  })
-
+    
   $("#toggle").change(function() {
       $('.menu-close').children().toggleClass('expanded');
   });
