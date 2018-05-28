@@ -46,19 +46,21 @@ get_header(); ?>
 				</div>
 				<div class="pacwest-difference-card-wrapper">
 					<div class="card">
-						<img src="<?php echo get_field('icon_1') ?>" alt="Icon">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-balance.png" alt="Icon-Balance">
 						<p><?php echo get_field('text_1') ?></p>
 					</div>
-					<div class="card">
-						<img src="<?php echo get_field('icon_2') ?>" alt="Icon">
+					<div class="card difference-white-icon">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-lab-dark.png" alt="Icon-Lab-Dark">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-lab.png" alt="Icon-Lab">
 						<p><?php echo get_field('text_2') ?></p>
 					</div>
 					<div class="card">
-						<img src="<?php echo get_field('icon_3') ?>" alt="Icon">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-hands.png" alt="Icon-Hands">
 						<p><?php echo get_field('text_3') ?></p>
 					</div>
-					<div class="card">
-						<img src="<?php echo get_field('icon_4') ?>" alt="Icon">
+					<div class="card difference-white-icon">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-light-dark-01.png" alt="Icon-Light-Dark">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-light.png" alt="Icon-Light">
 						<p><?php echo get_field('text_4') ?></p>
 					</div>
 				</div>

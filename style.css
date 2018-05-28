@@ -1184,6 +1184,57 @@ object {
                 transform: scale(1.01);
         -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
                 box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+    .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon {
+      max-width: 200px;
+      margin: 0 1rem;
+      padding: 2rem 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: #eee;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 3px; }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon img:nth-child(2) {
+        display: none; }
+      @media all and (max-width: 900px) {
+        .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon {
+          margin: 1rem; } }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon:nth-child(odd) {
+        color: white;
+        background-color: #0a2d5d; }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon div {
+        text-align: center; }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon img {
+        width: 50px;
+        height: 50px; }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon p {
+        margin: 5px auto;
+        text-align: center; }
+        @media all and (max-width: 950px) {
+          .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon p {
+            width: 90%; } }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon:hover {
+        background-color: #00c860;
+        color: #fff;
+        -webkit-transform: scale(1.01);
+                transform: scale(1.01);
+        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+        .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon:hover img:nth-child(1) {
+          display: none; }
+        .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon:hover img:nth-child(2) {
+          display: inline; }
   .page-template-front-page .pacwest-difference .learn-more {
     margin: 1rem auto;
     width: 210px;
