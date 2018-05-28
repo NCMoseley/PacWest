@@ -7,6 +7,20 @@ $transition-duration: 0.5s;
   display: none;
 }
 
+.site-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.page {
+  padding-top: 110px;
+}
+
+
+
+
 @media #{all and (max-width: $medium)} {
   .toggle-container .button-toggle {
     position: absolute;
@@ -174,6 +188,7 @@ $transition-duration: 0.5s;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
   .logo-container {
     width: 100px;
     margin: 10px 0 10px 2rem;
