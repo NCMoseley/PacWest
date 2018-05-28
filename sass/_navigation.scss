@@ -247,6 +247,7 @@ a {
 
   .current-menu-item a {
     color: $color__green;
+    font-weight: 700;
   }
 
   ul {
@@ -255,12 +256,26 @@ a {
     margin: 0;
     padding-left: 0;
     ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       top: $base__space-unit;
       left: -999rem;
       z-index: 99999;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      background: #fff;
+      @media all and (max-width) {
+
+      }
+
+      li a:hover {
+        color: $color__green;
+      }
+
       ul {
         left: -999rem;
         top: 0;
