@@ -11,7 +11,7 @@ $transition-duration: 0.5s;
   .toggle-container .button-toggle {
     position: absolute;
     z-index: 10;
-    left: 35%;
+    left: 65%;
     display: inline-block;
     width: 70px;
     height: 20px;
@@ -20,7 +20,7 @@ $transition-duration: 0.5s;
     cursor: pointer;
     transition: $transition-duration + 0.1;
     @media all and (max-width: 450px) {
-      left: 20%;
+      left: 30%;
     }
   }
   .menu-close {
@@ -32,7 +32,7 @@ $transition-duration: 0.5s;
   .right-x {
     position: absolute;
     content: '';
-    top: 30px;
+    top: 15px;
     right: 30px;
     width: 20px;
     height: 2px;
@@ -42,10 +42,10 @@ $transition-duration: 0.5s;
     opacity: 0;
   }
   .left-x {
-    transform: translateY(-50%) rotate(45deg);
+    transform: rotate(45deg);
   }
   .right-x {
-    transform: translateY(-50%) rotate(-45deg);
+    transform: rotate(-45deg);
   }
   .menu-menu-1-container {
     position: static;
@@ -104,9 +104,11 @@ $transition-duration: 0.5s;
       }
     }
     & ~ .menu-menu-1-container {
-      position: static;
+      position: absolute;
+      top: 45px;
+      right: -48px;
       background: white;
-      width: 100%;
+      width: 200px;
       display: flex;
       justify-content: center;
       transition: width 0.5s;
@@ -233,7 +235,12 @@ $transition-duration: 0.5s;
   nav {
     display: flex;
     justify-content: flex-end;
-    margin-right: 5rem;
+    margin-right: 0;
+
+
+    @media all and (max-width: $medium) {
+      margin-right: 5rem;
+    }
     @media all and (max-width: 800px) {
       margin-right: 3rem;
     }

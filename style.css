@@ -421,7 +421,7 @@ textarea {
   .toggle-container .button-toggle {
     position: absolute;
     z-index: 10;
-    left: 35%;
+    left: 65%;
     display: inline-block;
     width: 70px;
     height: 20px;
@@ -432,7 +432,7 @@ textarea {
     transition: 0.6s; } }
   @media all and (max-width: 750px) and (max-width: 450px) {
     .toggle-container .button-toggle {
-      left: 20%; } }
+      left: 30%; } }
 
 @media (max-width: 750px) {
   .menu-close {
@@ -443,7 +443,7 @@ textarea {
   .right-x {
     position: absolute;
     content: '';
-    top: 30px;
+    top: 15px;
     right: 30px;
     width: 20px;
     height: 2px;
@@ -453,11 +453,11 @@ textarea {
     transition: 0.5s;
     opacity: 0; }
   .left-x {
-    -webkit-transform: translateY(-50%) rotate(45deg);
-            transform: translateY(-50%) rotate(45deg); }
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
   .right-x {
-    -webkit-transform: translateY(-50%) rotate(-45deg);
-            transform: translateY(-50%) rotate(-45deg); }
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
   .menu-menu-1-container {
     position: static;
     -webkit-box-pack: end;
@@ -509,9 +509,11 @@ textarea {
     -webkit-transform: translateY(-50%) rotate(-45deg);
             transform: translateY(-50%) rotate(-45deg); }
   #toggle:checked ~ .menu-menu-1-container {
-    position: static;
+    position: absolute;
+    top: 45px;
+    right: -48px;
     background: white;
-    width: 100%;
+    width: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -667,7 +669,10 @@ textarea {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin-right: 5rem; }
+    margin-right: 0; }
+    @media all and (max-width: 750px) {
+      .nav-wrapper nav {
+        margin-right: 5rem; } }
     @media all and (max-width: 800px) {
       .nav-wrapper nav {
         margin-right: 3rem; } }
