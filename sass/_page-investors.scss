@@ -25,6 +25,7 @@
     url('../../assets/Stock_Photos/pwc-investors.jpg');
     color: $color__text-light;
     background-size: cover;
+    background-repeat: no-repeat;
     &-img-wrapper {
       width: 100px;
       display: flex;
