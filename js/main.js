@@ -76,15 +76,6 @@ jQuery(document).ready(function ($) {
     $('.hamburger--slider').toggleClass('is-active');
   });
 
-  // HAMBURGER MENU VISIBLITY TOGGLE
-
-  $(window).resize(function () {
-    if ($(window).width() < 750) {
-      $('.hamburger--slider').css('display', 'inline');
-    } else {
-      $('.hamburger--slider').css('display', 'none');
-    }
-  });
 
   // Parallax for Banners
 
