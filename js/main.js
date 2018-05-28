@@ -97,5 +97,9 @@ jQuery(document).ready(function ($) {
     $('.parallax').css('background-position', 'center ' + (para * 0.5) + 'px');
   }
 
+  //  Links for PacWest Difference
+
+  $("#link").attr("href", "<?php echo esc_url(home_url('/about/')); ?>");
+
 
 });
