@@ -261,7 +261,7 @@ a {
 
     .menu-item-163 {
       height: auto !important;    
-      a {
+      & > a {
         @media all and (max-width: 750px) {
           pointer-events: none;  
         }
