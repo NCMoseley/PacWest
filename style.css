@@ -1200,7 +1200,8 @@ object {
       background-color: #eee;
       text-transform: uppercase;
       font-weight: 300;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      text-decoration: none; }
       @media all and (max-width: 900px) {
         .page-template-front-page .pacwest-difference-card-wrapper .card {
           margin: 1rem; } }
@@ -1245,7 +1246,9 @@ object {
       background-color: #eee;
       text-transform: uppercase;
       font-weight: 300;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      text-decoration: none;
+      color: #404040; }
       .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon img:nth-child(2) {
         display: none; }
       @media all and (max-width: 900px) {
@@ -1254,12 +1257,13 @@ object {
       .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon:nth-child(odd) {
         color: white;
         background-color: #0a2d5d; }
-      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon div {
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon a {
         text-align: center; }
       .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon img {
         width: 50px;
         height: 50px; }
       .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon p {
+        text-decoration: none;
         margin: 5px auto;
         text-align: center; }
         @media all and (max-width: 950px) {
@@ -1313,9 +1317,7 @@ object {
               box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .page-template-front-page .our-products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

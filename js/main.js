@@ -90,9 +90,8 @@ jQuery(document).ready(function ($) {
 
 
 
-
   // DISABLE INVESTOR LINK FOR MOBILE
-  $('.menu-item-163').on('click', function(){
+  $('.menu-item-163').on('click', function () {
     $(this).children().last().slideToggle();
     $(this).children().last().css('display', 'flex');
   })

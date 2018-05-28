@@ -45,29 +45,31 @@ get_header(); ?>
 					<h2 class="front-h2">The <span>Pacwest</span> Difference</h2>
 				</div>
 				<div class="pacwest-difference-card-wrapper">
-					<div class="card">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-balance.png" alt="Icon-Balance">
-						<p><?php echo get_field('text_1') ?></p>
-					</div>
-					<div class="card difference-white-icon">
+						<a href="<?php echo esc_url(home_url('/about/#management-team')); ?>" class="card">
+							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-balance.png" 	alt="Icon-Balance">
+							<p><?php echo get_field('text_1') ?></p>
+						</a>
+					<a href="<?php echo esc_url(home_url('/about/#technologies')); ?>" class="card difference-white-icon">
 						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-lab-dark.png" alt="Icon-Lab-Dark">
 						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-lab.png" alt="Icon-Lab">
 						<p><?php echo get_field('text_2') ?></p>
-					</div>
-					<div class="card">
+					</a>
+					<a href="<?php echo esc_url(home_url('/about/#strategic-alliances')); ?>" class="card">
 						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-hands.png" alt="Icon-Hands">
 						<p><?php echo get_field('text_3') ?></p>
-					</div>
-					<div class="card difference-white-icon">
+					</a>
+					<a href="<?php echo esc_url(home_url('/about/')); ?>" class="card difference-white-icon">
 						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-light-dark-01.png" alt="Icon-Light-Dark">
 						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-light.png" alt="Icon-Light">
 						<p><?php echo get_field('text_4') ?></p>
-					</div>
+					</a>
 				</div>
 
+				<a href="<?php echo esc_url(home_url('/about/')); ?>">
 				<button class="button-blue">
 					Learn More
 				</button>
+				</a>
 			</section>
 
 			<section class="our-products">
