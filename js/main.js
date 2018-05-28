@@ -1,18 +1,18 @@
-jQuery( document ).ready(function($) {
+jQuery(document).ready(function ($) {
 
   // FAQ DROPDOWN
 
   $(function () {
     var faqExpanded = false;
 
-		$('.faq-answer').css('display', 'none');
+    $('.faq-answer').css('display', 'none');
     $('.open-close-icon').click(function () {
       faqExpanded = !faqExpanded;
 
       $(this).parent().next().slideToggle('swing');
       $(this).children().last().toggleClass('visible');
       $(this).children().last().toggleClass('invisible');
-      
+
       if (faqExpanded) {
         $(this).parent().parent().css('backgroundColor', '#fff');
         $(this).parent().next().css('color', '#333');
@@ -43,31 +43,67 @@ jQuery( document ).ready(function($) {
 
   var expanded = false;
 
-  $('.news-item-expand-link').click(function(){
+  $('.news-item-expand-link').click(function () {
     expanded = !expanded
-    
+
     if (expanded === true) {
-      $(this).prev().animate({'max-height':'1000px'}, 200);
+      $(this).prev().animate({
+        'max-height': '1000px'
+      }, 200);
+      $(this).children().css('transform', 'rotate(180deg)');
     } else {
-      $(this).prev().animate({'max-height':'30px'}, 200);
+      $(this).prev().animate({
+        'max-height': '38px'
+      }, 200);
+      $(this).children().css('transform', 'rotate(0)');
     }
   })
 
-  $("#toggle").change(function() {
-      $('.menu-close').children().toggleClass('expanded');
+
+  // INVESTOR LOGIN SHOW / HIDE
+
+  $('.login-prompt').on('click', function (e) {
+    e.preventDefault();
+    $(this).parent().css('justifyContent', 'center');
+    $(this).css('display', 'none');
+    $('.investor-header-wrapper').css("display", "flex");
+  })
+
+
+  // NAV MENU VISIBLITY TOGGLE 
+  $("#toggle").change(function () {
+    $('.menu-close').children().toggleClass('expanded');
+    $('.hamburger--slider').toggleClass('is-active');
   });
 
+  // HAMBURGER MENU VISIBLITY TOGGLE
+
+  $(window).resize(function () {
+    if ($(window).width() < 750) {
+      $('.hamburger--slider').css('display', 'inline');
+    } else {
+      $('.hamburger--slider').css('display', 'none');
+    }
+  });
+
+  // Parallax for Banners
+
+  $(window).scroll(function () {
+    parallax();
+  })
+
+  function parallax() {
+    var para = $(window).scrollTop();
+    $('.parallax').css('background-position', 'center ' + (para * 0.5) + 'px');
+  }
 
 
 
 
-    // INVESTOR LOGIN SHOW / HIDE
-
-    $('.login-prompt').on('click', function(e){
-      e.preventDefault();
-      $(this).parent().css('justifyContent', 'center');
-      $(this).css('display', 'none');
-      $('.investor-header-wrapper').css("display", "flex");
-    })
+  // DISABLE INVESTOR LINK FOR MOBILE
+  $('.menu-item-163').on('click', function(){
+    $(this).children().last().slideToggle();
+    $(this).children().last().css('display', 'flex');
+  })
 
 });
