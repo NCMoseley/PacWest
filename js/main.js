@@ -76,15 +76,6 @@ jQuery(document).ready(function ($) {
     $('.hamburger--slider').toggleClass('is-active');
   });
 
-  // HAMBURGER MENU VISIBLITY TOGGLE
-
-  $(window).resize(function () {
-    if ($(window).width() < 750) {
-      $('.hamburger--slider').css('display', 'inline');
-    } else {
-      $('.hamburger--slider').css('display', 'none');
-    }
-  });
 
   // Parallax for Banners
 
@@ -99,9 +90,8 @@ jQuery(document).ready(function ($) {
 
 
 
-
   // DISABLE INVESTOR LINK FOR MOBILE
-  $('.menu-item-163').on('click', function(){
+  $('.menu-item-163').on('click', function () {
     $(this).children().last().slideToggle();
     $(this).children().last().css('display', 'flex');
   })
