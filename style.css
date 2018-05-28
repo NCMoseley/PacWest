@@ -1424,14 +1424,14 @@ object {
         .investor-portal-content-copy {
           width: 90%; } }
   .investor-portal form {
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     @media all and (max-width: 500px) {
