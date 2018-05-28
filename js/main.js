@@ -78,14 +78,24 @@ jQuery(document).ready(function ($) {
 
   // HAMBURGER MENU VISIBLITY TOGGLE
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     if ($(window).width() < 750) {
       $('.hamburger--slider').css('display', 'inline');
-    }
-    else {
+    } else {
       $('.hamburger--slider').css('display', 'none');
     }
   });
+
+  // Parallax for Banners
+
+  $(window).scroll(function () {
+    parallax();
+  })
+
+  function parallax() {
+    var para = $(window).scrollTop();
+    $('.parallax').css('background-position', 'center ' + (para * 0.5) + 'px');
+  }
 
 
 });
