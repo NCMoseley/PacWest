@@ -90,7 +90,12 @@ get_header(); ?>
 							<div class="team-member-info">
 								<h2 class="uppercase"><?php the_title(); ?></h2>
 								<div class="position-container uppercase"> <?php the_field('position') ?> 
+
+								<div class="team-open-close">
 									<i class="about-plus-icon fa fa-plus" aria-hidden="true"></i>
+									<i class="fa fa-minus hidden" aria-hidden="true"></i>
+								</div>
+
 								</div>
 								
 
@@ -98,9 +103,7 @@ get_header(); ?>
 									<?php the_content(); ?>
 								</div>
 
-								<div class="about-close">
-									<i class="fa fa-times" aria-hidden="true"></i>
-								</div>
+								
 
 								
 							</div> <!-- close team member info -->
