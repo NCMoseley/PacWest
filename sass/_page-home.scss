@@ -489,7 +489,7 @@
   align-items: center;
   padding: 5%;
   &:hover {
-    transform: scale(1.01);
+    background-image: url('../../assets/Stock_Photos/pwc-contact-box.png');
     box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
   }
   h1 {
@@ -539,7 +539,7 @@
 
 .sub-footer-faq {
   height: 100%;
-  background-image: url('../../assets/Stock_Photos/pwc-boxes-faq.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-boxes-faq.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -549,14 +549,14 @@
   align-items: center;
   padding-bottom: 25px;
   &:hover {
-    transform: scale(1.01);
+    background-image: url('../../assets/Stock_Photos/pwc-boxes-faq.jpg');
     box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
   }
 }
 
 .sub-footer-investors {
   height: 100%;
-  background-image: url('../../assets/Stock_Photos/pwc-boxes-investors.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-boxes-investors.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -566,14 +566,14 @@
   align-items: center;
   padding-bottom: 25px;
   &:hover {
-    transform: scale(1.01);
+    background-image: url('../../assets/Stock_Photos/pwc-boxes-investors.jpg');
     box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
   }
 }
 
 .sub-footer-products {
   height: 100%;
-  background-image: url('../../assets/Stock_Photos/pwc-products.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-products.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -583,7 +583,7 @@
   align-items: center;
   padding-bottom: 25px;
   &:hover {
-    transform: scale(1.01);
+    background-image: url('../../assets/Stock_Photos/pwc-products.jpg');
     box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
   }
   h1.products-text {
