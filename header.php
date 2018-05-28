@@ -43,11 +43,13 @@
 						<input id="toggle" type="checkbox">
 						<label class="toggle-container" for="toggle">
 							<span class="button button-toggle"></span>
-							<div class="menu-close">
-								<div class="left-x"></div>
-								<div class="right-x"></div>
-							</div>
-    				</label>
+		
+							<button class="hamburger--slider" type="button">
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
+							</button>
+						</label>
 						<?php wp_nav_menu(array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' )); ?>
 					</nav><!-- #site-navigation -->
 				</div>

@@ -59,13 +59,6 @@ jQuery(document).ready(function ($) {
     }
   })
 
-  $("#toggle").change(function () {
-    $('.menu-close').children().toggleClass('expanded');
-  });
-
-
-
-
 
   // INVESTOR LOGIN SHOW / HIDE
 
@@ -75,5 +68,24 @@ jQuery(document).ready(function ($) {
     $(this).css('display', 'none');
     $('.investor-header-wrapper').css("display", "flex");
   })
+
+
+  // NAV MENU VISIBLITY TOGGLE 
+  $("#toggle").change(function () {
+    $('.menu-close').children().toggleClass('expanded');
+    $('.hamburger--slider').toggleClass('is-active');
+  });
+
+  // HAMBURGER MENU VISIBLITY TOGGLE
+
+  $(window).resize(function() {
+    if ($(window).width() < 750) {
+      $('.hamburger--slider').css('display', 'inline');
+    }
+    else {
+      $('.hamburger--slider').css('display', 'none');
+    }
+  });
+
 
 });
