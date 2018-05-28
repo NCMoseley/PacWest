@@ -445,12 +445,6 @@ textarea {
       left: 30%; } }
 
 @media (max-width: 750px) {
-  .hamburger--slider {
-    background: #fff;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    text-shadow: none;
-    border: none; }
   .menu-menu-1-container {
     position: static;
     -webkit-box-pack: end;
@@ -503,6 +497,16 @@ textarea {
       #toggle:checked ~ .menu-menu-1-container .menu > li:before {
         opacity: 0;
         width: 0; } }
+
+.hamburger--slider {
+  background: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border: none; }
+  @media all and (min-width: 750px) {
+    .hamburger--slider {
+      display: none; } }
 
 .login-prompt {
   display: none; }
