@@ -97,15 +97,10 @@ jQuery(document).ready(function ($) {
     $('.parallax').css('background-position', 'center ' + (para * 0.5) + 'px');
   }
 
-  //  Links for PacWest Difference
-
-  $("#link").attr("href", "<?php echo esc_url(home_url('/about/')); ?>");
-
-
 
 
   // DISABLE INVESTOR LINK FOR MOBILE
-  $('.menu-item-163').on('click', function(){
+  $('.menu-item-163').on('click', function () {
     $(this).children().last().slideToggle();
     $(this).children().last().css('display', 'flex');
   })
