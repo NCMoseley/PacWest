@@ -1086,13 +1086,13 @@ object {
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center -50px;
+  background-position: center 50px;
   background-attachment: fixed; }
   @media all and (min-width: 800px) {
     .page-template-front-page .banner-section {
       height: 40vw; } }
   .page-template-front-page .banner-section-img-wrapper {
-    width: 400px;
+    width: 320px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1103,8 +1103,8 @@ object {
         -ms-flex-align: center;
             align-items: center; }
     .page-template-front-page .banner-section-img-wrapper img {
-      width: 329px;
-      height: 171px; }
+      width: 320px;
+      height: 168px; }
   .page-template-front-page .banner-section h1 {
     width: 60%;
     margin: 0 auto;

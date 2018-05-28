@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
   function parallax() {
     var para = $(window).scrollTop();
     $('.parallax').css('background-position', 'center ' + (para * -1.4 - 50) + 'px');
-    $('.parallax-about').css('background-position', 'center ' + (para * -1.4 + 50) + 'px');
+    $('.parallax-low').css('background-position', 'center ' + (para * -1.4 + 50) + 'px');
   }
 
 
