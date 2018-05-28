@@ -1045,12 +1045,13 @@ object {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-images-home.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-images-home.jpg");
   color: #fff;
+  background-repeat: no-repeat;
   background-size: cover; }
   @media all and (min-width: 800px) {
     .page-template-front-page .banner-section {
       height: 40vw; } }
   .page-template-front-page .banner-section-img-wrapper {
-    width: 200px;
+    width: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1061,7 +1062,8 @@ object {
         -ms-flex-align: center;
             align-items: center; }
     .page-template-front-page .banner-section-img-wrapper img {
-      width: 100%; }
+      width: 329px;
+      height: 171px; }
   .page-template-front-page .banner-section h1 {
     width: 60%;
     margin: 0 auto;

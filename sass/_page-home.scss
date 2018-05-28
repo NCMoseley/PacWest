@@ -19,14 +19,16 @@
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../../assets/Stock_Photos/pwc-images-home.jpg');
     color: $color__text-light;
+    background-repeat: no-repeat;
     background-size: cover;
     &-img-wrapper {
-      width: 200px;
+      width: 400px;
       display: flex;
       justify-content: center;
       align-items: center;
       img {
-        width: 100%;
+        width: 329px;
+        height: 171px;
       }
     }
     h1 {
