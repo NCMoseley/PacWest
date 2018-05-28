@@ -34,17 +34,13 @@ get_header(); ?>
 					</ul>
 				</div>
 
-				<div class="cg-banner">
-
-					<div class="cg-banner-content-wrapper">
-						<img src="<?php echo $cg_logo ?>" alt="cg page logo" />
-						<h1>
-							<?php echo $cg_header ?>
-						</h1>
+				<header class="banner-section parallax">
+					<div class="banner-section-img-wrapper">
+						<img src="<?php echo $cg_logo ?>" alt="About page logo">
 					</div>
+					<h1><?php echo $cg_header ?></h1>
+        </header>
 
-				</div>
-				<!-- close cg banner -->
 
 				<div class="cg-page-description">
 					<p><?php echo $cg_page_description ?> </p>
