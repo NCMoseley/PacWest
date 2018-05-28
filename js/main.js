@@ -102,4 +102,12 @@ jQuery(document).ready(function ($) {
   $("#link").attr("href", "<?php echo esc_url(home_url('/about/')); ?>");
 
 
+
+
+  // DISABLE INVESTOR LINK FOR MOBILE
+  $('.menu-item-163').on('click', function(){
+    $(this).children().last().slideToggle();
+    $(this).children().last().css('display', 'flex');
+  })
+
 });
