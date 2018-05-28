@@ -427,6 +427,15 @@ textarea {
 #toggle {
   display: none; }
 
+.site-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0; }
+
+.page {
+  padding-top: 110px; }
+
 @media (max-width: 750px) {
   .toggle-container .button-toggle {
     position: absolute;
@@ -619,7 +628,8 @@ textarea {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-color: #fff; }
   .nav-wrapper .logo-container {
     width: 100px;
     margin: 10px 0 10px 2rem; }
