@@ -3068,10 +3068,16 @@ object {
       width: 80%;
       padding: 5px;
       background-color: #0a2d5d;
-      color: white; }
+      color: #fff; }
       @media all and (max-width: 550px) {
         .page-template-news .news-item-header-group {
           width: 90%; } }
+      .page-template-news .news-item-header-group a {
+        color: #fff; }
+        .page-template-news .news-item-header-group a:hover {
+          color: #00c860 !important; }
+        .page-template-news .news-item-header-group a:visited {
+          color: #fff; }
       .page-template-news .news-item-header-group h3 {
         margin: 0;
         font-weight: 300; }
@@ -3800,6 +3806,22 @@ object {
       -webkit-box-shadow: none;
               box-shadow: none;
       text-shadow: none; }
+
+.single-post article {
+  width: 75%;
+  margin: 0 auto;
+  padding: 10rem 0 0 0; }
+  @media all and (max-width: 550px) {
+    .single-post article {
+      width: 85%; } }
+
+.single-post .post-navigation {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 5rem; }
+  @media all and (max-width: 550px) {
+    .single-post .post-navigation {
+      width: 85%; } }
 
 .site-footer {
   font-family: "Roboto", Arial, Helvetica, sans-serif; }

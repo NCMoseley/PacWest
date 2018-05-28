@@ -88,10 +88,21 @@
         width: 80%;
         padding: 5px;
         background-color: $color__navy;
-        color: white;
+        color: #fff;
         @media all and (max-width: 550px) {
           width: 90%;
         }
+
+        a {
+          color: #fff;
+          &:hover {
+            color: $color__green !important;
+          }
+          &:visited {
+            color: #fff;
+          }
+        }
+
         h3 {
           margin: 0;
           font-weight: 300;
