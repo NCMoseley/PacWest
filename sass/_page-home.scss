@@ -21,7 +21,8 @@
     color: $color__text-light;
     background-repeat: no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center -50px;
+    background-attachment: fixed;
     &-img-wrapper {
       width: 400px;
       display: flex;
