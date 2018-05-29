@@ -1,4 +1,6 @@
 .page-template-products {
+  // Todo: remove display: none. 
+  display: none;
   .banner-section {
     @include eight {
       height: 40vw;
@@ -14,6 +16,9 @@
     url('../../assets/Stock_Photos/pwc-products.jpg');
     color: $color__text-light;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -50px;
+    background-attachment: fixed;
     &-img-wrapper {
       width: 100px;
       display: flex;

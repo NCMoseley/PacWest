@@ -130,7 +130,14 @@ jQuery(document).ready(function($) {
 
   function parallax() {
     var para = $(window).scrollTop();
-    $('.parallax').css('background-position', 'center ' + para * 0.5 + 'px');
+    $('.parallax').css(
+      'background-position',
+      'center ' + (para * -1.4 - 50) + 'px'
+    );
+    $('.parallax-low').css(
+      'background-position',
+      'center ' + (para * -1.4 + 50) + 'px'
+    );
   }
 
   // DISABLE INVESTOR LINK FOR MOBILE
@@ -155,6 +162,17 @@ jQuery(document).ready(function($) {
   $('.investor-overlay').on('click', function() {
     $(this).addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
+  });
+  // DISABLE INVESTOR LINK FOR MOBILE
+  $('.menu-item-163').on('click', function() {
+    $(this)
+      .children()
+      .last()
+      .slideToggle();
+    $(this)
+      .children()
+      .last()
+      .css('display', 'flex');
   });
 
   $('.nav-wrapper').on('click', function() {

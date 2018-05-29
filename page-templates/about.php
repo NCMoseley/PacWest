@@ -36,7 +36,7 @@ get_header(); ?>
 					</ul>
 				</div>
 
-				<header class="banner-section">
+				<header class="banner-section parallax-low">
 					<div class="banner-section-img-wrapper">
 						<img src="<?php echo $about_logo ?>" alt="About page logo">
 					</div>

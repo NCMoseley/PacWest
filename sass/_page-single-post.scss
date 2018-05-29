@@ -1,0 +1,21 @@
+.single-post {
+  article {
+    width: 75%;
+    margin: 0 auto;
+    padding: 10rem 0 0 0;
+    @media all and (max-width: 550px) {
+      width: 85%;
+    }
+  }
+
+  .post-navigation {
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    @media all and (max-width: 550px) {
+      width: 85%;
+    }
+  }
+
+
+}

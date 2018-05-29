@@ -27,7 +27,7 @@ THIS PAGE APPEARS TO BE REDUNDANT -->
 		<main id="main" class="site-main" role="main">
 
 
-			<header class="banner-section">
+			<header class="banner-section parallax">
 				<h1><?php the_field('front_page_banner_text'); ?></h1>	
 			</header>
 	

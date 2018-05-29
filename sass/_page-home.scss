@@ -21,14 +21,16 @@
     color: $color__text-light;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center 50px;
+    background-attachment: fixed;
     &-img-wrapper {
-      width: 400px;
+      width: 320px;
       display: flex;
       justify-content: center;
       align-items: center;
       img {
-        width: 329px;
-        height: 171px;
+        width: 320px;
+        height: 168px;
       }
     }
     h1 {
