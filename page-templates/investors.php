@@ -17,13 +17,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-<<<<<<< HEAD
 		<div class="investor-overlay hidden"></div>
 
-		<header class="banner-section">
-=======
+		<!-- <header class="banner-section"> -->
 		<header class="banner-section parallax">
->>>>>>> 36dda08f2dee632e52258f50339bc02e363c7596
 			<div class="banner-section-img-wrapper">
 				<img class="leaf-icon" src="<?php echo $logo ?>" alt="Leaf Logo">
 			</div>			
