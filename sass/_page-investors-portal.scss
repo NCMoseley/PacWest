@@ -74,23 +74,16 @@
       margin-bottom: 30px;
     }
     .corporate-download {
-      color: #fff;
-      background: $color__green;
-      box-shadow: none;
-      text-shadow: none;
-      border: none;
-      width: 213px;
-      height: 51px;
-      font-size: 18px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      @include button-green;
     }
   }
   .headed-next {
+    // Todo: reset display when ready for videos. 
+    // display: flex;
+    display: none;
     padding: 60px 0;
     min-height: 400px;
     background: $color__background-grey;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

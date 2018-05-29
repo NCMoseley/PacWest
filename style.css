@@ -3628,25 +3628,30 @@ object {
     text-align: center;
     margin-bottom: 30px; }
   .page-template-investor-portal .investors-corporate-presentation .corporate-download {
-    color: #fff;
-    background: #00c860;
+    margin: 1rem auto;
+    width: 210px;
+    padding: 15px 30px;
+    font-size: 16px;
     -webkit-box-shadow: none;
             box-shadow: none;
-    text-shadow: none;
+    color: white;
+    background-color: #00c860;
     border: none;
-    width: 213px;
-    height: 51px;
-    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    text-shadow: none; }
+    .page-template-investor-portal .investors-corporate-presentation .corporate-download:hover {
+      background-color: #00af54;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .page-template-investor-portal .headed-next {
+  display: none;
   padding: 60px 0;
   min-height: 400px;
   background: #f2f2f1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
