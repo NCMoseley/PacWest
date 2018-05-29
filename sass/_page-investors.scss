@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../../assets/Stock_Photos/pwc-investors.jpg');
+      url('../../assets/Stock_Photos/pwc-investors.jpg');
     color: $color__text-light;
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@
         position: absolute;
         top: 10px;
         left: 10px;
-        color: black;
+        color: $color__green;
         font-size: 22px;
         cursor: pointer;
         @include medium {
@@ -130,7 +130,7 @@
         align-items: center; // flex-basis: 50%;
         @include medium {
           flex-basis: 50%;
-          height: 392px;
+          height: 400px;
         }
         .wpcf7 {
           form {
@@ -158,6 +158,7 @@
             margin-top: 10px;
             letter-spacing: 2px;
             font-size: 16px;
+            margin-left: 14px;
           }
         }
       }

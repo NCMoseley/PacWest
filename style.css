@@ -970,7 +970,20 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 .hidden {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
+  max-height: 0; }
+  @media all and (min-width: 750px) {
+    .hidden {
+      display: none !important;
+      opacity: 1; } }
+
+.mobile-remove {
   display: none !important; }
+  @media all and (min-width: 750px) {
+    .mobile-remove {
+      display: block; } }
 
 .uppercase {
   text-transform: uppercase; }
@@ -2991,7 +3004,7 @@ object {
       position: absolute;
       top: 10px;
       left: 10px;
-      color: black;
+      color: #00c860;
       font-size: 22px;
       cursor: pointer; }
       @media all and (min-width: 750px) {
@@ -3041,7 +3054,7 @@ object {
         .page-template-investors .investor-login .portal-pop-up .pop-up-form {
           -ms-flex-preferred-size: 50%;
               flex-basis: 50%;
-          height: 392px; } }
+          height: 400px; } }
       .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 form {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -3072,7 +3085,8 @@ object {
         min-height: 40px;
         margin-top: 10px;
         letter-spacing: 2px;
-        font-size: 16px; }
+        font-size: 16px;
+        margin-left: 14px; }
 
 .page-template-news .news-h2 {
   font-size: 2rem;
