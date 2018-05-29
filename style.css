@@ -3299,14 +3299,11 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media all and (max-width: 1050px) {
-    .page-template-contact .wpcf7-form {
-      width: 100%; } }
   .page-template-contact .wpcf7-form input {
     width: 100%; }
   .page-template-contact .wpcf7-form input[type='submit'] {
@@ -3330,7 +3327,6 @@ object {
       -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
               box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   .page-template-contact .wpcf7-form p {
-    margin: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3347,12 +3343,13 @@ object {
     @media all and (max-width: 950px) {
       .page-template-contact .wpcf7-form p {
         width: 230px; } }
-    @media all and (max-width: 550px) {
+    @media all and (max-width: 650px) {
       .page-template-contact .wpcf7-form p {
         width: 100%; } }
   .page-template-contact .wpcf7-form p:nth-of-type(7) {
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: block; }
     .page-template-contact .wpcf7-form p:nth-of-type(7) label {
       width: 97%;
       margin: 0 auto; }
@@ -3475,7 +3472,7 @@ object {
       width: 100%; } }
 
 .page-template-faq .faq {
-  width: 40%;
+  width: 45%;
   margin: 1rem;
   padding: 5px 5% 5px 10px;
   display: -webkit-box;
