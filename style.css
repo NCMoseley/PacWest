@@ -2894,7 +2894,7 @@ object {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -50px;
+  background-position: center 50px;
   background-attachment: fixed; }
   @media all and (min-width: 800px) {
     .page-template-investors .banner-section {
