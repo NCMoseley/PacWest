@@ -140,7 +140,7 @@
     .press-releases-container {
       display: flex;
       flex-direction: column;
-      @include desktop {
+      @media all and (min-width: 1020px) {
         flex-direction: row;
       }
     }

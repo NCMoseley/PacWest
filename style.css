@@ -1547,8 +1547,8 @@ object {
     color: #00c860; }
 
 .press-releases-container {
-  width: 80%;
-  margin: 0 auto 0 auto;
+  width: 90%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1563,7 +1563,7 @@ object {
   @media all and (max-width: 950px) {
     .press-releases-container {
       width: 90%; } }
-  @media all and (max-width: 850px) {
+  @media all and (max-width: 950px) {
     .press-releases-container {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -3721,7 +3721,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media all and (min-width: 1000px) {
+  @media all and (min-width: 1020px) {
     .page-template-investor-portal .press-releases-wrapper .press-releases-container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
