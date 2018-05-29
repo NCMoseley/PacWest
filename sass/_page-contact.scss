@@ -21,6 +21,8 @@
     color: $color__text-light;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center -50px;
+    background-attachment: fixed;
     &-img-wrapper {
       width: 100px;
       display: flex;
@@ -64,7 +66,7 @@
     width: 70%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     @media all and (max-width: 1050px) {
       width: 100%;
@@ -82,7 +84,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      @media all and (max-width: 750px) {
+      @media all and (max-width: 950px) {
         width: 230px;
       }
       @media all and (max-width: 550px) {
@@ -93,8 +95,17 @@
       width: 100%;
       margin: 0 auto;
       label {
-        width: 75%;
+        width: 97%;
         margin: 0 auto;
+        @media all and (max-width: 550px) {
+          max-width: 335px;
+        }
+        @media all and (min-width: 551px) {
+          max-width: 88%;
+        }
+        @media all and (min-width: 610px) {
+          max-width: 80%;
+        }
       }
     }
   }

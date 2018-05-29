@@ -1,4 +1,6 @@
 .page-template-products {
+  // Todo: remove display: none. 
+  display: none;
   .banner-section {
     @include eight {
       height: 40vw;

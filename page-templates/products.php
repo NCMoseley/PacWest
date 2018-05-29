@@ -40,9 +40,6 @@ get_header(); ?>
       </header>
 
 
-
-
-
 			<section class="product-a-intro-section">
 				<div class="product-a-intro-section-paragraph">
 					<?php echo $prod_a_intro ?>
