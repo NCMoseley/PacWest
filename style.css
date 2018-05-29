@@ -1086,7 +1086,7 @@ object {
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 150px;
+  background-position: center 0;
   background-attachment: fixed; }
   @media all and (min-width: 800px) {
     .page-template-front-page .banner-section {
@@ -1934,7 +1934,7 @@ object {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 150px;
+  background-position: center 0;
   background-attachment: fixed; }
   @media all and (min-width: 800px) {
     .page-template-about .about-wrapper .banner-section {
