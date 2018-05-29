@@ -17,6 +17,8 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div class="investor-overlay hidden"></div>
+
 		<header class="banner-section">
 			<div class="banner-section-img-wrapper">
 				<img class="leaf-icon" src="<?php echo $logo ?>" alt="Leaf Logo">
@@ -35,6 +37,18 @@ get_header(); ?>
 
 			<div class="investor-login-desc">
 				<?php echo $login_info ?>
+			</div>
+
+			<div class="portal-pop-up hidden">
+				<div class="pop-up-image">
+					<img src="<?php echo get_field('pop_up_logo')?> " alt="Coastal view through trees"/>
+				</div>
+
+				<div class="pop-up-form">
+					<h2><?php echo get_field('pop_up_text') ?></h2>
+					<?php echo do_shortcode('[contact-form-7 id="249" title="Portal Pop Up"]'); ?>
+				</div>
+				
 			</div>
 
 		</section>
