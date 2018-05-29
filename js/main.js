@@ -1,11 +1,11 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   // FAQ DROPDOWN
 
-  $(function() {
+  $(function () {
     var faqExpanded = false;
 
     $('.faq-answer').css('display', 'none');
-    $('.open-close-icon').click(function() {
+    $('.open-close-icon').click(function () {
       faqExpanded = !faqExpanded;
 
       $(this)
@@ -73,14 +73,13 @@ jQuery(document).ready(function($) {
 
   var expanded = false;
 
-  $('.news-item-expand-link').click(function() {
+  $('.news-item-expand-link').click(function () {
     expanded = !expanded;
 
     if (expanded === true) {
       $(this)
         .prev()
-        .animate(
-          {
+        .animate({
             'max-height': '1000px'
           },
           200
@@ -91,8 +90,7 @@ jQuery(document).ready(function($) {
     } else {
       $(this)
         .prev()
-        .animate(
-          {
+        .animate({
             'max-height': '38px'
           },
           200
@@ -105,7 +103,7 @@ jQuery(document).ready(function($) {
 
   // INVESTOR LOGIN SHOW / HIDE
 
-  $('.login-prompt').on('click', function(e) {
+  $('.login-prompt').on('click', function (e) {
     e.preventDefault();
     $(this)
       .parent()
@@ -115,7 +113,7 @@ jQuery(document).ready(function($) {
   });
 
   // NAV MENU VISIBLITY TOGGLE
-  $('#toggle').change(function() {
+  $('#toggle').change(function () {
     $('.menu-close')
       .children()
       .toggleClass('expanded');
@@ -124,7 +122,7 @@ jQuery(document).ready(function($) {
 
   // Parallax for Banners
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     parallax();
   });
 
@@ -136,12 +134,12 @@ jQuery(document).ready(function($) {
     );
     $('.parallax-low').css(
       'background-position',
-      'center ' + (para * -1.4 + 50) + 'px'
+      'center ' + (para * -0.9 + 150) + 'px'
     );
   }
 
   // DISABLE INVESTOR LINK FOR MOBILE
-  $('.menu-item-163').on('click', function() {
+  $('.menu-item-163').on('click', function () {
     $(this)
       .children()
       .last()
@@ -154,17 +152,17 @@ jQuery(document).ready(function($) {
 
   // Investor Pop up modal
 
-  $('.investor-login-desc').on('click', function() {
+  $('.investor-login-desc').on('click', function () {
     $('.investor-overlay').removeClass('hidden');
     $('.portal-pop-up').removeClass('hidden');
   });
 
-  $('.investor-overlay').on('click', function() {
+  $('.investor-overlay').on('click', function () {
     $(this).addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
   });
   // DISABLE INVESTOR LINK FOR MOBILE
-  $('.menu-item-163').on('click', function() {
+  $('.menu-item-163').on('click', function () {
     $(this)
       .children()
       .last()
@@ -175,7 +173,7 @@ jQuery(document).ready(function($) {
       .css('display', 'flex');
   });
 
-  $('.nav-wrapper').on('click', function() {
+  $('.nav-wrapper').on('click', function () {
     $('.investor-overlay').addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
   });
