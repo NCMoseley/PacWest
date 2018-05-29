@@ -182,4 +182,18 @@ jQuery(document).ready(function($) {
       .last()
       .css('display', 'flex');
   });
+
+  
+  $('.nav-wrapper').on('click', function () {
+    $('.investor-overlay').addClass('hidden');
+    $('.portal-pop-up').addClass('hidden');
+  });
+
+
+
+  // LOGIN PADDING FIX 
+
+  $('.logged-in .site-header').css('top', '32px');
+
+
 });
