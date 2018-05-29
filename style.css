@@ -3294,7 +3294,7 @@ object {
   display: none; }
 
 .page-template-contact .wpcf7-form {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3350,18 +3350,9 @@ object {
     width: 100%;
     margin: 0 auto;
     display: block; }
-    .page-template-contact .wpcf7-form p:nth-of-type(7) label {
-      width: 97%;
-      margin: 0 auto; }
-      @media all and (max-width: 550px) {
-        .page-template-contact .wpcf7-form p:nth-of-type(7) label {
-          max-width: 335px; } }
-      @media all and (min-width: 551px) {
-        .page-template-contact .wpcf7-form p:nth-of-type(7) label {
-          max-width: 88%; } }
-      @media all and (min-width: 610px) {
-        .page-template-contact .wpcf7-form p:nth-of-type(7) label {
-          max-width: 80%; } }
+    @media all and (max-width: 650px) {
+      .page-template-contact .wpcf7-form p:nth-of-type(7) {
+        width: 335px; } }
 
 .page-template-contact .entry-title {
   display: none; }
