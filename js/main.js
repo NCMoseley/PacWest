@@ -163,6 +163,14 @@ jQuery(document).ready(function($) {
     $(this).addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
   });
+  $('.nav-wrapper').on('click', function() {
+    $('.investor-overlay').addClass('hidden');
+    $('.portal-pop-up').addClass('hidden');
+  });
+  $('.pop-up-close').on('click', function() {
+    $('.investor-overlay').addClass('hidden');
+    $('.portal-pop-up').addClass('hidden');
+  });
   // DISABLE INVESTOR LINK FOR MOBILE
   $('.menu-item-163').on('click', function() {
     $(this)
@@ -173,10 +181,5 @@ jQuery(document).ready(function($) {
       .children()
       .last()
       .css('display', 'flex');
-  });
-
-  $('.nav-wrapper').on('click', function() {
-    $('.investor-overlay').addClass('hidden');
-    $('.portal-pop-up').addClass('hidden');
   });
 });
