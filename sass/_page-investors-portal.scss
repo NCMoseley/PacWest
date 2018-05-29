@@ -5,7 +5,7 @@
   .entry-title {
     display: none;
   }
-  .investors-portal-banner {
+  .banner-section {
     @include eight {
       height: 40vw;
     }
@@ -23,26 +23,27 @@
     background-repeat: no-repeat;
     background-position: center -50px;
     background-attachment: fixed;
-    .portal-banner-wrapper {
+    &-img-wrapper {
       width: 100px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       img {
         width: 100%;
       }
-      h1 {
+    }
+    h1 {
+      width: 100%;
+      @include tablet {
         width: 60%;
-        margin: 0 auto;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 2.5rem;
-        font-weight: 300;
-        letter-spacing: 2px;
-        strong {
-          font-weight: 700;
-        }
       }
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
     }
   }
   .investors-corporate-presentation {
@@ -139,7 +140,7 @@
     .press-releases-container {
       display: flex;
       flex-direction: column;
-      @include desktop {
+      @media all and (min-width: 1020px) {
         flex-direction: row;
       }
     }

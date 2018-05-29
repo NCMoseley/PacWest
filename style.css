@@ -1547,8 +1547,8 @@ object {
     color: #00c860; }
 
 .press-releases-container {
-  width: 80%;
-  margin: 0 auto 0 auto;
+  width: 90%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1563,7 +1563,7 @@ object {
   @media all and (max-width: 950px) {
     .press-releases-container {
       width: 90%; } }
-  @media all and (max-width: 850px) {
+  @media all and (max-width: 950px) {
     .press-releases-container {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -2965,11 +2965,22 @@ object {
     display: -ms-flexbox;
     display: flex;
     height: 400px;
-    width: 700px; }
+    width: 300px; }
+    @media all and (min-width: 750px) {
+      .page-template-investors .investor-login .portal-pop-up {
+        width: 700px; } }
+    .page-template-investors .investor-login .portal-pop-up .pop-up-close {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: black;
+      font-size: 22px;
+      cursor: pointer; }
+      @media all and (min-width: 750px) {
+        .page-template-investors .investor-login .portal-pop-up .pop-up-close {
+          color: #fff; } }
     .page-template-investors .investor-login .portal-pop-up .pop-up-image {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      display: none;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -2983,12 +2994,18 @@ object {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
       width: 350px; }
+      @media all and (min-width: 750px) {
+        .page-template-investors .investor-login .portal-pop-up .pop-up-image {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
       .page-template-investors .investor-login .portal-pop-up .pop-up-image img {
         margin-bottom: 70px;
         -ms-flex-item-align: center;
             align-self: center;
         width: 200px; }
     .page-template-investors .investor-login .portal-pop-up .pop-up-form {
+      height: 450px;
       background: #fff;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2999,11 +3016,14 @@ object {
               flex-direction: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
+              align-items: center; }
       .page-template-investors .investor-login .portal-pop-up .pop-up-form h2 {
         font-size: 22px; }
+      @media all and (min-width: 750px) {
+        .page-template-investors .investor-login .portal-pop-up .pop-up-form {
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+          height: 392px; } }
       .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 form {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -3533,7 +3553,7 @@ object {
 .page-template-investor-portal .entry-title {
   display: none; }
 
-.page-template-investor-portal .investors-portal-banner {
+.page-template-investor-portal .banner-section {
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -3558,31 +3578,36 @@ object {
   background-position: center -50px;
   background-attachment: fixed; }
   @media all and (min-width: 800px) {
-    .page-template-investor-portal .investors-portal-banner {
+    .page-template-investor-portal .banner-section {
       height: 40vw; } }
-  .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper {
+  .page-template-investor-portal .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper img {
+    .page-template-investor-portal .banner-section-img-wrapper img {
       width: 100%; }
-    .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper h1 {
-      width: 60%;
-      margin: 0 auto;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 2.5rem;
-      font-weight: 300;
-      letter-spacing: 2px; }
-      .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper h1 strong {
-        font-weight: 700; }
+  .page-template-investor-portal .banner-section h1 {
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px; }
+    @media all and (min-width: 600px) {
+      .page-template-investor-portal .banner-section h1 {
+        width: 60%; } }
 
 .page-template-investor-portal .investors-corporate-presentation {
   background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
@@ -3716,7 +3741,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media all and (min-width: 1000px) {
+  @media all and (min-width: 1020px) {
     .page-template-investor-portal .press-releases-wrapper .press-releases-container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;

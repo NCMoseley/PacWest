@@ -24,12 +24,13 @@ get_header(); ?>
 <?php if (SwpmMemberUtils::is_member_logged_in()) {
     ?>
 
-		<div class="investors-portal-banner">
-				<div class="portal-banner-wrapper">
-					<img src="<?php echo $portal_logo ?>"/>
-					<h1> <?php echo $portal_header ?></h1>
+
+			<header class="banner-section parallax">
+				<div class="banner-section-img-wrapper">
+					<img src="<?php echo $portal_logo ?>" alt="Pacwest Logo">
 				</div>
-			</div>
+				<h1> <?php echo $portal_header ?></h1>
+      </header>
 
 			<div class="investors-corporate-presentation">
 				<h1> <?php echo $pres_header ?></h1>

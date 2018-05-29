@@ -83,10 +83,26 @@
       top: 150px;
       display: flex;
       height: 400px;
-      width: 700px;
+      width: 300px;
+
+      @include medium {
+        width: 700px;
+      }
+
+      .pop-up-close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: black;
+        font-size: 22px;
+        cursor: pointer;
+        @include medium {
+          color: #fff;
+        }
+      }
 
       .pop-up-image {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: flex-end;
         background: url('../../assets/Stock_Photos/pwc-images-home.jpg');
@@ -95,6 +111,9 @@
         background-repeat: no-repeat;
         flex-basis: 50%;
         width: 350px;
+        @include medium {
+          display: flex;
+        }
         img {
           margin-bottom: 70px;
           align-self: center;
@@ -102,6 +121,7 @@
         }
       }
       .pop-up-form {
+        height: 450px;
         background: #fff;
         h2 {
           font-size: 22px;
@@ -109,8 +129,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        // flex-basis: 50%;
 
-        flex-basis: 50%;
+        @include medium {
+          flex-basis: 50%;
+          height: 392px;
+        }
 
         .wpcf7 {
           form {
