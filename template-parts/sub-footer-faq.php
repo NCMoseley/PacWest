@@ -29,9 +29,10 @@
 							<h1 class="sub-footer-text">Investors</h1>
 						</div>
 					</a>
-          	<a href="<?php echo esc_url(home_url('/products/')); ?>">
+					<!-- Todo: change back to products -->
+          	<a href="<?php echo esc_url(home_url('/about/')); ?>">
 						<div class="sub-footer-products">
-							<h1 class="sub-footer-text products-text">Products</h1>
+							<h1 class="sub-footer-text products-text">About</h1>
 						</div>
 					</a>
 				</div>

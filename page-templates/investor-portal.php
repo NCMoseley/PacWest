@@ -21,14 +21,16 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-<?php if(SwpmMemberUtils::is_member_logged_in()) { ?>
+<?php if (SwpmMemberUtils::is_member_logged_in()) {
+    ?>
 
-		<div class="investors-portal-banner">
-				<div class="portal-banner-wrapper">
-					<img src="<?php echo $portal_logo ?>"/>
-					<h1> <?php echo $portal_header ?></h1>
+
+			<header class="banner-section parallax">
+				<div class="banner-section-img-wrapper">
+					<img src="<?php echo $portal_logo ?>" alt="Pacwest Logo">
 				</div>
-			</div>
+				<h1> <?php echo $portal_header ?></h1>
+      </header>
 
 			<div class="investors-corporate-presentation">
 				<h1> <?php echo $pres_header ?></h1>
@@ -61,7 +63,8 @@ get_header(); ?>
 	<span>Pacwest</span> News</h2>
 <div class="press-releases-container">
 
-	<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>
+	<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
+    $query = new WP_Query($args); ?>
 	<?php while ($query->have_posts()) : $query->the_post(); ?>
 	
 			<div class="press-release">
@@ -87,22 +90,23 @@ get_header(); ?>
 </a>
 </section>
 
-<?php } else {
-
-	?>
+<?php
+} else {
+        ?>
 	<div class="not-logged-in">
 		<h1>You need to be logged in to see this content</h1>
 		<?php echo get_field('portal_login') ?>
 		
 	</div>
 
-<?php } ?>
+<?php
+    } ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while (have_posts()) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php get_template_part('template-parts/content', 'page'); ?>
 
-			<?php endwhile; // End of the loop. ?>
+			<?php endwhile; // End of the loop.?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

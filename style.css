@@ -1086,7 +1086,7 @@ object {
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 50px;
+  background-position: center 0;
   background-attachment: fixed; }
   @media all and (min-width: 800px) {
     .page-template-front-page .banner-section {
@@ -1681,8 +1681,8 @@ object {
 
 .sub-footer-contact-us-today {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 150, 0.5)), to(rgba(0, 140, 128, 0.6))), url("../../assets/Stock_Photos/pwc-contact-box.png");
-  background-image: linear-gradient(rgba(0, 0, 150, 0.5), rgba(0, 140, 128, 0.6)), url("../../assets/Stock_Photos/pwc-contact-box.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.6)), to(rgba(21, 52, 92, 0.6))), url("../../assets/Stock_Photos/pwc-contact-box.png");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.6), rgba(21, 52, 92, 0.6)), url("../../assets/Stock_Photos/pwc-contact-box.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -1710,6 +1710,8 @@ object {
     @media all and (min-width: 600px) {
       .sub-footer-contact-us-today h1 {
         width: 365px; } }
+    .sub-footer-contact-us-today h1:hover {
+      text-shadow: 2px 2px 8px #404040; }
   .sub-footer-contact-us-today .button-white {
     width: 256px;
     padding: 15px 30px;
@@ -1740,6 +1742,9 @@ object {
   width: 250px;
   height: 6px;
   background-color: #FFFFFF; }
+  .sub-footer-contact-us-today-line:hover {
+    -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+            box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   @media all and (min-width: 750px) {
     .sub-footer-contact-us-today-line {
       width: 350px; } }
@@ -1767,8 +1772,8 @@ object {
 
 .sub-footer-faq {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.5)), to(rgba(21, 52, 92, 0.5))), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1786,6 +1791,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-faq h1:hover {
+    text-shadow: 2px 2px 8px #404040; }
   .sub-footer-faq:hover {
     background-image: url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
     -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
@@ -1793,8 +1800,8 @@ object {
 
 .sub-footer-investors {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.5)), to(rgba(21, 52, 92, 0.5))), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1812,6 +1819,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-investors h1:hover {
+    text-shadow: 2px 2px 8px #404040; }
   .sub-footer-investors:hover {
     background-image: url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
     -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
@@ -1819,8 +1828,8 @@ object {
 
 .sub-footer-products {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-products.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-products.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.5)), to(rgba(21, 52, 92, 0.5))), url("../../assets/Stock_Photos/pwc-products.jpg");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url("../../assets/Stock_Photos/pwc-products.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1838,6 +1847,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-products h1:hover {
+    text-shadow: 2px 2px 8px #404040; }
   .sub-footer-products:hover {
     background-image: url("../../assets/Stock_Photos/pwc-products.jpg");
     -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
@@ -1934,7 +1945,7 @@ object {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 50px;
+  background-position: center 0;
   background-attachment: fixed; }
   @media all and (min-width: 800px) {
     .page-template-about .about-wrapper .banner-section {
@@ -3303,19 +3314,16 @@ object {
   display: none; }
 
 .page-template-contact .wpcf7-form {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media all and (max-width: 1050px) {
-    .page-template-contact .wpcf7-form {
-      width: 100%; } }
   .page-template-contact .wpcf7-form input {
     width: 100%; }
   .page-template-contact .wpcf7-form input[type='submit'] {
@@ -3339,7 +3347,6 @@ object {
       -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
               box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   .page-template-contact .wpcf7-form p {
-    margin: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3356,24 +3363,16 @@ object {
     @media all and (max-width: 950px) {
       .page-template-contact .wpcf7-form p {
         width: 230px; } }
-    @media all and (max-width: 550px) {
+    @media all and (max-width: 650px) {
       .page-template-contact .wpcf7-form p {
         width: 100%; } }
   .page-template-contact .wpcf7-form p:nth-of-type(7) {
     width: 100%;
-    margin: 0 auto; }
-    .page-template-contact .wpcf7-form p:nth-of-type(7) label {
-      width: 97%;
-      margin: 0 auto; }
-      @media all and (max-width: 550px) {
-        .page-template-contact .wpcf7-form p:nth-of-type(7) label {
-          max-width: 335px; } }
-      @media all and (min-width: 551px) {
-        .page-template-contact .wpcf7-form p:nth-of-type(7) label {
-          max-width: 88%; } }
-      @media all and (min-width: 610px) {
-        .page-template-contact .wpcf7-form p:nth-of-type(7) label {
-          max-width: 80%; } }
+    margin: 0 auto;
+    display: block; }
+    @media all and (max-width: 650px) {
+      .page-template-contact .wpcf7-form p:nth-of-type(7) {
+        width: 335px; } }
 
 .page-template-contact .entry-title {
   display: none; }
@@ -3484,7 +3483,7 @@ object {
       width: 100%; } }
 
 .page-template-faq .faq {
-  width: 40%;
+  width: 45%;
   margin: 1rem;
   padding: 5px 5% 5px 10px;
   display: -webkit-box;
@@ -3554,7 +3553,7 @@ object {
 .page-template-investor-portal .entry-title {
   display: none; }
 
-.page-template-investor-portal .investors-portal-banner {
+.page-template-investor-portal .banner-section {
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -3579,31 +3578,36 @@ object {
   background-position: center -50px;
   background-attachment: fixed; }
   @media all and (min-width: 800px) {
-    .page-template-investor-portal .investors-portal-banner {
+    .page-template-investor-portal .banner-section {
       height: 40vw; } }
-  .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper {
+  .page-template-investor-portal .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper img {
+    .page-template-investor-portal .banner-section-img-wrapper img {
       width: 100%; }
-    .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper h1 {
-      width: 60%;
-      margin: 0 auto;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 2.5rem;
-      font-weight: 300;
-      letter-spacing: 2px; }
-      .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper h1 strong {
-        font-weight: 700; }
+  .page-template-investor-portal .banner-section h1 {
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px; }
+    @media all and (min-width: 600px) {
+      .page-template-investor-portal .banner-section h1 {
+        width: 60%; } }
 
 .page-template-investor-portal .investors-corporate-presentation {
   background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
@@ -3640,25 +3644,30 @@ object {
     text-align: center;
     margin-bottom: 30px; }
   .page-template-investor-portal .investors-corporate-presentation .corporate-download {
-    color: #fff;
-    background: #00c860;
+    margin: 1rem auto;
+    width: 210px;
+    padding: 15px 30px;
+    font-size: 16px;
     -webkit-box-shadow: none;
             box-shadow: none;
-    text-shadow: none;
+    color: white;
+    background-color: #00c860;
     border: none;
-    width: 213px;
-    height: 51px;
-    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    text-shadow: none; }
+    .page-template-investor-portal .investors-corporate-presentation .corporate-download:hover {
+      background-color: #00af54;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .page-template-investor-portal .headed-next {
+  display: none;
   padding: 60px 0;
   min-height: 400px;
   background: #f2f2f1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3992,18 +4001,15 @@ object {
             -ms-flex-pack: center;
                 justify-content: center;
         color: #fff; }
+        .site-footer .site-info .footer-left .footer-social-media a:visited {
+          color: #fff; }
         .site-footer .site-info .footer-left .footer-social-media i {
           margin: 0 15px;
           font-size: 22px; }
           .site-footer .site-info .footer-left .footer-social-media i:hover {
             -webkit-transform: scale(1.2);
-                    transform: scale(1.2); }
-        .site-footer .site-info .footer-left .footer-social-media i:nth-of-type(1):hover {
-          color: blue; }
-        .site-footer .site-info .footer-left .footer-social-media i:nth-of-type(2):hover {
-          color: skyblue; }
-        .site-footer .site-info .footer-left .footer-social-media i:nth-of-type(4):hover {
-          color: salmon; }
+                    transform: scale(1.2);
+            color: #00c860; }
     .site-footer .site-info .footer-right {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;

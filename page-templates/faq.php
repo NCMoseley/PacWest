@@ -22,7 +22,6 @@ get_header(); ?>
 				<div class="banner-section-img-wrapper">
 					<img src="<?php echo $logo ?>" alt="Pacwest Logo">
 				</div>
-
 				<h1>
 					<?php echo $banner_text ?>
 				</h1>
