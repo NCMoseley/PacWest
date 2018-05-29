@@ -9,8 +9,11 @@
     }
   }
   .banner-section {
-    @include eight {
+    @include desktop {
       height: 40vw;
+    }
+    @media all and (min-width: 1450px) {
+      height: 35vw;
     }
     width: 100%;
     margin: 0 auto;
@@ -92,7 +95,6 @@
         @media all and (max-width: 550px) {
           width: 90%;
         }
-
         a {
           color: #fff;
           &:hover {
@@ -102,7 +104,6 @@
             color: #fff;
           }
         }
-
         h3 {
           margin: 0;
           font-weight: 300;
