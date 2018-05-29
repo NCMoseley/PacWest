@@ -157,32 +157,37 @@ jQuery(document).ready(function($) {
   $('.investor-login-desc').on('click', function() {
     $('.investor-overlay').removeClass('hidden');
     $('.portal-pop-up').removeClass('hidden');
+    $('.investor-overlay').removeClass('mobile-remove');
+    $('.portal-pop-up').removeClass('mobile-remove');
   });
 
   $('.investor-overlay').on('click', function() {
     $(this).addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
+    $(this).addClass('mobile-remove');
+    $('.portal-pop-up').addClass('mobile-remove');
   });
   $('.nav-wrapper').on('click', function() {
     $('.investor-overlay').addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
+    $('.investor-overlay').addClass('mobile-remove');
+    $('.portal-pop-up').addClass('mobile-remove');
   });
   $('.pop-up-close').on('click', function() {
     $('.investor-overlay').addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
+    $('.investor-overlay').addClass('mobile-remove');
+    $('.portal-pop-up').addClass('mobile-remove');
   });
 
-  
-  $('.nav-wrapper').on('click', function () {
-    $('.investor-overlay').addClass('hidden');
-    $('.portal-pop-up').addClass('hidden');
-  });
+  setTimeout(function() {
+    $('.portal-pop-up').css('opacity', '1');
+    $('.portal-pop-up').css('max-height', '100%');
+    $('.investor-overlay').css('max-height', '100%');
+    $('.investor-overlay').css('opacity', '0.6');
+  }, 1000);
 
-
-
-  // LOGIN PADDING FIX 
+  // LOGIN PADDING FIX
 
   $('.logged-in .site-header').css('top', '32px');
-
-
 });

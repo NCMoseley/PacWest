@@ -5,7 +5,19 @@
 //globals
 
 .hidden {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  max-height: 0;
+  @include medium {
+    display: none !important;
+    opacity: 1;
+  }
+}
+.mobile-remove {
   display: none !important;
+  @include medium {
+    display: block;
+  }
 }
 .uppercase {
   text-transform: uppercase;
