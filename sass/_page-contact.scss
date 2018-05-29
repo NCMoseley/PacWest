@@ -63,7 +63,7 @@
     display: none;
   }
   .wpcf7-form {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -93,18 +93,8 @@
       width: 100%;
       margin: 0 auto;
       display: block;
-      label {
-        width: 97%;
-        margin: 0 auto;
-        @media all and (max-width: 550px) {
-          max-width: 335px;
-        }
-        @media all and (min-width: 551px) {
-          max-width: 88%;
-        }
-        @media all and (min-width: 610px) {
-          max-width: 80%;
-        }
+      @media all and (max-width: 650px) {
+        width: 335px;
       }
     }
   }
