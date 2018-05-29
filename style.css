@@ -4038,9 +4038,9 @@ object {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         max-width: 80%;
         margin-top: 13px;
         margin-left: 5%; }
@@ -4057,8 +4057,7 @@ object {
         .site-footer .site-info .footer-right .footer-right-wrapper #footer-sidebar3 p {
           color: #fff;
           display: inline;
-          font-size: 12px;
-          margin-right: 140px; }
+          font-size: 12px; }
         .site-footer .site-info .footer-right .footer-right-wrapper p {
           margin: 5px 0; }
         .site-footer .site-info .footer-right .footer-right-wrapper .footer-right-text {
