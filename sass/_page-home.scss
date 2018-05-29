@@ -481,7 +481,7 @@
 
 .sub-footer-contact-us-today {
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 150, .5), rgba(0, 140, 128, 0.6)), url('../../assets/Stock_Photos/pwc-contact-box.png');
+  background-image: linear-gradient(rgba(21, 52, 92, 0.6), rgba(21, 52, 92, 0.6)), url('../../assets/Stock_Photos/pwc-contact-box.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -500,6 +500,9 @@
     @include tablet {
       width: 365px;
     }
+    &:hover {
+      text-shadow: 2px 2px 8px #404040;
+    }
   }
   .button-white {
     @include button-white;
@@ -512,6 +515,7 @@
 }
 
 .sub-footer-contact-us-today-line {
+  @include hover-shadow;
   width: 250px;
   height: 6px;
   background-color: #FFFFFF;
@@ -541,7 +545,7 @@
 
 .sub-footer-faq {
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-boxes-faq.jpg');
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url('../../assets/Stock_Photos/pwc-boxes-faq.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -550,6 +554,9 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
+  h1:hover {
+    text-shadow: 2px 2px 8px #404040;
+  }
   &:hover {
     background-image: url('../../assets/Stock_Photos/pwc-boxes-faq.jpg');
     box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
@@ -558,7 +565,7 @@
 
 .sub-footer-investors {
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-boxes-investors.jpg');
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url('../../assets/Stock_Photos/pwc-boxes-investors.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -567,6 +574,9 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
+  h1:hover {
+    text-shadow: 2px 2px 8px #404040;
+  }
   &:hover {
     background-image: url('../../assets/Stock_Photos/pwc-boxes-investors.jpg');
     box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
@@ -575,7 +585,7 @@
 
 .sub-footer-products {
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url('../../assets/Stock_Photos/pwc-products.jpg');
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url('../../assets/Stock_Photos/pwc-products.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -584,6 +594,9 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 25px;
+  h1:hover {
+    text-shadow: 2px 2px 8px #404040;
+  }
   &:hover {
     background-image: url('../../assets/Stock_Photos/pwc-products.jpg');
     box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);

@@ -1681,8 +1681,8 @@ object {
 
 .sub-footer-contact-us-today {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 150, 0.5)), to(rgba(0, 140, 128, 0.6))), url("../../assets/Stock_Photos/pwc-contact-box.png");
-  background-image: linear-gradient(rgba(0, 0, 150, 0.5), rgba(0, 140, 128, 0.6)), url("../../assets/Stock_Photos/pwc-contact-box.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.6)), to(rgba(21, 52, 92, 0.6))), url("../../assets/Stock_Photos/pwc-contact-box.png");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.6), rgba(21, 52, 92, 0.6)), url("../../assets/Stock_Photos/pwc-contact-box.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 50%;
@@ -1710,6 +1710,8 @@ object {
     @media all and (min-width: 600px) {
       .sub-footer-contact-us-today h1 {
         width: 365px; } }
+    .sub-footer-contact-us-today h1:hover {
+      text-shadow: 2px 2px 8px #404040; }
   .sub-footer-contact-us-today .button-white {
     width: 256px;
     padding: 15px 30px;
@@ -1740,6 +1742,9 @@ object {
   width: 250px;
   height: 6px;
   background-color: #FFFFFF; }
+  .sub-footer-contact-us-today-line:hover {
+    -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+            box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   @media all and (min-width: 750px) {
     .sub-footer-contact-us-today-line {
       width: 350px; } }
@@ -1767,8 +1772,8 @@ object {
 
 .sub-footer-faq {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.5)), to(rgba(21, 52, 92, 0.5))), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1786,6 +1791,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-faq h1:hover {
+    text-shadow: 2px 2px 8px #404040; }
   .sub-footer-faq:hover {
     background-image: url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
     -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
@@ -1793,8 +1800,8 @@ object {
 
 .sub-footer-investors {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.5)), to(rgba(21, 52, 92, 0.5))), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1812,6 +1819,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-investors h1:hover {
+    text-shadow: 2px 2px 8px #404040; }
   .sub-footer-investors:hover {
     background-image: url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
     -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
@@ -1819,8 +1828,8 @@ object {
 
 .sub-footer-products {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-products.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-products.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.5)), to(rgba(21, 52, 92, 0.5))), url("../../assets/Stock_Photos/pwc-products.jpg");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url("../../assets/Stock_Photos/pwc-products.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1838,6 +1847,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-products h1:hover {
+    text-shadow: 2px 2px 8px #404040; }
   .sub-footer-products:hover {
     background-image: url("../../assets/Stock_Photos/pwc-products.jpg");
     -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
