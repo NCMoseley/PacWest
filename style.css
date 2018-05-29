@@ -438,6 +438,9 @@ textarea {
 
 .page {
   padding-top: 110px; }
+  @media all and (max-width: 785px) {
+    .page {
+      padding-top: 90px; } }
 
 @media (max-width: 750px) {
   .toggle-container .button-toggle {
@@ -1088,9 +1091,12 @@ object {
   background-size: cover;
   background-position: center 0;
   background-attachment: fixed; }
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 1000px) {
     .page-template-front-page .banner-section {
       height: 40vw; } }
+  @media all and (min-width: 1450px) {
+    .page-template-front-page .banner-section {
+      height: 35vw; } }
   .page-template-front-page .banner-section-img-wrapper {
     width: 320px;
     display: -webkit-box;
@@ -1947,9 +1953,12 @@ object {
   background-repeat: no-repeat;
   background-position: center 0;
   background-attachment: fixed; }
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 1000px) {
     .page-template-about .about-wrapper .banner-section {
       height: 40vw; } }
+  @media all and (min-width: 1450px) {
+    .page-template-about .about-wrapper .banner-section {
+      height: 35vw; } }
   .page-template-about .about-wrapper .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -2462,9 +2471,12 @@ object {
   background-repeat: no-repeat;
   background-position: center -50px;
   background-attachment: fixed; }
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 1000px) {
     .page-template-corporate-governance .cg-wrapper .banner-section {
       height: 40vw; } }
+  @media all and (min-width: 1450px) {
+    .page-template-corporate-governance .cg-wrapper .banner-section {
+      height: 35vw; } }
   .page-template-corporate-governance .cg-wrapper .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -2718,9 +2730,12 @@ object {
     background-repeat: no-repeat;
     background-position: center -50px;
     background-attachment: fixed; }
-    @media all and (min-width: 800px) {
+    @media all and (min-width: 1000px) {
       .page-template-products .banner-section {
         height: 40vw; } }
+    @media all and (min-width: 1450px) {
+      .page-template-products .banner-section {
+        height: 35vw; } }
     .page-template-products .banner-section-img-wrapper {
       width: 100px;
       display: -webkit-box;
@@ -2896,9 +2911,12 @@ object {
   background-repeat: no-repeat;
   background-position: center 50px;
   background-attachment: fixed; }
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 1000px) {
     .page-template-investors .banner-section {
       height: 40vw; } }
+  @media all and (min-width: 1450px) {
+    .page-template-investors .banner-section {
+      height: 35vw; } }
   .page-template-investors .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -3089,9 +3107,12 @@ object {
   background-repeat: no-repeat;
   background-position: center -50px;
   background-attachment: fixed; }
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 1000px) {
     .page-template-news .banner-section {
       height: 40vw; } }
+  @media all and (min-width: 1450px) {
+    .page-template-news .banner-section {
+      height: 35vw; } }
   .page-template-news .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -3263,9 +3284,12 @@ object {
   background-repeat: no-repeat;
   background-position: center -50px;
   background-attachment: fixed; }
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 1000px) {
     .page-template-contact .banner-section {
       height: 40vw; } }
+  @media all and (min-width: 1450px) {
+    .page-template-contact .banner-section {
+      height: 35vw; } }
   .page-template-contact .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -3577,9 +3601,12 @@ object {
   background-repeat: no-repeat;
   background-position: center -50px;
   background-attachment: fixed; }
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 1000px) {
     .page-template-investor-portal .banner-section {
       height: 40vw; } }
+  @media all and (min-width: 1450px) {
+    .page-template-investor-portal .banner-section {
+      height: 35vw; } }
   .page-template-investor-portal .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;

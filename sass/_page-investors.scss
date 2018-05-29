@@ -8,8 +8,11 @@
     opacity: 0.6;
   }
   .banner-section {
-    @include eight {
+    @include desktop {
       height: 40vw;
+    }
+    @media all and (min-width: 1450px) {
+      height: 35vw;
     }
     width: 100%;
     margin: 0 auto;
@@ -19,7 +22,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url('../../assets/Stock_Photos/pwc-investors.jpg');
+    url('../../assets/Stock_Photos/pwc-investors.jpg');
     color: $color__text-light;
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,7 +53,6 @@
   .investor-login {
     padding: 3rem 0;
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -84,11 +86,9 @@
       display: flex;
       height: 400px;
       width: 300px;
-
       @include medium {
         width: 700px;
       }
-
       .pop-up-close {
         position: absolute;
         top: 10px;
@@ -100,7 +100,6 @@
           color: #fff;
         }
       }
-
       .pop-up-image {
         display: none;
         justify-content: center;
@@ -128,14 +127,11 @@
         }
         display: flex;
         flex-direction: column;
-        align-items: center;
-        // flex-basis: 50%;
-
+        align-items: center; // flex-basis: 50%;
         @include medium {
           flex-basis: 50%;
           height: 392px;
         }
-
         .wpcf7 {
           form {
             display: flex;

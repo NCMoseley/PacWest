@@ -2,8 +2,11 @@
   // Todo: remove display: none. 
   display: none;
   .banner-section {
-    @include eight {
+    @include desktop {
       height: 40vw;
+    }
+    @media all and (min-width: 1450px) {
+      height: 35vw;
     }
     width: 100%;
     margin: 0 auto;
