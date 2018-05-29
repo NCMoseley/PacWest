@@ -171,17 +171,6 @@ jQuery(document).ready(function($) {
     $('.investor-overlay').addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
   });
-  // DISABLE INVESTOR LINK FOR MOBILE
-  $('.menu-item-163').on('click', function() {
-    $(this)
-      .children()
-      .last()
-      .slideToggle();
-    $(this)
-      .children()
-      .last()
-      .css('display', 'flex');
-  });
 
   
   $('.nav-wrapper').on('click', function () {
