@@ -130,13 +130,15 @@ jQuery(document).ready(function ($) {
     var para = $(window).scrollTop();
     $('.parallax').css(
       'background-position',
-      'center ' + (para * -1.4 - 50) + 'px'
+      'center ' + 'center ' + ',' + 'center ' + (para * -1.2 - 50) + 'px'
     );
     $('.parallax-low').css(
       'background-position',
-      'center ' + (para * -0.9 + 150) + 'px'
+      'center ' + 'center ' + ',' + 'center ' + (para * -0.9) + 'px'
     );
   }
+
+
 
   // DISABLE INVESTOR LINK FOR MOBILE
   $('.menu-item-163').on('click', function () {
