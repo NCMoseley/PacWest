@@ -2965,11 +2965,22 @@ object {
     display: -ms-flexbox;
     display: flex;
     height: 400px;
-    width: 700px; }
+    width: 300px; }
+    @media all and (min-width: 750px) {
+      .page-template-investors .investor-login .portal-pop-up {
+        width: 700px; } }
+    .page-template-investors .investor-login .portal-pop-up .pop-up-close {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: black;
+      font-size: 22px;
+      cursor: pointer; }
+      @media all and (min-width: 750px) {
+        .page-template-investors .investor-login .portal-pop-up .pop-up-close {
+          color: #fff; } }
     .page-template-investors .investor-login .portal-pop-up .pop-up-image {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      display: none;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -2983,12 +2994,18 @@ object {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
       width: 350px; }
+      @media all and (min-width: 750px) {
+        .page-template-investors .investor-login .portal-pop-up .pop-up-image {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
       .page-template-investors .investor-login .portal-pop-up .pop-up-image img {
         margin-bottom: 70px;
         -ms-flex-item-align: center;
             align-self: center;
         width: 200px; }
     .page-template-investors .investor-login .portal-pop-up .pop-up-form {
+      height: 450px;
       background: #fff;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2999,11 +3016,14 @@ object {
               flex-direction: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
+              align-items: center; }
       .page-template-investors .investor-login .portal-pop-up .pop-up-form h2 {
         font-size: 22px; }
+      @media all and (min-width: 750px) {
+        .page-template-investors .investor-login .portal-pop-up .pop-up-form {
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+          height: 392px; } }
       .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 form {
         display: -webkit-box;
         display: -ms-flexbox;

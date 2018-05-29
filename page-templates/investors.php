@@ -19,7 +19,7 @@ get_header(); ?>
 
 		<div class="investor-overlay hidden"></div>
 
-		<!-- <header class="banner-section"> -->
+		
 		<header class="banner-section parallax">
 			<div class="banner-section-img-wrapper">
 				<img class="leaf-icon" src="<?php echo $logo ?>" alt="Leaf Logo">
@@ -41,6 +41,8 @@ get_header(); ?>
 			</div>
 
 			<div class="portal-pop-up hidden">
+				<i class="fa fa-times pop-up-close" aria-hidden="true"></i>
+
 				<div class="pop-up-image">
 					<img src="<?php echo get_field('pop_up_logo')?> " alt="Coastal view through trees"/>
 				</div>
