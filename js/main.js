@@ -136,12 +136,20 @@ jQuery(document).ready(function ($) {
       'background-position',
       'center ' + 'center ' + ',' + 'center ' + para * -0.9 + 'px'
     );
+  }
+
+  parallaxToggle();
+  $(window).resize(function(){
+    parallaxToggle();
+  })
+
+  function parallaxToggle() {
     if ($(window).width() < 750) {
-      $('.banner-section').removeClass('parallax'),
-        $('.banner-section').removeClass('parallax-low');
+      $('.banner-section').removeClass('parallax parallax-low');
+      $('.banner-section').css('background-attachment', 'scroll');
     } else {
-      $('.banner-section').addClass('parallax'),
-        $('.banner-section').addClass('parallax-low');
+      $('.banner-section').addClass('parallax parallax-low');
+      $('.banner-section').css('background-attachment', 'fixed');
     }
   }
 
