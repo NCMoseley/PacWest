@@ -1315,10 +1315,10 @@ object {
   background-attachment: fixed; }
   @media all and (min-width: 1000px) {
     .page-template-front-page .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
   @media all and (min-width: 1450px) {
     .page-template-front-page .banner-section {
-      height: 35vw; } }
+      height: 675px; } }
   .page-template-front-page .banner-section-img-wrapper {
     width: 320px;
     display: -webkit-box;
@@ -2173,10 +2173,10 @@ object {
   background-attachment: fixed; }
   @media all and (min-width: 1000px) {
     .page-template-about .about-wrapper .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
   @media all and (min-width: 1450px) {
     .page-template-about .about-wrapper .banner-section {
-      height: 35vw; } }
+      height: 675px; } }
   .page-template-about .about-wrapper .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -2693,10 +2693,10 @@ object {
   background-attachment: fixed; }
   @media all and (min-width: 1000px) {
     .page-template-corporate-governance .cg-wrapper .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
   @media all and (min-width: 1450px) {
     .page-template-corporate-governance .cg-wrapper .banner-section {
-      height: 35vw; } }
+      height: 675px; } }
   .page-template-corporate-governance .cg-wrapper .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -2952,10 +2952,10 @@ object {
     background-attachment: fixed; }
     @media all and (min-width: 1000px) {
       .page-template-products .banner-section {
-        height: 40vw; } }
+        height: 475px; } }
     @media all and (min-width: 1450px) {
       .page-template-products .banner-section {
-        height: 35vw; } }
+        height: 675px; } }
     .page-template-products .banner-section-img-wrapper {
       width: 100px;
       display: -webkit-box;
@@ -3133,10 +3133,10 @@ object {
   background-attachment: fixed; }
   @media all and (min-width: 1000px) {
     .page-template-investors .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
   @media all and (min-width: 1450px) {
     .page-template-investors .banner-section {
-      height: 35vw; } }
+      height: 675px; } }
   .page-template-investors .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -3343,10 +3343,10 @@ object {
   background-attachment: fixed; }
   @media all and (min-width: 1000px) {
     .page-template-news .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
   @media all and (min-width: 1450px) {
     .page-template-news .banner-section {
-      height: 35vw; } }
+      height: 675px; } }
   .page-template-news .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -3520,10 +3520,10 @@ object {
   background-attachment: fixed; }
   @media all and (min-width: 1000px) {
     .page-template-contact .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
   @media all and (min-width: 1450px) {
     .page-template-contact .banner-section {
-      height: 35vw; } }
+      height: 675px; } }
   .page-template-contact .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -3668,9 +3668,12 @@ object {
   background-repeat: no-repeat;
   background-position: center -50px;
   background-attachment: fixed; }
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 1000px) {
     .page-template-faq .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
+  @media all and (min-width: 1450px) {
+    .page-template-faq .banner-section {
+      height: 675px; } }
   .page-template-faq .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -3837,10 +3840,10 @@ object {
   background-attachment: fixed; }
   @media all and (min-width: 1000px) {
     .page-template-investor-portal .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
   @media all and (min-width: 1450px) {
     .page-template-investor-portal .banner-section {
-      height: 35vw; } }
+      height: 675px; } }
   .page-template-investor-portal .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -4217,6 +4220,12 @@ object {
   @media all and (max-width: 550px) {
     .single-post .post-navigation {
       width: 85%; } }
+  .single-post .post-navigation a {
+    color: #333333; }
+    .single-post .post-navigation a:visited {
+      color: #333333; }
+    .single-post .post-navigation a:hover {
+      color: #00c860; }
 
 .page-template-private-sign-up {
   background-color: #f1f1f1; }

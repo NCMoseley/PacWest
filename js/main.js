@@ -136,12 +136,20 @@ jQuery(document).ready(function ($) {
       'background-position',
       'center ' + 'center ' + ',' + 'center ' + para * -0.9 + 'px'
     );
+  }
+
+  parallaxToggle();
+  $(window).resize(function(){
+    parallaxToggle();
+  })
+
+  function parallaxToggle() {
     if ($(window).width() < 750) {
-      $('.banner-section').removeClass('parallax'),
-        $('.banner-section').removeClass('parallax-low');
+      $('.banner-section').removeClass('parallax parallax-low');
+      $('.banner-section').css('background-attachment', 'scroll');
     } else {
-      $('.banner-section').addClass('parallax'),
-        $('.banner-section').addClass('parallax-low');
+      $('.banner-section').addClass('parallax parallax-low');
+      $('.banner-section').css('background-attachment', 'fixed');
     }
   }
 
@@ -234,6 +242,7 @@ jQuery(document).ready(function ($) {
     var url = templateLocation.template_url + '/investor-portal';
     if ($('body').hasClass('logged-in')) {
       $('.menu-item-163 > a').attr('href', url);
+      $('.sub-footer-investor-link').attr('href', url);
     }
   }
   investorRedirect();

@@ -50,10 +50,10 @@
     }
     .banner-section {
       @include desktop {
-        height: 40vw;
+        height: 475px;
       }
       @media all and (min-width: 1450px) {
-        height: 35vw;
+        height: 675px;
       }
       width: 100%;
       margin: 0 auto;
