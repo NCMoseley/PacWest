@@ -234,6 +234,7 @@ jQuery(document).ready(function ($) {
     var url = templateLocation.template_url + '/investor-portal';
     if ($('body').hasClass('logged-in')) {
       $('.menu-item-163 > a').attr('href', url);
+      $('.sub-footer-investor-link').attr('href', url);
     }
   }
   investorRedirect();

@@ -4215,6 +4215,12 @@ object {
   @media all and (max-width: 550px) {
     .single-post .post-navigation {
       width: 85%; } }
+  .single-post .post-navigation a {
+    color: #333333; }
+    .single-post .post-navigation a:visited {
+      color: #333333; }
+    .single-post .post-navigation a:hover {
+      color: #00c860; }
 
 .page-template-private-sign-up {
   background-color: #f1f1f1; }
