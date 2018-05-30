@@ -17,7 +17,6 @@
       align-items: center;
       display: flex;
       height: 100px;
-
       @include eight {
         height: 60px;
       }
@@ -31,7 +30,6 @@
         flex-wrap: wrap;
         align-items: center;
         width: 100%;
-
         @include eight {
           margin-top: 0;
           justify-content: flex-end;
@@ -54,10 +52,10 @@
     }
     .banner-section {
       @include desktop {
-        height: 40vw;
+        height: 475px;
       }
       @media all and (min-width: 1450px) {
-        height: 35vw;
+        height: 675px;
       }
       width: 100%;
       margin: 0 auto;
@@ -67,7 +65,7 @@
       justify-content: center;
       align-items: center;
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('../../assets/Stock_Photos/pwc-about-optimized.jpg');
+      url('../../assets/Stock_Photos/pwc-about-optimized.jpg');
       color: $color__text-light;
       background-size: cover;
       background-repeat: no-repeat;
@@ -92,8 +90,7 @@
       }
     }
     .about-our-company {
-      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom
-        left no-repeat;
+      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
       background-attachment: fixed;
       width: 100%;
       min-height: 400px;

@@ -6,8 +6,11 @@
     text-align: center;
   }
   .banner-section {
-    @include eight {
-      height: 40vw;
+    @include desktop {
+      height: 475px;
+    }
+    @media all and (min-width: 1450px) {
+      height: 675px;
     }
     width: 100%;
     margin: 0 auto;
