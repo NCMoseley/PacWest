@@ -40,6 +40,8 @@ get_header(); ?>
 				<?php echo $login_info ?>
 			</div>
 
+			  
+
 			<div class="portal-pop-up hidden">
 				<i class="fa fa-times pop-up-close" aria-hidden="true"></i>
 
