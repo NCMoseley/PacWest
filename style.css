@@ -714,6 +714,7 @@ a {
       height: auto !important; }
       @media all and (max-width: 750px) {
         .main-navigation ul .menu-item-163 > a {
+          text-align: center;
           pointer-events: none; } }
     .main-navigation ul ul {
       float: left;
