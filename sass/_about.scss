@@ -10,19 +10,19 @@
   }
   .about-wrapper {
     .about-menu {
-      display: none;
-      @include medium {
-        justify-content: center;
-        width: 100%;
-        height: 100px;
-        background: $color__green;
-        align-items: center;
-        display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100px;
+      background: $color__green;
+      align-items: center;
+      display: flex;
+      height: 100px;
+
+      @include eight {
         height: 60px;
-        justify-content: center;
       }
       ul {
-        margin: 0;
+        margin: 0 1%;
         padding-left: 0 !important;
         margin-top: 20px;
         min-height: 50px;
@@ -31,11 +31,9 @@
         flex-wrap: wrap;
         align-items: center;
         width: 100%;
-        @include medium {
-          margin-top: 0;
-          min-height: 50px;
-        }
+
         @include eight {
+          margin-top: 0;
           justify-content: flex-end;
           margin-right: 3rem;
         }
@@ -69,7 +67,7 @@
       justify-content: center;
       align-items: center;
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url('../../assets/Stock_Photos/pwc-about-optimized.jpg');
+        url('../../assets/Stock_Photos/pwc-about-optimized.jpg');
       color: $color__text-light;
       background-size: cover;
       background-repeat: no-repeat;
@@ -94,7 +92,8 @@
       }
     }
     .about-our-company {
-      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
+      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom
+        left no-repeat;
       background-attachment: fixed;
       width: 100%;
       min-height: 400px;
