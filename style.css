@@ -695,6 +695,9 @@ a {
   clear: both;
   display: block;
   width: 60%; }
+  .main-navigation a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
   @media all and (max-width: 900px) {
     .main-navigation {
       position: relative;
@@ -704,7 +707,7 @@ a {
       width: 30%; } }
   .main-navigation .current-menu-item > a {
     color: #00c860;
-    font-weight: 700; }
+    font-weight: 500; }
   .main-navigation ul {
     display: none;
     list-style: none;
