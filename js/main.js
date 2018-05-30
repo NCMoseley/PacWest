@@ -218,7 +218,7 @@ jQuery(document).ready(function($) {
 
   function investorVisbility() {
     if ($(window).width() < 750) {
-      $('.investors-link').css('display', 'block')
+      $('.investors-link').css('display', 'block');
     }
     else {
       $('.investors-link').css('display', 'none');

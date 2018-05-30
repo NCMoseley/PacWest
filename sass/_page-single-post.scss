@@ -15,6 +15,16 @@
     @media all and (max-width: 550px) {
       width: 85%;
     }
+
+    a {
+      color: $color__grey-dark;
+      &:visited {
+        color: $color__grey-dark;
+      }
+      &:hover {
+        color: $color__green;
+      }
+    }
   }
 
 
