@@ -3295,9 +3295,7 @@ object {
         font-size: 16px;
         margin-left: 14px; }
 
-.page-template-investors .investor-login-desc:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+.page-template-investors .investor-login-desc p:nth-child(2):hover {
   -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
           box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
