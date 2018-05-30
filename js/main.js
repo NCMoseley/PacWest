@@ -224,12 +224,7 @@ jQuery(document).ready(function ($) {
   function investorVisbility() {
     if ($(window).width() < 750) {
       $('.investors-link').css('display', 'block');
-<<<<<<< HEAD
-    }
-    else {
-=======
     } else {
->>>>>>> 6e12c1a6c6be29918f9098cad13f3787b26f78d3
       $('.investors-link').css('display', 'none');
     }
   }
@@ -239,6 +234,7 @@ jQuery(document).ready(function ($) {
     var url = templateLocation.template_url + '/investor-portal';
     if ($('body').hasClass('logged-in')) {
       $('.menu-item-163 > a').attr('href', url);
+      $('.sub-footer-investor-link').attr('href', url);
     }
   }
   investorRedirect();
