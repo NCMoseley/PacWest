@@ -696,8 +696,8 @@ a {
   display: block;
   width: 60%; }
   .main-navigation a:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
   @media all and (max-width: 900px) {
     .main-navigation {
       position: relative;
@@ -3294,8 +3294,8 @@ object {
         margin-left: 14px; }
 
 .page-template-investors .investor-login-desc:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
           box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
