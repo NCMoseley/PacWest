@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../../assets/Stock_Photos/pwc-investors.jpg');
+    url('../../assets/Stock_Photos/pwc-investors-optimized.jpg');
     color: $color__text-light;
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,9 +82,7 @@
     }
   }
   .headed-next {
-    // Todo: reset display when ready for videos. 
-    // display: flex;
-    display: none;
+    display: flex; // display: none;
     padding: 60px 0;
     min-height: 400px;
     background: $color__background-grey;
@@ -127,16 +125,9 @@
       }
     }
     .portal-view-more {
-      color: #fff;
-      background: $color__navy;
-      box-shadow: none;
-      text-shadow: none;
-      width: 210px;
-      height: 50px;
-      font-size: 18px;
-      border-radius: 5px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      //  Todo: 
+      display: none;
+      @include button-blue;
     }
   }
   .press-releases-wrapper {
