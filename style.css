@@ -3764,17 +3764,25 @@ object {
           width: 350px;
           margin: 20px 20px; } }
   .page-template-investor-portal .headed-next .portal-view-more {
-    color: #fff;
-    background: #0a2d5d;
+    display: none;
+    margin: 1rem auto;
+    width: 210px;
+    padding: 15px 30px;
+    font-size: 16px;
     -webkit-box-shadow: none;
             box-shadow: none;
-    text-shadow: none;
-    width: 210px;
-    height: 50px;
-    font-size: 18px;
+    color: white;
+    background-color: #0a2d5d;
+    border: none;
     border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    text-shadow: none; }
+    .page-template-investor-portal .headed-next .portal-view-more:hover {
+      background-color: #082246;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .page-template-investor-portal .press-releases-wrapper .press-releases-container {
   display: -webkit-box;
