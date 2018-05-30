@@ -40,6 +40,10 @@ get_header(); ?>
 				<?php echo $login_info ?>
 			</div>
 
+			<div class="forgot">
+				<a href="<?php echo home_url('/membership-login/password-reset/') ?>">I Forgot My Password!</a>
+			</div>
+
 			  
 
 			<div class="portal-pop-up hidden">

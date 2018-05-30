@@ -274,6 +274,7 @@ a {
       height: auto !important;
       &>a {
         @media all and (max-width: 750px) {
+          text-align: center;
           pointer-events: none;
         }
       }

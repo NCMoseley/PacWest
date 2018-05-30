@@ -79,7 +79,8 @@
       border: 0;
       &:hover {
         background-color: darken($color__green, 5%);
-        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69), 0px 10px 13px -8px rgba(0, 0, 0, 0.73);
+        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69),
+          0px 10px 13px -8px rgba(0, 0, 0, 0.73);
       }
     }
   }
@@ -177,6 +178,69 @@
         @include medium {
           margin-left: 20px;
         }
+      }
+    }
+  }
+}
+
+//password reset
+
+.page-template-password {
+  article {
+    .entry-content {
+      .swpm-reset-pw-success-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        background: none;
+        text-align: center;
+
+        margin: 0;
+        margin-right: 0 !important;
+      }
+    }
+    .entry-title {
+      color: $color__green;
+    }
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left
+      no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 0;
+
+    @include eight {
+      background-size: 100% 100%;
+    }
+
+    .swpm-pw-reset-widget-inside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      label {
+        text-transform: uppercase;
+      }
+      input {
+        max-width: 250px;
+        @include tablet {
+          max-width: 400px;
+        }
+      }
+      .swpm-pw-reset-submit {
+        background: $color__green;
+        color: #fff;
+        box-shadow: none;
+        text-shadow: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
     }
   }
