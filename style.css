@@ -1202,6 +1202,79 @@ object {
           .page-template-registration .swpm-registration-widget-form .reg-wrapper .registration-form-right {
             margin-left: 20px; } }
 
+.page-template-password article {
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+  padding: 0; }
+  .page-template-password article .entry-content .swpm-reset-pw-success-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    background: none;
+    text-align: center;
+    margin: 0;
+    margin-right: 0 !important; }
+  .page-template-password article .entry-title {
+    color: #00c860; }
+  @media all and (min-width: 800px) {
+    .page-template-password article {
+      background-size: 100% 100%; } }
+  .page-template-password article .swpm-pw-reset-widget-inside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-password article .swpm-pw-reset-widget-inside label {
+      text-transform: uppercase; }
+    .page-template-password article .swpm-pw-reset-widget-inside input {
+      max-width: 250px; }
+      @media all and (min-width: 600px) {
+        .page-template-password article .swpm-pw-reset-widget-inside input {
+          max-width: 400px; } }
+    .page-template-password article .swpm-pw-reset-widget-inside .swpm-pw-reset-submit {
+      background: #00c860;
+      color: #fff;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      text-shadow: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+
 .page-template-front-page .front-h2 {
   font-size: 2rem;
   letter-spacing: 3px;
@@ -3113,6 +3186,12 @@ object {
       color: #00c860;
       text-transform: uppercase;
       font-weight: 700; }
+  .page-template-investors .investor-login .forgot a {
+    color: #00c860;
+    text-decoration: none; }
+  .page-template-investors .investor-login .forgot a:hover {
+    text-decoration: underline;
+    font-weight: bold; }
   .page-template-investors .investor-login .portal-pop-up {
     position: fixed;
     top: 150px;

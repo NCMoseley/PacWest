@@ -40,6 +40,10 @@ get_header(); ?>
 				<?php echo $login_info ?>
 			</div>
 
+			<div class="forgot">
+				<a href="<?php echo home_url('/membership-login/password-reset/') ?>">I Forgot My Password!</a>
+			</div>
+
 			  
 
 			<div class="portal-pop-up hidden">
@@ -51,7 +55,7 @@ get_header(); ?>
 
 				<div class="pop-up-form">
 					<h2><?php echo get_field('pop_up_text') ?></h2>
-					<?php echo do_shortcode('[contact-form-7 id="249" title="Portal Pop Up"]'); ?>
+					<?php echo do_shortcode('[contact-form-7 id="36" title="Investor Portal Request Access"]'); ?>
 				</div>
 				
 			</div>
