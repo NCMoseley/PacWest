@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 
 //globals
-
 .hidden {
   opacity: 0;
   transition: opacity 1.5s ease;
@@ -13,12 +12,14 @@
     opacity: 1;
   }
 }
+
 .mobile-remove {
   display: none !important;
   @include medium {
     display: block;
   }
 }
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -78,8 +79,7 @@
       border: 0;
       &:hover {
         background-color: darken($color__green, 5%);
-        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69),
-          0px 10px 13px -8px rgba(0, 0, 0, 0.73);
+        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69), 0px 10px 13px -8px rgba(0, 0, 0, 0.73);
       }
     }
   }
@@ -107,7 +107,6 @@
     justify-content: center;
     align-items: center;
     min-height: 400px;
-
     .post-password-form {
       display: flex;
       flex-direction: column;
@@ -141,9 +140,7 @@
   }
   .swpm-registration-widget-form {
     display: flex;
-
     justify-content: center;
-
     .swpm-registration-submit {
       background: $color__green;
       color: #fff;
@@ -153,7 +150,6 @@
       text-transform: uppercase;
       letter-spacing: 2px;
     }
-
     input {
       max-width: 300px;
     }
@@ -166,11 +162,9 @@
       flex-direction: column;
       min-height: 220px;
       justify-content: space-between;
-
       @include medium {
         flex-direction: row;
       }
-
       .registration-form-left {
         display: flex;
         flex-direction: column;
@@ -180,7 +174,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         @include medium {
           margin-left: 20px;
         }
