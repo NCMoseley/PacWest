@@ -59,7 +59,7 @@ $transition-duration: 0.5s;
       top: 45px;
       right: -48px;
       background: white;
-      width: 200px;
+      width: 250px;
       display: flex;
       justify-content: center;
       transition: width 0.5s;
@@ -295,9 +295,11 @@ a {
       @media all and (max-width: 750px) {
         display: none;
         margin-bottom: 3rem;
+        padding: 0;
+        border-top: 1px solid $color__green;
         position: relative;
         left: 0;
-        top: 1rem;
+        top: 0;
       }
       li {
         // height: auto;

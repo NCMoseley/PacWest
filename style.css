@@ -479,7 +479,7 @@ textarea {
     top: 45px;
     right: -48px;
     background: white;
-    width: 200px;
+    width: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -746,9 +746,11 @@ a {
         .main-navigation ul ul {
           display: none;
           margin-bottom: 3rem;
+          padding: 0;
+          border-top: 1px solid #00c860;
           position: relative;
           left: 0;
-          top: 1rem; } }
+          top: 0; } }
       .main-navigation ul ul li a:hover {
         color: #00c860; }
       .main-navigation ul ul ul {
