@@ -80,6 +80,17 @@
         font-weight: 700;
       }
     }
+
+    .forgot {
+      a {
+        color: $color__green;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
     .portal-pop-up {
       position: fixed;
       top: 150px;
