@@ -190,4 +190,15 @@ jQuery(document).ready(function($) {
   // LOGIN PADDING FIX
 
   $('.logged-in .site-header').css('top', '32px');
+
+
+  var url = templateLocation.template_url + '/investor-portal';
+
+  function investorRedirect() {
+    if ($('body').hasClass('logged-in')){
+      $('.menu-item-163 > a').attr('href', url);
+    }
+  }
+  investorRedirect();
+
 });
