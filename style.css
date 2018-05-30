@@ -1765,7 +1765,7 @@ object {
     text-transform: uppercase; }
 
 .press-release:nth-child(2) {
-  background-color: #ccc; }
+  background-color: #f1f1f1; }
   .press-release:nth-child(2) h3 {
     color: #404040; }
   .press-release:nth-child(2) span {
@@ -3831,7 +3831,9 @@ object {
               box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .page-template-investor-portal .headed-next {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 60px 0;
   min-height: 400px;
   background: #f2f2f1;
@@ -4113,6 +4115,61 @@ object {
   @media all and (max-width: 550px) {
     .single-post .post-navigation {
       width: 85%; } }
+
+.page-template-private-sign-up {
+  background-color: #f1f1f1; }
+  .page-template-private-sign-up .private-logo-container {
+    padding: 2rem;
+    max-width: 436px;
+    margin: 0 auto; }
+  .page-template-private-sign-up .entry-title {
+    display: none; }
+  .page-template-private-sign-up .page {
+    padding-top: 0; }
+  .page-template-private-sign-up .wpcf7-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 60%;
+    margin: 0 auto; }
+    @media all and (min-width: 1030px) {
+      .page-template-private-sign-up .wpcf7-form {
+        max-width: 90%; } }
+    .page-template-private-sign-up .wpcf7-form p:nth-child(6) {
+      text-align: center; }
+      .page-template-private-sign-up .wpcf7-form p:nth-child(6) input {
+        margin: 1rem auto;
+        width: 210px;
+        padding: 15px 30px;
+        font-size: 16px;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        color: white;
+        background-color: #00c860;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: none; }
+        .page-template-private-sign-up .wpcf7-form p:nth-child(6) input:hover {
+          background-color: #00af54;
+          -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+                  box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+    .page-template-private-sign-up .wpcf7-form p {
+      margin: 20px; }
+    .page-template-private-sign-up .wpcf7-form p input {
+      width: 335px; }
+      @media all and (max-width: 450px) {
+        .page-template-private-sign-up .wpcf7-form p input {
+          width: 250px; } }
 
 .site-footer {
   font-family: "Roboto", Arial, Helvetica, sans-serif; }

@@ -44,7 +44,13 @@ get_header(); ?>
 				<h1> <?php echo $headed_next ?></h1>
 
 				<div class="video-container">
-					<div class="vid one"></div>
+					<!-- <video width="320" height="240" controls> -->
+  					<!-- <source src="https://drive.google.com/drive/folders/1Sqo15YdcOpaoyi0hJV7uSRE850yYLI2K" type="video/mp4">
+  					<source src="https://drive.google.com/drive/folders/1Sqo15YdcOpaoyi0hJV7uSRE850yYLI2K" type="video/ogg"> -->
+							<!-- </video> -->
+						<iframe width="100%" height="100%" src="https://drive.google.com/open?id=1Sqo15YdcOpaoyi0hJV7uSRE850yYLI2K"></iframe>
+								Your browser does not support the video tag.
+				
 					<div class="vid two"></div>
 					<div class="vid three"></div>
 
