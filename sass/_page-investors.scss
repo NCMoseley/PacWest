@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url('../../assets/Stock_Photos/pwc-investors-optimized.jpg');
+    url('../../assets/Stock_Photos/pwc-investors-optimized.jpg');
     color: $color__text-light;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,7 +80,6 @@
         font-weight: 700;
       }
     }
-
     .forgot {
       a {
         color: $color__green;
@@ -117,7 +116,6 @@
         align-items: flex-end;
         background: url('../../assets/Stock_Photos/pwc-home-optimized.jpg');
         background-size: cover;
-
         background-repeat: no-repeat;
         flex-basis: 50%;
         width: 350px;
@@ -174,5 +172,15 @@
         }
       }
     }
+  }
+  .investor-login-desc {
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+    }
+  }
+  div.wpcf7-mail-sent-ok {
+    background-color: $color__background-grey;
+    text-align: center;
   }
 }
