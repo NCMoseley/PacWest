@@ -44,15 +44,12 @@ get_header(); ?>
 				<h1> <?php echo $headed_next ?></h1>
 
 				<div class="video-container">
-					<!-- <video width="320" height="240" controls> -->
-  					<!-- <source src="https://drive.google.com/drive/folders/1Sqo15YdcOpaoyi0hJV7uSRE850yYLI2K" type="video/mp4">
-  					<source src="https://drive.google.com/drive/folders/1Sqo15YdcOpaoyi0hJV7uSRE850yYLI2K" type="video/ogg"> -->
-							<!-- </video> -->
-						<iframe width="100%" height="100%" src="https://drive.google.com/open?id=1Sqo15YdcOpaoyi0hJV7uSRE850yYLI2K"></iframe>
-								Your browser does not support the video tag.
+					
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/uwMLx2h_uM0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								<!-- Your browser does not support the video tag. -->
 				
-					<div class="vid two"></div>
-					<div class="vid three"></div>
+					<!-- <div class="vid two"></div>
+					<div class="vid three"></div> -->
 
 
 				</div>
