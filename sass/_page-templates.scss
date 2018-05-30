@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 
 //globals
-
 .hidden {
   opacity: 0;
   transition: opacity 1.5s ease;
@@ -13,12 +12,14 @@
     opacity: 1;
   }
 }
+
 .mobile-remove {
   display: none !important;
   @include medium {
     display: block;
   }
 }
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -107,7 +108,6 @@
     justify-content: center;
     align-items: center;
     min-height: 400px;
-
     .post-password-form {
       display: flex;
       flex-direction: column;
@@ -141,9 +141,7 @@
   }
   .swpm-registration-widget-form {
     display: flex;
-
     justify-content: center;
-
     .swpm-registration-submit {
       background: $color__green;
       color: #fff;
@@ -153,7 +151,6 @@
       text-transform: uppercase;
       letter-spacing: 2px;
     }
-
     input {
       max-width: 300px;
     }
@@ -166,11 +163,9 @@
       flex-direction: column;
       min-height: 220px;
       justify-content: space-between;
-
       @include medium {
         flex-direction: row;
       }
-
       .registration-form-left {
         display: flex;
         flex-direction: column;
@@ -180,7 +175,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         @include medium {
           margin-left: 20px;
         }
