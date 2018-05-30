@@ -93,7 +93,7 @@ get_header(); ?>
 
 								<div class="team-open-close">
 									<i class="about-plus-icon fa fa-plus" aria-hidden="true"></i>
-									<i class="fa fa-minus hidden" aria-hidden="true"></i>
+									<i class="fa fa-minus hidden-plus-minus" aria-hidden="true"></i>
 								</div>
 
 								</div>

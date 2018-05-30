@@ -13,6 +13,10 @@
   }
 }
 
+.hidden-plus-minus {
+  display: none !important;
+}
+
 .mobile-remove {
   display: none !important;
   @include medium {

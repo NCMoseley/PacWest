@@ -985,6 +985,9 @@ object {
       display: none !important;
       opacity: 1; } }
 
+.hidden-plus-minus {
+  display: none !important; }
+
 .mobile-remove {
   display: none !important; }
   @media all and (min-width: 750px) {
@@ -2437,7 +2440,9 @@ object {
       -ms-flex-align: center;
           align-items: center; }
   .page-template-about .about-wrapper .about-alliances h1 {
-    padding-top: 15px; }
+    padding-top: 15px;
+    max-width: 80%;
+    text-align: center; }
   .page-template-about .about-wrapper .about-alliances .alliance-wrapper {
     margin-top: 30px;
     display: -webkit-box;

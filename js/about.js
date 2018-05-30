@@ -11,6 +11,6 @@ jQuery(document).ready(function($) {
       .toggleClass('show-full-container');
     $(this)
       .children()
-      .toggleClass('hidden');
+      .toggleClass('hidden-plus-minus');
   });
 });
