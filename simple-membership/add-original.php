@@ -12,50 +12,35 @@ if (!empty($force_strong_pass)) {
     <form id="swpm-registration-form" class="swpm-validate-form" name="swpm-registration-form" method="post" action="">
         <input type ="hidden" name="level_identifier" value="<?php echo $level_identifier ?>" />
         <table>
-
-    <section class="reg-wrapper">
-        <div class="registration-form-left">
-        <div class="swpm-registration-firstname-row">
-                <div><label for="first_name"><?php echo SwpmUtils::_('First Name') ?></label></div>
-                <div><input type="text" id="first_name" value="<?php echo esc_attr($first_name); ?>" size="50" name="first_name" /></div>
-            </div>
-            
-            <div class="swpm-registration-email-row">
-                <div><label for="email"><?php echo SwpmUtils::_('Email') ?></label></div>
-                <div><input type="text" autocomplete="off" id="email" class="validate[required,custom[email],ajax[ajaxEmailCall]]" value="<?php echo esc_attr($email); ?>" size="50" name="email" /></div>
-            </div>
-            <div class="swpm-registration-password-row">
-                <div><label for="password"><?php echo SwpmUtils::_('Password') ?></label></div>
-                <div><input type="password" autocomplete="off" id="password" class="<?php echo $pass_class; ?>" value="" size="50" name="password" /></div>
-            </div>
-        </div>
-
-            <div class='registration-form-right'>
-
-            <div class="swpm-registration-lastname-row">
-                <div><label for="last_name"><?php echo SwpmUtils::_('Last Name') ?></label></div>
-                <div><input type="text" id="last_name" value="<?php echo esc_attr($last_name); ?>" size="50" name="last_name" /></div>
-            </div>
-
-            <div class="swpm-registration-username-row">
-                <div><label for="user_name"><?php echo SwpmUtils::_('Username') ?></label></div>
-                <div><input type="text" id="user_name" class="validate[required,custom[noapostrophe],custom[SWPMUserName],minSize[4],ajax[ajaxUserCall]]" value="<?php echo esc_attr($user_name); ?>" size="50" name="user_name" /></div>
-            </div>
-
-            <div class="swpm-registration-password-retype-row">
-                <div><label for="password_re"><?php echo SwpmUtils::_('Confirm Password') ?></label></div>
-                <div><input type="password" autocomplete="off" id="password_re" value="" size="50" name="password_re" /></div>
-            </div>
-          
-           
-
-            </div> <!-- form right -->
-          </section>
+            <tr class="swpm-registration-username-row">
+                <td><label for="user_name"><?php echo SwpmUtils::_('Username') ?></label></td>
+                <td><input type="text" id="user_name" class="validate[required,custom[noapostrophe],custom[SWPMUserName],minSize[4],ajax[ajaxUserCall]]" value="<?php echo esc_attr($user_name); ?>" size="50" name="user_name" /></td>
+            </tr>
+            <tr class="swpm-registration-email-row">
+                <td><label for="email"><?php echo SwpmUtils::_('Email') ?></label></td>
+                <td><input type="text" autocomplete="off" id="email" class="validate[required,custom[email],ajax[ajaxEmailCall]]" value="<?php echo esc_attr($email); ?>" size="50" name="email" /></td>
+            </tr>
+            <tr class="swpm-registration-password-row">
+                <td><label for="password"><?php echo SwpmUtils::_('Password') ?></label></td>
+                <td><input type="password" autocomplete="off" id="password" class="<?php echo $pass_class; ?>" value="" size="50" name="password" /></td>
+            </tr>
+            <tr class="swpm-registration-password-retype-row">
+                <td><label for="password_re"><?php echo SwpmUtils::_('Repeat Password') ?></label></td>
+                <td><input type="password" autocomplete="off" id="password_re" value="" size="50" name="password_re" /></td>
+            </tr>
+            <tr class="swpm-registration-firstname-row">
+                <td><label for="first_name"><?php echo SwpmUtils::_('First Name') ?></label></td>
+                <td><input type="text" id="first_name" value="<?php echo esc_attr($first_name); ?>" size="50" name="first_name" /></td>
+            </tr>
+            <tr class="swpm-registration-lastname-row">
+                <td><label for="last_name"><?php echo SwpmUtils::_('Last Name') ?></label></td>
+                <td><input type="text" id="last_name" value="<?php echo esc_attr($last_name); ?>" size="50" name="last_name" /></td>
+            </tr>
             <tr class="swpm-registration-membership-level-row">
-                <!-- <td><label for="membership_level"></label></td> -->
+                <td><label for="membership_level"><?php echo SwpmUtils::_('Membership Level') ?></label></td>
                 <td>
                     <?php
-                     //Show the level name in the form.
+                    echo $membership_level_alias; //Show the level name in the form.
                     //Add the input fields for the level data.
                     echo '<input type="hidden" value="' . $membership_level . '" size="50" name="membership_level" id="membership_level" />';
                     //Add the level input verification data.
@@ -100,7 +85,7 @@ if (!empty($force_strong_pass)) {
         <div class="swpm-before-registration-submit-section" align="center"><?php echo apply_filters('swpm_before_registration_submit_button', ''); ?></div>
 
         <div class="swpm-registration-submit-section" align="center">
-            <input type="submit" value="<?php echo SwpmUtils::_('Create Account') ?>" class="swpm-registration-submit" name="swpm_registration_submit" />
+            <input type="submit" value="<?php echo SwpmUtils::_('Register') ?>" class="swpm-registration-submit" name="swpm_registration_submit" />
         </div>
 
         <input type="hidden" name="action" value="custom_posts" />
