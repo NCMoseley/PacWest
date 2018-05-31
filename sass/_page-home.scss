@@ -57,7 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
+    background-color: $color__background-grey;
     @media all and (max-width: $tablet) {
       padding: 3rem 0;
       flex-direction: column;
@@ -122,7 +122,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #eee;
+        background-color: $color__background-grey;
         text-transform: uppercase;
         font-weight: 300;
         letter-spacing: 3px;
@@ -164,7 +164,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #eee;
+        background-color: $color__background-grey;
         text-transform: uppercase;
         font-weight: 300;
         letter-spacing: 3px;
@@ -279,6 +279,11 @@
 }
 
 .investor-portal {
+  div.wpcf7 {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+  }
   padding: 3rem 0;
   background-color: $color__background-screen;
   &-content {
@@ -424,7 +429,7 @@
 }
 
 .press-release:nth-child(2) {
-  background-color: $color__background-screen;
+  background-color: $color__background-grey;
   h3 {
     color: $color__text-main; // font-weight: bold;
   }

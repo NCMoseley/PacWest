@@ -5,7 +5,7 @@
 html {
 	box-sizing: border-box;
 	@include font-size(1);
-	background: $color__border-abbr;
+	background: $color__background-grey;
 }
 
 *,
@@ -17,7 +17,7 @@ html {
 
 body {
 	background: $color__background-body;
-	max-width: 1440px;
+	max-width: 2000px;
 	margin: 0 auto;
 	/* Fallback for when there is no custom background color defined. */
 }

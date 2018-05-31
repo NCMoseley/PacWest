@@ -82,11 +82,10 @@
   .faq {
     width: 45%;
     margin: 1rem;
-    padding: 5px 5% 5px 10px;
+    padding: 5px 50px 5px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-start; // align-items: center;
     background-color: $color__navy;
     @media #{all and (max-width: $medium)} {
       width: 70%;

@@ -291,7 +291,7 @@ html {
           box-sizing: border-box;
   font-size: 16px;
   font-size: 1rem;
-  background: #666; }
+  background: #f2f2f1; }
 
 *,
 *:before,
@@ -302,7 +302,7 @@ html {
 
 body {
   background: #fff;
-  max-width: 1440px;
+  max-width: 2000px;
   margin: 0 auto;
   /* Fallback for when there is no custom background color defined. */ }
 
@@ -1357,7 +1357,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #eee; }
+  background-color: #f2f2f1; }
   @media all and (max-width: 600px) {
     .page-template-front-page .intro-section {
       padding: 3rem 0;
@@ -1442,7 +1442,7 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      background-color: #eee;
+      background-color: #f2f2f1;
       text-transform: uppercase;
       font-weight: 300;
       letter-spacing: 3px;
@@ -1488,7 +1488,7 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      background-color: #eee;
+      background-color: #f2f2f1;
       text-transform: uppercase;
       font-weight: 300;
       letter-spacing: 3px;
@@ -1641,6 +1641,10 @@ object {
 .investor-portal {
   padding: 3rem 0;
   background-color: #f1f1f1; }
+  .investor-portal div.wpcf7 {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px; }
   .investor-portal-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1846,7 +1850,7 @@ object {
     text-transform: uppercase; }
 
 .press-release:nth-child(2) {
-  background-color: #f1f1f1; }
+  background-color: #f2f2f1; }
   .press-release:nth-child(2) h3 {
     color: #404040; }
   .press-release:nth-child(2) span {
@@ -3564,6 +3568,11 @@ object {
 .page-template-contact .entry-content > p {
   display: none; }
 
+.page-template-contact div.wpcf7 {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px; }
+
 .page-template-contact .wpcf7-form {
   width: 75%;
   margin: 0 auto;
@@ -3738,7 +3747,7 @@ object {
 .page-template-faq .faq {
   width: 45%;
   margin: 1rem;
-  padding: 5px 5% 5px 10px;
+  padding: 5px 50px 5px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3749,9 +3758,6 @@ object {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #0a2d5d; }
   @media (max-width: 750px) {
     .page-template-faq .faq {
