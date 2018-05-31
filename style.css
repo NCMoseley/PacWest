@@ -2522,9 +2522,6 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -2542,12 +2539,13 @@ object {
         @media all and (min-width: 800px) {
           .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
             width: 80%; } }
-        @media all and (min-width: 1000px) {
+        @media all and (min-width: 1200px) {
           .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
             width: 60%; } }
     .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image {
       -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
+          flex-basis: 50%;
+      overflow: hidden; }
       .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image img {
         max-height: 700px;
         min-height: 500px;
@@ -2562,7 +2560,7 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    @media all and (min-width: 750px) {
+    @media all and (min-width: 800px) {
       .page-template-about .about-wrapper .facilities-technology .technologies {
         max-height: 500px;
         min-height: 500px;
@@ -2576,7 +2574,8 @@ object {
       max-height: 500px;
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
-              order: 1; }
+              order: 1;
+      overflow: hidden; }
       @media all and (min-width: 800px) {
         .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
           -webkit-box-ordinal-group: 3;
@@ -2595,9 +2594,6 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -2609,6 +2605,7 @@ object {
               -ms-flex-order: 1;
                   order: 1; } }
       .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+        margin-top: 1.3rem;
         padding: 20px 0;
         height: 80%;
         width: 58%; }
@@ -2616,7 +2613,7 @@ object {
           .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
             width: 80%;
             padding: 0; } }
-        @media all and (min-width: 1000px) {
+        @media all and (min-width: 1200px) {
           .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
             width: 60%;
             margin-bottom: 30px; } }
