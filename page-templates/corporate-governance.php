@@ -22,9 +22,10 @@ get_header(); ?>
 			<section class="cg-wrapper">
 				<div class="cg-menu">
 					<ul class="cg-menu-list">
-						<a href="#board-of-directors">
+						<!-- Todo: -->
+						<!-- <a href="#board-of-directors">
 							<li>Board of Directors</li>
-						</a>
+						</a> -->
 						<a href="#management-team">
 							<li>Management Team</li>
 						</a>
@@ -114,6 +115,7 @@ get_header(); ?>
 				</div>
 
 				<section class="cg-team cg-mngmnt" >
+
 					<div class="managment-wrapper team-wrapper">
 						<?php $args = array('post_type'		=> 'team_member', 'meta_key'		=> 'team_member_category', 'meta_value'	=> 'Management'); $query = new WP_Query($args);?>
 
@@ -131,16 +133,21 @@ get_header(); ?>
 								</h2>
 								<div class="position-container uppercase">
 									<?php the_field('position') ?>
-									<i class="cg-plus-icon fa fa-plus" aria-hidden="true"></i>
+
+									<div class="team-open-close">
+										<i class="about-plus-icon fa fa-plus" 	aria-hidden="true"></i>
+										<i class="fa fa-minus hidden-plus-minus" 	aria-hidden="true"></i>
+									</div>
+
 								</div>
 
 								<div class="cg-bio">
 									<?php the_content(); ?>
 								</div>
 
-								<div class="cg-close">
+								<!-- <div class="cg-close">
 									<i class="fa fa-times" aria-hidden="true"></i>
-								</div>
+								</div> -->
 
 							</div>
 							<!-- close team member info -->

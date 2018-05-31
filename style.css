@@ -2880,9 +2880,12 @@ object {
       .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-headshot {
         -ms-flex-preferred-size: 30%;
             flex-basis: 30%;
-        max-height: 200px;
-        min-width: 140px;
-        border: 1px solid black; }
+        max-height: 200px !important;
+        min-width: 140px; }
+        .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-headshot img {
+          max-height: 200px !important;
+          min-height: 200px !important;
+          height: 200px !important; }
       .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-member-info {
         display: -webkit-box;
         display: -ms-flexbox;
