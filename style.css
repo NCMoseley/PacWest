@@ -1311,8 +1311,7 @@ object {
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 0;
-  background-attachment: fixed; }
+  background-position: center; }
   @media all and (min-width: 1000px) {
     .page-template-front-page .banner-section {
       height: 475px; } }
@@ -2169,8 +2168,7 @@ object {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 0;
-  background-attachment: fixed; }
+  background-position: center; }
   @media all and (min-width: 1000px) {
     .page-template-about .about-wrapper .banner-section {
       height: 475px; } }
@@ -2689,8 +2687,7 @@ object {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -50px;
-  background-attachment: fixed; }
+  background-position: center; }
   @media all and (min-width: 1000px) {
     .page-template-corporate-governance .cg-wrapper .banner-section {
       height: 475px; } }
@@ -2948,8 +2945,7 @@ object {
     color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center -50px;
-    background-attachment: fixed; }
+    background-position: center; }
     @media all and (min-width: 1000px) {
       .page-template-products .banner-section {
         height: 475px; } }
@@ -3129,8 +3125,7 @@ object {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 50px;
-  background-attachment: fixed; }
+  background-position: center; }
   @media all and (min-width: 1000px) {
     .page-template-investors .banner-section {
       height: 475px; } }
@@ -3339,8 +3334,7 @@ object {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -50px;
-  background-attachment: fixed; }
+  background-position: center; }
   @media all and (min-width: 1000px) {
     .page-template-news .banner-section {
       height: 475px; } }
@@ -3516,8 +3510,7 @@ object {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -50px;
-  background-attachment: fixed; }
+  background-position: center; }
   @media all and (min-width: 1000px) {
     .page-template-contact .banner-section {
       height: 475px; } }
@@ -3666,8 +3659,7 @@ object {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -50px;
-  background-attachment: fixed; }
+  background-position: center; }
   @media all and (min-width: 1000px) {
     .page-template-faq .banner-section {
       height: 475px; } }
@@ -3836,8 +3828,7 @@ object {
   color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -50px;
-  background-attachment: fixed; }
+  background-position: center; }
   @media all and (min-width: 1000px) {
     .page-template-investor-portal .banner-section {
       height: 475px; } }

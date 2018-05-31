@@ -65,12 +65,12 @@
       justify-content: center;
       align-items: center;
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('../../assets/Stock_Photos/pwc-about-optimized.jpg');
+      url('../../assets/Stock_Photos/pwc-about-optimized.jpg');
       color: $color__text-light;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center 0;
-      background-attachment: fixed;
+      background-position: center; // background-position: center -50px;
+      // background-attachment: fixed;
       &-img-wrapper {
         width: 100px;
         display: flex;
@@ -90,8 +90,7 @@
       }
     }
     .about-our-company {
-      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom
-        left no-repeat;
+      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
       background-attachment: fixed;
       width: 100%;
       min-height: 400px;

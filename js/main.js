@@ -122,36 +122,36 @@ jQuery(document).ready(function ($) {
 
   // Parallax for Banners
 
-  $(window).scroll(function () {
-    parallax();
-  });
+  // $(window).scroll(function () {
+  //   parallax();
+  // });
 
-  function parallax() {
-    var para = $(window).scrollTop();
-    $('.parallax').css(
-      'background-position',
-      'center ' + 'center ' + ',' + 'center ' + (para * -1.2 - 50) + 'px'
-    );
-    $('.parallax-low').css(
-      'background-position',
-      'center ' + 'center ' + ',' + 'center ' + para * -0.9 + 'px'
-    );
-  }
+  // function parallax() {
+  //   var para = $(window).scrollTop();
+  //   $('.parallax').css(
+  //     'background-position',
+  //     'center ' + 'center ' + ',' + 'center ' + (para * -1.2 - 50) + 'px'
+  //   );
+  //   $('.parallax-low').css(
+  //     'background-position',
+  //     'center ' + 'center ' + ',' + 'center ' + para * -0.9 + 'px'
+  //   );
+  // }
 
-  parallaxToggle();
-  $(window).resize(function(){
-    parallaxToggle();
-  })
+  // parallaxToggle();
+  // $(window).resize(function(){
+  //   parallaxToggle();
+  // })
 
-  function parallaxToggle() {
-    if ($(window).width() < 750) {
-      $('.banner-section').removeClass('parallax parallax-low');
-      $('.banner-section').css('background-attachment', 'scroll');
-    } else {
-      $('.banner-section').addClass('parallax parallax-low');
-      $('.banner-section').css('background-attachment', 'fixed');
-    }
-  }
+  // function parallaxToggle() {
+  //   if ($(window).width() < 750) {
+  //     $('.banner-section').removeClass('parallax parallax-low');
+  //     $('.banner-section').css('background-attachment', 'scroll');
+  //   } else {
+  //     $('.banner-section').addClass('parallax parallax-low');
+  //     $('.banner-section').css('background-attachment', 'fixed');
+  //   }
+  // }
 
   // DISABLE INVESTOR LINK FOR MOBILE
   $('.menu-item-163').on('click', function () {
