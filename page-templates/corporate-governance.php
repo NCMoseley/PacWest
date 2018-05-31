@@ -46,9 +46,9 @@ get_header(); ?>
 					<p><?php echo $cg_page_description ?> </p>
 				</div>
 
-				
+				<!-- Todo:  -->
 
-				<div class="cg-section-heading" id="board-of-directors">
+				<!-- <div class="cg-section-heading" id="board-of-directors">
 					<div class="left-box">
 						<p>Board of</p>
 						<h1>Directors</h1>
@@ -89,10 +89,10 @@ get_header(); ?>
 								</div>
 
 							</div>
-							<!-- close team member info -->
+							
 
 						</div>
-						<!-- close individual team member -->
+					
 
 
 						<?php endwhile; ?>
@@ -100,8 +100,8 @@ get_header(); ?>
 
 
 					</div>
-					</section>
-					<!-- bod wrapper -->
+					</section> -->
+					
 
 					<div class="cg-section-heading" id="management-team">
 					<div class="left-box">
