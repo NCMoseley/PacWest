@@ -67,7 +67,7 @@ get_header(); ?>
 						<?php while ($query->have_posts()) : $query->the_post(); ?>
 
 
-						<div class="individual-team-member">
+					<div class="individual-team-member">
 							<div class="team-headshot">
 								<img src="<?php the_field('team_member_image')?>" />
 							</div>
@@ -78,21 +78,19 @@ get_header(); ?>
 								</h2>
 								<div class="position-container uppercase">
 									<?php the_field('position') ?>
-									<i class="cg-plus-icon fa fa-plus" aria-hidden="true"></i>
+
+									<div class="team-open-close">
+										<i class="about-plus-icon fa fa-plus" 	aria-hidden="true"></i>
+										<i class="fa fa-minus hidden-plus-minus" 	aria-hidden="true"></i>
+									</div>
+
 								</div>
 
 								<div class="cg-bio">
 									<?php the_content(); ?>
 								</div>
 
-								<div class="cg-close">
-									<i class="fa fa-times" aria-hidden="true"></i>
-								</div>
-
 							</div>
-							
-
-						</div>
 					
 
 
@@ -145,10 +143,6 @@ get_header(); ?>
 									<?php the_content(); ?>
 								</div>
 
-								<!-- <div class="cg-close">
-									<i class="fa fa-times" aria-hidden="true"></i>
-								</div> -->
-
 							</div>
 							<!-- close team member info -->
 
@@ -193,15 +187,16 @@ get_header(); ?>
 								</h2>
 								<div class="position-container uppercase">
 									<?php the_field('position') ?>
-									<i class="cg-plus-icon fa fa-plus" aria-hidden="true"></i>
+
+									<div class="team-open-close">
+										<i class="about-plus-icon fa fa-plus" 	aria-hidden="true"></i>
+										<i class="fa fa-minus hidden-plus-minus" 	aria-hidden="true"></i>
+									</div>
+
 								</div>
 
 								<div class="cg-bio">
 									<?php the_content(); ?>
-								</div>
-
-								<div class="cg-close">
-									<i class="fa fa-times" aria-hidden="true"></i>
 								</div>
 
 							</div>
