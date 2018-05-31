@@ -247,4 +247,5 @@ jQuery(document).ready(function ($) {
   }
   investorRedirect();
 
+
 });

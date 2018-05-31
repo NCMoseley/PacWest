@@ -86,7 +86,8 @@ get_header(); ?>
 
 
 
-				<section class="about-team" id="management-team">
+				<section class="about-team" name="management-team" id="management-team">
+				
 
 					<h1 class="uppercase">
 						<?php echo $about_team_header ?> </h1>

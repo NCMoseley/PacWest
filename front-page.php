@@ -45,7 +45,7 @@ get_header(); ?>
 					<h2 class="front-h2">The <span>Pacwest</span> Difference</h2>
 				</div>
 				<div class="pacwest-difference-card-wrapper">
-						<a href="<?php echo esc_url(home_url('/about/#management-team')); ?>" class="card">
+						<a class="card" href="<?php echo esc_url(home_url('/about/#management-team')); ?>" >
 							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-balance.png" 	alt="Icon-Balance">
 							<p><?php echo get_field('text_1') ?></p>
 						</a>
