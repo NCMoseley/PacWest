@@ -1,11 +1,11 @@
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function($) {
   // FAQ DROPDOWN
 
-  $(function () {
+  $(function() {
     var faqExpanded = false;
 
     $('.faq-answer').css('display', 'none');
-    $('.open-close-icon').click(function () {
+    $('.open-close-icon').click(function() {
       faqExpanded = !faqExpanded;
 
       $(this)
@@ -73,13 +73,14 @@ jQuery(document).ready(function ($) {
 
   var expanded = false;
 
-  $('.news-item-expand-link').click(function () {
+  $('.news-item-expand-link').click(function() {
     expanded = !expanded;
 
     if (expanded === true) {
       $(this)
         .prev()
-        .animate({
+        .animate(
+          {
             'max-height': '1000px'
           },
           200
@@ -90,7 +91,8 @@ jQuery(document).ready(function ($) {
     } else {
       $(this)
         .prev()
-        .animate({
+        .animate(
+          {
             'max-height': '38px'
           },
           200
@@ -103,7 +105,7 @@ jQuery(document).ready(function ($) {
 
   // INVESTOR LOGIN SHOW / HIDE
 
-  $('.login-prompt').on('click', function (e) {
+  $('.login-prompt').on('click', function(e) {
     e.preventDefault();
     $(this)
       .parent()
@@ -113,7 +115,7 @@ jQuery(document).ready(function ($) {
   });
 
   // NAV MENU VISIBLITY TOGGLE
-  $('#toggle').change(function () {
+  $('#toggle').change(function() {
     $('.menu-close')
       .children()
       .toggleClass('expanded');
@@ -122,7 +124,7 @@ jQuery(document).ready(function ($) {
 
   // Parallax for Banners
 
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     parallax();
   });
 
@@ -139,9 +141,9 @@ jQuery(document).ready(function ($) {
   }
 
   parallaxToggle();
-  $(window).resize(function(){
+  $(window).resize(function() {
     parallaxToggle();
-  })
+  });
 
   function parallaxToggle() {
     if ($(window).width() < 750) {
@@ -154,7 +156,7 @@ jQuery(document).ready(function ($) {
   }
 
   // DISABLE INVESTOR LINK FOR MOBILE
-  $('.menu-item-163').on('click', function () {
+  $('.menu-item-163').on('click', function() {
     $(this)
       .children()
       .last()
@@ -167,33 +169,33 @@ jQuery(document).ready(function ($) {
 
   // Investor Pop up modal
 
-  $('.investor-login-desc').on('click', function () {
+  $('.investor-login-desc').on('click', function() {
     $('.investor-overlay').removeClass('hidden');
     $('.portal-pop-up').removeClass('hidden');
     $('.investor-overlay').removeClass('mobile-remove');
     $('.portal-pop-up').removeClass('mobile-remove');
   });
 
-  $('.investor-overlay').on('click', function () {
+  $('.investor-overlay').on('click', function() {
     $(this).addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
     $(this).addClass('mobile-remove');
     $('.portal-pop-up').addClass('mobile-remove');
   });
-  $('.nav-wrapper').on('click', function () {
+  $('.nav-wrapper').on('click', function() {
     $('.investor-overlay').addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
     $('.investor-overlay').addClass('mobile-remove');
     $('.portal-pop-up').addClass('mobile-remove');
   });
-  $('.pop-up-close').on('click', function () {
+  $('.pop-up-close').on('click', function() {
     $('.investor-overlay').addClass('hidden');
     $('.portal-pop-up').addClass('hidden');
     $('.investor-overlay').addClass('mobile-remove');
     $('.portal-pop-up').addClass('mobile-remove');
   });
 
-  setTimeout(function () {
+  setTimeout(function() {
     $('.portal-pop-up').css('opacity', '1');
     $('.portal-pop-up').css('max-height', '100%');
     $('.investor-overlay').css('max-height', '100%');
@@ -204,47 +206,43 @@ jQuery(document).ready(function ($) {
 
   $('.logged-in .site-header').css('top', '32px');
 
-
-
   // ADD MENU ITEM IN MOBILE
 
-  function addMenuItem() {
-    var link = '';
-    if ($('body').hasClass('logged-in')) {
-      link = '/investor-portal';
-    } else {
-      link = '/investors'
-    }
+  // function addMenuItem() {
+  //   var link = '';
+  //   if ($('body').hasClass('logged-in')) {
+  //     link = '/investor-portal';
+  //   } else {
+  //     link = '/investors'
+  //   }
 
-    $('.menu-item-163 .sub-menu').append(
-      '<li class="investors-link"><a href="' +
-      templateLocation.template_url + link +
-      '">Investors</a></li>'
-    );
+  // $('.menu-item-163 .sub-menu').append(
+  //   '<li class="investors-link"><a href="' +
+  //   templateLocation.template_url + link +
+  //   '">Investors</a></li>'
+  // );
 
-    investorVisbility();
-    $(window).resize(function () {
-      investorVisbility();
-    });
-  }
-  addMenuItem();
+  //   investorVisbility();
+  //   $(window).resize(function () {
+  //     investorVisbility();
+  //   });
+  // }
+  // addMenuItem();
 
-  function investorVisbility() {
-    if ($(window).width() < 750) {
-      $('.investors-link').css('display', 'block');
-    } else {
-      $('.investors-link').css('display', 'none');
-    }
-  }
+  // function investorVisbility() {
+  //   if ($(window).width() < 750) {
+  //     $('.investors-link').css('display', 'block');
+  //   } else {
+  //     $('.investors-link').css('display', 'none');
+  //   }
+  // }
 
-
-  function investorRedirect() {
-    var url = templateLocation.template_url + '/investor-portal';
-    if ($('body').hasClass('logged-in')) {
-      $('.menu-item-163 > a').attr('href', url);
-      $('.sub-footer-investor-link').attr('href', url);
-    }
-  }
-  investorRedirect();
-
+  // function investorRedirect() {
+  //   var url = templateLocation.template_url + '/investor-portal';
+  //   if ($('body').hasClass('logged-in')) {
+  //     $('.menu-item-163 > a').attr('href', url);
+  //     $('.sub-footer-investor-link').attr('href', url);
+  //   }
+  // }
+  // investorRedirect();
 });
