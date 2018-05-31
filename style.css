@@ -1089,6 +1089,25 @@ object {
 
 .page-template-registration {
   background: #f2f2f1; }
+  .page-template-registration .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    min-height: 400px; }
+  .page-template-registration .error {
+    text-align: center;
+    max-width: 90%;
+    margin-bottom: 20px; }
+    .page-template-registration .error ul {
+      margin: 0 auto;
+      padding: 0;
+      color: red; }
   .page-template-registration .reg-logo-wrapper {
     padding-top: 30px;
     display: -webkit-box;
@@ -1649,6 +1668,9 @@ object {
     margin: 0 auto;
     padding: 0;
     max-width: 1440px; }
+  .investor-portal-mail-sent-ok {
+    border: 2px solid #398f14;
+    margin: auto; }
   .investor-portal-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4249,6 +4271,19 @@ object {
       color: #333333; }
     .single-post .post-navigation a:hover {
       color: #00c860; }
+
+.page-template-registration .entry-content {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  min-height: 400px; }
 
 .page-template-private-sign-up {
   background-color: #f1f1f1; }

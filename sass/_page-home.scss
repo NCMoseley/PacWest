@@ -284,6 +284,10 @@
     padding: 0;
     max-width: 1440px;
   }
+  &-mail-sent-ok {
+    border: 2px solid #398f14;
+    margin: auto;
+  }
   padding: 3rem 0;
   background-color: $color__background-screen;
   &-content {

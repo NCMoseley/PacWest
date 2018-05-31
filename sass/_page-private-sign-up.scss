@@ -1,3 +1,13 @@
+.page-template-registration .entry-content {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  min-height: 400px;
+}
+
 .page-template-private-sign-up {
   background-color: $color__background-screen;
   .private-logo-container {

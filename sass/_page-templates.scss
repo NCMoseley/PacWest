@@ -83,8 +83,7 @@
       border: 0;
       &:hover {
         background-color: darken($color__green, 5%);
-        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69),
-          0px 10px 13px -8px rgba(0, 0, 0, 0.73);
+        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69), 0px 10px 13px -8px rgba(0, 0, 0, 0.73);
       }
     }
   }
@@ -92,6 +91,22 @@
 
 // registration form
 .page-template-registration {
+  .entry-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 400px;
+  }
+  .error {
+    text-align: center;
+    max-width: 90%;
+    margin-bottom: 20px;
+    ul {
+      margin: 0 auto;
+      padding: 0;
+      color: red;
+    }
+  }
   .reg-logo-wrapper {
     padding-top: 30px;
     display: flex;
@@ -188,7 +203,6 @@
 }
 
 //password reset
-
 .page-template-password {
   article {
     .entry-content {
@@ -200,7 +214,6 @@
         border: none;
         background: none;
         text-align: center;
-
         margin: 0;
         margin-right: 0 !important;
       }
@@ -208,8 +221,7 @@
     .entry-title {
       color: $color__green;
     }
-    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left
-      no-repeat;
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -217,17 +229,14 @@
     align-items: center;
     min-height: 400px;
     padding: 0;
-
     @include eight {
       background-size: 100% 100%;
     }
-
     .swpm-pw-reset-widget-inside {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       label {
         text-transform: uppercase;
       }
