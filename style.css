@@ -2532,10 +2532,15 @@ object {
               -ms-flex-pack: start;
                   justify-content: flex-start;
           padding-left: 8%; } }
+      @media all and (min-width: 1200px) {
+        .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
       .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
         height: 80%;
         width: 58%;
-        padding: 20px 0; }
+        padding: 30px 0; }
         @media all and (min-width: 800px) {
           .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
             width: 80%; } }
@@ -2604,9 +2609,14 @@ object {
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
                   order: 1; } }
+      @media all and (min-width: 1200px) {
+        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
       .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
-        margin-top: 1.3rem;
-        padding: 20px 0;
+        margin-top: 1.5rem;
+        padding: 30px 0;
         height: 80%;
         width: 58%; }
         @media all and (min-width: 800px) {

@@ -328,17 +328,20 @@
         }
         .facilities-text {
           flex-basis: 50%;
-          display: flex; // align-items: center;
+          display: flex;
           justify-content: center;
           color: #fff;
           @include eight {
             justify-content: flex-start;
             padding-left: 8%;
           }
+          @include large {
+            align-items: center;
+          }
           .facilities-text-wrapper {
             height: 80%;
             width: 58%;
-            padding: 20px 0;
+            padding: 30px 0;
             @include eight {
               width: 80%;
             }
@@ -383,15 +386,18 @@
         .technologies-text {
           order: 2;
           color: #fff;
-          display: flex; // align-items: center;
+          display: flex;
           justify-content: center;
           flex-basis: 50%;
           @include eight {
             order: 1;
           }
+          @include large {
+            align-items: center;
+          }
           .technologies-text-wrapper {
-            margin-top: 1.3rem;
-            padding: 20px 0;
+            margin-top: 1.5rem;
+            padding: 30px 0;
             height: 80%;
             width: 58%;
             @include eight {
