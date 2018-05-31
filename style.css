@@ -2427,7 +2427,8 @@ object {
           .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
             margin-top: 5px;
             font-size: 20px;
-            color: #0a2d5d; }
+            color: #0a2d5d;
+            cursor: pointer; }
         .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-bio {
           margin-top: 14px; }
 
@@ -2923,7 +2924,8 @@ object {
           .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-member-info .position-container i {
             margin-top: 5px;
             font-size: 20px;
-            color: #0a2d5d; }
+            color: #0a2d5d;
+            cursor: pointer; }
         .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-member-info .cg-bio {
           margin-top: 14px; }
         .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-member-info .cg-close {
