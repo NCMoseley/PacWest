@@ -2084,9 +2084,12 @@ object {
     background-image: url("../../assets/Stock_Photos/pwc-products-optimized.jpg");
     -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
             box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+    .sub-footer-products:hover h1.products-text {
+      color: #0a2d5d; }
   .sub-footer-products h1.products-text {
-    color: #0a2d5d;
-    -webkit-text-stroke: 1px #fff; }
+    color: #fff; }
+    .sub-footer-products h1.products-text:hover {
+      color: #0a2d5d; }
 
 .page-template-about h1 {
   letter-spacing: 2px; }

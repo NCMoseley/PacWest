@@ -608,9 +608,14 @@
   &:hover {
     background-image: url('../../assets/Stock_Photos/pwc-products-optimized.jpg');
     box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+    h1.products-text {
+      color: $color__navy;
+    }
   }
   h1.products-text {
-    color: $color__navy;
-    -webkit-text-stroke: 1px #fff;
+    color: $color__text-light;
+    &:hover {
+      color: $color__navy;
+    }
   }
 }
