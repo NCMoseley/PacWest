@@ -1710,6 +1710,8 @@ object {
             justify-content: space-evenly;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    .investor-portal form .wpcf7-response-output {
+      border: none; }
     @media all and (max-width: 500px) {
       .investor-portal form {
         width: 100%; } }
@@ -1719,7 +1721,7 @@ object {
     @media all and (max-width: 500px) {
       .investor-portal form input {
         width: 90%; } }
-    .investor-portal form input[type="submit"] {
+    .investor-portal form input[type='submit'] {
       margin: 1rem auto;
       width: 210px;
       padding: 15px 30px;
@@ -1734,7 +1736,7 @@ object {
       text-decoration: none;
       text-transform: uppercase;
       text-shadow: none; }
-      .investor-portal form input[type="submit"]:hover {
+      .investor-portal form input[type='submit']:hover {
         background-color: #00af54;
         -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
                 box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
@@ -1912,7 +1914,7 @@ object {
               flex-direction: row;
       height: 50vw; } }
   .sub-footer .sub-footer-text {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 52px;
     font-weight: 500;
     letter-spacing: 5px;
@@ -1999,7 +2001,7 @@ object {
 .sub-footer-contact-us-today-line {
   width: 250px;
   height: 6px;
-  background-color: #FFFFFF; }
+  background-color: #ffffff; }
   .sub-footer-contact-us-today-line:hover {
     -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
             box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
@@ -3249,7 +3251,7 @@ object {
     font-weight: bold; }
   .page-template-investors .investor-login .portal-pop-up {
     position: fixed;
-    top: 150px;
+    top: 120px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3312,6 +3314,11 @@ object {
           -ms-flex-preferred-size: 50%;
               flex-basis: 50%;
           height: 400px; } }
+      .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 .wpcf7-not-valid-tip {
+        display: none; }
+      .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 .wpcf7-response-output {
+        border: none;
+        color: #00c860; }
       .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 form {
         display: -webkit-box;
         display: -ms-flexbox;
