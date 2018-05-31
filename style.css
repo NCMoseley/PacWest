@@ -696,8 +696,8 @@ a {
   display: block;
   width: 60%; }
   .main-navigation a:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
+    font-weight: 500;
+    color: #00c860; }
   @media all and (max-width: 900px) {
     .main-navigation {
       position: relative;
@@ -706,8 +706,7 @@ a {
     .main-navigation {
       width: 30%; } }
   .main-navigation .current-menu-item > a {
-    color: #00c860;
-    font-weight: 500; }
+    color: #00c860; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -764,10 +763,11 @@ a {
         @media all and (max-width: 750px) {
           .main-navigation ul ul a {
             width: 150px; } }
-      .main-navigation ul ul .menu-item-244 a {
-        line-height: 1.45;
-        padding-top: 10px;
-        padding-bottom: 8px; }
+      @media all and (max-width: 750px) {
+        .main-navigation ul ul .menu-item-244 a {
+          line-height: 1.45;
+          padding-top: 10px;
+          padding-bottom: 8px; } }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
