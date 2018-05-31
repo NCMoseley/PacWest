@@ -764,6 +764,10 @@ a {
         @media all and (max-width: 750px) {
           .main-navigation ul ul a {
             width: 150px; } }
+      .main-navigation ul ul .menu-item-244 a {
+        line-height: 1.45;
+        padding-top: 10px;
+        padding-bottom: 8px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
