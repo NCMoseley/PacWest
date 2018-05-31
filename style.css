@@ -2079,7 +2079,7 @@ object {
           align-items: center;
   padding-bottom: 25px; }
   .sub-footer-products h1:hover {
-    text-shadow: 2px 2px 8px #404040; }
+    text-shadow: 2px 2px 8px #a0a5aa; }
   .sub-footer-products:hover {
     background-image: url("../../assets/Stock_Photos/pwc-products-optimized.jpg");
     -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
