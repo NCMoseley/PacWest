@@ -3645,6 +3645,9 @@ object {
     @media all and (max-width: 650px) {
       .page-template-contact .wpcf7-form p:nth-of-type(7) {
         width: 335px; } }
+  .page-template-contact .wpcf7-form p:nth-of-type(8) {
+    width: 100%;
+    text-align: center; }
 
 .page-template-contact .entry-title {
   display: none; }
