@@ -5,6 +5,13 @@
   margin-top: -32px;
 }
 
+.padding-top {
+  @media all and (max-width: 785px) {
+    padding-top: 90px;
+  }
+  padding-top: 110px;
+}
+
 //globals
 .hidden {
   opacity: 0;

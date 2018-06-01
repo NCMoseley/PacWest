@@ -437,10 +437,10 @@ textarea {
           box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23); }
 
 .page {
-  padding-top: 110px; }
+  padding-top: 60px; }
   @media all and (max-width: 785px) {
     .page {
-      padding-top: 90px; } }
+      padding-top: 50px; } }
 
 @media (max-width: 750px) {
   .toggle-container .button-toggle {
@@ -981,6 +981,12 @@ object {
 --------------------------------------------------------------*/
 .investor-logged-in {
   margin-top: -32px; }
+
+.padding-top {
+  padding-top: 110px; }
+  @media all and (max-width: 785px) {
+    .padding-top {
+      padding-top: 90px; } }
 
 .hidden {
   opacity: 0;
@@ -2123,382 +2129,185 @@ object {
     .sub-footer-products h1.products-text:hover {
       color: #0a2d5d; }
 
-.page-template-about h1 {
-  letter-spacing: 2px; }
+.page-templatea-about,
+.logged-in {
+  padding-top: 60px !important; }
+  .page-templatea-about .about-menu,
+  .logged-in .about-menu {
+    position: fixed;
+    top: 60px !important; }
+  .page-templatea-about .about-content-wrap,
+  .logged-in .about-content-wrap {
+    margin-top: 100px; }
+    @media all and (min-width: 800px) {
+      .page-templatea-about .about-content-wrap,
+      .logged-in .about-content-wrap {
+        margin-top: 50px; } }
 
-.page-template-about .hentry {
-  display: none; }
-
-.page-template-about .entry-title {
-  display: none; }
-
-.page-template-about .about-wrapper .about-menu {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100px;
-  background: #00c860;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100px; }
-  @media all and (min-width: 800px) {
-    .page-template-about .about-wrapper .about-menu {
-      height: 60px; } }
-  .page-template-about .about-wrapper .about-menu ul {
-    margin: 0 1%;
-    padding-left: 0 !important;
-    margin-top: 20px;
-    min-height: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.page-template-about {
+  padding-top: 87px; }
+  .page-template-about .about-content-wrap {
+    margin-top: 95px; }
+    @media all and (min-width: 800px) {
+      .page-template-about .about-content-wrap {
+        margin-top: 58px; } }
+  .page-template-about h1 {
+    letter-spacing: 2px; }
+  .page-template-about .hentry {
+    display: none; }
+  .page-template-about .entry-title {
+    display: none; }
+  .page-template-about .about-wrapper .about-menu {
+    position: fixed;
+    top: 109px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    background: #00c860;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%; }
-    @media all and (min-width: 800px) {
-      .page-template-about .about-wrapper .about-menu ul {
-        margin-top: 0;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        margin-right: 3rem; } }
-    @media all and (min-width: 1000px) {
-      .page-template-about .about-wrapper .about-menu ul {
-        margin-right: 6.5rem; } }
-    .page-template-about .about-wrapper .about-menu ul li {
-      text-transform: uppercase;
-      list-style: none;
-      margin: 0 8px;
-      color: #fff;
-      font-weight: 300; }
-  .page-template-about .about-wrapper .about-menu a {
-    text-decoration: none; }
-
-.page-template-about .about-wrapper .banner-section {
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-about-optimized.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-about-optimized.jpg");
-  color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
-  @media all and (min-width: 1000px) {
-    .page-template-about .about-wrapper .banner-section {
-      height: 475px; } }
-  @media all and (min-width: 1450px) {
-    .page-template-about .about-wrapper .banner-section {
-      height: 675px; } }
-  .page-template-about .about-wrapper .banner-section-img-wrapper {
-    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .page-template-about .about-wrapper .banner-section-img-wrapper img {
-      width: 100%; }
-  .page-template-about .about-wrapper .banner-section h1 {
-    width: 60%;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase; }
-
-.page-template-about .about-wrapper .about-our-company {
-  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  min-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0; }
-  @media all and (min-width: 800px) {
-    .page-template-about .about-wrapper .about-our-company {
-      background-size: 100% 100%; } }
-  .page-template-about .about-wrapper .about-our-company h1 {
-    color: #333333;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    margin-bottom: 0; }
-  .page-template-about .about-wrapper .about-our-company p {
-    text-align: center;
-    max-width: 75%;
-    color: #333333;
-    font-family: "Roboto", Arial, Helvetica, sans-serif; }
-
-.page-template-about .about-wrapper .about-our-vision {
-  width: 100%;
-  min-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  @media all and (min-width: 800px) {
-    .page-template-about .about-wrapper .about-our-vision {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
-  .page-template-about .about-wrapper .about-our-vision .our-vision-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: 350px;
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-    background: #f2f2f1;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
+    height: 100px; }
     @media all and (min-width: 800px) {
-      .page-template-about .about-wrapper .about-our-vision .our-vision-text {
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1; } }
-    .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper {
-      color: #333333;
-      height: 300px;
-      width: 300px;
-      max-height: 200px; }
-      .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper .about-vision {
-        display: block;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 2px; }
-  .page-template-about .about-wrapper .about-our-vision .our-vision-image {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
-    max-height: 400px; }
-    @media all and (min-width: 800px) {
-      .page-template-about .about-wrapper .about-our-vision .our-vision-image {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2; } }
-    .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
-      height: auto;
-      width: auto; }
-      @media all and (min-width: 800px) {
-        .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
-          max-height: 400px;
-          min-height: 400px;
-          width: 100%; } }
-
-.page-template-about .about-wrapper .about-team {
-  min-height: 600px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 0; }
-  .page-template-about .about-wrapper .about-team h1 {
-    color: #333333; }
-  .page-template-about .about-wrapper .about-team .about-team-para {
-    max-width: 75%; }
-    .page-template-about .about-wrapper .about-team .about-team-para p {
-      text-align: center;
-      color: #333333; }
-  .page-template-about .about-wrapper .about-team .team-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 90%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 20px 0; }
-    @media all and (min-width: 800px) {
-      .page-template-about .about-wrapper .about-team .team-wrapper {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; } }
-    .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-      margin: 10px 10px;
-      max-width: 350px;
-      min-width: 350px;
-      max-height: 200px;
-      min-height: 200px;
-      overflow: hidden;
+      .page-template-about .about-wrapper .about-menu {
+        height: 60px; } }
+    .page-template-about .about-wrapper .about-menu ul {
+      margin: 0 1%;
+      padding-left: 0 !important;
+      margin-top: 20px;
+      min-height: 50px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
-      @media all and (min-width: 600px) {
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-          max-width: 500px;
-          min-width: 500px; } }
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%; }
       @media all and (min-width: 800px) {
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-          -ms-flex-preferred-size: 50%;
-              flex-basis: 50%;
-          max-width: 335px;
-          min-width: 335px; } }
-      @media all and (min-width: 950px) {
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-          max-width: 400px;
-          min-width: 400px; } }
+        .page-template-about .about-wrapper .about-menu ul {
+          margin-top: 0;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
+          margin-right: 3rem; } }
       @media all and (min-width: 1000px) {
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-          max-width: 450px;
-          min-width: 450px;
-          margin: 10px 0px; } }
-      @media all and (min-width: 1200px) {
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-          max-width: 530px;
-          min-width: 530px;
-          margin: 10px 0; } }
-      .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot {
-        -ms-flex-preferred-size: 30%;
-            flex-basis: 30%;
-        max-height: 200px !important;
-        min-width: 140px; }
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot img {
-          max-height: 200px !important;
-          min-height: 200px !important;
-          height: 200px !important; }
-      .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -ms-flex-preferred-size: 70%;
-            flex-basis: 70%;
-        margin: 3px 2%;
-        max-height: 172px;
-        overflow: hidden; }
-        @media all and (min-width: 600px) {
-          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
-            max-height: 162px; } }
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
-          margin: 0;
-          color: #0a2d5d;
-          font-size: 16px;
-          letter-spacing: 2px; }
-          @media all and (min-width: 600px) {
-            .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
-              font-size: 20px; } }
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
-          color: #c3c3c3;
-          margin-bottom: 50px;
-          letter-spacing: 2px; }
-          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
-            margin-top: 5px;
-            font-size: 20px;
-            color: #0a2d5d;
-            cursor: pointer; }
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-bio {
-          margin-top: 14px; }
-
-.page-template-about .about-wrapper .about-alliances {
-  background: #f2f2f1;
-  min-height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .page-template-about .about-wrapper .about-alliances h1 {
-    padding-top: 15px;
-    max-width: 80%;
-    text-align: center; }
-  .page-template-about .about-wrapper .about-alliances .alliance-wrapper {
-    margin-top: 30px;
+        .page-template-about .about-wrapper .about-menu ul {
+          margin-right: 6.5rem; } }
+      .page-template-about .about-wrapper .about-menu ul li {
+        text-transform: uppercase;
+        list-style: none;
+        margin: 0 8px;
+        color: #fff;
+        font-weight: 300; }
+    .page-template-about .about-wrapper .about-menu a {
+      text-decoration: none; }
+  .page-template-about .about-wrapper .banner-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-about-optimized.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-about-optimized.jpg");
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media all and (min-width: 1000px) {
+      .page-template-about .about-wrapper .banner-section {
+        height: 475px; } }
+    @media all and (min-width: 1450px) {
+      .page-template-about .about-wrapper .banner-section {
+        height: 675px; } }
+    .page-template-about .about-wrapper .banner-section-img-wrapper {
+      width: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .page-template-about .about-wrapper .banner-section-img-wrapper img {
+        width: 100%; }
+    .page-template-about .about-wrapper .banner-section h1 {
+      width: 60%;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+  .page-template-about .about-wrapper .about-our-company {
+    background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px 0; }
-    .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
+    @media all and (min-width: 800px) {
+      .page-template-about .about-wrapper .about-our-company {
+        background-size: 100% 100%; } }
+    .page-template-about .about-wrapper .about-our-company h1 {
+      color: #333333;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      margin-bottom: 0; }
+    .page-template-about .about-wrapper .about-our-company p {
+      text-align: center;
+      max-width: 75%;
+      color: #333333;
+      font-family: "Roboto", Arial, Helvetica, sans-serif; }
+  .page-template-about .about-wrapper .about-our-vision {
+    width: 100%;
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    @media all and (min-width: 800px) {
+      .page-template-about .about-wrapper .about-our-vision {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
+    .page-template-about .about-wrapper .about-our-vision .our-vision-text {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2508,26 +2317,52 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      max-height: 90px;
-      max-width: 220px;
-      min-height: 90px;
-      min-width: 220px;
-      margin: 15px 10px; }
-      @media all and (min-width: 750px) {
-        .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
-          -ms-flex-preferred-size: 25%;
-              flex-basis: 25%; } }
-      .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo img {
-        max-height: 85px;
-        max-width: 215px;
-        margin: 0 auto;
-        -ms-flex-item-align: center;
-            align-self: center; }
-
-.page-template-about .about-wrapper .facilities-technology {
-  border: 1px solid black;
-  min-height: 700px; }
-  .page-template-about .about-wrapper .facilities-technology .facilities {
+      min-height: 350px;
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+      background: #f2f2f1;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .about-our-vision .our-vision-text {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; } }
+      .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper {
+        color: #333333;
+        height: 300px;
+        width: 300px;
+        max-height: 200px; }
+        .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper .about-vision {
+          display: block;
+          font-size: 30px;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 2px; }
+    .page-template-about .about-wrapper .about-our-vision .our-vision-image {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+      max-height: 400px; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .about-our-vision .our-vision-image {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; } }
+      .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
+        height: auto;
+        width: auto; }
+        @media all and (min-width: 800px) {
+          .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
+            max-height: 400px;
+            min-height: 400px;
+            width: 100%; } }
+  .page-template-about .about-wrapper .about-team {
+    min-height: 600px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2535,126 +2370,312 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #0a2d5d; }
-    @media all and (min-width: 800px) {
-      .page-template-about .about-wrapper .facilities-technology .facilities {
-        max-height: 500px;
-        min-height: 500px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; } }
-    .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0; }
+    .page-template-about .about-wrapper .about-team h1 {
+      color: #333333; }
+    .page-template-about .about-wrapper .about-team .about-team-para {
+      max-width: 75%; }
+      .page-template-about .about-wrapper .about-team .about-team-para p {
+        text-align: center;
+        color: #333333; }
+    .page-template-about .about-wrapper .about-team .team-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 90%;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      color: #fff; }
+      padding: 20px 0; }
       @media all and (min-width: 800px) {
-        .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
-          -webkit-box-pack: start;
-              -ms-flex-pack: start;
-                  justify-content: flex-start;
-          padding-left: 8%; } }
-      @media all and (min-width: 1200px) {
-        .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; } }
-      .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
-        height: 80%;
-        width: 58%;
-        padding: 30px 0; }
+        .page-template-about .about-wrapper .about-team .team-wrapper {
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; } }
+      .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+        margin: 10px 10px;
+        max-width: 350px;
+        min-width: 350px;
+        max-height: 200px;
+        min-height: 200px;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        @media all and (min-width: 600px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 500px;
+            min-width: 500px; } }
         @media all and (min-width: 800px) {
-          .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
-            width: 80%; } }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+            max-width: 335px;
+            min-width: 335px; } }
+        @media all and (min-width: 950px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 400px;
+            min-width: 400px; } }
+        @media all and (min-width: 1000px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 450px;
+            min-width: 450px;
+            margin: 10px 0px; } }
         @media all and (min-width: 1200px) {
-          .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
-            width: 60%; } }
-    .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
-      overflow: hidden; }
-      .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image img {
-        max-height: 700px;
-        min-height: 500px;
-        -o-object-fit: cover;
-           object-fit: cover; }
-  .page-template-about .about-wrapper .facilities-technology .technologies {
-    background: #0a2d5d;
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 530px;
+            min-width: 530px;
+            margin: 10px 0; } }
+        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot {
+          -ms-flex-preferred-size: 30%;
+              flex-basis: 30%;
+          max-height: 200px !important;
+          min-width: 140px; }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot img {
+            max-height: 200px !important;
+            min-height: 200px !important;
+            height: 200px !important; }
+        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -ms-flex-preferred-size: 70%;
+              flex-basis: 70%;
+          margin: 3px 2%;
+          max-height: 172px;
+          overflow: hidden; }
+          @media all and (min-width: 600px) {
+            .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
+              max-height: 162px; } }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
+            margin: 0;
+            color: #0a2d5d;
+            font-size: 16px;
+            letter-spacing: 2px; }
+            @media all and (min-width: 600px) {
+              .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
+                font-size: 20px; } }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            color: #c3c3c3;
+            margin-bottom: 50px;
+            letter-spacing: 2px; }
+            .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
+              margin-top: 5px;
+              font-size: 20px;
+              color: #0a2d5d;
+              cursor: pointer; }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-bio {
+            margin-top: 14px; }
+  .page-template-about .about-wrapper .about-alliances {
+    background: #f2f2f1;
+    min-height: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-    @media all and (min-width: 800px) {
-      .page-template-about .about-wrapper .facilities-technology .technologies {
-        max-height: 500px;
-        min-height: 500px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; } }
-    .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
-      max-height: 500px;
-      -webkit-box-ordinal-group: 2;
-          -ms-flex-order: 1;
-              order: 1;
-      overflow: hidden; }
-      @media all and (min-width: 800px) {
-        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
-          -webkit-box-ordinal-group: 3;
-              -ms-flex-order: 2;
-                  order: 2; } }
-      .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image img {
-        max-height: 700px;
-        min-height: 500px;
-        -o-object-fit: cover;
-           object-fit: cover; }
-    .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
-      -webkit-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-              order: 2;
-      color: #fff;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-about .about-wrapper .about-alliances h1 {
+      padding-top: 15px;
+      max-width: 80%;
+      text-align: center; }
+    .page-template-about .about-wrapper .about-alliances .alliance-wrapper {
+      margin-top: 30px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
+      width: 90%;
+      padding: 20px 0; }
+      .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        max-height: 90px;
+        max-width: 220px;
+        min-height: 90px;
+        min-width: 220px;
+        margin: 15px 10px; }
+        @media all and (min-width: 750px) {
+          .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%; } }
+        .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo img {
+          max-height: 85px;
+          max-width: 215px;
+          margin: 0 auto;
+          -ms-flex-item-align: center;
+              align-self: center; }
+  .page-template-about .about-wrapper .facilities-technology {
+    border: 1px solid black;
+    min-height: 700px; }
+    .page-template-about .about-wrapper .facilities-technology .facilities {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      background: #0a2d5d; }
       @media all and (min-width: 800px) {
-        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
-          -webkit-box-ordinal-group: 2;
-              -ms-flex-order: 1;
-                  order: 1; } }
-      @media all and (min-width: 1200px) {
-        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; } }
-      .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
-        margin-top: 1.5rem;
-        padding: 30px 0;
-        height: 80%;
-        width: 58%; }
+        .page-template-about .about-wrapper .facilities-technology .facilities {
+          max-height: 500px;
+          min-height: 500px;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+      .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: #fff; }
         @media all and (min-width: 800px) {
-          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
-            width: 80%;
-            padding: 0; } }
+          .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            padding-left: 8%; } }
         @media all and (min-width: 1200px) {
-          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
-            width: 60%;
-            margin-bottom: 30px; } }
+          .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; } }
+        .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
+          height: 80%;
+          width: 58%;
+          padding: 30px 0; }
+          @media all and (min-width: 800px) {
+            .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
+              width: 80%; } }
+          @media all and (min-width: 1200px) {
+            .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
+              width: 60%; } }
+      .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        overflow: hidden; }
+        .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image img {
+          max-height: 700px;
+          min-height: 500px;
+          -o-object-fit: cover;
+             object-fit: cover; }
+    .page-template-about .about-wrapper .facilities-technology .technologies {
+      background: #0a2d5d;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .facilities-technology .technologies {
+          max-height: 500px;
+          min-height: 500px;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+      .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        max-height: 500px;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        overflow: hidden; }
+        @media all and (min-width: 800px) {
+          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
+            -webkit-box-ordinal-group: 3;
+                -ms-flex-order: 2;
+                    order: 2; } }
+        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image img {
+          max-height: 700px;
+          min-height: 500px;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+        @media all and (min-width: 800px) {
+          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1; } }
+        @media all and (min-width: 1200px) {
+          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; } }
+        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+          margin-top: 1.5rem;
+          padding: 30px 0;
+          height: 80%;
+          width: 58%; }
+          @media all and (min-width: 800px) {
+            .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+              width: 80%;
+              padding: 0; } }
+          @media all and (min-width: 1200px) {
+            .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+              width: 60%;
+              margin-bottom: 30px; } }
 
 .page-template-corporate-governance h1 {
   letter-spacing: 2px; }
@@ -4282,61 +4303,6 @@ object {
       color: #333333; }
     .single-post .post-navigation a:hover {
       color: #00c860; }
-
-.page-template-private-sign-up {
-  background-color: #f1f1f1; }
-  .page-template-private-sign-up .private-logo-container {
-    padding: 2rem;
-    max-width: 436px;
-    margin: 0 auto; }
-  .page-template-private-sign-up .entry-title {
-    display: none; }
-  .page-template-private-sign-up .page {
-    padding-top: 0; }
-  .page-template-private-sign-up .wpcf7-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 60%;
-    margin: 0 auto; }
-    @media all and (min-width: 1030px) {
-      .page-template-private-sign-up .wpcf7-form {
-        max-width: 90%; } }
-    .page-template-private-sign-up .wpcf7-form p:nth-child(6) {
-      text-align: center; }
-      .page-template-private-sign-up .wpcf7-form p:nth-child(6) input {
-        margin: 1rem auto;
-        width: 210px;
-        padding: 15px 30px;
-        font-size: 16px;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        color: white;
-        background-color: #00c860;
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-shadow: none; }
-        .page-template-private-sign-up .wpcf7-form p:nth-child(6) input:hover {
-          background-color: #00af54;
-          -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
-                  box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
-    .page-template-private-sign-up .wpcf7-form p {
-      margin: 20px; }
-    .page-template-private-sign-up .wpcf7-form p input {
-      width: 335px; }
-      @media all and (max-width: 450px) {
-        .page-template-private-sign-up .wpcf7-form p input {
-          width: 250px; } }
 
 .site-footer {
   font-family: "Roboto", Arial, Helvetica, sans-serif; }
