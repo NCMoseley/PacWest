@@ -16,14 +16,15 @@
 	<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> class="<?php if (SwpmMemberUtils::is_member_logged_in()) {
+	?>padding-top"<?php } ?>/>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html('Skip to content'); ?></a>
 
 			<header id="masthead" class="site-header <?php if (SwpmMemberUtils::is_member_logged_in()) {
 			?>investor-logged-in"<?php } ?> role="banner">	
 
- 
+	<?php if (!SwpmMemberUtils::is_member_logged_in()) {?>
 				<div class="investor-nav">
 					<div class="login-prompt">
 						<button>Investor Login</button>
@@ -32,6 +33,7 @@
 						<?php echo get_field('header_investor_login')?>
 					</div>					
 				</div>
+<?php	} ?>
 			
 				<div class="nav-wrapper">
 					<div class="logo-container">

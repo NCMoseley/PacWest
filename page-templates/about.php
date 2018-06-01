@@ -46,6 +46,8 @@ get_header(); ?>
 					</ul>
 				</div>
 
+				<section class="about-content-wrap">
+
 				<header class="banner-section parallax-low">
 					<div class="banner-section-img-wrapper">
 						<img src="<?php echo $about_logo ?>" alt="About page logo">
@@ -197,6 +199,8 @@ get_header(); ?>
 
 						</div>
 					</div>
+				</section>
+
 				</section>
 
 				<?php while (have_posts()) : the_post(); ?>
