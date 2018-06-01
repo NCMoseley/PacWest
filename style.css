@@ -4283,19 +4283,6 @@ object {
     .single-post .post-navigation a:hover {
       color: #00c860; }
 
-.page-template-registration .entry-content {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: center;
-  justify-content: space-around;
-  -ms-flex-align: center;
-  min-height: 400px; }
-
 .page-template-private-sign-up {
   background-color: #f1f1f1; }
   .page-template-private-sign-up .private-logo-container {

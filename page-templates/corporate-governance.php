@@ -159,7 +159,9 @@ get_header(); ?>
 					</section>
 					<!-- management wrapper -->
 
-					<div class="cg-section-heading" id="board-of-advisors">
+					<!-- Todo: -->
+
+					<!-- <div class="cg-section-heading" id="board-of-advisors">
 					<div class="left-box">
 						<p>Board of</p>
 						<h1>Advisors</h1>
@@ -200,18 +202,17 @@ get_header(); ?>
 								</div>
 
 							</div>
-							<!-- close team member info -->
+						
 
 						</div>
-						<!-- close individual team member -->
-
+					
 
 						<?php endwhile; ?>
 						<?php wp_reset_query() ?>
 
 
 					</div>
-					</section>
+					</section> -->
 					<!-- boa wrapper -->
 				
 				<!-- cg team -->
