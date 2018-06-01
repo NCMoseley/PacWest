@@ -3,6 +3,7 @@
   .about-menu {
     position: fixed;
     top: 60px !important;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .16), 0 1px 6px rgba(0, 0, 0, .23);
   }
   padding-top: 60px !important;
   .about-content-wrap {
@@ -15,14 +16,12 @@
 
 .page-template-about {
   padding-top: 87px;
-
   .about-content-wrap {
     margin-top: 95px;
     @include eight {
       margin-top: 58px;
     }
   }
-
   h1 {
     letter-spacing: 2px;
   }
@@ -85,15 +84,13 @@
       }
       width: 100%;
       margin: 0 auto;
-
       padding: 2rem 0;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('../../assets/Stock_Photos/pwc-about-optimized.jpg');
+      url('../../assets/Stock_Photos/pwc-about-optimized.jpg');
       color: $color__text-light;
       background-size: cover;
       background-repeat: no-repeat;
@@ -118,8 +115,7 @@
       }
     }
     .about-our-company {
-      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom
-        left no-repeat;
+      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
       background-attachment: fixed;
       width: 100%;
       min-height: 400px;
