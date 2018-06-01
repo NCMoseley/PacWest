@@ -21,11 +21,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<header class="banner-section parallax-low">
+
+			<header class="banner-section <?php echo wp_is_mobile() ? '' : 'parallax-low' ?>">
 				<div class="banner-section-img-wrapper">
 					<img src="<?php echo $logo ?>" alt="Pacwest Logo">
 				</div>
-				
 				<h1>
 					<?php echo $banner_text ?>
 				</h1>
