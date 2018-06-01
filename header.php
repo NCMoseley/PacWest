@@ -20,7 +20,8 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html('Skip to content'); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">	
+			<header id="masthead" class="site-header <?php if (SwpmMemberUtils::is_member_logged_in()) {
+			?>investor-logged-in"<?php } ?> role="banner">	
 
  
 				<div class="investor-nav">

@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.investor-logged-in {
+  margin-top: -32px;
+}
 
 //globals
 .hidden {
@@ -83,7 +86,8 @@
       border: 0;
       &:hover {
         background-color: darken($color__green, 5%);
-        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69), 0px 10px 13px -8px rgba(0, 0, 0, 0.73);
+        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69),
+          0px 10px 13px -8px rgba(0, 0, 0, 0.73);
       }
     }
   }
@@ -222,7 +226,8 @@
     .entry-title {
       color: $color__green;
     }
-    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left
+      no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;

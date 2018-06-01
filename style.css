@@ -979,6 +979,9 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.investor-logged-in {
+  margin-top: -32px; }
+
 .hidden {
   opacity: 0;
   -webkit-transition: opacity 1.5s ease;
