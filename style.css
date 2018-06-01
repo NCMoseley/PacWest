@@ -2136,7 +2136,9 @@ object {
   .page-templatea-about .about-menu,
   .logged-in .about-menu {
     position: fixed;
-    top: 60px !important; }
+    top: 60px !important;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23); }
   .page-templatea-about .about-content-wrap,
   .logged-in .about-content-wrap {
     margin-top: 100px; }
@@ -3646,6 +3648,10 @@ object {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase; }
+
+.page-template-contact div.wpcf7-mail-sent-ok {
+  border: 2px solid #398f14;
+  margin: auto auto; }
 
 .page-template-contact .entry-content > p {
   display: none; }

@@ -20,12 +20,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="cg-wrapper">
-				<div class="cg-menu">
+
+				<!-- Todo: -->
+				<!-- <div class="cg-menu">
 					<ul class="cg-menu-list">
-						<!-- Todo: -->
-						<!-- <a href="#board-of-directors">
+						
+						<a href="#board-of-directors">
 							<li>Board of Directors</li>
-						</a> -->
+						</a>
 						<a href="#management-team">
 							<li>Management Team</li>
 						</a>
@@ -33,7 +35,7 @@ get_header(); ?>
 							<li>Board of Advisors</li>
 						</a>
 					</ul>
-				</div>
+				</div> -->
 
 				<header class="banner-section parallax">
 					<div class="banner-section-img-wrapper">
