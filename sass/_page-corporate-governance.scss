@@ -49,6 +49,7 @@
       }
     }
     .banner-section {
+      height: 500px;
       @include desktop {
         height: 475px;
       }
@@ -63,7 +64,7 @@
       justify-content: center;
       align-items: center;
       background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url('../../assets/Stock_Photos/pwc-team.jpg');
+        url('../../assets/Stock_Photos/pwc-team.jpg');
       color: $color__text-light;
       background-size: cover;
       background-repeat: no-repeat;

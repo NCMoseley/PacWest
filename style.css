@@ -1323,6 +1323,7 @@ object {
   text-align: center; }
 
 .page-template-front-page .banner-section {
+  height: 600px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -1347,7 +1348,7 @@ object {
   background-position: center; }
   @media all and (min-width: 1000px) {
     .page-template-front-page .banner-section {
-      height: 475px; } }
+      height: 520px; } }
   @media all and (min-width: 1450px) {
     .page-template-front-page .banner-section {
       height: 675px; } }
@@ -2212,6 +2213,7 @@ object {
     .page-template-about .about-wrapper .about-menu a {
       text-decoration: none; }
   .page-template-about .about-wrapper .banner-section {
+    height: 500px;
     width: 100%;
     margin: 0 auto;
     padding: 2rem 0;
@@ -2737,6 +2739,7 @@ object {
     text-decoration: none; }
 
 .page-template-corporate-governance .cg-wrapper .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -3180,6 +3183,7 @@ object {
   opacity: 0.6; }
 
 .page-template-investors .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -3570,6 +3574,7 @@ object {
   text-align: center; }
 
 .page-template-contact .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -3727,6 +3732,7 @@ object {
   text-align: center; }
 
 .page-template-faq .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -3876,12 +3882,12 @@ object {
             transform-origin: 58% 10%; }
   .page-template-faq .faq .invisible {
     opacity: 0;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s; }
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .page-template-faq .faq .visible {
     opacity: 1;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s; }
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .page-template-faq .faq .open {
     color: #333333 !important;
     background-color: #fff !important; }
@@ -3893,6 +3899,7 @@ object {
   display: none; }
 
 .page-template-investor-portal .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;

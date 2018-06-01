@@ -6,8 +6,9 @@
     text-align: center;
   }
   .banner-section {
+    height: 600px;
     @include desktop {
-      height: 475px;
+      height: 520px;
     }
     @media all and (min-width: 1450px) {
       height: 675px;
