@@ -2145,10 +2145,17 @@ object {
 .logged-in {
   padding-top: 60px !important; }
   .logged-in .about-menu {
+    margin-top: 33px;
     position: fixed;
     top: 60px !important;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23); }
+    @media all and (max-width: 330px) {
+      .logged-in .about-menu {
+        padding-bottom: 20px; } }
+    @media all and (max-width: 784px) {
+      .logged-in .about-menu {
+        margin-top: 46px; } }
   .logged-in .about-content-wrap {
     margin-top: 100px; }
     @media all and (min-width: 800px) {

@@ -6,9 +6,17 @@
 
 .logged-in {
   .about-menu {
+    @media all and (max-width: 330px) {
+      padding-bottom: 20px;
+    }
+    margin-top: 33px;
+    @media all and (max-width: 784px) {
+      margin-top: 46px;
+    }
     position: fixed;
     top: 60px !important;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, .16), 0 1px 6px rgba(0, 0, 0, .23);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .16),
+    0 1px 6px rgba(0, 0, 0, .23);
   }
   padding-top: 60px !important;
   .about-content-wrap {
