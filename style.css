@@ -624,6 +624,12 @@ textarea {
       letter-spacing: 1px;
       font-size: 12px; }
 
+.logged-in .nav-wrapper {
+  margin-top: 33px; }
+  @media all and (max-width: 784px) {
+    .logged-in .nav-wrapper {
+      margin-top: 46px; } }
+
 .nav-wrapper {
   height: 60px;
   display: -webkit-box;
