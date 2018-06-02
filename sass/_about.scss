@@ -1,4 +1,9 @@
 .page-templatea-about,
+.about-menu {
+  position: fixed;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .16), 0 1px 6px rgba(0, 0, 0, .23);
+}
+
 .logged-in {
   .about-menu {
     position: fixed;

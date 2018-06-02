@@ -1119,7 +1119,7 @@ object {
       padding: 0;
       color: red; }
   .page-template-registration .reg-logo-wrapper {
-    padding-top: 30px;
+    padding-top: 90px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2131,19 +2131,21 @@ object {
       color: #0a2d5d; }
 
 .page-templatea-about,
+.about-menu {
+  position: fixed;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23); }
+
 .logged-in {
   padding-top: 60px !important; }
-  .page-templatea-about .about-menu,
   .logged-in .about-menu {
     position: fixed;
     top: 60px !important;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23); }
-  .page-templatea-about .about-content-wrap,
   .logged-in .about-content-wrap {
     margin-top: 100px; }
     @media all and (min-width: 800px) {
-      .page-templatea-about .about-content-wrap,
       .logged-in .about-content-wrap {
         margin-top: 50px; } }
 
