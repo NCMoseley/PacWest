@@ -2493,7 +2493,11 @@ object {
                     justify-content: space-between;
             color: #c3c3c3;
             margin-bottom: 50px;
-            letter-spacing: 2px; }
+            letter-spacing: 2px;
+            font-size: 13px; }
+            @media all and (min-width: 600px) {
+              .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container {
+                font-size: 16px; } }
             .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
               margin-top: 5px;
               font-size: 20px;
