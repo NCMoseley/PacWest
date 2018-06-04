@@ -3,12 +3,12 @@ jQuery(document).ready(function ($) {
 
   $(function () {
     var faqExpanded = false;
-    var faqExpanded2 = true;
+
 
     $('.faq-answer').css('display', 'none');
     $('.open-close-icon').click(function () {
       faqExpanded = !faqExpanded;
-      faqExpanded2 = false;
+
 
       $(this)
         .parent()
@@ -26,7 +26,7 @@ jQuery(document).ready(function ($) {
         .parent()
         .parent().toggleClass('height');
 
-      if (faqExpanded && faqExpanded2) {
+      if (faqExpanded) {
         $(this)
           .parent()
           .parent()
