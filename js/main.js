@@ -32,38 +32,10 @@ jQuery(document).ready(function ($) {
           .parent()
           .parent()
           .css('backgroundColor', '#fff');
-        // $(this)
-        //   .parent()
-        //   .next()
-        //   .css('color', '#333');
-        // $(this)
-        //   .prev()
-        //   .css('color', '#333');
-        // $(this)
-        //   .parent()
-        //   .parent()
-        //   .prev()
-        //   .css('height', '6rem');
-        // $(this)
-        //   .parent()
-        //   .parent()
-        //   .next()
-        //   .css('height', '6rem');
-
       } else {
         $('.faq').css('backgroundColor', '#0a2d5d');
         $('.faq-answer').css('color', '#fff');
         $('.faq-header h3').css('color', '#fff');
-        // $(this)
-        //   .parent()
-        //   .parent()
-        //   .prev()
-        //   .css('height', 'auto');
-        // $(this)
-        //   .parent()
-        //   .parent()
-        //   .next()
-        //   .css('height', 'auto');
       }
     });
   });
@@ -249,4 +221,4 @@ jQuery(document).ready(function ($) {
   investorRedirect();
 
 
-}); 
+});
