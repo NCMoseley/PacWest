@@ -3891,6 +3891,9 @@ object {
             align-items: center; }
   .page-template-faq .faq-answer {
     color: white; }
+  .page-template-faq .faq .open-close-icon {
+    padding: 10px;
+    cursor: pointer; }
   .page-template-faq .faq .horizontal {
     width: 20px;
     height: 3px;
