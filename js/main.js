@@ -9,7 +9,6 @@ jQuery(document).ready(function ($) {
     $('.open-close-icon').click(function () {
       faqExpanded = !faqExpanded;
 
-
       $(this)
         .parent()
         .next()
