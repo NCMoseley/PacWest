@@ -1,0 +1,156 @@
+.page-template-news {
+  .news-h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    @media all and (max-width: $tablet) {
+      font-size: 1.5rem;
+    }
+  }
+  .banner-section {
+    @include desktop {
+      height: 475px;
+    }
+    @media all and (min-width: 1450px) {
+      height: 675px;
+    }
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../../assets/Stock_Photos/pwc-news-optimized.jpg');
+    color: $color__text-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; // background-position: center -50px;
+    // background-attachment: fixed;
+    &-img-wrapper {
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    h1 {
+      width: 60%;
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+  .news-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    @media all and (max-width: $medium) {
+      background: #fff;
+    }
+  }
+  .news-items-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    @media all and (max-width: 550px) {
+      width: 100%;
+    }
+  }
+  .news-item {
+    width: 90%;
+    margin: 0 auto;
+    @media all and (max-width: 550px) {
+      width: 100%;
+    }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media all and (max-width: 550px) {
+        flex-direction: column;
+      }
+      &-group {
+        width: 80%;
+        padding: 5px;
+        background-color: $color__navy;
+        color: #fff;
+        @media all and (max-width: 550px) {
+          width: 90%;
+        }
+        a {
+          color: #fff;
+          &:hover {
+            color: $color__green !important;
+          }
+          &:visited {
+            color: #fff;
+          }
+        }
+        h3 {
+          margin: 0;
+          font-weight: 300;
+        }
+      }
+    }
+    &-pdf {
+      position: relative;
+      right: 5rem;
+      padding: 1rem;
+      background-color: $color__green;
+      color: white;
+      border-radius: 3px;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:hover {
+        background-color: darken($color__green, 5%);
+        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+      }
+      @media all and (max-width: 930px) {
+        right: 0;
+      }
+      @media all and (max-width: 550px) {
+        width: 75%;
+        margin: 1rem;
+      }
+      a {
+        text-decoration: none;
+        &:visited,
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    &-body {
+      height: auto;
+      max-height: 38px;
+      overflow: hidden;
+      @media all and (max-width: 550px) {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+    &-expand-link {
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

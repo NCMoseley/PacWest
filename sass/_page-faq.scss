@@ -1,0 +1,154 @@
+.page-template-faq {
+  .faq-h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .banner-section {
+    height: 500px;
+    @include desktop {
+      height: 475px;
+    }
+    @media all and (min-width: 1450px) {
+      height: 675px;
+    }
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../../assets/Stock_Photos/pwc-boxes-faq-optimized.jpg');
+    color: $color__text-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; // background-position: center -50px;
+    // background-attachment: fixed;
+    &-img-wrapper {
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    h1 {
+      width: 100%;
+      @include tablet {
+        width: 60%;
+      }
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+  }
+  .main-section {
+    padding: 4rem 0;
+    background-color: #eee;
+  }
+  .main-section-intro {
+    margin: 0;
+    text-align: center;
+    h2 {
+      text-transform: uppercase;
+    }
+    strong {
+      color: $color__green;
+    }
+  }
+  .faq-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media all and (max-width: $medium) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @media all and (max-width: 550px) {
+      width: 100%;
+    }
+  }
+  .faq {
+    width: 45%;
+    margin: 1rem;
+    padding: 5px 50px 5px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // align-items: center;
+    background-color: $color__navy !important;
+    color: $color__text-light !important;
+    height: 6rem;
+    @media #{all and (max-width: $medium)} {
+      width: 70%;
+    }
+    @media #{all and (max-width: 550px)} {
+      width: 90%;
+    }
+    h3 {
+      color: $color__text-light;
+      font-size: 16px;
+      max-width: 70%;
+      font-weight: 300;
+    }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-answer {
+      color: white;
+    }
+    .open-close-icon {
+      padding: 10px;
+      cursor: pointer;
+    }
+    .horizontal {
+      width: 20px;
+      height: 3px;
+      background-color: $color__green;
+    }
+    .vertical {
+      width: 20px;
+      height: 3px;
+      background-color: $color__green;
+      transform: rotate(90deg);
+      transform-origin: 58% 10%;
+    }
+    .invisible {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    .visible {
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+    .open {
+      color: $color__grey-dark !important;
+      background-color: #fff !important;
+    }
+  }
+  .faq.height {
+    height: auto !important;
+  }
+  .faq.height.color {
+    background-color: #fff !important;
+    h3 {
+      color: $color__grey-dark !important;
+    }
+    p {
+      color: $color__grey-dark !important;
+    }
+  }
+}

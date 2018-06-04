@@ -1,33 +1,44 @@
 // Structure
-
 $base__space-unit: 1.5rem;
-
 // Colors
-
-
 $color__navy: #0a2d5d;
+$color__footer: #252525;
 $color__green: #00c860;
-
-
+$color__grey-dark: #333333;
 $color__background-body: #fff;
 $color__text-main: #404040;
-
+$color__text-light: #fff;
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
-
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
+$color__background-grey: #f2f2f1;
+$color__text-light-grey: #c3c3c3;
 $color__border-abbr: #666;
-
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-
+$color__border-input: #d7d7d7;
+$color__link: #fff;
+$color__link-visited: lightblue;
+// $color__link-hover: midnightblue;
+$color__link-hover: #00c860;
 // Typography
-
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__main: 'Roboto',
+Arial,
+Helvetica,
+sans-serif;
+$font__code: Monaco,
+Consolas,
+'Andale Mono',
+'DejaVu Sans Mono',
+monospace;
+$font__pre: 'Courier 10 Pitch',
+Courier,
+monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+//widths:
+$desktop: 1000px;
+$large: 1200px;
+$tablet: 600px;
+$medium: 750px;
+$small: 320px;

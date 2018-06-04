@@ -1,17 +1,32 @@
 .site-footer {
+  font-family: $font__main;
   .site-info {
     border: 1px solid black;
-    min-height: 350px;
+    min-height: 370px;
     display: flex;
-
+    flex-direction: column;
+    @include medium {
+      flex-direction: row;
+    }
     .footer-left {
+      min-height: 300px;
       flex-basis: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: black;
-
+      background: $color__footer;
+      padding: 3%;
+      .footer-left-text {
+        p:nth-of-type(2) {
+          display: none;
+        }
+        #footer-sidebar1 {
+          h3 {
+            display: none;
+          }
+        }
+      }
       .footer-logo {
         height: 120px;
         width: 200px;
@@ -20,9 +35,19 @@
         color: #fff;
       }
       .footer-social-media {
+        display: flex;
+        justify-content: center;
+        color: $color__text-light;
+        a:visited {
+          color: $color__text-light;
+        }
         i {
-          color: #fff;
-          margin: 0 5px;
+          margin: 0 15px;
+          font-size: 22px;
+          &:hover {
+            transform: scale(1.2);
+            color: $color__green;
+          }
         }
       }
     }
@@ -31,55 +56,88 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background: #333536;
-
+      align-items: center;
+      background: $color__grey-dark;
       .footer-right-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
+        max-width: 80%;
         margin-top: 13px;
+        #footer-sidebar2 {
+          .widget {
+            color: #fff;
+            h3 {
+              text-transform: uppercase;
+              font-size: 34px;
+              margin: 0; // text-align: center;
+            }
+            p {
+              font-size: 14px; // text-align: center;
+            }
+          }
+        }
+        #footer-sidebar3 {
+          h3 {
+            display: none;
+          }
+          p {
+            color: #fff;
+            display: inline;
+            font-size: 12px; // margin-right: 140px;
+          }
+        }
         p {
           margin: 5px 0;
         }
         margin-left: 5%;
         .footer-right-text {
           margin-bottom: 20px;
-          h2 {
-            color: #fff;
-            margin: 0;
-          }
-          p {
-            color: #fff;
-            max-width: 90%;
-          }
         }
       }
       .footer-sign-up {
         display: flex;
         margin-bottom: 10px;
-
         .wpcf7-form {
           display: flex;
-          align-items: center;
-          justify-content: center;
+          align-items: center; // justify-content: center;
+          flex-wrap: wrap;
           width: 100%;
-
           .wpcf7-email {
             max-width: 250px;
             margin-right: 10px;
             height: 30px;
+            border: 1px solid $color__background-pre;
+            border-radius: 0;
+          }
+          input::placeholder {
+            text-transform: uppercase;
+            color: $color__text-light-grey;
           }
           .wpcf7-submit {
             height: 25px;
-
             min-width: 175px;
             color: #fff;
-            background: green;
+            background: $color__green;
             box-shadow: none;
             text-shadow: none;
             border-radius: 5px;
+            margin-top: 0.5px;
+            font-size: 16px;
+            text-transform: uppercase;
             border: none;
-            padding-bottom: 19px;
+            padding-bottom: 22px;
+            &:hover {
+              background-color: darken($color__green, 5%);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .83), 0px 10px 13px -8px rgba(0, 0, 0, .83);
+            }
+          }
+          div.wpcf7-mail-sent-ok {
+            color: $color__text-light;
+          }
+          div.wpcf7-response-output {
+            color: $color__text-light;
           }
         }
       }
