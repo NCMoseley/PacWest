@@ -27,7 +27,9 @@ get_header(); ?>
 			<section class="about-wrapper">
 				<div class="about-menu">
 					<ul class="about-menu-list">
-						<li>About</li>
+						<a href="#about-company">
+							<li>About</li>
+						</a>
 						<a href="#about-vision">
 							<li>Vision</li>
 						</a>
@@ -57,7 +59,7 @@ get_header(); ?>
 					</h1>
 				</header>
 
-				<div class="about-our-company">
+				<div class="about-our-company" id="about-company">
 					<h1 class="uppercase">
 						<?php echo $about_company_header ?> </h1>
 					<p>
