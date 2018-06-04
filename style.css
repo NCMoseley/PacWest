@@ -3672,7 +3672,7 @@ object {
   padding: 0;
   max-width: 1440px; }
 
-.page-template-contact .wpcf7-form {
+.page-template-contact .post-40 .wpcf7-form {
   width: 75%;
   margin: 0 auto;
   display: -webkit-box;
@@ -3683,9 +3683,9 @@ object {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .page-template-contact .wpcf7-form input {
+  .page-template-contact .post-40 .wpcf7-form input {
     width: 100%; }
-  .page-template-contact .wpcf7-form input[type='submit'] {
+  .page-template-contact .post-40 .wpcf7-form input[type='submit']:first-of-type {
     margin: 1rem auto;
     width: 210px;
     padding: 15px 30px;
@@ -3701,11 +3701,11 @@ object {
     text-transform: uppercase;
     text-shadow: none;
     background-color: #00c860; }
-    .page-template-contact .wpcf7-form input[type='submit']:hover {
+    .page-template-contact .post-40 .wpcf7-form input[type='submit']:first-of-type:hover {
       background-color: #082246;
       -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
               box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
-  .page-template-contact .wpcf7-form p {
+  .page-template-contact .post-40 .wpcf7-form p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3720,26 +3720,26 @@ object {
         -ms-flex-align: center;
             align-items: center; }
     @media all and (max-width: 950px) {
-      .page-template-contact .wpcf7-form p {
+      .page-template-contact .post-40 .wpcf7-form p {
         width: 230px; } }
     @media all and (max-width: 650px) {
-      .page-template-contact .wpcf7-form p {
+      .page-template-contact .post-40 .wpcf7-form p {
         width: 100%; } }
-  .page-template-contact .wpcf7-form p:nth-of-type(7) {
+  .page-template-contact .post-40 .wpcf7-form p:nth-of-type(7) {
     width: 100%;
     margin: 0 auto;
     display: block; }
     @media all and (max-width: 650px) {
-      .page-template-contact .wpcf7-form p:nth-of-type(7) {
+      .page-template-contact .post-40 .wpcf7-form p:nth-of-type(7) {
         width: 335px; } }
-  .page-template-contact .wpcf7-form p:nth-of-type(8) {
+  .page-template-contact .post-40 .wpcf7-form p:nth-of-type(8) {
     width: 100%;
     text-align: center; }
 
-.page-template-contact .entry-title {
+.page-template-contact .post-40 .entry-title {
   display: none; }
 
-.page-template-contact .widget-area {
+.page-template-contact .post-40 .widget-area {
   display: none; }
 
 .page-template-faq .faq-h2 {
