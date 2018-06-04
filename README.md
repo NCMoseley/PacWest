@@ -1,8 +1,12 @@
-# PacWest
+# PacWest Canopy
 
 ![Hero Image](https://github.com/NCMoseley/Packwest/blob/master/assets/Stock_Photos/pwc-home-optimized-2.jpg)
 
 A beautiful Theme built for a Beautiful Vancouver based website.
+
+```
+https://pacwestcanopy.com/
+```
 
 by Caravel Media
 
