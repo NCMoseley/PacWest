@@ -205,46 +205,46 @@ jQuery(document).ready(function ($) {
 
 
 
-  // ADD MENU ITEM IN MOBILE
+  // // ADD MENU ITEM IN MOBILE
 
-  function addMenuItem() {
-    var link = '';
-    if ($('body').hasClass('logged-in')) {
-      link = '/investor-portal';
-    } else {
-      link = '/investors'
-    }
+  // function addMenuItem() {
+  //   var link = '';
+  //   if ($('body').hasClass('logged-in')) {
+  //     link = '/investor-portal';
+  //   } else {
+  //     link = '/investors'
+  //   }
 
-    $('.menu-item-163 .sub-menu').append(
-      '<li class="investors-link"><a href="' +
-      templateLocation.template_url + link +
-      '">Investors</a></li>'
-    );
+  //   $('.menu-item-163 .sub-menu').append(
+  //     '<li class="investors-link"><a href="' +
+  //     templateLocation.template_url + link +
+  //     '">Investors</a></li>'
+  //   );
 
-    investorVisbility();
-    $(window).resize(function () {
-      investorVisbility();
-    });
-  }
-  addMenuItem();
+  //   investorVisbility();
+  //   $(window).resize(function () {
+  //     investorVisbility();
+  //   });
+  // }
+  // addMenuItem();
 
-  function investorVisbility() {
-    if ($(window).width() < 750) {
-      $('.investors-link').css('display', 'block');
-    } else {
-      $('.investors-link').css('display', 'none');
-    }
-  }
+  // function investorVisbility() {
+  //   if ($(window).width() < 750) {
+  //     $('.investors-link').css('display', 'block');
+  //   } else {
+  //     $('.investors-link').css('display', 'none');
+  //   }
+  // }
 
 
-  function investorRedirect() {
-    var url = templateLocation.template_url + '/investor-portal';
-    if ($('body').hasClass('logged-in')) {
-      $('.menu-item-163 > a').attr('href', url);
-      $('.sub-footer-investor-link').attr('href', url);
-    }
-  }
-  investorRedirect();
+  // function investorRedirect() {
+  //   var url = templateLocation.template_url + '/investor-portal';
+  //   if ($('body').hasClass('logged-in')) {
+  //     $('.menu-item-163 > a').attr('href', url);
+  //     $('.sub-footer-investor-link').attr('href', url);
+  //   }
+  // }
+  // investorRedirect();
 
 
 }); 
