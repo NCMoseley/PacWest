@@ -8,6 +8,7 @@
 get_header(); ?>
 	<?php $logo = get_field('faq_page_banner_logo'); ?>
 	<?php $banner_text = get_field('faq_page_banner_text'); ?>
+	
 
 	<?php $main_text = get_field('faq_page_main_text'); ?>
 

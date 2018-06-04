@@ -87,7 +87,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center; // align-items: center;
-    background-color: $color__navy;
+    background-color: $color__navy !important;
+    color: $color__text-light !important;
     height: 6rem;
     @media #{all and (max-width: $medium)} {
       width: 70%;
@@ -136,5 +137,12 @@
   }
   .faq.height {
     height: auto !important;
+  }
+  .faq.height.color {
+    background-color: #fff !important;
+    h3 {
+      color: $color__grey-dark !important;
+    }
+    color: $color__grey-dark !important;
   }
 }

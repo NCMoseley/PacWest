@@ -3865,7 +3865,8 @@ object {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #0a2d5d;
+  background-color: #0a2d5d !important;
+  color: #fff !important;
   height: 6rem; }
   @media (max-width: 750px) {
     .page-template-faq .faq {
@@ -3916,6 +3917,12 @@ object {
 
 .page-template-faq .faq.height {
   height: auto !important; }
+
+.page-template-faq .faq.height.color {
+  background-color: #fff !important;
+  color: #333333 !important; }
+  .page-template-faq .faq.height.color h3 {
+    color: #333333 !important; }
 
 .page-template-investor-portal .hentry {
   display: none; }
