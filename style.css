@@ -3919,9 +3919,10 @@ object {
   height: auto !important; }
 
 .page-template-faq .faq.height.color {
-  background-color: #fff !important;
-  color: #333333 !important; }
+  background-color: #fff !important; }
   .page-template-faq .faq.height.color h3 {
+    color: #333333 !important; }
+  .page-template-faq .faq.height.color p {
     color: #333333 !important; }
 
 .page-template-investor-portal .hentry {

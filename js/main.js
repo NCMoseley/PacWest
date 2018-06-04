@@ -32,13 +32,13 @@ jQuery(document).ready(function ($) {
           .parent()
           .parent()
           .css('backgroundColor', '#fff');
-        $(this)
-          .parent()
-          .next()
-          .css('color', '#333');
-        $(this)
-          .prev()
-          .css('color', '#333');
+        // $(this)
+        //   .parent()
+        //   .next()
+        //   .css('color', '#333');
+        // $(this)
+        //   .prev()
+        //   .css('color', '#333');
         // $(this)
         //   .parent()
         //   .parent()
