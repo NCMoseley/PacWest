@@ -2,7 +2,7 @@
 
 ![Hero Image](https://github.com/NCMoseley/PacWest/blob/master/assets/Stock_Photos/pwc-home-optimized-2.jpg)
 
-A beautiful Theme built for a Beautiful Vancouver based website.
+A beautiful Theme built for a Beautiful Vancouver based [website.](https://pacwestcanopy.com/ 'Go to Homepage')
 
 ```
 https://pacwestcanopy.com/
