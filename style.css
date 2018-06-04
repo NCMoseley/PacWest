@@ -3862,10 +3862,11 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  background-color: #0a2d5d; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0a2d5d;
+  height: 6rem; }
   @media (max-width: 750px) {
     .page-template-faq .faq {
       width: 70%; } }
@@ -3912,6 +3913,9 @@ object {
   .page-template-faq .faq .open {
     color: #333333 !important;
     background-color: #fff !important; }
+
+.page-template-faq .faq.height {
+  height: auto !important; }
 
 .page-template-investor-portal .hentry {
   display: none; }

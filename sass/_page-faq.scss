@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url('../../assets/Stock_Photos/pwc-boxes-faq-optimized.jpg');
+    url('../../assets/Stock_Photos/pwc-boxes-faq-optimized.jpg');
     color: $color__text-light;
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,8 +86,9 @@
     padding: 5px 50px 5px 30px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; // align-items: center;
+    justify-content: center; // align-items: center;
     background-color: $color__navy;
+    height: 6rem;
     @media #{all and (max-width: $medium)} {
       width: 70%;
     }
@@ -132,5 +133,8 @@
       color: $color__grey-dark !important;
       background-color: #fff !important;
     }
+  }
+  .faq.height {
+    height: auto !important;
   }
 }
