@@ -6,4 +6,10 @@ by Caravel Media
 
 ## Caravel Media
 
-www.caravel
+www.caravelweb.com
+
+Authors:
+
+Colin Matson-Jones
+Ilya Meerovich
+Nathan Moseley
