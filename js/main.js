@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
       $(this)
         .parent()
         .next()
-        .slideToggle(100);
+        .slideToggle(0);
       $(this)
         .children()
         .last()
@@ -26,7 +26,8 @@ jQuery(document).ready(function ($) {
         .toggleClass('invisible');
       $(this)
         .parent()
-        .parent().toggleClass('color');
+        .parent()
+        .toggleClass('color');
 
       if (faqExpanded) {
         $(this)
