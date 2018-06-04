@@ -16,13 +16,15 @@
 	<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> class="<?php if (SwpmMemberUtils::is_member_logged_in()) {
+	?>padding-top"<?php } ?>/>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html('Skip to content'); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">	
+			<header id="masthead" class="site-header <?php if (SwpmMemberUtils::is_member_logged_in()) {
+			?>investor-logged-in"<?php } ?> role="banner">	
 
-
+	<?php if (!SwpmMemberUtils::is_member_logged_in()) {?>
 				<div class="investor-nav">
 					<div class="login-prompt">
 						<button>Investor Login</button>
@@ -31,11 +33,12 @@
 						<?php echo get_field('header_investor_login')?>
 					</div>					
 				</div>
+<?php	} ?>
 			
 				<div class="nav-wrapper">
 					<div class="logo-container">
 						<a href="<?php echo esc_url(home_url('/')); ?>">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Logos/SVG/PWC-Light-01.svg" alt="Pacwest Logo">
+							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Logos/PNG/PWC-Nav.png" alt="Pacwest Logo">
 						</a>
 					</div>
 	
@@ -43,11 +46,13 @@
 						<input id="toggle" type="checkbox">
 						<label class="toggle-container" for="toggle">
 							<span class="button button-toggle"></span>
-							<div class="menu-close">
-								<div class="left-x"></div>
-								<div class="right-x"></div>
-							</div>
-    				</label>
+		
+							<button class="hamburger--slider" type="button">
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
+							</button>
+						</label>
 						<?php wp_nav_menu(array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' )); ?>
 					</nav><!-- #site-navigation -->
 				</div>

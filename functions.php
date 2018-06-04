@@ -66,7 +66,7 @@ function red_starter_widgets_init()
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ));
-    register_sidebar( array(
+    register_sidebar(array(
         'name' => 'Footer Left',
         'id' => 'footer-sidebar-1',
         'description' => 'Appears in the footer area',
@@ -74,8 +74,8 @@ function red_starter_widgets_init()
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
-        ) );
-        register_sidebar( array(
+        ));
+    register_sidebar(array(
         'name' => 'Be The First',
         'id' => 'footer-sidebar-2',
         'description' => 'Appears in the footer area',
@@ -83,9 +83,9 @@ function red_starter_widgets_init()
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
-        ) );
+        ));
       
-        register_sidebar( array(
+    register_sidebar(array(
             'name' => 'Copyright',
             'id' => 'footer-sidebar-3',
             'description' => 'Appears in the footer area',
@@ -93,7 +93,7 @@ function red_starter_widgets_init()
             'after_widget' => '</aside>',
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
-            ) );
+            ));
 }
 add_action('widgets_init', 'red_starter_widgets_init');
 
@@ -113,13 +113,19 @@ add_filter('stylesheet_uri', 'red_starter_minified_css', 10, 2);
 /**
  * Enqueue scripts and styles.
  */
-function red_starter_scripts() {
+function red_starter_scripts()
+{
     wp_enqueue_style('red-starter-style', get_stylesheet_uri());
     wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
     wp_enqueue_style('mainfont', "https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700");
+    wp_enqueue_style('hamburger-menu', get_template_directory_uri() . '/lib/hamburgers.css');
 
     wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true);
-    wp_enqueue_script('main', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '1.0.0', true);
+    wp_register_script('main', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '1.0.0', true);
+        // wp_localize_script( 'main', 'templateLocation', array( 'template_url' => get_bloginfo('url') ) ); 
+        wp_enqueue_script('main');
+
+
     wp_enqueue_script('about', get_template_directory_uri() . '/build/js/about.min.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('smoothScroll', get_template_directory_uri() . '/build/js/smoothScroll.min.js', array('jquery'), '1.0.0', true);
 
@@ -129,9 +135,43 @@ function red_starter_scripts() {
 }
 add_action('wp_enqueue_scripts', 'red_starter_scripts');
 
+/**
+ * Custom logo for this theme.
+ */
 
+function my_login_logo()
+{
+    ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/Logos/PNG/PWC-Light.png);
+           
+		height:125px;
+		width:320px;
+		background-size: 320px 125px;
+		background-repeat: no-repeat;
+        	padding-bottom: 30px;
+        }
+    </style>
+<?php
+}
+add_action('login_enqueue_scripts', 'my_login_logo');
 
+/**
+ * Clicking logo leads to home.
+ */
 
+function my_login_logo_url()
+{
+    return home_url();
+}
+add_filter('login_headerurl', 'my_login_logo_url');
+
+function my_login_logo_url_title()
+{
+    return 'PacWest, a site by Caravel';
+}
+add_filter('login_headertitle', 'my_login_logo_url_title');
 
 
 /**
@@ -143,8 +183,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-
-
- 
-

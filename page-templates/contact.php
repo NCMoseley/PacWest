@@ -15,7 +15,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 
-			<header class="banner-section">
+			<header class="banner-section parallax">
 				<div class="banner-section-img-wrapper">
 					<img src="<?php echo $logo ?>" alt="Pacwest Logo">
 				</div>
@@ -25,16 +25,15 @@ get_header(); ?>
 				</h1>
 			</header>
 
+			<div class="main-content">		
+				<section class="contact-form">
+					<h2 class="contact-h2"><?php echo $main_text ?></h2>
+				</section>
 
-			<section class="contact-form">
-				<h2 class="contact-h2"><?php echo $main_text ?></h2>
-			</section>
-
-			<?php while (have_posts()) : the_post(); ?>
-				<?php get_template_part('template-parts/content', 'page'); ?>
-			<?php endwhile; // End of the loop.?>
-
-
+				<?php while (have_posts()) : the_post(); ?>
+					<?php get_template_part('template-parts/content', 'page'); ?>
+				<?php endwhile; // End of the loop.?>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

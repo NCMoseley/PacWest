@@ -1,12 +1,26 @@
 jQuery(document).ready(function($) {
-  $(document).on('click', 'a[href^="#"]', function(event) {
-    event.preventDefault();
+  if ($('body').hasClass('logged-in')) {
+    var headerHeight = $('div.nav-wrapper').height() + 60;
+  } else {
+    headerHeight = $('div.nav-wrapper').height() + 82;
+  }
 
-    $('html, body').animate(
-      {
-        scrollTop: $($.attr(this, 'href')).offset().top
-      },
-      1500
-    );
-  });
+  if (
+    $('body').hasClass('page-template-about') ||
+    $('body').hasClass('page-template-corporate-governance')
+  ) {
+    $('a[href*=#]').bind('click', function(e) {
+      e.preventDefault();
+
+      var target = $(this).attr('href');
+      var scrollTo = $(target).offset().top - headerHeight;
+
+      $('html, body').animate(
+        {
+          scrollTop: scrollTo
+        },
+        1500
+      );
+    });
+  }
 });

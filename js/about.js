@@ -1,25 +1,16 @@
 jQuery(document).ready(function($) {
-  $('.about-plus-icon').on('click', function() {
+  $('.team-open-close').on('click', function() {
     $(this)
       .parent()
       .parent()
       .parent()
-      .addClass('show-full-container');
-
+      .toggleClass('show-full-container');
     $(this)
       .parent()
       .parent()
-      .addClass('show-full-container');
-  });
-
-  $('.about-close').on('click', function() {
+      .toggleClass('show-full-container');
     $(this)
-      .parent()
-      .parent()
-      .removeClass('show-full-container');
-
-    $(this)
-      .parent()
-      .removeClass('show-full-container');
+      .children()
+      .toggleClass('hidden-plus-minus');
   });
 });

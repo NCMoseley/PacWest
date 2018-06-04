@@ -29,7 +29,7 @@
 							<h1 class="sub-footer-text">Faq</h1>
 						</div>
 					</a>
-					<a href="<?php echo esc_url(home_url('/investors/')); ?>">
+					<a class="sub-footer-investor-link" href="<?php echo esc_url(home_url('/investors/')); ?>">
 						<div class="sub-footer-investors">
 							<h1 class="sub-footer-text">Investors</h1>
 						</div>

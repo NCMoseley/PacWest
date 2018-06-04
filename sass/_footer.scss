@@ -15,7 +15,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: black;
+      background: $color__footer;
       padding: 3%;
       .footer-left-text {
         p:nth-of-type(2) {
@@ -37,10 +37,17 @@
       .footer-social-media {
         display: flex;
         justify-content: center;
+        color: $color__text-light;
+        a:visited {
+          color: $color__text-light;
+        }
         i {
-          color: #fff;
-          margin: 0 5px;
+          margin: 0 15px;
           font-size: 22px;
+          &:hover {
+            transform: scale(1.2);
+            color: $color__green;
+          }
         }
       }
     }
@@ -55,7 +62,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         max-width: 80%;
         margin-top: 13px;
         #footer-sidebar2 {
@@ -78,8 +85,7 @@
           p {
             color: #fff;
             display: inline;
-            font-size: 12px;
-            margin-right: 140px;
+            font-size: 12px; // margin-right: 140px;
           }
         }
         p {
@@ -122,6 +128,16 @@
             text-transform: uppercase;
             border: none;
             padding-bottom: 22px;
+            &:hover {
+              background-color: darken($color__green, 5%);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .83), 0px 10px 13px -8px rgba(0, 0, 0, .83);
+            }
+          }
+          div.wpcf7-mail-sent-ok {
+            color: $color__text-light;
+          }
+          div.wpcf7-response-output {
+            color: $color__text-light;
           }
         }
       }

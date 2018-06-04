@@ -17,7 +17,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<header class="banner-section">
+		<div class="investor-overlay hidden"></div>
+
+		
+		<header class="banner-section parallax">
 			<div class="banner-section-img-wrapper">
 				<img class="leaf-icon" src="<?php echo $logo ?>" alt="Leaf Logo">
 			</div>			
@@ -35,6 +38,26 @@ get_header(); ?>
 
 			<div class="investor-login-desc">
 				<?php echo $login_info ?>
+			</div>
+
+			<div class="forgot">
+				<a href="<?php echo home_url('/membership-login/password-reset/') ?>">I Forgot My Password!</a>
+			</div>
+
+			  
+
+			<div class="portal-pop-up hidden">
+				<i class="fa fa-times pop-up-close" aria-hidden="true"></i>
+
+				<div class="pop-up-image">
+					<img src="<?php echo get_field('pop_up_logo')?> " alt="Coastal view through trees"/>
+				</div>
+
+				<div class="pop-up-form">
+					<h2><?php echo get_field('pop_up_text') ?></h2>
+					<?php echo do_shortcode('[contact-form-7 id="36" title="Investor Portal Request Access"]'); ?>
+				</div>
+				
 			</div>
 
 		</section>

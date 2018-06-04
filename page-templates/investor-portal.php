@@ -21,14 +21,16 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-<?php if(SwpmMemberUtils::is_member_logged_in()) { ?>
+<?php if (SwpmMemberUtils::is_member_logged_in()) {
+    ?>
 
-		<div class="investors-portal-banner">
-				<div class="portal-banner-wrapper">
-					<img src="<?php echo $portal_logo ?>"/>
-					<h1> <?php echo $portal_header ?></h1>
+
+			<header class="banner-section parallax">
+				<div class="banner-section-img-wrapper">
+					<img src="<?php echo $portal_logo ?>" alt="Pacwest Logo">
 				</div>
-			</div>
+				<h1> <?php echo $portal_header ?></h1>
+      </header>
 
 			<div class="investors-corporate-presentation">
 				<h1> <?php echo $pres_header ?></h1>
@@ -42,9 +44,12 @@ get_header(); ?>
 				<h1> <?php echo $headed_next ?></h1>
 
 				<div class="video-container">
-					<div class="vid one"></div>
-					<div class="vid two"></div>
-					<div class="vid three"></div>
+					
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/uwMLx2h_uM0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								<!-- Your browser does not support the video tag. -->
+				
+					<!-- <div class="vid two"></div>
+					<div class="vid three"></div> -->
 
 
 				</div>
@@ -57,50 +62,54 @@ get_header(); ?>
 
 		<section class="press-releases-wrapper">
 
-			<h2 class="press-releases-title front-h2">
-				<span>Pacwest</span> News</h2>
-			<div class="press-releases-container">
+<h2 class="press-releases-title front-h2">
+	<span>Pacwest</span> News</h2>
+<div class="press-releases-container">
 
-				<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>
-				<?php while ($query->have_posts()) : $query->the_post(); ?>
-				<div class="press-release">
-					<div class="green-vertical-line"></div>
-					<div class="pr-content">
-						<h3>
-							<?php the_title(); ?>
-						</h3>
-						<span>
-							<?php the_time(' F jS, Y') ?>
-						</span>
-					</div>
-					<p>
-						<a href="<?php the_permalink();?>">Read More ‣</a>
-					</p>
+	<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
+    $query = new WP_Query($args); ?>
+	<?php while ($query->have_posts()) : $query->the_post(); ?>
+	
+			<div class="press-release">
+				<div class="green-vertical-line"></div>
+				<div class="pr-content">
+					<h3>
+						<a href="<?php echo esc_url(home_url('/news/')); ?>">
+						<?php the_title(); ?>
+						</a>
+					</h3>
+					<span>
+						<?php the_time(' F jS, Y') ?>
+					</span>
 				</div>
-				<?php endwhile; ?>
-				<?php wp_reset_query() ?>
 			</div>
-			<a href="<?php the_permalink();?>">
-				<button class="button-blue">Read More</button>
-			</a>
+			<?php endwhile; ?>
+			<?php wp_reset_query() ?>
+			</div>
+	
+
+<a href="<?php echo esc_url(home_url('/news/')); ?>">
+	<button class="button-blue">Read More</button>
+</a>
 </section>
 
-<?php } else {
-
-	?>
+<?php
+} else {
+        ?>
 	<div class="not-logged-in">
 		<h1>You need to be logged in to see this content</h1>
 		<?php echo get_field('portal_login') ?>
 		
 	</div>
 
-<?php } ?>
+<?php
+    } ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while (have_posts()) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php get_template_part('template-parts/content', 'page'); ?>
 
-			<?php endwhile; // End of the loop. ?>
+			<?php endwhile; // End of the loop.?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

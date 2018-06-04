@@ -13,7 +13,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-      <header class="banner-section">
+      <header class="banner-section parallax">
 				<div class="banner-section-img-wrapper">
 					<img src="<?php echo $logo ?>" alt="Pacwest Logo">
 				</div>
@@ -34,12 +34,14 @@ get_header(); ?>
             <div class="news-item">
               <div class="news-item-header">
                 <div class="news-item-header-group">
-                  <h3>
-                    <?php the_title(); ?>
-                  </h3>
-                  <span>
-                    <?php the_time(' F jS, Y') ?>
-                  </span>
+                  <a href="<?php the_permalink() ?>">
+                    <h3>
+                      <?php the_title(); ?>
+                    </h3>
+                    <span>
+                      <?php the_time(' F jS, Y') ?>
+                    </span>
+                  </a>
                 </div>
                 <div class="news-item-pdf">
                   <a href="<?php the_field('press_release_pdf')  ?>">PDF</a>
@@ -49,7 +51,7 @@ get_header(); ?>
 
 
               <div class="news-item-body">
-                <?php the_content(); ?>
+                <?php the_excerpt(); ?>
               </div>
 
               <p class="news-item-expand-link">

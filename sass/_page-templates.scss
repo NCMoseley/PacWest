@@ -2,7 +2,39 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.investor-logged-in {
+  margin-top: -32px;
+}
+
+.padding-top {
+  @media all and (max-width: 785px) {
+    padding-top: 90px;
+  }
+  padding-top: 110px;
+}
+
 //globals
+.hidden {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  max-height: 0;
+  @include medium {
+    display: none !important;
+    opacity: 1;
+  }
+}
+
+.hidden-plus-minus {
+  display: none !important;
+}
+
+.mobile-remove {
+  display: none !important;
+  @include medium {
+    display: block;
+  }
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -26,7 +58,6 @@
 }
 
 // invester portal form
-
 .membership-wrapper {
   display: flex;
   flex-direction: column;
@@ -38,7 +69,6 @@
     @include medium {
       flex-direction: row;
     }
-
     input {
       margin: 0 10px;
       min-height: 40px;
@@ -58,9 +88,185 @@
       box-shadow: none;
       min-width: 180px;
       border-radius: 3px;
-      font-size: 16px;
+      font-size: 22px;
       letter-spacing: 2px;
       text-transform: uppercase;
+      border: 0;
+      &:hover {
+        background-color: darken($color__green, 5%);
+        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69), 0px 10px 13px -8px rgba(0, 0, 0, 0.73);
+      }
+    }
+  }
+}
+
+// registration form
+.page-template-registration {
+  .entry-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 400px;
+  }
+  .error {
+    text-align: center;
+    max-width: 90%;
+    margin-bottom: 20px;
+    ul {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      color: red;
+    }
+  }
+  .reg-logo-wrapper {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 200px;
+      align-self: center;
+      @include medium {
+        width: 400px;
+      }
+    }
+  }
+  article {
+    padding: 0;
+  }
+  .entry-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    .post-password-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p:first-of-type {
+        font-size: 22px;
+        max-width: 75%;
+        text-align: center;
+      }
+      input {
+        border-radius: 0;
+        min-height: 33px;
+        max-height: 33px;
+      }
+      input[type='submit'] {
+        background: $color__green;
+        color: #fff;
+        box-shadow: none;
+        text-shadow: none;
+        min-width: 100px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-top: 10px;
+      }
+    }
+  }
+  background: $color__background-grey;
+  .entry-title {
+    display: none;
+  }
+  .swpm-registration-widget-form {
+    display: flex;
+    justify-content: center;
+    .swpm-registration-submit {
+      background: $color__green;
+      color: #fff;
+      box-shadow: none;
+      text-shadow: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    input {
+      max-width: 300px;
+    }
+    label {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    .reg-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 220px;
+      justify-content: space-between;
+      @include medium {
+        flex-direction: row;
+      }
+      .registration-form-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .registration-form-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include medium {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+//password reset
+.page-template-password {
+  article {
+    .entry-content {
+      .swpm-reset-pw-success-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        background: none;
+        text-align: center;
+        margin: 0;
+        margin-right: 0 !important;
+      }
+    }
+    .entry-title {
+      color: $color__green;
+    }
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 0;
+    @include eight {
+      background-size: 100% 100%;
+    }
+    .swpm-pw-reset-widget-inside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      label {
+        text-transform: uppercase;
+      }
+      input {
+        max-width: 250px;
+        @include tablet {
+          max-width: 400px;
+        }
+      }
+      .swpm-pw-reset-submit {
+        background: $color__green;
+        color: #fff;
+        box-shadow: none;
+        text-shadow: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
     }
   }
 }

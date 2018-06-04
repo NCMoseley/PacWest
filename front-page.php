@@ -21,11 +21,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<header class="banner-section">
+
+			<header class="banner-section <?php echo wp_is_mobile() ? '' : 'parallax-low' ?>">
 				<div class="banner-section-img-wrapper">
 					<img src="<?php echo $logo ?>" alt="Pacwest Logo">
 				</div>
-				
 				<h1>
 					<?php echo $banner_text ?>
 				</h1>
@@ -45,27 +45,31 @@ get_header(); ?>
 					<h2 class="front-h2">The <span>Pacwest</span> Difference</h2>
 				</div>
 				<div class="pacwest-difference-card-wrapper">
-					<div class="card">
-						<img src="<?php echo get_field('icon_1') ?>" alt="Icon">
-						<p><?php echo get_field('text_1') ?></p>
-					</div>
-					<div class="card">
-						<img src="<?php echo get_field('icon_2') ?>" alt="Icon">
+						<a class="card" href="<?php echo esc_url(home_url('/about/#management-team')); ?>" >
+							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-balance.png" 	alt="Icon-Balance">
+							<p><?php echo get_field('text_1') ?></p>
+						</a>
+					<a href="<?php echo esc_url(home_url('/about/#technologies')); ?>" class="card difference-white-icon">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-lab-dark.png" alt="Icon-Lab-Dark">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-lab.png" alt="Icon-Lab">
 						<p><?php echo get_field('text_2') ?></p>
-					</div>
-					<div class="card">
-						<img src="<?php echo get_field('icon_3') ?>" alt="Icon">
+					</a>
+					<a href="<?php echo esc_url(home_url('/about/#strategic-alliances')); ?>" class="card">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-hands.png" alt="Icon-Hands">
 						<p><?php echo get_field('text_3') ?></p>
-					</div>
-					<div class="card">
-						<img src="<?php echo get_field('icon_4') ?>" alt="Icon">
+					</a>
+					<a href="<?php echo esc_url(home_url('/about/')); ?>" class="card difference-white-icon">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-light-dark-01.png" alt="Icon-Light-Dark">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Icons/PNG/pwc-light.png" alt="Icon-Light">
 						<p><?php echo get_field('text_4') ?></p>
-					</div>
+					</a>
 				</div>
 
+				<a href="<?php echo esc_url(home_url('/about/')); ?>">
 				<button class="button-blue">
 					Learn More
 				</button>
+				</a>
 			</section>
 
 			<section class="our-products">
@@ -110,23 +114,25 @@ get_header(); ?>
 
 					<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3 ); $query = new WP_Query($args);?>
 					<?php while ($query->have_posts()) : $query->the_post(); ?>
-					<div class="press-release">
-						<div class="green-vertical-line"></div>
-						<div class="pr-content">
-							<h3>
-								<?php the_title(); ?>
-							</h3>
-							<span>
-								<?php the_time(' F jS, Y') ?>
-							</span>
-						</div>
-						<p>
-							<a href="<?php echo esc_url(home_url('/news/')); ?>">Read More ‣</a>
-						</p>
-					</div>
-					<?php endwhile; ?>
-					<?php wp_reset_query() ?>
-				</div>
+					
+							<div class="press-release">
+								<div class="green-vertical-line"></div>
+								<div class="pr-content">
+									<h3>
+										<a href="<?php echo esc_url(home_url('/news/')); ?>">
+										<?php the_title(); ?>
+										</a>
+									</h3>
+									<span>
+										<?php the_time(' F jS, Y') ?>
+									</span>
+								</div>
+							</div>
+							<?php endwhile; ?>
+							<?php wp_reset_query() ?>
+							</div>
+					
+
 				<a href="<?php echo esc_url(home_url('/news/')); ?>">
 					<button class="button-blue">Read More</button>
 				</a>

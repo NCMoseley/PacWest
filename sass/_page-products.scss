@@ -1,7 +1,12 @@
 .page-template-products {
+  // Todo: remove display: none. 
+  display: none;
   .banner-section {
-    @include eight {
-      height: 40vw;
+    @include desktop {
+      height: 475px;
+    }
+    @media all and (min-width: 1450px) {
+      height: 675px;
     }
     width: 100%;
     margin: 0 auto;
@@ -11,9 +16,12 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../../assets/Stock_Photos/pwc-products.jpg');
+    url('../../assets/Stock_Photos/pwc-products-optimized.jpg');
     color: $color__text-light;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; // background-position: center -50px;
+    // background-attachment: fixed;
     &-img-wrapper {
       width: 100px;
       display: flex;
@@ -46,6 +54,7 @@
       margin: 0 2rem;
       line-height: 30px;
       color: $color__navy;
+      font-size: 20px;
       text-transform: uppercase;
       text-align: center;
       @media all and (max-width: $medium) {
@@ -53,10 +62,20 @@
       }
     }
   }
+  .product-a-intro-section {
+    &-paragraph {
+      font-weight: 400;
+    }
+  }
   .product-b-intro-section,
   .product-c-intro-section {
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    @media all and (max-width: $medium) {
+      background: #fff;
+    }
     &-paragraph {
-      width: 70%;
       color: $color__grey-dark;
       text-transform: none;
     }
@@ -119,9 +138,9 @@
           width: 100%;
         }
         img {
-          width: 80%;
+          width: 100%;
           @media all and (max-width: $medium) {
-            width: 100%;
+            width: 80%;
           }
         }
       }

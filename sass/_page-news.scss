@@ -9,8 +9,11 @@
     }
   }
   .banner-section {
-    @include eight {
-      height: 40vw;
+    @include desktop {
+      height: 475px;
+    }
+    @media all and (min-width: 1450px) {
+      height: 675px;
     }
     width: 100%;
     margin: 0 auto;
@@ -20,9 +23,12 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../../assets/Stock_Photos/pwc-news.jpg');
+    url('../../assets/Stock_Photos/pwc-news-optimized.jpg');
     color: $color__text-light;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; // background-position: center -50px;
+    // background-attachment: fixed;
     &-img-wrapper {
       width: 100px;
       display: flex;
@@ -50,6 +56,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    @media all and (max-width: $medium) {
+      background: #fff;
+    }
   }
   .news-items-wrapper {
     width: 85%;
@@ -79,12 +91,22 @@
         width: 80%;
         padding: 5px;
         background-color: $color__navy;
-        color: white;
+        color: #fff;
         @media all and (max-width: 550px) {
           width: 90%;
         }
+        a {
+          color: #fff;
+          &:hover {
+            color: $color__green !important;
+          }
+          &:visited {
+            color: #fff;
+          }
+        }
         h3 {
           margin: 0;
+          font-weight: 300;
         }
       }
     }
@@ -97,6 +119,10 @@
       border-radius: 3px;
       text-transform: uppercase;
       cursor: pointer;
+      &:hover {
+        background-color: darken($color__green, 5%);
+        box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, .19), 0px 10px 13px -8px rgba(0, 0, 0, .23);
+      }
       @media all and (max-width: 930px) {
         right: 0;
       }
@@ -113,7 +139,8 @@
       }
     }
     &-body {
-      height: 30px;
+      height: auto;
+      max-height: 38px;
       overflow: hidden;
       @media all and (max-width: 550px) {
         width: 90%;
@@ -123,6 +150,7 @@
     &-expand-link {
       width: 100%;
       text-align: center;
+      cursor: pointer;
     }
   }
 }

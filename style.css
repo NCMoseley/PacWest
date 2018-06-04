@@ -290,7 +290,8 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  background: #f2f2f1; }
 
 *,
 *:before,
@@ -301,11 +302,16 @@ html {
 
 body {
   background: #fff;
+  max-width: 2000px;
+  margin: 0 auto;
   /* Fallback for when there is no custom background color defined. */ }
 
-blockquote, q {
+blockquote,
+q {
   quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
+  blockquote:before, blockquote:after,
+  q:before,
+  q:after {
     content: ""; }
 
 hr {
@@ -314,7 +320,8 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul, ol {
+ul,
+ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
@@ -388,15 +395,18 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
+input,
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px; }
+  border-radius: 3px;
+  padding: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
   input[type="search"]:focus,
+  input:focus,
   textarea:focus {
     color: #111; }
 
@@ -417,14 +427,29 @@ textarea {
 #toggle {
   display: none; }
 
+.site-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23); }
+
+.page {
+  padding-top: 60px; }
+  @media all and (max-width: 785px) {
+    .page {
+      padding-top: 50px; } }
+
 @media (max-width: 750px) {
   .toggle-container .button-toggle {
     position: absolute;
     z-index: 10;
-    left: 35%;
+    left: 60%;
     display: inline-block;
-    width: 70px;
-    height: 20px;
+    width: 75px;
+    height: 40px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -432,32 +457,9 @@ textarea {
     transition: 0.6s; } }
   @media all and (max-width: 750px) and (max-width: 450px) {
     .toggle-container .button-toggle {
-      left: 20%; } }
+      left: 30%; } }
 
 @media (max-width: 750px) {
-  .menu-close {
-    width: 100%;
-    height: 30px;
-    cursor: pointer; }
-  .left-x,
-  .right-x {
-    position: absolute;
-    content: '';
-    top: 30px;
-    right: 30px;
-    width: 20px;
-    height: 2px;
-    background-color: #0a2d5d;
-    border-radius: 5px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    opacity: 0; }
-  .left-x {
-    -webkit-transform: translateY(-50%) rotate(45deg);
-            transform: translateY(-50%) rotate(45deg); }
-  .right-x {
-    -webkit-transform: translateY(-50%) rotate(-45deg);
-            transform: translateY(-50%) rotate(-45deg); }
   .menu-menu-1-container {
     position: static;
     -webkit-box-pack: end;
@@ -467,51 +469,17 @@ textarea {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important; }
+            flex-direction: column; }
   .menu > .menu-item {
-    position: relative;
-    color: transparent;
-    font-size: 14px;
-    letter-spacing: -1.2px;
-    height: 7px;
-    line-height: 7px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    -webkit-transform: scaleY(0.2);
-            transform: scaleY(0.2);
-    -webkit-transition: 0.5s, opacity 1s;
-    transition: 0.5s, opacity 1s; }
-    .menu > .menu-item:nth-child(n + 4) {
-      letter-spacing: -8px;
-      margin-top: -7px;
-      opacity: 0; }
-    .menu > .menu-item:before {
-      position: absolute;
-      content: '';
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background-color: #0a2d5d;
-      -webkit-transform: translateY(-50%) scaleY(5);
-              transform: translateY(-50%) scaleY(5);
-      -webkit-transition: 0.5s;
-      transition: 0.5s; }
+    display: none; }
   .expanded {
     opacity: 1; }
-  #toggle:checked .toggle-container .button-toggle .left-x {
-    -webkit-transform: translateY(-50%) rotate(45deg);
-            transform: translateY(-50%) rotate(45deg); }
-  #toggle:checked .toggle-container .button-toggle .right-x {
-    -webkit-transform: translateY(-50%) rotate(-45deg);
-            transform: translateY(-50%) rotate(-45deg); }
   #toggle:checked ~ .menu-menu-1-container {
-    position: static;
+    position: absolute;
+    top: 45px;
+    right: -48px;
     background: white;
-    width: 100%;
+    width: 250px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -521,8 +489,17 @@ textarea {
     -webkit-transition: width 0.5s;
     transition: width 0.5s; }
   #toggle:checked ~ .menu-menu-1-container .menu {
-    padding: 5rem 0; }
-    #toggle:checked ~ .menu-menu-1-container .menu li {
+    padding: 3rem 0; } }
+  @media all and (max-width: 750px) and (max-width: 750px) {
+    #toggle:checked ~ .menu-menu-1-container .menu {
+      width: 200px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+@media (max-width: 750px) {
+    #toggle:checked ~ .menu-menu-1-container .menu > li {
+      display: block;
       letter-spacing: 0;
       height: 40px;
       line-height: 40px;
@@ -532,9 +509,19 @@ textarea {
               transform: scaleY(1);
       -webkit-transition: 0.5s, opacity 0.1s;
       transition: 0.5s, opacity 0.1s; }
-      #toggle:checked ~ .menu-menu-1-container .menu li:before {
+      #toggle:checked ~ .menu-menu-1-container .menu > li:before {
         opacity: 0;
         width: 0; } }
+
+.hamburger--slider {
+  background: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border: none; }
+  @media all and (min-width: 750px) {
+    .hamburger--slider {
+      display: none; } }
 
 .login-prompt {
   display: none; }
@@ -602,7 +589,9 @@ textarea {
       margin: 0 !important;
       font-size: 10px; }
       .investor-nav .membership-wrapper .email-password .swpm-login-submit .swpm-login-form-submit {
-        font-size: 10px; }
+        font-size: 10px;
+        margin-top: 2px;
+        padding-bottom: 17px; }
         @media all and (max-width: 680px) {
           .investor-nav .membership-wrapper .email-password .swpm-login-submit .swpm-login-form-submit {
             margin: 3px 0 !important;
@@ -635,7 +624,14 @@ textarea {
       letter-spacing: 1px;
       font-size: 12px; }
 
+.logged-in.admin-bar div.nav-wrapper {
+  margin-top: 33px; }
+  @media all and (max-width: 784px) {
+    .logged-in.admin-bar div.nav-wrapper {
+      margin-top: 46px; } }
+
 .nav-wrapper {
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,19 +640,34 @@ textarea {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-color: #fff; }
   .nav-wrapper .logo-container {
     width: 100px;
     margin: 10px 0 10px 2rem; }
+    .nav-wrapper .logo-container a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .nav-wrapper .logo-container img {
       width: 100%; }
   .nav-wrapper nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 6rem; }
+    @media all and (max-width: 1000px) {
+      .nav-wrapper nav {
+        margin-right: 3rem; } }
+    @media all and (max-width: 600px) {
+      .nav-wrapper nav {
+        margin-right: 2rem; } }
     .nav-wrapper nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -689,8 +700,10 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 70%; }
+  width: 60%; }
+  .main-navigation a:hover {
+    font-weight: 500;
+    color: #00c860; }
   @media all and (max-width: 900px) {
     .main-navigation {
       position: relative;
@@ -698,19 +711,53 @@ a {
   @media all and (max-width: 750px) {
     .main-navigation {
       width: 30%; } }
+  .main-navigation .current-menu-item > a {
+    color: #00c860; }
   .main-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
+    .main-navigation ul .menu-item-163 {
+      height: auto !important; }
+      @media all and (max-width: 750px) {
+        .main-navigation ul .menu-item-163 > a {
+          text-align: center;
+          pointer-events: none; } }
     .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
+      padding: 1rem 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
-      z-index: 99999; }
+      z-index: 99999;
+      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      background: #fff; }
+      @media all and (max-width: 750px) {
+        .main-navigation ul ul {
+          display: none;
+          margin-bottom: 3rem;
+          padding: 0;
+          border-top: 1px solid #00c860;
+          position: relative;
+          left: 0;
+          top: 0; } }
+      .main-navigation ul ul li a:hover {
+        color: #00c860; }
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
@@ -719,6 +766,14 @@ a {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
+        @media all and (max-width: 750px) {
+          .main-navigation ul ul a {
+            width: 150px; } }
+      @media all and (max-width: 750px) {
+        .main-navigation ul ul .menu-item-244 a {
+          line-height: 1.45;
+          padding-top: 10px;
+          padding-bottom: 8px; } }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -729,7 +784,6 @@ a {
     display: block;
     text-decoration: none; }
 
-/* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block; }
@@ -931,6 +985,34 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.investor-logged-in {
+  margin-top: -32px; }
+
+.padding-top {
+  padding-top: 110px; }
+  @media all and (max-width: 785px) {
+    .padding-top {
+      padding-top: 90px; } }
+
+.hidden {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
+  max-height: 0; }
+  @media all and (min-width: 750px) {
+    .hidden {
+      display: none !important;
+      opacity: 1; } }
+
+.hidden-plus-minus {
+  display: none !important; }
+
+.mobile-remove {
+  display: none !important; }
+  @media all and (min-width: 750px) {
+    .mobile-remove {
+      display: block; } }
+
 .uppercase {
   text-transform: uppercase; }
 
@@ -1011,9 +1093,234 @@ object {
               box-shadow: none;
       min-width: 180px;
       border-radius: 3px;
-      font-size: 16px;
+      font-size: 22px;
       letter-spacing: 2px;
+      text-transform: uppercase;
+      border: 0; }
+      .membership-wrapper .email-password .swpm-login-form-submit:hover {
+        background-color: #00af54;
+        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69), 0px 10px 13px -8px rgba(0, 0, 0, 0.73);
+                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.69), 0px 10px 13px -8px rgba(0, 0, 0, 0.73); }
+
+.page-template-registration {
+  background: #f2f2f1; }
+  .page-template-registration .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    min-height: 400px; }
+  .page-template-registration .error {
+    text-align: center;
+    max-width: 90%;
+    margin-bottom: 20px; }
+    .page-template-registration .error ul {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      color: red; }
+  .page-template-registration .reg-logo-wrapper {
+    padding-top: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-template-registration .reg-logo-wrapper img {
+      width: 200px;
+      -ms-flex-item-align: center;
+          align-self: center; }
+      @media all and (min-width: 750px) {
+        .page-template-registration .reg-logo-wrapper img {
+          width: 400px; } }
+  .page-template-registration article {
+    padding: 0; }
+  .page-template-registration .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 400px; }
+    .page-template-registration .entry-content .post-password-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .page-template-registration .entry-content .post-password-form p:first-of-type {
+        font-size: 22px;
+        max-width: 75%;
+        text-align: center; }
+      .page-template-registration .entry-content .post-password-form input {
+        border-radius: 0;
+        min-height: 33px;
+        max-height: 33px; }
+      .page-template-registration .entry-content .post-password-form input[type='submit'] {
+        background: #00c860;
+        color: #fff;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        text-shadow: none;
+        min-width: 100px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-top: 10px; }
+  .page-template-registration .entry-title {
+    display: none; }
+  .page-template-registration .swpm-registration-widget-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-template-registration .swpm-registration-widget-form .swpm-registration-submit {
+      background: #00c860;
+      color: #fff;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      text-shadow: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .page-template-registration .swpm-registration-widget-form input {
+      max-width: 300px; }
+    .page-template-registration .swpm-registration-widget-form label {
+      text-transform: uppercase;
+      font-size: 14px; }
+    .page-template-registration .swpm-registration-widget-form .reg-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      min-height: 220px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media all and (min-width: 750px) {
+        .page-template-registration .swpm-registration-widget-form .reg-wrapper {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+      .page-template-registration .swpm-registration-widget-form .reg-wrapper .registration-form-left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+      .page-template-registration .swpm-registration-widget-form .reg-wrapper .registration-form-right {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        @media all and (min-width: 750px) {
+          .page-template-registration .swpm-registration-widget-form .reg-wrapper .registration-form-right {
+            margin-left: 20px; } }
+
+.page-template-password article {
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+  padding: 0; }
+  .page-template-password article .entry-content .swpm-reset-pw-success-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    background: none;
+    text-align: center;
+    margin: 0;
+    margin-right: 0 !important; }
+  .page-template-password article .entry-title {
+    color: #00c860; }
+  @media all and (min-width: 800px) {
+    .page-template-password article {
+      background-size: 100% 100%; } }
+  .page-template-password article .swpm-pw-reset-widget-inside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-password article .swpm-pw-reset-widget-inside label {
       text-transform: uppercase; }
+    .page-template-password article .swpm-pw-reset-widget-inside input {
+      max-width: 250px; }
+      @media all and (min-width: 600px) {
+        .page-template-password article .swpm-pw-reset-widget-inside input {
+          max-width: 400px; } }
+    .page-template-password article .swpm-pw-reset-widget-inside .swpm-pw-reset-submit {
+      background: #00c860;
+      color: #fff;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      text-shadow: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
 
 .page-template-front-page .front-h2 {
   font-size: 2rem;
@@ -1022,6 +1329,7 @@ object {
   text-align: center; }
 
 .page-template-front-page .banner-section {
+  height: 600px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -1038,15 +1346,20 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-images-home.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-images-home.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-home-optimized-2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-home-optimized-2.jpg");
   color: #fff;
-  background-size: cover; }
-  @media all and (min-width: 800px) {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  @media all and (min-width: 1000px) {
     .page-template-front-page .banner-section {
-      height: 40vw; } }
+      height: 520px; } }
+  @media all and (min-width: 1450px) {
+    .page-template-front-page .banner-section {
+      height: 675px; } }
   .page-template-front-page .banner-section-img-wrapper {
-    width: 200px;
+    width: 320px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1057,7 +1370,8 @@ object {
         -ms-flex-align: center;
             align-items: center; }
     .page-template-front-page .banner-section-img-wrapper img {
-      width: 100%; }
+      width: 320px;
+      height: 168px; }
   .page-template-front-page .banner-section h1 {
     width: 60%;
     margin: 0 auto;
@@ -1083,7 +1397,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #eee; }
+  background-color: #f2f2f1; }
   @media all and (max-width: 600px) {
     .page-template-front-page .intro-section {
       padding: 3rem 0;
@@ -1095,10 +1409,12 @@ object {
     width: 50%;
     margin: 0 2rem;
     line-height: 30px;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 20px; }
     @media all and (max-width: 600px) {
       .page-template-front-page .intro-section-paragraph {
-        width: 90%; } }
+        width: 90%;
+        font-size: 16px; } }
   .page-template-front-page .intro-section-img-wrapper {
     max-width: 150px;
     margin: 1rem 5rem 1rem 1rem; }
@@ -1123,7 +1439,13 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #333333; }
+  color: #333333;
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
+  @media all and (max-width: 750px) {
+    .page-template-front-page .pacwest-difference {
+      background: #fff; } }
   .page-template-front-page .pacwest-difference h2 > span {
     color: #00c860; }
   .page-template-front-page .pacwest-difference-card-wrapper {
@@ -1160,10 +1482,11 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      background-color: #eee;
+      background-color: #f2f2f1;
       text-transform: uppercase;
       font-weight: 300;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      text-decoration: none; }
       @media all and (max-width: 900px) {
         .page-template-front-page .pacwest-difference-card-wrapper .card {
           margin: 1rem; } }
@@ -1181,6 +1504,67 @@ object {
         @media all and (max-width: 950px) {
           .page-template-front-page .pacwest-difference-card-wrapper .card p {
             width: 90%; } }
+      .page-template-front-page .pacwest-difference-card-wrapper .card:hover {
+        background-color: #00c860;
+        color: #fff;
+        -webkit-transform: scale(1.01);
+                transform: scale(1.01);
+        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+    .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon {
+      max-width: 200px;
+      margin: 0 1rem;
+      padding: 2rem 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: #f2f2f1;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 3px;
+      text-decoration: none;
+      color: #404040; }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon img:nth-child(2) {
+        display: none; }
+      @media all and (max-width: 900px) {
+        .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon {
+          margin: 1rem; } }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon:nth-child(odd) {
+        color: white;
+        background-color: #0a2d5d; }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon a {
+        text-align: center; }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon img {
+        width: 50px;
+        height: 50px; }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon p {
+        text-decoration: none;
+        margin: 5px auto;
+        text-align: center; }
+        @media all and (max-width: 950px) {
+          .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon p {
+            width: 90%; } }
+      .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon:hover {
+        background-color: #00c860;
+        color: #fff;
+        -webkit-transform: scale(1.01);
+                transform: scale(1.01);
+        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+        .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon:hover img:nth-child(1) {
+          display: none; }
+        .page-template-front-page .pacwest-difference-card-wrapper .card.difference-white-icon:hover img:nth-child(2) {
+          display: inline; }
   .page-template-front-page .pacwest-difference .learn-more {
     margin: 1rem auto;
     width: 210px;
@@ -1210,12 +1594,15 @@ object {
     text-transform: uppercase;
     text-shadow: none; }
     .page-template-front-page .pacwest-difference .button-blue:hover {
-      background-color: #082246; }
+      background-color: #082246;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+    .page-template-front-page .pacwest-difference .button-blue:hover {
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .page-template-front-page .our-products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1266,6 +1653,8 @@ object {
         width: 90%; } }
   .page-template-front-page .our-products-content-header {
     text-align: center; }
+  .page-template-front-page .our-products-content-copy {
+    text-align: center; }
   .page-template-front-page .our-products .button-blue {
     margin: 1rem auto;
     width: 210px;
@@ -1282,11 +1671,23 @@ object {
     text-transform: uppercase;
     text-shadow: none; }
     .page-template-front-page .our-products .button-blue:hover {
-      background-color: #082246; }
+      background-color: #082246;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+    .page-template-front-page .our-products .button-blue:hover {
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .investor-portal {
   padding: 3rem 0;
   background-color: #f1f1f1; }
+  .investor-portal div.wpcf7 {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px; }
+  .investor-portal-mail-sent-ok {
+    border: 2px solid #398f14;
+    margin: auto; }
   .investor-portal-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1306,7 +1707,8 @@ object {
       color: #333333; }
     .investor-portal-content-copy {
       width: 65%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      text-align: center; }
       @media all and (max-width: 700px) {
         .investor-portal-content-copy {
           width: 50%; } }
@@ -1314,16 +1716,18 @@ object {
         .investor-portal-content-copy {
           width: 90%; } }
   .investor-portal form {
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    .investor-portal form .wpcf7-response-output {
+      border: none; }
     @media all and (max-width: 500px) {
       .investor-portal form {
         width: 100%; } }
@@ -1333,7 +1737,7 @@ object {
     @media all and (max-width: 500px) {
       .investor-portal form input {
         width: 90%; } }
-    .investor-portal form input[type="submit"] {
+    .investor-portal form input[type='submit'] {
       margin: 1rem auto;
       width: 210px;
       padding: 15px 30px;
@@ -1341,16 +1745,17 @@ object {
       -webkit-box-shadow: none;
               box-shadow: none;
       color: white;
-      background-color: #0a2d5d;
+      background-color: #00c860;
       border: none;
       border-radius: 5px;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
-      text-shadow: none;
-      background-color: #00c860; }
-      .investor-portal form input[type="submit"]:hover {
-        background-color: #082246; }
+      text-shadow: none; }
+      .investor-portal form input[type='submit']:hover {
+        background-color: #00af54;
+        -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+                box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
     .investor-portal form p {
       margin: 1rem;
       display: -webkit-box;
@@ -1365,7 +1770,8 @@ object {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      width: 335px; }
 
 /* ================== Press Releases ================= */
 .press-releases-wrapper {
@@ -1398,9 +1804,15 @@ object {
     text-shadow: none;
     text-align: center; }
     .press-releases-wrapper .button-blue:hover {
-      background-color: #082246; }
+      background-color: #082246;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+    .press-releases-wrapper .button-blue:hover {
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   .press-releases-wrapper a {
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-decoration: none; }
 
 .press-releases-title {
   font-weight: 700;
@@ -1411,8 +1823,8 @@ object {
     color: #00c860; }
 
 .press-releases-container {
-  width: 80%;
-  margin: 0 auto 0 auto;
+  width: 90%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1427,7 +1839,7 @@ object {
   @media all and (max-width: 950px) {
     .press-releases-container {
       width: 90%; } }
-  @media all and (max-width: 850px) {
+  @media all and (max-width: 950px) {
     .press-releases-container {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1473,49 +1885,34 @@ object {
     color: #ffffff;
     text-align: left;
     margin: 0;
-    margin-bottom: 30px;
-    opacity: 1;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s; }
+    margin-bottom: 30px; }
   .press-release span {
     display: inline;
     font-size: 17px;
     font-weight: 500;
     color: #fff;
     text-align: left;
-    text-transform: uppercase;
-    opacity: 1;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s; }
-  .press-release p {
-    position: absolute;
-    padding-left: 5%;
-    padding-bottom: 40px;
-    color: #fff;
-    opacity: 0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s; }
-
-.press-release:hover h3 {
-  opacity: 0; }
-
-.press-release:hover span {
-  opacity: 0; }
-
-.press-release:hover p {
-  opacity: 1;
-  font-size: 24px; }
+    text-transform: uppercase; }
 
 .press-release:nth-child(2) {
-  background-color: #ccc; }
+  background-color: #f2f2f1; }
   .press-release:nth-child(2) h3 {
     color: #404040; }
   .press-release:nth-child(2) span {
-    color: #404040;
-    font-weight: bold; }
+    color: #404040; }
   .press-release:nth-child(2) a {
-    color: #404040;
-    font-weight: bold; }
+    color: #404040; }
+
+.press-release:hover {
+  background-color: #00c860;
+  -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+  .press-release:hover .green-vertical-line {
+    background-color: #fff; }
+  .press-release:hover h3 a {
+    color: #fff; }
+  .press-release:hover span {
+    color: #fff; }
 
 .sub-footer {
   display: -webkit-box;
@@ -1533,7 +1930,7 @@ object {
               flex-direction: row;
       height: 50vw; } }
   .sub-footer .sub-footer-text {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 52px;
     font-weight: 500;
     letter-spacing: 5px;
@@ -1560,11 +1957,11 @@ object {
 
 .sub-footer-contact-us-today {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-contact-box.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-contact-box.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.6)), to(rgba(21, 52, 92, 0.6))), url("../../assets/Stock_Photos/pwc-contact-box-optimized.jpg");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.6), rgba(21, 52, 92, 0.6)), url("../../assets/Stock_Photos/pwc-contact-box-optimized.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 0% 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1579,12 +1976,18 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding: 5%; }
+  .sub-footer-contact-us-today:hover {
+    background-image: url("../../assets/Stock_Photos/pwc-contact-box-optimized.jpg");
+    -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+            box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   .sub-footer-contact-us-today h1 {
     font-size: 42px;
     width: 280px; }
     @media all and (min-width: 600px) {
       .sub-footer-contact-us-today h1 {
         width: 365px; } }
+    .sub-footer-contact-us-today h1:hover {
+      text-shadow: 2px 2px 8px #404040; }
   .sub-footer-contact-us-today .button-white {
     width: 256px;
     padding: 15px 30px;
@@ -1604,12 +2007,20 @@ object {
     margin-left: 0;
     margin-right: 0; }
     .sub-footer-contact-us-today .button-white:hover {
-      background-color: #d9d9d9; }
+      background-color: #d9d9d9;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+    .sub-footer-contact-us-today .button-white:hover {
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .sub-footer-contact-us-today-line {
   width: 250px;
   height: 6px;
-  background-color: #FFFFFF; }
+  background-color: #ffffff; }
+  .sub-footer-contact-us-today-line:hover {
+    -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+            box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   @media all and (min-width: 750px) {
     .sub-footer-contact-us-today-line {
       width: 350px; } }
@@ -1637,7 +2048,8 @@ object {
 
 .sub-footer-faq {
   height: 100%;
-  background-image: url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.5)), to(rgba(21, 52, 92, 0.5))), url("../../assets/Stock_Photos/pwc-boxes-faq-optimized.jpg");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url("../../assets/Stock_Photos/pwc-boxes-faq-optimized.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1655,10 +2067,17 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-faq h1:hover {
+    text-shadow: 2px 2px 8px #404040; }
+  .sub-footer-faq:hover {
+    background-image: url("../../assets/Stock_Photos/pwc-boxes-faq-optimized.jpg");
+    -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+            box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .sub-footer-investors {
   height: 100%;
-  background-image: url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.5)), to(rgba(21, 52, 92, 0.5))), url("../../assets/Stock_Photos/pwc-boxes-investors-optimized.jpg");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url("../../assets/Stock_Photos/pwc-boxes-investors-optimized.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1676,10 +2095,17 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-investors h1:hover {
+    text-shadow: 2px 2px 8px #404040; }
+  .sub-footer-investors:hover {
+    background-image: url("../../assets/Stock_Photos/pwc-boxes-investors-optimized.jpg");
+    -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+            box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .sub-footer-products {
   height: 100%;
-  background-image: url("../../assets/Stock_Photos/pwc-products.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 52, 92, 0.5)), to(rgba(21, 52, 92, 0.5))), url("../../assets/Stock_Photos/pwc-products-optimized.jpg");
+  background-image: linear-gradient(rgba(21, 52, 92, 0.5), rgba(21, 52, 92, 0.5)), url("../../assets/Stock_Photos/pwc-products-optimized.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1697,397 +2123,113 @@ object {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px; }
+  .sub-footer-products h1:hover {
+    text-shadow: 2px 2px 8px #a0a5aa; }
+  .sub-footer-products:hover {
+    background-image: url("../../assets/Stock_Photos/pwc-products-optimized.jpg");
+    -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+            box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+    .sub-footer-products:hover h1.products-text {
+      color: #0a2d5d; }
   .sub-footer-products h1.products-text {
-    color: #0a2d5d;
-    -webkit-text-stroke: 1px #fff; }
+    color: #fff; }
+    .sub-footer-products h1.products-text:hover {
+      color: #0a2d5d; }
 
-.page-template-about h1 {
-  letter-spacing: 2px; }
+.page-templatea-about,
+.about-menu {
+  position: fixed;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23); }
 
-.page-template-about .hentry {
-  display: none; }
+.logged-in {
+  padding-top: 60px !important; }
+  .logged-in .about-menu {
+    position: fixed;
+    top: 60px !important;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23); }
+    @media all and (max-width: 330px) {
+      .logged-in .about-menu {
+        padding-bottom: 20px; } }
+  .logged-in .about-content-wrap {
+    margin-top: 100px; }
+    @media all and (min-width: 800px) {
+      .logged-in .about-content-wrap {
+        margin-top: 50px; } }
 
-.page-template-about .entry-title {
-  display: none; }
-
-.page-template-about .about-wrapper .about-menu {
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100px;
-  background: #00c860;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  @media all and (min-width: 1000px) {
-    .page-template-about .about-wrapper .about-menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      height: 70px;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; } }
-  .page-template-about .about-wrapper .about-menu ul {
-    margin: 0;
-    margin-top: 20px;
-    min-height: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+.page-template-about {
+  padding-top: 87px; }
+  .page-template-about .about-content-wrap {
+    margin-top: 95px; }
+    @media all and (min-width: 800px) {
+      .page-template-about .about-content-wrap {
+        margin-top: 58px; } }
+  .page-template-about h1 {
+    letter-spacing: 2px; }
+  .page-template-about .hentry {
+    display: none; }
+  .page-template-about .entry-title {
+    display: none; }
+  .page-template-about .about-wrapper .about-menu {
+    position: fixed;
+    top: 109px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: #00c860;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%; }
-    @media all and (min-width: 1000px) {
-      .page-template-about .about-wrapper .about-menu ul {
-        margin-top: 0;
-        width: 70%;
-        min-height: 50px;
-        margin-right: 1%; } }
-    @media all and (min-width: 1200px) {
-      .page-template-about .about-wrapper .about-menu ul {
-        width: 65%; } }
-    .page-template-about .about-wrapper .about-menu ul li {
-      text-transform: uppercase;
-      list-style: none;
-      margin: 0 8px;
-      color: #fff; }
-  .page-template-about .about-wrapper .about-menu a {
-    text-decoration: none; }
-
-.page-template-about .about-wrapper .banner-section {
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-about.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-about.jpg");
-  color: #fff;
-  background-size: cover; }
-  @media all and (min-width: 800px) {
-    .page-template-about .about-wrapper .banner-section {
-      height: 40vw; } }
-  .page-template-about .about-wrapper .banner-section-img-wrapper {
-    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .page-template-about .about-wrapper .banner-section-img-wrapper img {
-      width: 100%; }
-  .page-template-about .about-wrapper .banner-section h1 {
-    color: #fff;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    text-transform: uppercase; }
-
-.page-template-about .about-wrapper .about-our-company {
-  width: 100%;
-  min-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0; }
-  .page-template-about .about-wrapper .about-our-company h1 {
-    color: #333333;
-    font-family: "Roboto", Arial, Helvetica, sans-serif; }
-  .page-template-about .about-wrapper .about-our-company p {
-    text-align: center;
-    max-width: 75%;
-    color: #333333;
-    font-family: "Roboto", Arial, Helvetica, sans-serif; }
-
-.page-template-about .about-wrapper .about-our-vision {
-  width: 100%;
-  min-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  @media all and (min-width: 800px) {
-    .page-template-about .about-wrapper .about-our-vision {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; } }
-  .page-template-about .about-wrapper .about-our-vision .our-vision-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: 350px;
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-    background: #f2f2f1;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; }
+    height: 100px; }
     @media all and (min-width: 800px) {
-      .page-template-about .about-wrapper .about-our-vision .our-vision-text {
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1; } }
-    .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper {
-      color: #333333;
-      height: 300px;
-      width: 300px;
-      max-height: 200px; }
-      .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper .about-vision {
-        display: block;
-        font-size: 30px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 2px; }
-  .page-template-about .about-wrapper .about-our-vision .our-vision-image {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
-    max-height: 400px; }
-    @media all and (min-width: 800px) {
-      .page-template-about .about-wrapper .about-our-vision .our-vision-image {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2; } }
-    .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
-      height: auto;
-      width: auto; }
-      @media all and (min-width: 800px) {
-        .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
-          max-height: 400px;
-          min-height: 400px;
-          width: 100%; } }
-
-.page-template-about .about-wrapper .about-team {
-  min-height: 600px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 0; }
-  .page-template-about .about-wrapper .about-team h1 {
-    color: #333333; }
-  .page-template-about .about-wrapper .about-team .about-team-para {
-    max-width: 75%; }
-    .page-template-about .about-wrapper .about-team .about-team-para p {
-      text-align: center;
-      color: #333333; }
-  .page-template-about .about-wrapper .about-team .team-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 90%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 20px 0; }
-    @media all and (min-width: 800px) {
-      .page-template-about .about-wrapper .about-team .team-wrapper {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; } }
-    .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-      margin: 10px 10px;
-      max-width: 350px;
-      min-width: 350px;
-      max-height: 200px;
-      min-height: 200px;
-      overflow: hidden;
+      .page-template-about .about-wrapper .about-menu {
+        height: 60px; } }
+    .page-template-about .about-wrapper .about-menu ul {
+      margin: 0 1%;
+      padding-left: 0 !important;
+      margin-top: 20px;
+      min-height: 50px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
-      @media all and (min-width: 600px) {
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-          max-width: 500px;
-          min-width: 500px; } }
-      @media all and (min-width: 800px) {
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-          -ms-flex-preferred-size: 50%;
-              flex-basis: 50%;
-          max-width: 335px;
-          min-width: 335px; } }
-      @media all and (min-width: 950px) {
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-          max-width: 400px;
-          min-width: 400px; } }
-      @media all and (min-width: 1000px) {
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-          max-width: 450px;
-          min-width: 450px;
-          margin: 10px 0px; } }
-      @media all and (min-width: 1200px) {
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
-          max-width: 530px;
-          min-width: 530px;
-          margin: 10px 0; } }
-      .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot {
-        -ms-flex-preferred-size: 30%;
-            flex-basis: 30%;
-        max-height: 200px;
-        min-width: 140px;
-        border: 1px solid black; }
-      .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -ms-flex-preferred-size: 70%;
-            flex-basis: 70%;
-        margin: 3px 2%;
-        max-height: 172px;
-        overflow: hidden; }
-        @media all and (min-width: 600px) {
-          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
-            max-height: 162px; } }
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
-          margin: 0;
-          color: #0a2d5d;
-          font-size: 16px;
-          letter-spacing: 2px; }
-          @media all and (min-width: 600px) {
-            .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
-              font-size: 20px; } }
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
-          color: #c3c3c3;
-          margin-bottom: 50px;
-          letter-spacing: 2px; }
-          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
-            margin-top: 5px;
-            font-size: 20px;
-            color: #0a2d5d; }
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-bio {
-          margin-top: 14px; }
-        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-close {
-          margin-top: 5px;
-          -ms-flex-item-align: center;
-              align-self: center; }
-          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-close i {
-            font-size: 20px;
-            color: #0a2d5d; }
-
-.page-template-about .about-wrapper .about-alliances {
-  background: #f2f2f1;
-  min-height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .page-template-about .about-wrapper .about-alliances h1 {
-    padding-top: 15px; }
-  .page-template-about .about-wrapper .about-alliances .alliance-wrapper {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 90%;
-    padding: 20px 0; }
-    .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      padding: 5px 10px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      max-height: 200; }
-      @media all and (min-width: 750px) {
-        .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
-          -ms-flex-preferred-size: 25%;
-              flex-basis: 25%; } }
-      .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo img {
-        max-height: 190px;
-        margin: 0 auto;
-        -ms-flex-item-align: center;
-            align-self: center; }
-
-.page-template-about .about-wrapper .facilities-technology {
-  border: 1px solid black;
-  min-height: 700px; }
-  .page-template-about .about-wrapper .facilities-technology .facilities {
+      width: 100%; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .about-menu ul {
+          margin-top: 0;
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
+          margin-right: 3rem; } }
+      @media all and (min-width: 1000px) {
+        .page-template-about .about-wrapper .about-menu ul {
+          margin-right: 6.5rem; } }
+      .page-template-about .about-wrapper .about-menu ul li {
+        text-transform: uppercase;
+        list-style: none;
+        margin: 0 8px;
+        color: #fff;
+        font-weight: 300; }
+    .page-template-about .about-wrapper .about-menu a {
+      text-decoration: none; }
+  .page-template-about .about-wrapper .banner-section {
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2095,54 +2237,78 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #0a2d5d; }
-    @media all and (min-width: 800px) {
-      .page-template-about .about-wrapper .facilities-technology .facilities {
-        max-height: 500px;
-        min-height: 500px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; } }
-    .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-about-optimized.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-about-optimized.jpg");
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media all and (min-width: 1000px) {
+      .page-template-about .about-wrapper .banner-section {
+        height: 475px; } }
+    @media all and (min-width: 1450px) {
+      .page-template-about .about-wrapper .banner-section {
+        height: 675px; } }
+    .page-template-about .about-wrapper .banner-section-img-wrapper {
+      width: 100px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      color: #fff; }
-      @media all and (min-width: 800px) {
-        .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
-          -webkit-box-pack: start;
-              -ms-flex-pack: start;
-                  justify-content: flex-start;
-          padding-left: 8%; } }
-      .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
-        height: 80%;
-        width: 58%;
-        padding: 20px 0; }
-        @media all and (min-width: 800px) {
-          .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
-            width: 80%; } }
-        @media all and (min-width: 1000px) {
-          .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
-            width: 60%; } }
-    .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
-      .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image img {
-        max-height: 700px;
-        min-height: 500px;
-        -o-object-fit: cover;
-           object-fit: cover; }
-  .page-template-about .about-wrapper .facilities-technology .technologies {
-    background: #0a2d5d;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .page-template-about .about-wrapper .banner-section-img-wrapper img {
+        width: 100%; }
+    .page-template-about .about-wrapper .banner-section h1 {
+      width: 60%;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+  .page-template-about .about-wrapper .about-our-company {
+    background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0; }
+    @media all and (min-width: 800px) {
+      .page-template-about .about-wrapper .about-our-company {
+        background-size: 100% 100%; } }
+    .page-template-about .about-wrapper .about-our-company h1 {
+      color: #333333;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      margin-bottom: 0; }
+    .page-template-about .about-wrapper .about-our-company p {
+      text-align: center;
+      max-width: 75%;
+      color: #333333;
+      font-family: "Roboto", Arial, Helvetica, sans-serif; }
+  .page-template-about .about-wrapper .about-our-vision {
+    width: 100%;
+    min-height: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2150,64 +2316,385 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    @media all and (min-width: 750px) {
-      .page-template-about .about-wrapper .facilities-technology .technologies {
-        max-height: 500px;
-        min-height: 500px;
+    @media all and (min-width: 800px) {
+      .page-template-about .about-wrapper .about-our-vision {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row; } }
-    .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%;
-      max-height: 500px;
-      -webkit-box-ordinal-group: 2;
-          -ms-flex-order: 1;
-              order: 1; }
-      @media all and (min-width: 800px) {
-        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
-          -webkit-box-ordinal-group: 3;
-              -ms-flex-order: 2;
-                  order: 2; } }
-      .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image img {
-        max-height: 700px;
-        min-height: 500px;
-        -o-object-fit: cover;
-           object-fit: cover; }
-    .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
-      -webkit-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-              order: 2;
-      color: #fff;
+    .page-template-about .about-wrapper .about-our-vision .our-vision-text {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      min-height: 350px;
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+      background: #f2f2f1;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
       @media all and (min-width: 800px) {
-        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+        .page-template-about .about-wrapper .about-our-vision .our-vision-text {
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
                   order: 1; } }
-      .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
-        padding: 20px 0;
-        height: 80%;
-        width: 58%; }
+      .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper {
+        color: #333333;
+        height: 300px;
+        width: 300px;
+        max-height: 200px; }
+        .page-template-about .about-wrapper .about-our-vision .our-vision-text .our-vision-text-wrapper .about-vision {
+          display: block;
+          font-size: 30px;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 2px; }
+    .page-template-about .about-wrapper .about-our-vision .our-vision-image {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+      max-height: 400px; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .about-our-vision .our-vision-image {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; } }
+      .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
+        height: auto;
+        width: auto; }
         @media all and (min-width: 800px) {
-          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
-            width: 80%;
-            padding: 0; } }
+          .page-template-about .about-wrapper .about-our-vision .our-vision-image img {
+            max-height: 400px;
+            min-height: 400px;
+            width: 100%; } }
+  .page-template-about .about-wrapper .about-team {
+    min-height: 600px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0; }
+    .page-template-about .about-wrapper .about-team h1 {
+      color: #333333; }
+    .page-template-about .about-wrapper .about-team .about-team-para {
+      max-width: 75%; }
+      .page-template-about .about-wrapper .about-team .about-team-para p {
+        text-align: center;
+        color: #333333; }
+    .page-template-about .about-wrapper .about-team .team-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      width: 90%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 20px 0; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .about-team .team-wrapper {
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; } }
+      .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+        margin: 10px 10px;
+        max-width: 350px;
+        min-width: 350px;
+        max-height: 200px;
+        min-height: 200px;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        @media all and (min-width: 600px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 500px;
+            min-width: 500px; } }
+        @media all and (min-width: 800px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+            max-width: 335px;
+            min-width: 335px; } }
+        @media all and (min-width: 950px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 400px;
+            min-width: 400px; } }
         @media all and (min-width: 1000px) {
-          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
-            width: 60%;
-            margin-bottom: 30px; } }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 450px;
+            min-width: 450px;
+            margin: 10px 0px; } }
+        @media all and (min-width: 1200px) {
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member {
+            max-width: 530px;
+            min-width: 530px;
+            margin: 10px 0; } }
+        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot {
+          -ms-flex-preferred-size: 30%;
+              flex-basis: 30%;
+          max-height: 200px !important;
+          min-width: 140px; }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-headshot img {
+            max-height: 200px !important;
+            min-height: 200px !important;
+            height: 200px !important; }
+        .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -ms-flex-preferred-size: 70%;
+              flex-basis: 70%;
+          margin: 3px 2%;
+          max-height: 172px;
+          overflow: hidden; }
+          @media all and (min-width: 600px) {
+            .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info {
+              max-height: 162px; } }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
+            margin: 0;
+            color: #0a2d5d;
+            font-size: 16px;
+            letter-spacing: 2px; }
+            @media all and (min-width: 600px) {
+              .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info h2 {
+                font-size: 20px; } }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            color: #c3c3c3;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+            font-size: 13px; }
+            @media all and (min-width: 600px) {
+              .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container {
+                font-size: 16px; } }
+            .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .position-container i {
+              margin-top: 5px;
+              font-size: 20px;
+              color: #0a2d5d;
+              cursor: pointer; }
+          .page-template-about .about-wrapper .about-team .team-wrapper .individual-team-member .team-member-info .about-bio {
+            margin-top: 14px; }
+  .page-template-about .about-wrapper .about-alliances {
+    background: #f2f2f1;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-about .about-wrapper .about-alliances h1 {
+      padding-top: 15px;
+      max-width: 80%;
+      text-align: center; }
+    .page-template-about .about-wrapper .about-alliances .alliance-wrapper {
+      margin-top: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 90%;
+      padding: 20px 0; }
+      .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        max-height: 90px;
+        max-width: 220px;
+        min-height: 90px;
+        min-width: 220px;
+        margin: 15px 10px; }
+        @media all and (min-width: 750px) {
+          .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo {
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%; } }
+        .page-template-about .about-wrapper .about-alliances .alliance-wrapper .alliance-logo img {
+          max-height: 85px;
+          max-width: 215px;
+          margin: 0 auto;
+          -ms-flex-item-align: center;
+              align-self: center; }
+  .page-template-about .about-wrapper .facilities-technology {
+    border: 1px solid black;
+    min-height: 700px; }
+    .page-template-about .about-wrapper .facilities-technology .facilities {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      background: #0a2d5d; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .facilities-technology .facilities {
+          max-height: 500px;
+          min-height: 500px;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+      .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: #fff; }
+        @media all and (min-width: 800px) {
+          .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            padding-left: 8%; } }
+        @media all and (min-width: 1200px) {
+          .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; } }
+        .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
+          height: 80%;
+          width: 58%;
+          padding: 30px 0; }
+          @media all and (min-width: 800px) {
+            .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
+              width: 80%; } }
+          @media all and (min-width: 1200px) {
+            .page-template-about .about-wrapper .facilities-technology .facilities .facilities-text .facilities-text-wrapper {
+              width: 60%; } }
+      .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        overflow: hidden; }
+        .page-template-about .about-wrapper .facilities-technology .facilities .facilities-image img {
+          max-height: 700px;
+          min-height: 500px;
+          -o-object-fit: cover;
+             object-fit: cover; }
+    .page-template-about .about-wrapper .facilities-technology .technologies {
+      background: #0a2d5d;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      @media all and (min-width: 800px) {
+        .page-template-about .about-wrapper .facilities-technology .technologies {
+          max-height: 500px;
+          min-height: 500px;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+      .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        max-height: 500px;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        overflow: hidden; }
+        @media all and (min-width: 800px) {
+          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image {
+            -webkit-box-ordinal-group: 3;
+                -ms-flex-order: 2;
+                    order: 2; } }
+        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-image img {
+          max-height: 700px;
+          min-height: 500px;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+        @media all and (min-width: 800px) {
+          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1; } }
+        @media all and (min-width: 1200px) {
+          .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; } }
+        .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+          margin-top: 1.5rem;
+          padding: 30px 0;
+          height: 80%;
+          width: 58%; }
+          @media all and (min-width: 800px) {
+            .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+              width: 80%;
+              padding: 0; } }
+          @media all and (min-width: 1200px) {
+            .page-template-about .about-wrapper .facilities-technology .technologies .technologies-text .technologies-text-wrapper {
+              width: 60%;
+              margin-bottom: 30px; } }
 
 .page-template-corporate-governance h1 {
   letter-spacing: 2px; }
@@ -2234,7 +2721,7 @@ object {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      height: 70px;
+      height: 60px;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
@@ -2255,12 +2742,11 @@ object {
     @media all and (min-width: 800px) {
       .page-template-corporate-governance .cg-wrapper .cg-menu ul {
         margin-top: 0;
-        width: 75%;
         min-height: 50px;
-        margin-right: 1%; } }
-    @media all and (min-width: 1200px) {
+        margin-right: 3rem; } }
+    @media all and (min-width: 1000px) {
       .page-template-corporate-governance .cg-wrapper .cg-menu ul {
-        width: 65%; } }
+        margin-right: 6.5rem; } }
     .page-template-corporate-governance .cg-wrapper .cg-menu ul li {
       text-transform: uppercase;
       list-style: none;
@@ -2269,7 +2755,8 @@ object {
   .page-template-corporate-governance .cg-wrapper .cg-menu a {
     text-decoration: none; }
 
-.page-template-corporate-governance .cg-wrapper .cg-banner {
+.page-template-corporate-governance .cg-wrapper .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -2289,33 +2776,35 @@ object {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-team.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-team.jpg");
   color: #fff;
-  background-size: cover; }
-  @media all and (min-width: 800px) {
-    .page-template-corporate-governance .cg-wrapper .cg-banner {
-      height: 40vw; } }
-  .page-template-corporate-governance .cg-wrapper .cg-banner .cg-banner-content-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media all and (min-width: 1000px) {
+    .page-template-corporate-governance .cg-wrapper .banner-section {
+      height: 475px; } }
+  @media all and (min-width: 1450px) {
+    .page-template-corporate-governance .cg-wrapper .banner-section {
+      height: 675px; } }
+  .page-template-corporate-governance .cg-wrapper .banner-section-img-wrapper {
+    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .page-template-corporate-governance .cg-wrapper .cg-banner .cg-banner-content-wrapper img {
-      height: 100px;
-      width: 100px; }
-    .page-template-corporate-governance .cg-wrapper .cg-banner .cg-banner-content-wrapper h1 {
-      color: #fff;
-      font-family: "Roboto", Arial, Helvetica, sans-serif;
-      font-weight: 200;
-      text-align: center;
-      text-transform: uppercase; }
+    .page-template-corporate-governance .cg-wrapper .banner-section-img-wrapper img {
+      width: 100%; }
+  .page-template-corporate-governance .cg-wrapper .banner-section h1 {
+    width: 60%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
 
 .page-template-corporate-governance .cg-wrapper .cg-page-description {
   width: 100%;
@@ -2472,9 +2961,12 @@ object {
       .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-headshot {
         -ms-flex-preferred-size: 30%;
             flex-basis: 30%;
-        max-height: 200px;
-        min-width: 140px;
-        border: 1px solid black; }
+        max-height: 200px !important;
+        min-width: 140px; }
+        .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-headshot img {
+          max-height: 200px !important;
+          min-height: 200px !important;
+          height: 200px !important; }
       .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-member-info {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2512,7 +3004,8 @@ object {
           .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-member-info .position-container i {
             margin-top: 5px;
             font-size: 20px;
-            color: #0a2d5d; }
+            color: #0a2d5d;
+            cursor: pointer; }
         .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-member-info .cg-bio {
           margin-top: 14px; }
         .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-member-info .cg-close {
@@ -2521,105 +3014,15 @@ object {
               align-self: center; }
           .page-template-corporate-governance .cg-wrapper .cg-team .team-wrapper .individual-team-member .team-member-info .cg-close i {
             font-size: 20px;
-            color: #0a2d5d; }
+            color: #0a2d5d;
+            cursor: pointer; }
 
-.page-template-products .banner-section {
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-products.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-products.jpg");
-  color: #fff;
-  background-size: cover; }
-  @media all and (min-width: 800px) {
-    .page-template-products .banner-section {
-      height: 40vw; } }
-  .page-template-products .banner-section-img-wrapper {
-    width: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .page-template-products .banner-section-img-wrapper img {
-      width: 100%; }
-  .page-template-products .banner-section h1 {
-    width: 60%;
+.page-template-products {
+  display: none; }
+  .page-template-products .banner-section {
+    width: 100%;
     margin: 0 auto;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 2px; }
-
-.page-template-products .product-a-intro-section,
-.page-template-products .product-b-intro-section,
-.page-template-products .product-c-intro-section {
-  padding: 4rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #eee; }
-  .page-template-products .product-a-intro-section-paragraph,
-  .page-template-products .product-b-intro-section-paragraph,
-  .page-template-products .product-c-intro-section-paragraph {
-    width: 50%;
-    margin: 0 2rem;
-    line-height: 30px;
-    color: #0a2d5d;
-    text-transform: uppercase;
-    text-align: center; }
-    @media all and (max-width: 750px) {
-      .page-template-products .product-a-intro-section-paragraph,
-      .page-template-products .product-b-intro-section-paragraph,
-      .page-template-products .product-c-intro-section-paragraph {
-        width: 70%; } }
-
-.page-template-products .product-b-intro-section-paragraph,
-.page-template-products .product-c-intro-section-paragraph {
-  width: 70%;
-  color: #333333;
-  text-transform: none; }
-
-.page-template-products .product-main-section .product {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  @media all and (max-width: 750px) {
-    .page-template-products .product-main-section .product {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
-  .page-template-products .product-main-section .product-info {
-    width: 50%;
-    padding: 6rem 0;
+    padding: 2rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2630,39 +3033,46 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    background-color: #00c860;
-    color: white; }
-    @media all and (max-width: 750px) {
-      .page-template-products .product-main-section .product-info {
-        width: 100%;
-        padding: 3rem 0; } }
-  .page-template-products .product-main-section .product-info-header {
-    width: 40%;
-    margin: 0 auto; }
-    @media all and (max-width: 750px) {
-      .page-template-products .product-main-section .product-info-header {
-        width: 85%; } }
-    .page-template-products .product-main-section .product-info-header * {
-      margin: 0;
-      text-transform: uppercase; }
-    .page-template-products .product-main-section .product-info-header .product-subtitle {
-      font-weight: 300; }
-    .page-template-products .product-main-section .product-info-header .product-title {
-      font-size: 2rem; }
-  .page-template-products .product-main-section .product-info-description {
-    width: 40%;
-    margin: 0 auto;
-    line-height: 30px;
-    letter-spacing: 1px;
-    font-weight: 300; }
-    @media all and (max-width: 750px) {
-      .page-template-products .product-main-section .product-info-description {
-        width: 85%; } }
-  .page-template-products .product-main-section .product-img-wrapper {
-    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-products-optimized.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-products-optimized.jpg");
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media all and (min-width: 1000px) {
+      .page-template-products .banner-section {
+        height: 475px; } }
+    @media all and (min-width: 1450px) {
+      .page-template-products .banner-section {
+        height: 675px; } }
+    .page-template-products .banner-section-img-wrapper {
+      width: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .page-template-products .banner-section-img-wrapper img {
+        width: 100%; }
+    .page-template-products .banner-section h1 {
+      width: 60%;
+      margin: 0 auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 2px; }
+  .page-template-products .product-a-intro-section,
+  .page-template-products .product-b-intro-section,
+  .page-template-products .product-c-intro-section {
+    padding: 4rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2672,17 +3082,125 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow: hidden; }
-    @media all and (max-width: 750px) {
-      .page-template-products .product-main-section .product-img-wrapper {
-        width: 100%; } }
-    .page-template-products .product-main-section .product-img-wrapper img {
-      width: 80%; }
+    background-color: #eee; }
+    .page-template-products .product-a-intro-section-paragraph,
+    .page-template-products .product-b-intro-section-paragraph,
+    .page-template-products .product-c-intro-section-paragraph {
+      width: 50%;
+      margin: 0 2rem;
+      line-height: 30px;
+      color: #0a2d5d;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center; }
       @media all and (max-width: 750px) {
-        .page-template-products .product-main-section .product-img-wrapper img {
+        .page-template-products .product-a-intro-section-paragraph,
+        .page-template-products .product-b-intro-section-paragraph,
+        .page-template-products .product-c-intro-section-paragraph {
+          width: 70%; } }
+  .page-template-products .product-a-intro-section-paragraph {
+    font-weight: 400; }
+  .page-template-products .product-b-intro-section,
+  .page-template-products .product-c-intro-section {
+    background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed; }
+    @media all and (max-width: 750px) {
+      .page-template-products .product-b-intro-section,
+      .page-template-products .product-c-intro-section {
+        background: #fff; } }
+    .page-template-products .product-b-intro-section-paragraph,
+    .page-template-products .product-c-intro-section-paragraph {
+      color: #333333;
+      text-transform: none; }
+  .page-template-products .product-main-section .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media all and (max-width: 750px) {
+      .page-template-products .product-main-section .product {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .page-template-products .product-main-section .product-info {
+      width: 50%;
+      padding: 6rem 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      background-color: #00c860;
+      color: white; }
+      @media all and (max-width: 750px) {
+        .page-template-products .product-main-section .product-info {
+          width: 100%;
+          padding: 3rem 0; } }
+    .page-template-products .product-main-section .product-info-header {
+      width: 40%;
+      margin: 0 auto; }
+      @media all and (max-width: 750px) {
+        .page-template-products .product-main-section .product-info-header {
+          width: 85%; } }
+      .page-template-products .product-main-section .product-info-header * {
+        margin: 0;
+        text-transform: uppercase; }
+      .page-template-products .product-main-section .product-info-header .product-subtitle {
+        font-weight: 300; }
+      .page-template-products .product-main-section .product-info-header .product-title {
+        font-size: 2rem; }
+    .page-template-products .product-main-section .product-info-description {
+      width: 40%;
+      margin: 0 auto;
+      line-height: 30px;
+      letter-spacing: 1px;
+      font-weight: 300; }
+      @media all and (max-width: 750px) {
+        .page-template-products .product-main-section .product-info-description {
+          width: 85%; } }
+    .page-template-products .product-main-section .product-img-wrapper {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      overflow: hidden; }
+      @media all and (max-width: 750px) {
+        .page-template-products .product-main-section .product-img-wrapper {
           width: 100%; } }
+      .page-template-products .product-main-section .product-img-wrapper img {
+        width: 100%; }
+        @media all and (max-width: 750px) {
+          .page-template-products .product-main-section .product-img-wrapper img {
+            width: 80%; } }
+
+.page-template-investors .investor-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: black;
+  opacity: 0.6; }
 
 .page-template-investors .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -2699,13 +3217,18 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-investors.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-investors.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-investors-optimized.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-investors-optimized.jpg");
   color: #fff;
-  background-size: cover; }
-  @media all and (min-width: 800px) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media all and (min-width: 1000px) {
     .page-template-investors .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
+  @media all and (min-width: 1450px) {
+    .page-template-investors .banner-section {
+      height: 675px; } }
   .page-template-investors .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -2756,7 +3279,8 @@ object {
     padding: 1rem;
     text-align: center;
     font-size: 1.5rem;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    cursor: pointer; }
     .page-template-investors .investor-login-desc p {
       margin: 0;
       font-weight: 300; }
@@ -2764,6 +3288,122 @@ object {
       color: #00c860;
       text-transform: uppercase;
       font-weight: 700; }
+  .page-template-investors .investor-login .forgot a {
+    color: #00c860;
+    text-decoration: none; }
+  .page-template-investors .investor-login .forgot a:hover {
+    text-decoration: underline;
+    font-weight: bold; }
+  .page-template-investors .investor-login .portal-pop-up {
+    position: fixed;
+    top: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+    width: 300px; }
+    @media all and (min-width: 750px) {
+      .page-template-investors .investor-login .portal-pop-up {
+        width: 700px; } }
+    .page-template-investors .investor-login .portal-pop-up .pop-up-close {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #00c860;
+      font-size: 22px;
+      cursor: pointer; }
+      @media all and (min-width: 750px) {
+        .page-template-investors .investor-login .portal-pop-up .pop-up-close {
+          color: #fff; } }
+    .page-template-investors .investor-login .portal-pop-up .pop-up-image {
+      display: none;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      background: url("../../assets/Stock_Photos/pwc-home-optimized.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      width: 350px; }
+      @media all and (min-width: 750px) {
+        .page-template-investors .investor-login .portal-pop-up .pop-up-image {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
+      .page-template-investors .investor-login .portal-pop-up .pop-up-image img {
+        margin-bottom: 70px;
+        -ms-flex-item-align: center;
+            align-self: center;
+        width: 200px; }
+    .page-template-investors .investor-login .portal-pop-up .pop-up-form {
+      height: 450px;
+      background: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .page-template-investors .investor-login .portal-pop-up .pop-up-form h2 {
+        font-size: 22px; }
+      @media all and (min-width: 750px) {
+        .page-template-investors .investor-login .portal-pop-up .pop-up-form {
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+          height: 400px; } }
+      .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 .wpcf7-not-valid-tip {
+        display: none; }
+      .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 .wpcf7-response-output {
+        border: none;
+        color: #00c860; }
+      .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 input {
+        max-width: 250px; }
+      .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 p {
+        margin: 4px 0;
+        font-size: 12px;
+        text-transform: uppercase; }
+      .page-template-investors .investor-login .portal-pop-up .pop-up-form .wpcf7 .wpcf7-submit {
+        -ms-flex-item-align: center;
+            align-self: center;
+        color: #fff;
+        background: #00c860;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        text-shadow: none;
+        text-transform: uppercase;
+        min-width: 175px;
+        min-height: 40px;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin-left: 14px; }
+
+.page-template-investors .investor-login-desc p:nth-child(2):hover {
+  -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
+
+.page-template-investors div.wpcf7-mail-sent-ok {
+  background-color: #f2f2f1;
+  text-align: center; }
 
 .page-template-news .news-h2 {
   font-size: 2rem;
@@ -2791,13 +3431,18 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-news.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-news.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-news-optimized.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-news-optimized.jpg");
   color: #fff;
-  background-size: cover; }
-  @media all and (min-width: 800px) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media all and (min-width: 1000px) {
     .page-template-news .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
+  @media all and (min-width: 1450px) {
+    .page-template-news .banner-section {
+      height: 675px; } }
   .page-template-news .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -2835,7 +3480,13 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
+  @media all and (max-width: 750px) {
+    .page-template-news .news-section {
+      background: #fff; } }
 
 .page-template-news .news-items-wrapper {
   width: 85%;
@@ -2883,12 +3534,19 @@ object {
       width: 80%;
       padding: 5px;
       background-color: #0a2d5d;
-      color: white; }
+      color: #fff; }
       @media all and (max-width: 550px) {
         .page-template-news .news-item-header-group {
           width: 90%; } }
+      .page-template-news .news-item-header-group a {
+        color: #fff; }
+        .page-template-news .news-item-header-group a:hover {
+          color: #00c860 !important; }
+        .page-template-news .news-item-header-group a:visited {
+          color: #fff; }
       .page-template-news .news-item-header-group h3 {
-        margin: 0; }
+        margin: 0;
+        font-weight: 300; }
   .page-template-news .news-item-pdf {
     position: relative;
     right: 5rem;
@@ -2898,6 +3556,10 @@ object {
     border-radius: 3px;
     text-transform: uppercase;
     cursor: pointer; }
+    .page-template-news .news-item-pdf:hover {
+      background-color: #00af54;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
     @media all and (max-width: 930px) {
       .page-template-news .news-item-pdf {
         right: 0; } }
@@ -2910,7 +3572,8 @@ object {
       .page-template-news .news-item-pdf a:visited, .page-template-news .news-item-pdf a:hover {
         color: white; }
   .page-template-news .news-item-body {
-    height: 30px;
+    height: auto;
+    max-height: 38px;
     overflow: hidden; }
     @media all and (max-width: 550px) {
       .page-template-news .news-item-body {
@@ -2918,7 +3581,8 @@ object {
         margin: 0 auto; } }
   .page-template-news .news-item-expand-link {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
 
 .page-template-contact .contact-h2 {
   font-size: 2rem;
@@ -2927,6 +3591,7 @@ object {
   text-align: center; }
 
 .page-template-contact .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -2943,13 +3608,18 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-boxes-investors.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-boxes-investors-optimized.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-boxes-investors-optimized.jpg");
   color: #fff;
-  background-size: cover; }
-  @media all and (min-width: 800px) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media all and (min-width: 1000px) {
     .page-template-contact .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
+  @media all and (min-width: 1450px) {
+    .page-template-contact .banner-section {
+      height: 675px; } }
   .page-template-contact .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -2974,6 +3644,14 @@ object {
     .page-template-contact .banner-section h1 strong {
       font-weight: 700; }
 
+.page-template-contact .main-content {
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed; }
+  @media all and (max-width: 750px) {
+    .page-template-contact .main-content {
+      background: #fff; } }
+
 .page-template-contact .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2986,20 +3664,29 @@ object {
           align-items: center;
   text-transform: uppercase; }
 
+.page-template-contact div.wpcf7-mail-sent-ok {
+  border: 2px solid #398f14;
+  margin: auto auto; }
+
+.page-template-contact .entry-content > p {
+  display: none; }
+
+.page-template-contact div.wpcf7 {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px; }
+
 .page-template-contact .wpcf7-form {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media all and (max-width: 1050px) {
-    .page-template-contact .wpcf7-form {
-      width: 100%; } }
   .page-template-contact .wpcf7-form input {
     width: 100%; }
   .page-template-contact .wpcf7-form input[type='submit'] {
@@ -3019,9 +3706,10 @@ object {
     text-shadow: none;
     background-color: #00c860; }
     .page-template-contact .wpcf7-form input[type='submit']:hover {
-      background-color: #082246; }
+      background-color: #082246;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
   .page-template-contact .wpcf7-form p {
-    margin: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3035,18 +3723,22 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    @media all and (max-width: 750px) {
+    @media all and (max-width: 950px) {
       .page-template-contact .wpcf7-form p {
         width: 230px; } }
-    @media all and (max-width: 550px) {
+    @media all and (max-width: 650px) {
       .page-template-contact .wpcf7-form p {
         width: 100%; } }
   .page-template-contact .wpcf7-form p:nth-of-type(7) {
-    width: 85%;
-    margin: 0 auto; }
-    .page-template-contact .wpcf7-form p:nth-of-type(7) label {
-      width: 100%;
-      margin: 0 auto; }
+    width: 100%;
+    margin: 0 auto;
+    display: block; }
+    @media all and (max-width: 650px) {
+      .page-template-contact .wpcf7-form p:nth-of-type(7) {
+        width: 335px; } }
+  .page-template-contact .wpcf7-form p:nth-of-type(8) {
+    width: 100%;
+    text-align: center; }
 
 .page-template-contact .entry-title {
   display: none; }
@@ -3054,7 +3746,14 @@ object {
 .page-template-contact .widget-area {
   display: none; }
 
+.page-template-faq .faq-h2 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center; }
+
 .page-template-faq .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -3071,13 +3770,18 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-boxes-faq.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-boxes-faq-optimized.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-boxes-faq-optimized.jpg");
   color: #fff;
-  background-size: cover; }
-  @media all and (min-width: 800px) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media all and (min-width: 1000px) {
     .page-template-faq .banner-section {
-      height: 40vw; } }
+      height: 475px; } }
+  @media all and (min-width: 1450px) {
+    .page-template-faq .banner-section {
+      height: 675px; } }
   .page-template-faq .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
@@ -3148,9 +3852,9 @@ object {
       width: 100%; } }
 
 .page-template-faq .faq {
-  width: 40%;
+  width: 45%;
   margin: 1rem;
-  padding: 5px 5% 5px 10px;
+  padding: 5px 50px 5px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3158,13 +3862,12 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #0a2d5d; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0a2d5d !important;
+  color: #fff !important;
+  height: 6rem; }
   @media (max-width: 750px) {
     .page-template-faq .faq {
       width: 70%; } }
@@ -3188,6 +3891,9 @@ object {
             align-items: center; }
   .page-template-faq .faq-answer {
     color: white; }
+  .page-template-faq .faq .open-close-icon {
+    padding: 10px;
+    cursor: pointer; }
   .page-template-faq .faq .horizontal {
     width: 20px;
     height: 3px;
@@ -3202,15 +3908,25 @@ object {
             transform-origin: 58% 10%; }
   .page-template-faq .faq .invisible {
     opacity: 0;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s; }
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .page-template-faq .faq .visible {
     opacity: 1;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s; }
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
   .page-template-faq .faq .open {
     color: #333333 !important;
     background-color: #fff !important; }
+
+.page-template-faq .faq.height {
+  height: auto !important; }
+
+.page-template-faq .faq.height.color {
+  background-color: #fff !important; }
+  .page-template-faq .faq.height.color h3 {
+    color: #333333 !important; }
+  .page-template-faq .faq.height.color p {
+    color: #333333 !important; }
 
 .page-template-investor-portal .hentry {
   display: none; }
@@ -3218,7 +3934,8 @@ object {
 .page-template-investor-portal .entry-title {
   display: none; }
 
-.page-template-investor-portal .investors-portal-banner {
+.page-template-investor-portal .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
@@ -3235,14 +3952,19 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-investors.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-investors.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../../assets/Stock_Photos/pwc-investors-optimized.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Stock_Photos/pwc-investors-optimized.jpg");
   color: #fff;
-  background-size: cover; }
-  @media all and (min-width: 800px) {
-    .page-template-investor-portal .investors-portal-banner {
-      height: 40vw; } }
-  .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media all and (min-width: 1000px) {
+    .page-template-investor-portal .banner-section {
+      height: 475px; } }
+  @media all and (min-width: 1450px) {
+    .page-template-investor-portal .banner-section {
+      height: 675px; } }
+  .page-template-investor-portal .banner-section-img-wrapper {
     width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3257,14 +3979,24 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper img {
+    .page-template-investor-portal .banner-section-img-wrapper img {
       width: 100%; }
-    .page-template-investor-portal .investors-portal-banner .portal-banner-wrapper h1 {
-      color: #fff;
-      font-family: "Roboto", Arial, Helvetica, sans-serif;
-      text-transform: uppercase; }
+  .page-template-investor-portal .banner-section h1 {
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px; }
+    @media all and (min-width: 600px) {
+      .page-template-investor-portal .banner-section h1 {
+        width: 60%; } }
 
 .page-template-investor-portal .investors-corporate-presentation {
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 40px 0;
   min-height: 400px;
   display: -webkit-box;
@@ -3280,6 +4012,9 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 800px) {
+    .page-template-investor-portal .investors-corporate-presentation {
+      background-size: 100% 100%; } }
   .page-template-investor-portal .investors-corporate-presentation h1 {
     margin-bottom: 0;
     text-transform: uppercase;
@@ -3293,25 +4028,32 @@ object {
     text-align: center;
     margin-bottom: 30px; }
   .page-template-investor-portal .investors-corporate-presentation .corporate-download {
-    color: #fff;
-    background: #00c860;
+    margin: 1rem auto;
+    width: 210px;
+    padding: 15px 30px;
+    font-size: 16px;
     -webkit-box-shadow: none;
             box-shadow: none;
-    text-shadow: none;
+    color: white;
+    background-color: #00c860;
     border: none;
-    width: 213px;
-    height: 51px;
-    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    text-shadow: none; }
+    .page-template-investor-portal .investors-corporate-presentation .corporate-download:hover {
+      background-color: #00af54;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .page-template-investor-portal .headed-next {
-  padding: 60px 0;
-  min-height: 400px;
-  background: #f2f2f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 60px 0;
+  min-height: 400px;
+  background: #f2f2f1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3365,17 +4107,25 @@ object {
           width: 350px;
           margin: 20px 20px; } }
   .page-template-investor-portal .headed-next .portal-view-more {
-    color: #fff;
-    background: #0a2d5d;
+    display: none;
+    margin: 1rem auto;
+    width: 210px;
+    padding: 15px 30px;
+    font-size: 16px;
     -webkit-box-shadow: none;
             box-shadow: none;
-    text-shadow: none;
-    width: 210px;
-    height: 50px;
-    font-size: 18px;
+    color: white;
+    background-color: #0a2d5d;
+    border: none;
     border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    text-shadow: none; }
+    .page-template-investor-portal .headed-next .portal-view-more:hover {
+      background-color: #082246;
+      -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23);
+              box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.19), 0px 10px 13px -8px rgba(0, 0, 0, 0.23); }
 
 .page-template-investor-portal .press-releases-wrapper .press-releases-container {
   display: -webkit-box;
@@ -3385,7 +4135,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media all and (min-width: 1000px) {
+  @media all and (min-width: 1020px) {
     .page-template-investor-portal .press-releases-wrapper .press-releases-container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -3393,6 +4143,8 @@ object {
               flex-direction: row; } }
 
 .page-template-investor-portal .not-logged-in {
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-attachment: fixed;
   min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3407,9 +4159,193 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 800px) {
+    .page-template-investor-portal .not-logged-in {
+      background-size: 100% 100%; } }
   .page-template-investor-portal .not-logged-in h1 {
     max-width: 80%;
     text-align: center; }
+
+.error404 .error-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-attachment: fixed; }
+  @media all and (min-width: 800px) {
+    .error404 .error-404 {
+      background-size: 100% 100%; } }
+  .error404 .error-404 .page-header {
+    max-width: 80%; }
+    .error404 .error-404 .page-header h1 {
+      text-align: center; }
+  .error404 .error-404 .page-content {
+    max-width: 80%; }
+    .error404 .error-404 .page-content p {
+      text-align: center; }
+    .error404 .error-404 .page-content .search-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .error404 .error-404 .page-content .search-form input {
+        height: 30px;
+        border-radius: 0;
+        border: 1px solid #c3c3c3; }
+        @media all and (min-width: 800px) {
+          .error404 .error-404 .page-content .search-form input {
+            min-width: 400px; } }
+      .error404 .error-404 .page-content .search-form .search-submit {
+        background: #00c860;
+        color: #fff;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        text-shadow: none; }
+
+.search .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-attachment: fixed; }
+  @media all and (min-width: 800px) {
+    .search .site-content {
+      background-size: 100% 100%; } }
+  .search .site-content .page-header {
+    text-align: center; }
+  .search .site-content .article-wrapper article {
+    min-height: 100px;
+    background: #0a2d5d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 4px solid #00c860;
+    margin: 20px 10%; }
+    .search .site-content .article-wrapper article .entry-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-width: 80%; }
+      .search .site-content .article-wrapper article .entry-header h2 {
+        text-align: center; }
+      .search .site-content .article-wrapper article .entry-header a {
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        max-width: 80%; }
+      .search .site-content .article-wrapper article .entry-header a:hover {
+        text-decoration: underline; }
+    .search .site-content .article-wrapper article .entry-summary {
+      color: #fff;
+      max-width: 80%;
+      text-align: center; }
+
+.search-no-results .page-content {
+  min-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
+  background-attachment: fixed; }
+  @media all and (min-width: 800px) {
+    .search-no-results .page-content {
+      background-size: 100% 100%; } }
+  .search-no-results .page-content p {
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    max-width: 80%; }
+  .search-no-results .page-content .search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .search-no-results .page-content .search-form input {
+      height: 30px;
+      border-radius: 0;
+      border: 1px solid #c3c3c3; }
+      @media all and (min-width: 800px) {
+        .search-no-results .page-content .search-form input {
+          min-width: 400px; } }
+    .search-no-results .page-content .search-form .search-submit {
+      background: #00c860;
+      color: #fff;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      text-shadow: none; }
+
+.single-post article {
+  width: 75%;
+  margin: 0 auto;
+  padding: 10rem 0 0 0; }
+  @media all and (max-width: 550px) {
+    .single-post article {
+      width: 85%; } }
+
+.single-post .post-navigation {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 5rem; }
+  @media all and (max-width: 550px) {
+    .single-post .post-navigation {
+      width: 85%; } }
+  .single-post .post-navigation a {
+    color: #333333; }
+    .single-post .post-navigation a:visited {
+      color: #333333; }
+    .single-post .post-navigation a:hover {
+      color: #00c860; }
 
 .site-footer {
   font-family: "Roboto", Arial, Helvetica, sans-serif; }
@@ -3446,7 +4382,7 @@ object {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      background: black;
+      background: #252525;
       padding: 3%; }
       .site-footer .site-info .footer-left .footer-left-text p:nth-of-type(2) {
         display: none; }
@@ -3463,11 +4399,17 @@ object {
         display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center; }
+                justify-content: center;
+        color: #fff; }
+        .site-footer .site-info .footer-left .footer-social-media a:visited {
+          color: #fff; }
         .site-footer .site-info .footer-left .footer-social-media i {
-          color: #fff;
-          margin: 0 5px;
+          margin: 0 15px;
           font-size: 22px; }
+          .site-footer .site-info .footer-left .footer-social-media i:hover {
+            -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+            color: #00c860; }
     .site-footer .site-info .footer-right {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%;
@@ -3496,9 +4438,9 @@ object {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         max-width: 80%;
         margin-top: 13px;
         margin-left: 5%; }
@@ -3515,8 +4457,7 @@ object {
         .site-footer .site-info .footer-right .footer-right-wrapper #footer-sidebar3 p {
           color: #fff;
           display: inline;
-          font-size: 12px;
-          margin-right: 140px; }
+          font-size: 12px; }
         .site-footer .site-info .footer-right .footer-right-wrapper p {
           margin: 5px 0; }
         .site-footer .site-info .footer-right .footer-right-wrapper .footer-right-text {
@@ -3568,6 +4509,14 @@ object {
             text-transform: uppercase;
             border: none;
             padding-bottom: 22px; }
+            .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form .wpcf7-submit:hover {
+              background-color: #00af54;
+              -webkit-box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.83), 0px 10px 13px -8px rgba(0, 0, 0, 0.83);
+                      box-shadow: 0px 14px 20px -15px rgba(0, 0, 0, 0.83), 0px 10px 13px -8px rgba(0, 0, 0, 0.83); }
+          .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-mail-sent-ok {
+            color: #fff; }
+          .site-footer .site-info .footer-right .footer-sign-up .wpcf7-form div.wpcf7-response-output {
+            color: #fff; }
       .site-footer .site-info .footer-right .footer-copy {
         font-size: 12px;
         color: #fff; }

@@ -20,8 +20,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<section class="cg-wrapper">
-				<div class="cg-menu">
+
+				<!-- Todo: -->
+				<!-- <div class="cg-menu">
 					<ul class="cg-menu-list">
+						
 						<a href="#board-of-directors">
 							<li>Board of Directors</li>
 						</a>
@@ -32,27 +35,23 @@ get_header(); ?>
 							<li>Board of Advisors</li>
 						</a>
 					</ul>
-				</div>
+				</div> -->
 
-				<div class="cg-banner">
-
-					<div class="cg-banner-content-wrapper">
-						<img src="<?php echo $cg_logo ?>" alt="cg page logo" />
-						<h1>
-							<?php echo $cg_header ?>
-						</h1>
+				<header class="banner-section parallax">
+					<div class="banner-section-img-wrapper">
+						<img src="<?php echo $cg_logo ?>" alt="About page logo">
 					</div>
+					<h1><?php echo $cg_header ?></h1>
+        </header>
 
-				</div>
-				<!-- close cg banner -->
 
 				<div class="cg-page-description">
 					<p><?php echo $cg_page_description ?> </p>
 				</div>
 
-				
+				<!-- Todo:  -->
 
-				<div class="cg-section-heading" id="board-of-directors">
+				<!-- <div class="cg-section-heading" id="board-of-directors">
 					<div class="left-box">
 						<p>Board of</p>
 						<h1>Directors</h1>
@@ -70,7 +69,7 @@ get_header(); ?>
 						<?php while ($query->have_posts()) : $query->the_post(); ?>
 
 
-						<div class="individual-team-member">
+					<div class="individual-team-member">
 							<div class="team-headshot">
 								<img src="<?php the_field('team_member_image')?>" />
 							</div>
@@ -81,22 +80,20 @@ get_header(); ?>
 								</h2>
 								<div class="position-container uppercase">
 									<?php the_field('position') ?>
-									<i class="cg-plus-icon fa fa-plus" aria-hidden="true"></i>
+
+									<div class="team-open-close">
+										<i class="about-plus-icon fa fa-plus" 	aria-hidden="true"></i>
+										<i class="fa fa-minus hidden-plus-minus" 	aria-hidden="true"></i>
+									</div>
+
 								</div>
 
 								<div class="cg-bio">
 									<?php the_content(); ?>
 								</div>
 
-								<div class="cg-close">
-									<i class="fa fa-times" aria-hidden="true"></i>
-								</div>
-
 							</div>
-							<!-- close team member info -->
-
-						</div>
-						<!-- close individual team member -->
+					
 
 
 						<?php endwhile; ?>
@@ -104,8 +101,8 @@ get_header(); ?>
 
 
 					</div>
-					</section>
-					<!-- bod wrapper -->
+					</section> -->
+					
 
 					<div class="cg-section-heading" id="management-team">
 					<div class="left-box">
@@ -118,6 +115,7 @@ get_header(); ?>
 				</div>
 
 				<section class="cg-team cg-mngmnt" >
+
 					<div class="managment-wrapper team-wrapper">
 						<?php $args = array('post_type'		=> 'team_member', 'meta_key'		=> 'team_member_category', 'meta_value'	=> 'Management'); $query = new WP_Query($args);?>
 
@@ -135,15 +133,16 @@ get_header(); ?>
 								</h2>
 								<div class="position-container uppercase">
 									<?php the_field('position') ?>
-									<i class="cg-plus-icon fa fa-plus" aria-hidden="true"></i>
+
+									<div class="team-open-close">
+										<i class="about-plus-icon fa fa-plus" 	aria-hidden="true"></i>
+										<i class="fa fa-minus hidden-plus-minus" 	aria-hidden="true"></i>
+									</div>
+
 								</div>
 
 								<div class="cg-bio">
 									<?php the_content(); ?>
-								</div>
-
-								<div class="cg-close">
-									<i class="fa fa-times" aria-hidden="true"></i>
 								</div>
 
 							</div>
@@ -162,7 +161,9 @@ get_header(); ?>
 					</section>
 					<!-- management wrapper -->
 
-					<div class="cg-section-heading" id="board-of-advisors">
+					<!-- Todo: -->
+
+					<!-- <div class="cg-section-heading" id="board-of-advisors">
 					<div class="left-box">
 						<p>Board of</p>
 						<h1>Advisors</h1>
@@ -190,30 +191,30 @@ get_header(); ?>
 								</h2>
 								<div class="position-container uppercase">
 									<?php the_field('position') ?>
-									<i class="cg-plus-icon fa fa-plus" aria-hidden="true"></i>
+
+									<div class="team-open-close">
+										<i class="about-plus-icon fa fa-plus" 	aria-hidden="true"></i>
+										<i class="fa fa-minus hidden-plus-minus" 	aria-hidden="true"></i>
+									</div>
+
 								</div>
 
 								<div class="cg-bio">
 									<?php the_content(); ?>
 								</div>
 
-								<div class="cg-close">
-									<i class="fa fa-times" aria-hidden="true"></i>
-								</div>
-
 							</div>
-							<!-- close team member info -->
+						
 
 						</div>
-						<!-- close individual team member -->
-
+					
 
 						<?php endwhile; ?>
 						<?php wp_reset_query() ?>
 
 
 					</div>
-					</section>
+					</section> -->
 					<!-- boa wrapper -->
 				
 				<!-- cg team -->

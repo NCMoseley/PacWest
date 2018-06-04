@@ -8,6 +8,7 @@
 get_header(); ?>
 	<?php $logo = get_field('faq_page_banner_logo'); ?>
 	<?php $banner_text = get_field('faq_page_banner_text'); ?>
+	
 
 	<?php $main_text = get_field('faq_page_main_text'); ?>
 
@@ -18,11 +19,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 
-      <header class="banner-section">
+      <header class="banner-section parallax">
 				<div class="banner-section-img-wrapper">
 					<img src="<?php echo $logo ?>" alt="Pacwest Logo">
 				</div>
-
 				<h1>
 					<?php echo $banner_text ?>
 				</h1>
@@ -31,7 +31,7 @@ get_header(); ?>
 
 			<section class="main-section">
 				<div class="main-section-intro">
-					<h2><?php echo $main_text ?></h2>
+					<h2 class="faq-h2"><?php echo $main_text ?></h2>
 				</div>
 
 				<div class="faq-container">
