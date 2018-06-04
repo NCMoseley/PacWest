@@ -50,13 +50,13 @@ get_header(); ?>
 
 
 
-              <div class="news-item-body">
+              <!-- <div class="news-item-body">
                 <?php the_excerpt(); ?>
-              </div>
+              </div> -->
 
-              <p class="news-item-expand-link">
+              <!-- <p class="news-item-expand-link">
                 <i class="fa fa-chevron-down"></i>
-              </p>
+              </p> -->
 
             </div>
 
