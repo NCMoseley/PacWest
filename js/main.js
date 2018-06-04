@@ -10,6 +10,9 @@ jQuery(document).ready(function ($) {
 
       $(this)
         .parent()
+        .parent().toggleClass('height');
+      $(this)
+        .parent()
         .next()
         .slideToggle(100);
       $(this)
@@ -20,9 +23,6 @@ jQuery(document).ready(function ($) {
         .children()
         .last()
         .toggleClass('invisible');
-      $(this)
-        .parent()
-        .parent().toggleClass('height');
       $(this)
         .parent()
         .parent().toggleClass('color');
