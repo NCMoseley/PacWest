@@ -4,7 +4,6 @@ jQuery(document).ready(function ($) {
   $(function () {
     var faqExpanded = false;
 
-
     $('.faq-answer').css('display', 'none');
     $('.open-close-icon').click(function () {
       faqExpanded = !faqExpanded;
@@ -24,6 +23,9 @@ jQuery(document).ready(function ($) {
       $(this)
         .parent()
         .parent().toggleClass('height');
+      $(this)
+        .parent()
+        .parent().toggleClass('color');
 
       if (faqExpanded) {
         $(this)
@@ -207,6 +209,7 @@ jQuery(document).ready(function ($) {
   // // ADD MENU ITEM IN MOBILE
 
   function addMenuItem() {
+    var templateLocation = ' ';
     var link = '';
     if ($('body').hasClass('logged-in')) {
       link = '/investor-portal';
