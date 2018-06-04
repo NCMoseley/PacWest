@@ -10,7 +10,8 @@ jQuery(document).ready(function ($) {
 
       $(this)
         .parent()
-        .parent().toggleClass('height');
+        .parent()
+        .toggleClass('height');
       $(this)
         .parent()
         .next()
