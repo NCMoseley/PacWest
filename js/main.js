@@ -3,10 +3,12 @@ jQuery(document).ready(function ($) {
 
   $(function () {
     var faqExpanded = false;
+    var faqExpanded2 = true;
 
     $('.faq-answer').css('display', 'none');
     $('.open-close-icon').click(function () {
       faqExpanded = !faqExpanded;
+      faqExpanded2 = false;
 
       $(this)
         .parent()
@@ -20,8 +22,11 @@ jQuery(document).ready(function ($) {
         .children()
         .last()
         .toggleClass('invisible');
+      $(this)
+        .parent()
+        .parent().toggleClass('height');
 
-      if (faqExpanded) {
+      if (faqExpanded && faqExpanded2) {
         $(this)
           .parent()
           .parent()
@@ -33,41 +38,35 @@ jQuery(document).ready(function ($) {
         $(this)
           .prev()
           .css('color', '#333');
-        $(this)
-          .parent()
-          .parent()
-          .prev()
-          .css('height', '5rem');
-        $(this)
-          .parent()
-          .parent()
-          .next()
-          .css('height', '5rem');
+        // $(this)
+        //   .parent()
+        //   .parent()
+        //   .prev()
+        //   .css('height', '6rem');
+        // $(this)
+        //   .parent()
+        //   .parent()
+        //   .next()
+        //   .css('height', '6rem');
 
-        // $('.faq').animate({'backgroundColor': '#fff'}, 200);
-        // $('.faq-answer').animate({'color' : '#333'}, 200);
-        // $('.faq-header h3').animate({'color': '#333'}, 200);
       } else {
         $('.faq').css('backgroundColor', '#0a2d5d');
         $('.faq-answer').css('color', '#fff');
         $('.faq-header h3').css('color', '#fff');
-        $(this)
-          .parent()
-          .parent()
-          .prev()
-          .css('height', 'auto');
-        $(this)
-          .parent()
-          .parent()
-          .next()
-          .css('height', 'auto');
-
-        // $('.faq').animate({'backgroundColor': '#0a2d5d'}, 200);
-        // $('.faq-answer').animate({'color': '#fff'}, 200);
-        // $('.faq-header h3').animate({'color': '#fff'}, 200);
+        // $(this)
+        //   .parent()
+        //   .parent()
+        //   .prev()
+        //   .css('height', 'auto');
+        // $(this)
+        //   .parent()
+        //   .parent()
+        //   .next()
+        //   .css('height', 'auto');
       }
     });
   });
+
 
   // NEWS ITEM EXPANSION
 

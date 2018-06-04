@@ -3865,7 +3865,8 @@ object {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background-color: #0a2d5d; }
+  background-color: #0a2d5d;
+  height: 6rem; }
   @media (max-width: 750px) {
     .page-template-faq .faq {
       width: 70%; } }
@@ -3912,6 +3913,9 @@ object {
   .page-template-faq .faq .open {
     color: #333333 !important;
     background-color: #fff !important; }
+
+.page-template-faq .faq.height {
+  height: auto !important; }
 
 .page-template-investor-portal .hentry {
   display: none; }
