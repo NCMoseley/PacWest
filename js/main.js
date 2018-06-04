@@ -178,12 +178,12 @@ jQuery(document).ready(function ($) {
 
   $('.logged-in .site-header').css('top', '32px');
 
-  var templateLocation = '';
+
 
   // // ADD MENU ITEM IN MOBILE
+  var templateLocation = 'https://pacwestcanopy.com';
 
   function addMenuItem() {
-    var templateLocation = ' ';
     var link = '';
     if ($('body').hasClass('logged-in')) {
       link = '/investor-portal';

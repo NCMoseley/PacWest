@@ -182,13 +182,12 @@ $transition-duration: 0.5s;
   }
 }
 
-.logged-in.admin-bar div.nav-wrapper {
-  margin-top: 33px;
-  @media all and (max-width: 784px) {
-    margin-top: 46px;
-  }
-}
-
+// .logged-in.admin-bar div.nav-wrapper {
+//   margin-top: 33px;
+//   @media all and (max-width: 784px) {
+//     margin-top: 46px;
+//   }
+// }
 .nav-wrapper {
   height: 60px;
   display: flex;

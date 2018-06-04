@@ -1,21 +1,21 @@
-# RED Starter
+# PacWest Canopy
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+![Hero Image](https://github.com/NCMoseley/PacWest/blob/master/assets/Stock_Photos/pwc-home-optimized-2.jpg)
 
-## Installation
+A beautiful Theme built for a Beautiful Vancouver based [website.](https://pacwestcanopy.com/ 'Go to Homepage')
 
-### 1. Download me (don't clone me!)
+```
+https://pacwestcanopy.com/
+```
 
-Then add me to your `wp-content` directory.
+by Caravel Media
 
-### 2. Rename the `redstarter-master` directory
+## Caravel Media
 
-Make sure that the theme directory name is project appropriate!
+www.caravelweb.com
 
-### 3. Install the dev dependencies
+Authors:
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+Colin Matson-Jones
+Ilya Meerovich
+Nathan Moseley
