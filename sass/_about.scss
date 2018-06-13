@@ -14,7 +14,8 @@
     // }
     position: fixed;
     top: 60px !important;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16),
+    0 1px 6px rgba(0, 0, 0, 0.23);
   }
   padding-top: 60px !important;
   .about-content-wrap {
@@ -101,8 +102,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('../../assets/Stock_Photos/pwc-about-optimized.jpg');
+      background: url('../../assets/Stock_Photos/about-blur.jpg');
       color: $color__text-light;
       background-size: cover;
       background-repeat: no-repeat;
@@ -127,8 +127,7 @@
       }
     }
     .about-our-company {
-      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom
-        left no-repeat;
+      background: url('../../assets/Images:Graphics/pwc-light-bg.png') bottom left no-repeat;
       background-attachment: fixed;
       width: 100%;
       min-height: 400px;

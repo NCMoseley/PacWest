@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../../assets/Stock_Photos/pwc-boxes-faq-optimized.jpg');
+    url('../../assets/Stock_Photos/faq-blur.jpg');
     color: $color__text-light;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,7 +30,6 @@
     &-img-wrapper {
       width: 100px;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       img {
@@ -38,16 +37,16 @@
       }
     }
     h1 {
-      width: 100%;
-      @include tablet {
-        width: 60%;
-      }
+      width: 60%;
       margin: 0 auto;
       text-transform: uppercase;
       text-align: center;
       font-size: 2.5rem;
       font-weight: 300;
       letter-spacing: 2px;
+      strong {
+        font-weight: 700;
+      }
     }
   }
   .main-section {

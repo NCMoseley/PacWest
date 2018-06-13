@@ -63,7 +63,7 @@ gulp.task('browser-sync', function () {
   ];
 
   browserSync.init(files, {
-    proxy: 'localhost:8888/htdocs/pac'
+    proxy: 'localhost:8888/pacwest'
   });
 
   gulp.watch(files).on('change', browserSync.reload);

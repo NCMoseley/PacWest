@@ -121,9 +121,15 @@ function red_starter_scripts()
     wp_enqueue_style('hamburger-menu', get_template_directory_uri() . '/lib/hamburgers.css');
 
     wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true);
+
+    wp_enqueue_script('jquery-unveil', get_template_directory_uri() . '/build/js/jquery.unveil.min.js', array('jquery'), '', true);
+
     wp_register_script('main', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), '1.0.0', true);
-        // wp_localize_script( 'main', 'templateLocation', array( 'template_url' => get_bloginfo('url') ) ); 
-        wp_enqueue_script('main');
+    // wp_localize_script( 'main', 'templateLocation', array( 'template_url' => get_bloginfo('url') ) );
+    wp_enqueue_script('main');
+
+
+    wp_enqueue_script('image-unveil', get_template_directory_uri() . '/build/js/image.unveil.min.js', array('jquery'), '', true);
 
 
     wp_enqueue_script('about', get_template_directory_uri() . '/build/js/about.min.js', array('jquery'), '1.0.0', true);

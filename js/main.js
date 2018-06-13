@@ -7,7 +7,6 @@ jQuery(document).ready(function ($) {
     $('.faq-answer').css('display', 'none');
     $('.open-close-icon').click(function () {
       faqExpanded = !faqExpanded;
-
       $(this)
         .parent()
         .parent()

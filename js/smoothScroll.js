@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
       window.scrollTo(window.scrollX, window.scrollY - 140);
     }
   }
-  $(window).on("hashchange", offsetAnchor);
+  $(window).on('hashchange', offsetAnchor);
 
   window.setTimeout(offsetAnchor, 1);
 });

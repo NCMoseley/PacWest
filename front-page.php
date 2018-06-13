@@ -22,7 +22,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 
-			<header class="banner-section <?php echo wp_is_mobile() ? '' : 'parallax-low' ?>">
+			<header class="banner-section">
+			<!-- <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Stock_Photos/pwc-home-blur.jpg" data-src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/Stock_Photos/pwc-home-optimized-2.jpg" class="hero" alt="full hero image"> -->
 				<div class="banner-section-img-wrapper">
 					<img src="<?php echo $logo ?>" alt="Pacwest Logo">
 				</div>
