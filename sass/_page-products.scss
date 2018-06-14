@@ -2,6 +2,7 @@
   // Todo: remove display: none. 
   display: none;
   .banner-section {
+    height: 500px;
     @include desktop {
       height: 475px;
     }
@@ -20,8 +21,7 @@
     color: $color__text-light;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; // background-position: center -50px;
-    // background-attachment: fixed;
+    background-position: center;
     &-img-wrapper {
       width: 100px;
       display: flex;

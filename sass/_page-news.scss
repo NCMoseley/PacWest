@@ -9,6 +9,7 @@
     }
   }
   .banner-section {
+    height: 500px;
     @include desktop {
       height: 475px;
     }

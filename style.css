@@ -3034,6 +3034,7 @@ object {
 .page-template-products {
   display: none; }
   .page-template-products .banner-section {
+    height: 500px;
     width: 100%;
     margin: 0 auto;
     padding: 2rem 0;
@@ -3429,6 +3430,7 @@ object {
       font-size: 1.5rem; } }
 
 .page-template-news .banner-section {
+  height: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
