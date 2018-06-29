@@ -33,6 +33,11 @@
       }
       p {
         color: #fff;
+        @media all and (max-width: 424px) {
+          width: 75%;
+          margin: 0 auto;
+          text-align: center;
+        }
       }
       .footer-social-media {
         display: flex;

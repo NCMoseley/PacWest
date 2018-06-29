@@ -3659,14 +3659,14 @@ object {
       width: 100%; }
   .page-template-contact .banner-section h1 {
     width: 60%;
-    margin: 0 auto;
-    text-transform: uppercase;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 300;
-    letter-spacing: 2px; }
-    .page-template-contact .banner-section h1 strong {
-      font-weight: 700; }
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+    @media all and (max-width: 424px) {
+      .page-template-contact .banner-section h1 {
+        font-size: 1.5rem; } }
 
 .page-template-contact .main-content {
   background: url("../../assets/Images:Graphics/pwc-light-bg.png") bottom left no-repeat;
@@ -4415,6 +4415,11 @@ object {
         width: 200px; }
       .site-footer .site-info .footer-left p {
         color: #fff; }
+        @media all and (max-width: 424px) {
+          .site-footer .site-info .footer-left p {
+            width: 75%;
+            margin: 0 auto;
+            text-align: center; } }
       .site-footer .site-info .footer-left .footer-social-media {
         display: -webkit-box;
         display: -ms-flexbox;

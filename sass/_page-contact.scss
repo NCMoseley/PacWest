@@ -38,15 +38,14 @@
     }
     h1 {
       width: 60%;
-      margin: 0 auto;
-      text-transform: uppercase;
       text-align: center;
       font-size: 2.5rem;
+      @media all and (max-width: 424px) {
+        font-size: 1.5rem;
+      }
       font-weight: 300;
       letter-spacing: 2px;
-      strong {
-        font-weight: 700;
-      }
+      text-transform: uppercase;
     }
   }
   .main-content {
