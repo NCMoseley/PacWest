@@ -1,6 +1,6 @@
 .page-template-products {
   // Todo: remove display: none. 
-  display: none;
+  // display: none; 
   .banner-section {
     height: 500px;
     @include desktop {
@@ -21,7 +21,8 @@
     color: $color__text-light;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; // background-position: center -50px;
+    // background-attachment: fixed;
     &-img-wrapper {
       width: 100px;
       display: flex;
@@ -37,8 +38,14 @@
       text-transform: uppercase;
       text-align: center;
       font-size: 2.5rem;
+      @media all and (max-width: 424px) {
+        font-size: 1.8rem;
+      }
       font-weight: 300;
       letter-spacing: 2px;
+      strong {
+        font-weight: 700;
+      }
     }
   }
   .product-a-intro-section,
