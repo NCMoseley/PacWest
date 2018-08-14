@@ -8,13 +8,11 @@ A beautiful Theme built for a Beautiful Vancouver based [website.](https://pacwe
 https://pacwestcanopy.com/
 ```
 
-by Caravel Media
+by TickerForce/Concord Business Development
 
-## Caravel Media
+[Concord Business Plans](https://www.concordbusiness.com/ 'Go to Homepage')
 
-www.caravelweb.com
-
-Authors:
+Developers:
 
 Colin Matson-Jones
 Ilya Meerovich
